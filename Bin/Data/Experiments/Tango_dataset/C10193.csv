@@ -1,0 +1,25 @@
+DATA;RowHeading3;RowHeading2;RowHeading1;ColumnHeading
+36 829;total, all commodities;;;imports
+1 671;total, all commodities;;;exports
+38 500;total, all commodities;;;total
+0,1;"wood and articles of wood; wood charcoal";44;7;imports
+0;"wood and articles of wood; wood charcoal";44;7;exports
+0,1;"wood and articles of wood; wood charcoal";44;7;total
+0,2;beverages, spirits and vinegar;22;6;imports
+0;beverages, spirits and vinegar;22;6;exports
+0,2;beverages, spirits and vinegar;22;6;total
+0,2;"salt; sulfur; earths and stone; plastering materials, lime and cement";25;5;imports
+1;"salt; sulfur; earths and stone; plastering materials, lime and cement";25;5;exports
+1,2;"salt; sulfur; earths and stone; plastering materials, lime and cement";25;5;total
+24;inorganic chemicals,precious metals and radioactive elements;28;4;imports
+0,5;inorganic chemicals,precious metals and radioactive elements;28;4;exports
+25;inorganic chemicals,precious metals and radioactive elements;28;4;total
+78;organic chemicals;29;3;imports
+3,1;organic chemicals;29;3;exports
+81;organic chemicals;29;3;total
+137;pulp of wood or of other fibrous cellulosic material;47;2;imports
+0;pulp of wood or of other fibrous cellulosic material;47;2;exports
+137;pulp of wood or of other fibrous cellulosic material;47;2;total
+36 589;mineral fuels, oils and waxes;27;1;imports
+1 667;mineral fuels, oils and waxes;27;1;exports
+38 256;mineral fuels, oils and waxes;27;1;total

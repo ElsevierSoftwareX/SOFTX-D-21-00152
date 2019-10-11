@@ -1,0 +1,13 @@
+Caption= Запрос службе поддержки
+GroupBox1c= Запрос службе поддержки: 
+GroupBox1h=
+
+RzButton1c=Отправить запрос
+RzButton1h=
+RzButton2c=Отмена
+RzButton2h=
+
+RzLabel1c=Введите текст запроса*:
+RzLabel2c=Укажите тип запроса*:
+
+

@@ -1,0 +1,43 @@
+DATA;RowHeading1;ColumnHeading
+54,1;2009/10;pupils | 300 pupils or more
+38,2;2009/10;pupils | 100-299 pupils
+7,7;2009/10;pupils | less than 100 pupils
+27,3;2009/10;schools | 300 pupils or more
+40,7;2009/10;schools | 100-299 pupils
+32;2009/10;schools | less than 100 pupils
+53,7;2008/09;pupils | 300 pupils or more
+38,2;2008/09;pupils | 100-299 pupils
+8,1;2008/09;pupils | less than 100 pupils
+26,7;2008/09;schools | 300 pupils or more
+40;2008/09;schools | 100-299 pupils
+33,3;2008/09;schools | less than 100 pupils
+53,5;2007/08;pupils | 300 pupils or more
+38,2;2007/08;pupils | 100-299 pupils
+8,3;2007/08;pupils | less than 100 pupils
+26,4;2007/08;schools | 300 pupils or more
+39,6;2007/08;schools | 100-299 pupils
+34;2007/08;schools | less than 100 pupils
+52,6;2006/07;pupils | 300 pupils or more
+39;2006/07;pupils | 100-299 pupils
+8,4;2006/07;pupils | less than 100 pupils
+25,7;2006/07;schools | 300 pupils or more
+40;2006/07;schools | 100-299 pupils
+34,3;2006/07;schools | less than 100 pupils
+52,9;2005/06;pupils | 300 pupils or more
+38,3;2005/06;pupils | 100-299 pupils
+8,8;2005/06;pupils | less than 100 pupils
+25,8;2005/06;schools | 300 pupils or more
+39;2005/06;schools | 100-299 pupils
+35,2;2005/06;schools | less than 100 pupils
+53;2004/05;pupils | 300 pupils or more
+38,3;2004/05;pupils | 100-299 pupils
+8,7;2004/05;pupils | less than 100 pupils
+25,8;2004/05;schools | 300 pupils or more
+39;2004/05;schools | 100-299 pupils
+35,2;2004/05;schools | less than 100 pupils
+52;2003/04;pupils | 300 pupils or more
+39,3;2003/04;pupils | 100-299 pupils
+8,7;2003/04;pupils | less than 100 pupils
+24,8;2003/04;schools | 300 pupils or more
+39;2003/04;schools | 100-299 pupils
+36,2;2003/04;schools | less than 100 pupils

@@ -1,0 +1,106 @@
+DATA;RowHeading1;ColumnHeading
+11,4;main activity | other;4-year institution | private
+12,8;main activity | other;4-year institution | public
+8,3;main activity | other;2-year institution | private
+7,5;main activity | other;2-year institution | public
+10,8;main activity | other;total
+7,6;main activity | administration;4-year institution | private
+8,5;main activity | administration;4-year institution | public
+11,9;main activity | administration;2-year institution | private
+3,1;main activity | administration;2-year institution | public
+6,7;main activity | administration;total
+9,0;main activity | research;4-year institution | private
+15,3;main activity | research;4-year institution | public
+0;main activity | research;2-year institution | private
+0,1;main activity | research;2-year institution | public
+8,8;main activity | research;total
+72,1;main activity | teaching;4-year institution | private
+63,4;main activity | teaching;4-year institution | public
+79,7;main activity | teaching;2-year institution | private
+89,3;main activity | teaching;2-year institution | public
+73,8;main activity | teaching;total
+48,4;highest level of educational attainment | doctorate;4-year institution | private
+58,4;highest level of educational attainment | doctorate;4-year institution | public
+20,3;highest level of educational attainment | doctorate;2-year institution | private
+11,6;highest level of educational attainment | doctorate;2-year institution | public
+41,3;highest level of educational attainment | doctorate;total
+11,0;highest level of educational attainment | first-professional;4-year institution | private
+9,2;highest level of educational attainment | first-professional;4-year institution | public
+2,6;highest level of educational attainment | first-professional;2-year institution | private
+2,9;highest level of educational attainment | first-professional;2-year institution | public
+7,8;highest level of educational attainment | first-professional;total
+34,3;highest level of educational attainment | master’s;4-year institution | private
+26,3;highest level of educational attainment | master’s;4-year institution | public
+52,3;highest level of educational attainment | master’s;2-year institution | private
+55,1;highest level of educational attainment | master’s;2-year institution | public
+37,4;highest level of educational attainment | master’s;total
+5,5;highest level of educational attainment | bachelor’s;4-year institution | private
+5,2;highest level of educational attainment | bachelor’s;4-year institution | public
+18,2;highest level of educational attainment | bachelor’s;2-year institution | private
+18,5;highest level of educational attainment | bachelor’s;2-year institution | public
+9,3;highest level of educational attainment | bachelor’s;total
+0,9;highest level of educational attainment | less than bachelor’s;4-year institution | private
+0,9;highest level of educational attainment | less than bachelor’s;4-year institution | public
+6,7;highest level of educational attainment | less than bachelor’s;2-year institution | private
+11,9;highest level of educational attainment | less than bachelor’s;2-year institution | public
+4,2;highest level of educational attainment | less than bachelor’s;total
+41,8;employment status | part-time;4-year institution | private
+28,3;employment status | part-time;4-year institution | public
+41,7;employment status | part-time;2-year institution | private
+66,7;employment status | part-time;2-year institution | public
+43,7;employment status | part-time;total
+58,2;employment status | full-time;4-year institution | private
+71,7;employment status | full-time;4-year institution | public
+58,3;employment status | full-time;2-year institution | private
+33,3;employment status | full-time;2-year institution | public
+56,3;employment status | full-time;total
+1,6;race/ethnicity | more than one race;4-year institution | private
+1,7;race/ethnicity | more than one race;4-year institution | public
+1,4;race/ethnicity | more than one race;2-year institution | private
+1,8;race/ethnicity | more than one race;2-year institution | public
+1,7;race/ethnicity | more than one race;total
+0,2;race/ethnicity | american indian/alaska native;4-year institution | private
+0,4;race/ethnicity | american indian/alaska native;4-year institution | public
+0;race/ethnicity | american indian/alaska native;2-year institution | private
+0,6;race/ethnicity | american indian/alaska native;2-year institution | public
+0,4;race/ethnicity | american indian/alaska native;total
+0,1;race/ethnicity | pacific islander;4-year institution | private
+0,1;race/ethnicity | pacific islander;4-year institution | public
+0;race/ethnicity | pacific islander;2-year institution | private
+0,2;race/ethnicity | pacific islander;2-year institution | public
+0,1;race/ethnicity | pacific islander;total
+6,1;race/ethnicity | asian;4-year institution | private
+9,0;race/ethnicity | asian;4-year institution | public
+1,0;race/ethnicity | asian;2-year institution | private
+2,9;race/ethnicity | asian;2-year institution | public
+6,3;race/ethnicity | asian;total
+2,6;race/ethnicity | hispanic;4-year institution | private
+3,2;race/ethnicity | hispanic;4-year institution | public
+0,4;race/ethnicity | hispanic;2-year institution | private
+4,9;race/ethnicity | hispanic;2-year institution | public
+3,5;race/ethnicity | hispanic;total
+4,8;race/ethnicity | black;4-year institution | private
+5,1;race/ethnicity | black;4-year institution | public
+2,0;race/ethnicity | black;2-year institution | private
+6,8;race/ethnicity | black;2-year institution | public
+5,5;race/ethnicity | black;total
+84,6;race/ethnicity | white;4-year institution | private
+80,6;race/ethnicity | white;4-year institution | public
+95,2;race/ethnicity | white;2-year institution | private
+82,7;race/ethnicity | white;2-year institution | public
+82,5;race/ethnicity | white;total
+39,9;sex | female;4-year institution | private
+39,3;sex | female;4-year institution | public
+47,6;sex | female;2-year institution | private
+49,3;sex | female;2-year institution | public
+42,5;sex | female;total
+60,1;sex | male;4-year institution | private
+60,7;sex | male;4-year institution | public
+52,4;sex | male;2-year institution | private
+50,7;sex | male;2-year institution | public
+57,5;sex | male;total
+347,000;total;4-year institution | private
+494,000;total;4-year institution | public
+8,600;total;2-year institution | private
+362,000;total;2-year institution | public
+1,212,00;total;total

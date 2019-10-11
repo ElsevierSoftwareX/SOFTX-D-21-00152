@@ -1,0 +1,21 @@
+DATA;RowHeading1;ColumnHeading
+10 000;ontario;area on canadian side of boundary  km2
+18 960;ontario;total area  km2
+244;ontario;maximum depth m
+311;ontario;length km
+12 800;erie;area on canadian side of boundary  km2
+25 700;erie;total area  km2
+64;erie;maximum depth m
+388;erie;length km
+36 000;huron;area on canadian side of boundary  km2
+59 600;huron;total area  km2
+229;huron;maximum depth m
+332;huron;length km
+0;michigan;area on canadian side of boundary  km2
+57 800;michigan;total area  km2
+282;michigan;maximum depth m
+494;michigan;length km
+28 700;superior;area on canadian side of boundary  km2
+82 100;superior;total area  km2
+406;superior;maximum depth m
+563;superior;length km

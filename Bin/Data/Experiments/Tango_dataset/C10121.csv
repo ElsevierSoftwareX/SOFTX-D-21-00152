@@ -1,0 +1,52 @@
+DATA;RowHeading1;ColumnHeading
+5 302;other than residential buildings | unknown number of storeys;persons (dwelling population)
+3 168;other than residential buildings | unknown number of storeys;dwellings
+18 479;other than residential buildings | unknown number of storeys;buildings
+536;other than residential buildings | 10 + storeys;persons (dwelling population)
+523;other than residential buildings | 10 + storeys;dwellings
+99;other than residential buildings | 10 + storeys;buildings
+25 224;other than residential buildings | 3 - 9 storeys;persons (dwelling population)
+18 530;other than residential buildings | 3 - 9 storeys;dwellings
+8 874;other than residential buildings | 3 - 9 storeys;buildings
+58 165;other than residential buildings | 1 - 2 storeys;persons (dwelling population)
+32 656;other than residential buildings | 1 - 2 storeys;dwellings
+180 191;other than residential buildings | 1 - 2 storeys;buildings
+89 227;other than residential buildings;persons (dwelling population)
+54 877;other than residential buildings;dwellings
+207 643;other than residential buildings;buildings
+5 337;blocks of flats | unknown number of storeys;persons (dwelling population)
+4 189;blocks of flats | unknown number of storeys;dwellings
+427;blocks of flats | unknown number of storeys;buildings
+16 760;blocks of flats | 10 + storeys;persons (dwelling population)
+12 237;blocks of flats | 10 + storeys;dwellings
+186;blocks of flats | 10 + storeys;buildings
+1 536 899;blocks of flats | 3 - 9 storeys;persons (dwelling population)
+1 060 878;blocks of flats | 3 - 9 storeys;dwellings
+38 543;blocks of flats | 3 - 9 storeys;buildings
+199 568;blocks of flats | 1 - 2 storeys;persons (dwelling population)
+141 329;blocks of flats | 1 - 2 storeys;dwellings
+16 769;blocks of flats | 1 - 2 storeys;buildings
+1 758 564;blocks of flats;persons (dwelling population)
+1 218 633;blocks of flats;dwellings
+55 925;blocks of flats;buildings
+696 753;attached houses;persons (dwelling population)
+382 273;attached houses;dwellings
+75 109;attached houses;buildings
+2 674 740;detached hiouses;persons (dwelling population)
+1 112 142;detached hiouses;dwellings
+1 082 511;detached hiouses;buildings
+16 088;unknown number of storeys;persons (dwelling population)
+10 957;unknown number of storeys;dwellings
+19 737;unknown number of storeys;buildings
+17 315;10 + storeys;persons (dwelling population)
+12 771;10 + storeys;dwellings
+292;10 + storeys;buildings
+1 577 577;3 - 9 storeys;persons (dwelling population)
+1 086 426;3 - 9 storeys;dwellings
+51 529;3 - 9 storeys;buildings
+3 608 304;1 - 2 storeys;persons (dwelling population)
+1 657 771;1 - 2 storeys;dwellings
+1 349 630;1 - 2 storeys;buildings
+5 219 284;total;persons (dwelling population)
+2 767 925;total;dwellings
+1 421 188;total;buildings

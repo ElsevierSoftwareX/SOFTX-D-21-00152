@@ -1,0 +1,166 @@
+DATA;RowHeading1;ColumnHeading
+2 509 493;payments | other programs;2008 $ thousands
+2 223 736;payments | other programs;2007 $ thousands
+2 980 709;payments | other programs;2006 $ thousands
+3 153 943;payments | other programs;2005 $ thousands
+2 437 261;payments | other programs;2004 $ thousands
+643 780;payments | provincial stabilization;2008 $ thousands
+837 851;payments | provincial stabilization;2007 $ thousands
+496 919;payments | provincial stabilization;2006 $ thousands
+390 763;payments | provincial stabilization;2005 $ thousands
+626 336;payments | provincial stabilization;2004 $ thousands
+915 302;payments | crop insurance;2008 $ thousands
+759 117;payments | crop insurance;2007 $ thousands
+734 687;payments | crop insurance;2006 $ thousands
+936 376;payments | crop insurance;2005 $ thousands
+864 528;payments | crop insurance;2004 $ thousands
+239 746;payments | net income stabilization account;2008 $ thousands
+272 203;payments | net income stabilization account;2007 $ thousands
+316 946;payments | net income stabilization account;2006 $ thousands
+442 340;payments | net income stabilization account;2005 $ thousands
+934 140;payments | net income stabilization account;2004 $ thousands
+4 308 321;payments;2008 $ thousands
+4 092 907;payments;2007 $ thousands
+4 529 261;payments;2006 $ thousands
+4 923 422;payments;2005 $ thousands
+4 862 265;payments;2004 $ thousands
+624 346;livestock | other livestock products;2008 $ thousands
+596 305;livestock | other livestock products;2007 $ thousands
+603 071;livestock | other livestock products;2006 $ thousands
+619 923;livestock | other livestock products;2005 $ thousands
+607 292;livestock | other livestock products;2004 $ thousands
+3 026 554;livestock | poultry and eggs;2008 $ thousands
+2 675 680;livestock | poultry and eggs;2007 $ thousands
+2 426 594;livestock | poultry and eggs;2006 $ thousands
+2 468 827;livestock | poultry and eggs;2005 $ thousands
+2 456 778;livestock | poultry and eggs;2004 $ thousands
+127 274;livestock | sheep and lambs;2008 $ thousands
+128 114;livestock | sheep and lambs;2007 $ thousands
+131 654;livestock | sheep and lambs;2006 $ thousands
+110 642;livestock | sheep and lambs;2005 $ thousands
+84 334;livestock | sheep and lambs;2004 $ thousands
+5 306 326;livestock | milk and cream;2008 $ thousands
+5 207 151;livestock | milk and cream;2007 $ thousands
+4 843 231;livestock | milk and cream;2006 $ thousands
+4 852 249;livestock | milk and cream;2005 $ thousands
+4 601 909;livestock | milk and cream;2004 $ thousands
+3 186 758;livestock | pigs;2008 $ thousands
+3 280 023;livestock | pigs;2007 $ thousands
+3 374 105;livestock | pigs;2006 $ thousands
+3 888 679;livestock | pigs;2005 $ thousands
+4 217 338;livestock | pigs;2004 $ thousands
+6 531 080;livestock | cattle and calves;2008 $ thousands
+6 351 138;livestock | cattle and calves;2007 $ thousands
+6 361 444;livestock | cattle and calves;2006 $ thousands
+6 399 984;livestock | cattle and calves;2005 $ thousands
+5 087 883;livestock | cattle and calves;2004 $ thousands
+18 802 338;livestock;2008 $ thousands
+18 238 411;livestock;2007 $ thousands
+17 740 099;livestock;2006 $ thousands
+18 340 304;livestock;2005 $ thousands
+17 055 534;livestock;2004 $ thousands
+-443 531;crops | deferred grain receipts;2008 $ thousands
+-368 754;crops | deferred grain receipts;2007 $ thousands
+-121 456;crops | deferred grain receipts;2006 $ thousands
+247 694;crops | deferred grain receipts;2005 $ thousands
+14 967;crops | deferred grain receipts;2004 $ thousands
+6 187 051;crops | other crops;2008 $ thousands
+6 097 297;crops | other crops;2007 $ thousands
+6 215 533;crops | other crops;2006 $ thousands
+5 854 919;crops | other crops;2005 $ thousands
+5 906 566;crops | other crops;2004 $ thousands
+193 977;crops | dry beans;2008 $ thousands
+165 097;crops | dry beans;2007 $ thousands
+153 268;crops | dry beans;2006 $ thousands
+155 345;crops | dry beans;2005 $ thousands
+151 916;crops | dry beans;2004 $ thousands
+40 817;crops | chick peas;2008 $ thousands
+48 681;crops | chick peas;2007 $ thousands
+65 371;crops | chick peas;2006 $ thousands
+34 956;crops | chick peas;2005 $ thousands
+7 295;crops | chick peas;2004 $ thousands
+109 222;crops | canary seed;2008 $ thousands
+76 438;crops | canary seed;2007 $ thousands
+46 116;crops | canary seed;2006 $ thousands
+35 013;crops | canary seed;2005 $ thousands
+54 886;crops | canary seed;2004 $ thousands
+600 784;crops | lentils;2008 $ thousands
+343 955;crops | lentils;2007 $ thousands
+182 347;crops | lentils;2006 $ thousands
+226 677;crops | lentils;2005 $ thousands
+204 998;crops | lentils;2004 $ thousands
+57 997;crops | sunflower;2008 $ thousands
+70 177;crops | sunflower;2007 $ thousands
+24 629;crops | sunflower;2006 $ thousands
+15 212;crops | sunflower;2005 $ thousands
+31 746;crops | sunflower;2004 $ thousands
+145 010;crops | mustard;2008 $ thousands
+90 748;crops | mustard;2007 $ thousands
+46 118;crops | mustard;2006 $ thousands
+44 057;crops | mustard;2005 $ thousands
+75 494;crops | mustard;2004 $ thousands
+631 993;crops | dry peas;2008 $ thousands
+562 784;crops | dry peas;2007 $ thousands
+366 519;crops | dry peas;2006 $ thousands
+265 299;crops | dry peas;2005 $ thousands
+342 672;crops | dry peas;2004 $ thousands
+1 124 707;crops | soybeans;2008 $ thousands
+1 031 570;crops | soybeans;2007 $ thousands
+679 914;crops | soybeans;2006 $ thousands
+760 350;crops | soybeans;2005 $ thousands
+630 764;crops | soybeans;2004 $ thousands
+1 555 484;crops | corn for grain;2008 $ thousands
+1 051 161;crops | corn for grain;2007 $ thousands
+753 659;crops | corn for grain;2006 $ thousands
+622 791;crops | corn for grain;2005 $ thousands
+794 416;crops | corn for grain;2004 $ thousands
+4 902 881;crops | canola;2008 $ thousands
+3 450 296;crops | canola;2007 $ thousands
+2 503 038;crops | canola;2006 $ thousands
+1 826 124;crops | canola;2005 $ thousands
+2 151 367;crops | canola;2004 $ thousands
+346 734;crops | flaxseed;2008 $ thousands
+246 963;crops | flaxseed;2007 $ thousands
+158 805;crops | flaxseed;2006 $ thousands
+171 221;crops | flaxseed;2005 $ thousands
+198 722;crops | flaxseed;2004 $ thousands
+37 866;crops | all rye;2008 $ thousands
+38 445;crops | all rye;2007 $ thousands
+16 160;crops | all rye;2006 $ thousands
+12 782;crops | all rye;2005 $ thousands
+29 457;crops | all rye;2004 $ thousands
+968 404;crops | barley;2008 $ thousands
+848 658;crops | barley;2007 $ thousands
+439 992;crops | barley;2006 $ thousands
+451 643;crops | barley;2005 $ thousands
+586 233;crops | barley;2004 $ thousands
+569 895;crops | oats;2008 $ thousands
+427 701;crops | oats;2007 $ thousands
+332 877;crops | oats;2006 $ thousands
+257 146;crops | oats;2005 $ thousands
+231 433;crops | oats;2004 $ thousands
+4 413 685;crops | all wheat | wheat excluding durum wheat;2008 $ thousands
+3 247 664;crops | all wheat | wheat excluding durum wheat;2007 $ thousands
+2 251 252;crops | all wheat | wheat excluding durum wheat;2006 $ thousands
+1 935 739;crops | all wheat | wheat excluding durum wheat;2005 $ thousands
+2 420 354;crops | all wheat | wheat excluding durum wheat;2004 $ thousands
+1 419 697;crops | all wheat | durum wheat;2008 $ thousands
+985 295;crops | all wheat | durum wheat;2007 $ thousands
+571 322;crops | all wheat | durum wheat;2006 $ thousands
+560 420;crops | all wheat | durum wheat;2005 $ thousands
+587 139;crops | all wheat | durum wheat;2004 $ thousands
+5 833 382;crops | all wheat;2008 $ thousands
+4 232 959;crops | all wheat;2007 $ thousands
+2 822 574;crops | all wheat;2006 $ thousands
+2 496 159;crops | all wheat;2005 $ thousands
+3 007 493;crops | all wheat;2004 $ thousands
+22 862 673;crops;2008 $ thousands
+18 414 176;crops;2007 $ thousands
+14 685 464;crops;2006 $ thousands
+13 477 388;crops;2005 $ thousands
+14 420 425;crops;2004 $ thousands
+45 973 332;total farm cash receipts;2008 $ thousands
+40 745 494;total farm cash receipts;2007 $ thousands
+36 954 824;total farm cash receipts;2006 $ thousands
+36 741 114;total farm cash receipts;2005 $ thousands
+36 338 224;total farm cash receipts;2004 $ thousands

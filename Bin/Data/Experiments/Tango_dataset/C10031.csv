@@ -1,0 +1,41 @@
+DATA;RowHeading1;ColumnHeading
+28,2;mother's mean age by first live birth;2009
+28,2;mother's mean age by first live birth;2008
+28,1;mother's mean age by first live birth;2007
+28,0;mother's mean age by first live birth;2006
+27,9;mother's mean age by first live birth;2005
+27,8;mother's mean age by first live birth;2004
+27,9;mother's mean age by first live birth;2003
+27,7;mother's mean age by first live birth;2002
+27,6;mother's mean age by first live birth;2001
+27,6;mother's mean age by first live birth;2000
+30,1;mother's mean age by all live births;2009
+30,1;mother's mean age by all live births;2008
+30,0;mother's mean age by all live births;2007
+30,0;mother's mean age by all live births;2006
+30,0;mother's mean age by all live births;2005
+30,0;mother's mean age by all live births;2004
+30,0;mother's mean age by all live births;2003
+29,9;mother's mean age by all live births;2002
+29,9;mother's mean age by all live births;2001
+29,9;mother's mean age by all live births;2000
+1,86;total fertility rate;2009
+1,85;total fertility rate;2008
+1,83;total fertility rate;2007
+1,84;total fertility rate;2006
+1,80;total fertility rate;2005
+1,80;total fertility rate;2004
+1,76;total fertility rate;2003
+1,72;total fertility rate;2002
+1,73;total fertility rate;2001
+1,73;total fertility rate;2000
+60 430;number of live births;2009
+59 530;number of live births;2008
+58 729;number of live births;2007
+58 840;number of live births;2006
+57 745;number of live births;2005
+57 758;number of live births;2004
+56 630;number of live births;2003
+55 555;number of live births;2002
+56 189;number of live births;2001
+56 742;number of live births;2000

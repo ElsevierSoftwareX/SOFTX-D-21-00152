@@ -1,0 +1,202 @@
+DATA;RowHeading1;ColumnHeading
+2;finnmark;1st quarter 2010 | >500 000
+1;finnmark;1st quarter 2010 | 251 000-500 000
+1;finnmark;1st quarter 2010 | 101 000-250 000
+6;finnmark;1st quarter 2010 | 51 000-100 000
+10;finnmark;1st quarter 2010 | total
+2;finnmark;1st quarter 2009 | >500 000
+1;finnmark;1st quarter 2009 | 251 000-500 000
+3;finnmark;1st quarter 2009 | 101 000-250 000
+8;finnmark;1st quarter 2009 | 51 000-100 000
+14;finnmark;1st quarter 2009 | total
+4;troms;1st quarter 2010 | >500 000
+4;troms;1st quarter 2010 | 251 000-500 000
+5;troms;1st quarter 2010 | 101 000-250 000
+7;troms;1st quarter 2010 | 51 000-100 000
+20;troms;1st quarter 2010 | total
+4;troms;1st quarter 2009 | >500 000
+4;troms;1st quarter 2009 | 251 000-500 000
+6;troms;1st quarter 2009 | 101 000-250 000
+11;troms;1st quarter 2009 | 51 000-100 000
+25;troms;1st quarter 2009 | total
+10;nordland;1st quarter 2010 | >500 000
+6;nordland;1st quarter 2010 | 251 000-500 000
+6;nordland;1st quarter 2010 | 101 000-250 000
+15;nordland;1st quarter 2010 | 51 000-100 000
+37;nordland;1st quarter 2010 | total
+5;nordland;1st quarter 2009 | >500 000
+5;nordland;1st quarter 2009 | 251 000-500 000
+8;nordland;1st quarter 2009 | 101 000-250 000
+25;nordland;1st quarter 2009 | 51 000-100 000
+43;nordland;1st quarter 2009 | total
+3;nord-tr?ndelag;1st quarter 2010 | >500 000
+4;nord-tr?ndelag;1st quarter 2010 | 251 000-500 000
+1;nord-tr?ndelag;1st quarter 2010 | 101 000-250 000
+9;nord-tr?ndelag;1st quarter 2010 | 51 000-100 000
+17;nord-tr?ndelag;1st quarter 2010 | total
+4;nord-tr?ndelag;1st quarter 2009 | >500 000
+4;nord-tr?ndelag;1st quarter 2009 | 251 000-500 000
+7;nord-tr?ndelag;1st quarter 2009 | 101 000-250 000
+9;nord-tr?ndelag;1st quarter 2009 | 51 000-100 000
+24;nord-tr?ndelag;1st quarter 2009 | total
+7;s?r-tr?ndelag;1st quarter 2010 | >500 000
+4;s?r-tr?ndelag;1st quarter 2010 | 251 000-500 000
+2;s?r-tr?ndelag;1st quarter 2010 | 101 000-250 000
+19;s?r-tr?ndelag;1st quarter 2010 | 51 000-100 000
+32;s?r-tr?ndelag;1st quarter 2010 | total
+5;s?r-tr?ndelag;1st quarter 2009 | >500 000
+4;s?r-tr?ndelag;1st quarter 2009 | 251 000-500 000
+17;s?r-tr?ndelag;1st quarter 2009 | 101 000-250 000
+48;s?r-tr?ndelag;1st quarter 2009 | 51 000-100 000
+74;s?r-tr?ndelag;1st quarter 2009 | total
+10;m?re og romsdal;1st quarter 2010 | >500 000
+8;m?re og romsdal;1st quarter 2010 | 251 000-500 000
+10;m?re og romsdal;1st quarter 2010 | 101 000-250 000
+16;m?re og romsdal;1st quarter 2010 | 51 000-100 000
+44;m?re og romsdal;1st quarter 2010 | total
+17;m?re og romsdal;1st quarter 2009 | >500 000
+10;m?re og romsdal;1st quarter 2009 | 251 000-500 000
+10;m?re og romsdal;1st quarter 2009 | 101 000-250 000
+21;m?re og romsdal;1st quarter 2009 | 51 000-100 000
+58;m?re og romsdal;1st quarter 2009 | total
+5;sogn og fjordane;1st quarter 2010 | >500 000
+3;sogn og fjordane;1st quarter 2010 | 251 000-500 000
+2;sogn og fjordane;1st quarter 2010 | 101 000-250 000
+6;sogn og fjordane;1st quarter 2010 | 51 000-100 000
+16;sogn og fjordane;1st quarter 2010 | total
+5;sogn og fjordane;1st quarter 2009 | >500 000
+6;sogn og fjordane;1st quarter 2009 | 251 000-500 000
+3;sogn og fjordane;1st quarter 2009 | 101 000-250 000
+9;sogn og fjordane;1st quarter 2009 | 51 000-100 000
+23;sogn og fjordane;1st quarter 2009 | total
+12;hordaland;1st quarter 2010 | >500 000
+8;hordaland;1st quarter 2010 | 251 000-500 000
+7;hordaland;1st quarter 2010 | 101 000-250 000
+51;hordaland;1st quarter 2010 | 51 000-100 000
+78;hordaland;1st quarter 2010 | total
+17;hordaland;1st quarter 2009 | >500 000
+10;hordaland;1st quarter 2009 | 251 000-500 000
+16;hordaland;1st quarter 2009 | 101 000-250 000
+54;hordaland;1st quarter 2009 | 51 000-100 000
+97;hordaland;1st quarter 2009 | total
+8;rogaland;1st quarter 2010 | >500 000
+4;rogaland;1st quarter 2010 | 251 000-500 000
+10;rogaland;1st quarter 2010 | 101 000-250 000
+23;rogaland;1st quarter 2010 | 51 000-100 000
+45;rogaland;1st quarter 2010 | total
+17;rogaland;1st quarter 2009 | >500 000
+9;rogaland;1st quarter 2009 | 251 000-500 000
+13;rogaland;1st quarter 2009 | 101 000-250 000
+21;rogaland;1st quarter 2009 | 51 000-100 000
+60;rogaland;1st quarter 2009 | total
+7;vest-agder;1st quarter 2010 | >500 000
+2;vest-agder;1st quarter 2010 | 251 000-500 000
+4;vest-agder;1st quarter 2010 | 101 000-250 000
+15;vest-agder;1st quarter 2010 | 51 000-100 000
+28;vest-agder;1st quarter 2010 | total
+12;vest-agder;1st quarter 2009 | >500 000
+2;vest-agder;1st quarter 2009 | 251 000-500 000
+10;vest-agder;1st quarter 2009 | 101 000-250 000
+23;vest-agder;1st quarter 2009 | 51 000-100 000
+47;vest-agder;1st quarter 2009 | total
+5;aust-agder;1st quarter 2010 | >500 000
+3;aust-agder;1st quarter 2010 | 251 000-500 000
+2;aust-agder;1st quarter 2010 | 101 000-250 000
+12;aust-agder;1st quarter 2010 | 51 000-100 000
+22;aust-agder;1st quarter 2010 | total
+3;aust-agder;1st quarter 2009 | >500 000
+3;aust-agder;1st quarter 2009 | 251 000-500 000
+4;aust-agder;1st quarter 2009 | 101 000-250 000
+10;aust-agder;1st quarter 2009 | 51 000-100 000
+20;aust-agder;1st quarter 2009 | total
+7;telemark;1st quarter 2010 | >500 000
+3;telemark;1st quarter 2010 | 101 000-250 000
+7;telemark;1st quarter 2010 | 51 000-100 000
+17;telemark;1st quarter 2010 | total
+6;telemark;1st quarter 2009 | >500 000
+7;telemark;1st quarter 2009 | 251 000-500 000
+4;telemark;1st quarter 2009 | 101 000-250 000
+6;telemark;1st quarter 2009 | 51 000-100 000
+23;telemark;1st quarter 2009 | total
+12;vestfold;1st quarter 2010 | >500 000
+5;vestfold;1st quarter 2010 | 251 000-500 000
+4;vestfold;1st quarter 2010 | 101 000-250 000
+30;vestfold;1st quarter 2010 | 51 000-100 000
+51;vestfold;1st quarter 2010 | total
+17;vestfold;1st quarter 2009 | >500 000
+7;vestfold;1st quarter 2009 | 251 000-500 000
+6;vestfold;1st quarter 2009 | 101 000-250 000
+31;vestfold;1st quarter 2009 | 51 000-100 000
+61;vestfold;1st quarter 2009 | total
+7;buskerud;1st quarter 2010 | >500 000
+4;buskerud;1st quarter 2010 | 251 000-500 000
+8;buskerud;1st quarter 2010 | 101 000-250 000
+29;buskerud;1st quarter 2010 | 51 000-100 000
+48;buskerud;1st quarter 2010 | total
+5;buskerud;1st quarter 2009 | >500 000
+7;buskerud;1st quarter 2009 | 251 000-500 000
+9;buskerud;1st quarter 2009 | 101 000-250 000
+31;buskerud;1st quarter 2009 | 51 000-100 000
+52;buskerud;1st quarter 2009 | total
+6;oppland;1st quarter 2010 | >500 000
+5;oppland;1st quarter 2010 | 251 000-500 000
+4;oppland;1st quarter 2010 | 101 000-250 000
+12;oppland;1st quarter 2010 | 51 000-100 000
+27;oppland;1st quarter 2010 | total
+7;oppland;1st quarter 2009 | >500 000
+4;oppland;1st quarter 2009 | 251 000-500 000
+10;oppland;1st quarter 2009 | 101 000-250 000
+17;oppland;1st quarter 2009 | 51 000-100 000
+38;oppland;1st quarter 2009 | total
+6;hedmark;1st quarter 2010 | >500 000
+4;hedmark;1st quarter 2010 | 251 000-500 000
+5;hedmark;1st quarter 2010 | 101 000-250 000
+16;hedmark;1st quarter 2010 | 51 000-100 000
+31;hedmark;1st quarter 2010 | total
+3;hedmark;1st quarter 2009 | >500 000
+2;hedmark;1st quarter 2009 | 251 000-500 000
+7;hedmark;1st quarter 2009 | 101 000-250 000
+10;hedmark;1st quarter 2009 | 51 000-100 000
+1;hedmark;1st quarter 2009 | 50000
+23;hedmark;1st quarter 2009 | total
+17;oslo;1st quarter 2010 | >500 000
+6;oslo;1st quarter 2010 | 251 000-500 000
+12;oslo;1st quarter 2010 | 101 000-250 000
+72;oslo;1st quarter 2010 | 51 000-100 000
+107;oslo;1st quarter 2010 | total
+34;oslo;1st quarter 2009 | >500 000
+10;oslo;1st quarter 2009 | 251 000-500 000
+9;oslo;1st quarter 2009 | 101 000-250 000
+78;oslo;1st quarter 2009 | 51 000-100 000
+131;oslo;1st quarter 2009 | total
+10;akershus;1st quarter 2010 | >500 000
+3;akershus;1st quarter 2010 | 251 000-500 000
+7;akershus;1st quarter 2010 | 101 000-250 000
+49;akershus;1st quarter 2010 | 51 000-100 000
+69;akershus;1st quarter 2010 | total
+12;akershus;1st quarter 2009 | >500 000
+4;akershus;1st quarter 2009 | 251 000-500 000
+14;akershus;1st quarter 2009 | 101 000-250 000
+50;akershus;1st quarter 2009 | 51 000-100 000
+80;akershus;1st quarter 2009 | total
+4;?stfold;1st quarter 2010 | >500 000
+5;?stfold;1st quarter 2010 | 251 000-500 000
+4;?stfold;1st quarter 2010 | 101 000-250 000
+28;?stfold;1st quarter 2010 | 51 000-100 000
+41;?stfold;1st quarter 2010 | total
+8;?stfold;1st quarter 2009 | >500 000
+5;?stfold;1st quarter 2009 | 251 000-500 000
+8;?stfold;1st quarter 2009 | 101 000-250 000
+29;?stfold;1st quarter 2009 | 51 000-100 000
+50;?stfold;1st quarter 2009 | total
+142;total;1st quarter 2010 | >500 000
+79;total;1st quarter 2010 | 251 000-500 000
+97;total;1st quarter 2010 | 101 000-250 000
+422;total;1st quarter 2010 | 51 000-100 000
+740;total;1st quarter 2010 | total
+183;total;1st quarter 2009 | >500 000
+104;total;1st quarter 2009 | 251 000-500 000
+164;total;1st quarter 2009 | 101 000-250 000
+491;total;1st quarter 2009 | 51 000-100 000
+1;total;1st quarter 2009 | 50000
+943;total;1st quarter 2009 | total

@@ -1,0 +1,91 @@
+DATA;RowHeading1;ColumnHeading
+1 454 175;total;total
+90 333;total;not elsewhere included
+451 962;total;dwelling not owned by usual resident(s)
+167 925;total;dwelling held in a family trust by usual resident(s)
+743 955;total;dwelling owned or partly owned by usual resident(s)
+246;area outside region;total
+18;area outside region;not elsewhere included
+96;area outside region;dwelling not owned by usual resident(s)
+24;area outside region;dwelling held in a family trust by usual resident(s)
+105;area outside region;dwelling owned or partly owned by usual resident(s)
+16 437;marlborough region;total
+1 035;marlborough region;not elsewhere included
+4 230;marlborough region;dwelling not owned by usual resident(s)
+1 893;marlborough region;dwelling held in a family trust by usual resident(s)
+9 276;marlborough region;dwelling owned or partly owned by usual resident(s)
+16 920;nelson region;total
+762;nelson region;not elsewhere included
+5 070;nelson region;dwelling not owned by usual resident(s)
+1 806;nelson region;dwelling held in a family trust by usual resident(s)
+9 279;nelson region;dwelling owned or partly owned by usual resident(s)
+16 803;tasman region;total
+846;tasman region;not elsewhere included
+3 864;tasman region;dwelling not owned by usual resident(s)
+2 085;tasman region;dwelling held in a family trust by usual resident(s)
+10 002;tasman region;dwelling owned or partly owned by usual resident(s)
+35 319;southland region;total
+1 929;southland region;not elsewhere included
+8 862;southland region;dwelling not owned by usual resident(s)
+4 440;southland region;dwelling held in a family trust by usual resident(s)
+20 088;southland region;dwelling owned or partly owned by usual resident(s)
+73 875;otago region;total
+3 975;otago region;not elsewhere included
+21 633;otago region;dwelling not owned by usual resident(s)
+10 599;otago region;dwelling held in a family trust by usual resident(s)
+37 665;otago region;dwelling owned or partly owned by usual resident(s)
+199 932;canterbury region;total
+9 528;canterbury region;not elsewhere included
+56 409;canterbury region;dwelling not owned by usual resident(s)
+20 073;canterbury region;dwelling held in a family trust by usual resident(s)
+113 919;canterbury region;dwelling owned or partly owned by usual resident(s)
+12 462;west coast region;total
+855;west coast region;not elsewhere included
+3 558;west coast region;dwelling not owned by usual resident(s)
+867;west coast region;dwelling held in a family trust by usual resident(s)
+7 176;west coast region;dwelling owned or partly owned by usual resident(s)
+166 974;wellington region;total
+8 883;wellington region;not elsewhere included
+53 583;wellington region;dwelling not owned by usual resident(s)
+17 382;wellington region;dwelling held in a family trust by usual resident(s)
+87 123;wellington region;dwelling owned or partly owned by usual resident(s)
+84 015;manawatu-wanganui region;total
+4 830;manawatu-wanganui region;not elsewhere included
+26 289;manawatu-wanganui region;dwelling not owned by usual resident(s)
+9 183;manawatu-wanganui region;dwelling held in a family trust by usual resident(s)
+43 716;manawatu-wanganui region;dwelling owned or partly owned by usual resident(s)
+39 897;taranaki region;total
+2 538;taranaki region;not elsewhere included
+11 262;taranaki region;dwelling not owned by usual resident(s)
+5 010;taranaki region;dwelling held in a family trust by usual resident(s)
+21 090;taranaki region;dwelling owned or partly owned by usual resident(s)
+54 621;hawke's bay region;total
+3 375;hawke's bay region;not elsewhere included
+16 458;hawke's bay region;dwelling not owned by usual resident(s)
+6 807;hawke's bay region;dwelling held in a family trust by usual resident(s)
+27 975;hawke's bay region;dwelling owned or partly owned by usual resident(s)
+15 486;gisborne region;total
+1 080;gisborne region;not elsewhere included
+5 502;gisborne region;dwelling not owned by usual resident(s)
+1 362;gisborne region;dwelling held in a family trust by usual resident(s)
+7 539;gisborne region;dwelling owned or partly owned by usual resident(s)
+94 773;bay of plenty region;total
+6 165;bay of plenty region;not elsewhere included
+28 977;bay of plenty region;dwelling not owned by usual resident(s)
+12 603;bay of plenty region;dwelling held in a family trust by usual resident(s)
+47 031;bay of plenty region;dwelling owned or partly owned by usual resident(s)
+138 336;waikato region;total
+9 273;waikato region;not elsewhere included
+44 616;waikato region;dwelling not owned by usual resident(s)
+15 132;waikato region;dwelling held in a family trust by usual resident(s)
+69 315;waikato region;dwelling owned or partly owned by usual resident(s)
+433 647;auckland region;total
+30 777;auckland region;not elsewhere included
+145 857;auckland region;dwelling not owned by usual resident(s)
+52 728;auckland region;dwelling held in a family trust by usual resident(s)
+204 288;auckland region;dwelling owned or partly owned by usual resident(s)
+54 453;northland region;total
+4 470;northland region;not elsewhere included
+15 696;northland region;dwelling not owned by usual resident(s)
+5 928;northland region;dwelling held in a family trust by usual resident(s)
+28 359;northland region;dwelling owned or partly owned by usual resident(s)

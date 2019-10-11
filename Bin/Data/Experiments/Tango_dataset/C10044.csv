@@ -1,0 +1,229 @@
+DATA;RowHeading1;ColumnHeading
+4,84;south africa;gross investment (eur million)
+3 292;south africa;personnel
+366;south africa;turnover (eur million)
+23;south africa;number of enterprises
+0,57;egypt;gross investment (eur million)
+523;egypt;personnel
+47;egypt;turnover (eur million)
+5;egypt;number of enterprises
+10,67;africa;gross investment (eur million)
+4 745;africa;personnel
+513;africa;turnover (eur million)
+47;africa;number of enterprises
+2,21;viet nam;gross investment (eur million)
+561;viet nam;personnel
+57;viet nam;turnover (eur million)
+5;viet nam;number of enterprises
+3,89;new zealand;gross investment (eur million)
+761;new zealand;personnel
+150;new zealand;turnover (eur million)
+13;new zealand;number of enterprises
+10,21;thailand;gross investment (eur million)
+3 495;thailand;personnel
+1 157;thailand;turnover (eur million)
+24;thailand;number of enterprises
+10,39;singapore;gross investment (eur million)
+3 541;singapore;personnel
+1 364;singapore;turnover (eur million)
+44;singapore;number of enterprises
+5,67;malaysia;gross investment (eur million)
+1 985;malaysia;personnel
+484;malaysia;turnover (eur million)
+33;malaysia;number of enterprises
+245,46;china;gross investment (eur million)
+57 165;china;personnel
+9 622;china;turnover (eur million)
+170;china;number of enterprises
+3,69;japan;gross investment (eur million)
+1 356;japan;personnel
+989;japan;turnover (eur million)
+36;japan;number of enterprises
+117,11;india;gross investment (eur million)
+22 008;india;personnel
+3 254;india;turnover (eur million)
+38;india;number of enterprises
+1,88;indonesia;gross investment (eur million)
+2 167;indonesia;personnel
+559;indonesia;turnover (eur million)
+19;indonesia;number of enterprises
+12,77;hong kong;gross investment (eur million)
+1 825;hong kong;personnel
+1 018;hong kong;turnover (eur million)
+29;hong kong;number of enterprises
+46,01;south korea;gross investment (eur million)
+1 806;south korea;personnel
+257;south korea;turnover (eur million)
+19;south korea;number of enterprises
+163,13;kazakstan;gross investment (eur million)
+1 397;kazakstan;personnel
+625;kazakstan;turnover (eur million)
+11;kazakstan;number of enterprises
+0,86;philippines;gross investment (eur million)
+460;philippines;personnel
+42;philippines;turnover (eur million)
+8;philippines;number of enterprises
+14,17;australia;gross investment (eur million)
+3 997;australia;personnel
+2 522;australia;turnover (eur million)
+49;australia;number of enterprises
+704,61;asia and oceania;gross investment (eur million)
+108 243;asia and oceania;personnel
+23 085;asia and oceania;turnover (eur million)
+544;asia and oceania;number of enterprises
+12,13;mexico;gross investment (eur million)
+9 340;mexico;personnel
+914;mexico;turnover (eur million)
+34;mexico;number of enterprises
+1,38;chile;gross investment (eur million)
+1 413;chile;personnel
+218;chile;turnover (eur million)
+16;chile;number of enterprises
+48,51;brazil;gross investment (eur million)
+15 682;brazil;personnel
+1 572;brazil;turnover (eur million)
+51;brazil;number of enterprises
+2,19;argentina;gross investment (eur million)
+379;argentina;personnel
+22;argentina;turnover (eur million)
+9;argentina;number of enterprises
+450,35;central and south america;gross investment (eur million)
+29 275;central and south america;personnel
+3 506;central and south america;turnover (eur million)
+157;central and south america;number of enterprises
+196,52;united states;gross investment (eur million)
+35 811;united states;personnel
+16 141;united states;turnover (eur million)
+221;united states;number of enterprises
+48,22;canada;gross investment (eur million)
+9 249;canada;personnel
+1 994;canada;turnover (eur million)
+51;canada;number of enterprises
+244,74;north-america;gross investment (eur million)
+45 060;north-america;personnel
+18 134;north-america;turnover (eur million)
+272;north-america;number of enterprises
+488,88;estonia;gross investment (eur million)
+35 615;estonia;personnel
+4 898;estonia;turnover (eur million)
+466;estonia;number of enterprises
+478,11;russian federation;gross investment (eur million)
+39 261;russian federation;personnel
+5 284;russian federation;turnover (eur million)
+383;russian federation;number of enterprises
+748,36;hungary;gross investment (eur million)
+14 869;hungary;personnel
+908;hungary;turnover (eur million)
+66;hungary;number of enterprises
+15,25;ukraine;gross investment (eur million)
+3 513;ukraine;personnel
+300;ukraine;turnover (eur million)
+37;ukraine;number of enterprises
+248,26;turkey;gross investment (eur million)
+7 261;turkey;personnel
+5 645;turkey;turnover (eur million)
+16;turkey;number of enterprises
+14,81;czech republic;gross investment (eur million)
+5 653;czech republic;personnel
+972;czech republic;turnover (eur million)
+60;czech republic;number of enterprises
+114,00;denmark;gross investment (eur million)
+11 135;denmark;personnel
+4 154;denmark;turnover (eur million)
+148;denmark;number of enterprises
+24,14;switzerland;gross investment (eur million)
+3 104;switzerland;personnel
+2 423;switzerland;turnover (eur million)
+41;switzerland;number of enterprises
+0,39;slovenia;gross investment (eur million)
+336;slovenia;personnel
+40;slovenia;turnover (eur million)
+10;slovenia;number of enterprises
+11,73;slovakia;gross investment (eur million)
+1 797;slovakia;personnel
+369;slovakia;turnover (eur million)
+28;slovakia;number of enterprises
+224,23;germany;gross investment (eur million)
+48 551;germany;personnel
+21 328;germany;turnover (eur million)
+285;germany;number of enterprises
+2 900,66;sweden;gross investment (eur million)
+77 644;sweden;personnel
+44 483;sweden;turnover (eur million)
+598;sweden;number of enterprises
+57,52;romania;gross investment (eur million)
+2 913;romania;personnel
+124;romania;turnover (eur million)
+19;romania;number of enterprises
+143,42;france;gross investment (eur million)
+15 777;france;personnel
+6 010;france;turnover (eur million)
+141;france;number of enterprises
+283,97;poland;gross investment (eur million)
+26 543;poland;personnel
+4 349;poland;turnover (eur million)
+149;poland;number of enterprises
+4,52;portugal;gross investment (eur million)
+2 070;portugal;personnel
+599;portugal;turnover (eur million)
+20;portugal;number of enterprises
+168,48;norway;gross investment (eur million)
+17 580;norway;personnel
+6 160;norway;turnover (eur million)
+194;norway;number of enterprises
+173,00;lithuania;gross investment (eur million)
+15 509;lithuania;personnel
+2 222;lithuania;turnover (eur million)
+189;lithuania;number of enterprises
+296,46;latvia;gross investment (eur million)
+13 231;latvia;personnel
+2 557;latvia;turnover (eur million)
+192;latvia;number of enterprises
+0,39;croatia;gross investment (eur million)
+140;croatia;personnel
+32;croatia;turnover (eur million)
+8;croatia;number of enterprises
+1,92;greece;gross investment (eur million)
+769;greece;personnel
+230;greece;turnover (eur million)
+10;greece;number of enterprises
+41,45;austria;gross investment (eur million)
+5 707;austria;personnel
+2 521;austria;turnover (eur million)
+47;austria;number of enterprises
+80,10;italy;gross investment (eur million)
+10 341;italy;personnel
+4 197;italy;turnover (eur million)
+74;italy;number of enterprises
+6,69;ireland;gross investment (eur million)
+899;ireland;personnel
+508;ireland;turnover (eur million)
+19;ireland;number of enterprises
+20,71;spain;gross investment (eur million)
+4 594;spain;personnel
+3 222;spain;turnover (eur million)
+66;spain;number of enterprises
+128,72;united kingdom;gross investment (eur million)
+17 846;united kingdom;personnel
+9 386;united kingdom;turnover (eur million)
+185;united kingdom;number of enterprises
+39,72;belgium;gross investment (eur million)
+5 030;belgium;personnel
+2 344;belgium;turnover (eur million)
+66;belgium;number of enterprises
+424,84;netherlands;gross investment (eur million)
+11 071;netherlands;personnel
+4 833;netherlands;turnover (eur million)
+151;netherlands;number of enterprises
+4 131,02;eu15;gross investment (eur million)
+211 514;eu15;personnel
+103 929;eu15;turnover (eur million)
+1 820;eu15;number of enterprises
+6 206,70;eu27;gross investment (eur million)
+328 406;eu27;personnel
+120 424;eu27;turnover (eur million)
+3 010;eu27;number of enterprises
+7 286,07;europe;gross investment (eur million)
+401 556;europe;personnel
+140 744;europe;turnover (eur million)
+3 723;europe;number of enterprises

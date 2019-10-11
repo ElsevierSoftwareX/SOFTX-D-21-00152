@@ -1,0 +1,67 @@
+DATA;RowHeading1;ColumnHeading
+0,4;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | doctor's degree;women | %
+9 283;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | doctor's degree;women | total
+0,7;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | doctor's degree;men | %
+14 647;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | doctor's degree;men | total
+0,6;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | doctor's degree;population, | %
+23 930;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | doctor's degree;population, | total
+0,2;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | licentiate's degree;women | %
+3 865;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | licentiate's degree;women | total
+0,2;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | licentiate's degree;men | %
+5 725;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | licentiate's degree;men | total
+0,2;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | licentiate's degree;population, | %
+9 590;tertiary level (isced 5/6) | second stage of tertiary education (isced 6) | licentiate's degree;population, | total
+0,6;tertiary level (isced 5/6) | second stage of tertiary education (isced 6);women | %
+13 148;tertiary level (isced 5/6) | second stage of tertiary education (isced 6);women | total
+0,9;tertiary level (isced 5/6) | second stage of tertiary education (isced 6);men | %
+20 372;tertiary level (isced 5/6) | second stage of tertiary education (isced 6);men | total
+0,8;tertiary level (isced 5/6) | second stage of tertiary education (isced 6);population, | %
+33 520;tertiary level (isced 5/6) | second stage of tertiary education (isced 6);population, | total
+7,6;tertiary level (isced 5/6) | isced 5 a long/very long programmes (master level);women | %
+172 471;tertiary level (isced 5/6) | isced 5 a long/very long programmes (master level);women | total
+6,9;tertiary level (isced 5/6) | isced 5 a long/very long programmes (master level);men | %
+148 701;tertiary level (isced 5/6) | isced 5 a long/very long programmes (master level);men | total
+7,2;tertiary level (isced 5/6) | isced 5 a long/very long programmes (master level);population, | %
+321 172;tertiary level (isced 5/6) | isced 5 a long/very long programmes (master level);population, | total
+8,5;tertiary level (isced 5/6) | isced 5 a medium programmes (bachelor level);women | %
+194 242;tertiary level (isced 5/6) | isced 5 a medium programmes (bachelor level);women | total
+7,5;tertiary level (isced 5/6) | isced 5 a medium programmes (bachelor level);men | %
+162 178;tertiary level (isced 5/6) | isced 5 a medium programmes (bachelor level);men | total
+8;tertiary level (isced 5/6) | isced 5 a medium programmes (bachelor level);population, | %
+356 420;tertiary level (isced 5/6) | isced 5 a medium programmes (bachelor level);population, | total
+12,9;tertiary level (isced 5/6) | isced 5 b programmes;women | %
+294 277;tertiary level (isced 5/6) | isced 5 b programmes;women | total
+8,7;tertiary level (isced 5/6) | isced 5 b programmes;men | %
+187 807;tertiary level (isced 5/6) | isced 5 b programmes;men | total
+10,9;tertiary level (isced 5/6) | isced 5 b programmes;population, | %
+482,084;tertiary level (isced 5/6) | isced 5 b programmes;population, | total
+29,6;tertiary level (isced 5/6);women | %
+674 138;tertiary level (isced 5/6);women | total
+24,1;tertiary level (isced 5/6);men | %
+519 058;tertiary level (isced 5/6);men | total
+26,9;tertiary level (isced 5/6);population, | %
+1 193 196;tertiary level (isced 5/6);population, | total
+36,2;upper secondary education/post-secondary non tertiary education (isced 3/4);women | %
+825 526;upper secondary education/post-secondary non tertiary education (isced 3/4);women | total
+41;upper secondary education/post-secondary non tertiary education (isced 3/4);men | %
+884 436;upper secondary education/post-secondary non tertiary education (isced 3/4);men | total
+38,6;upper secondary education/post-secondary non tertiary education (isced 3/4);population, | %
+1 709 962;upper secondary education/post-secondary non tertiary education (isced 3/4);population, | total
+65,8;population with educational qualifications;women | %
+1 499 664;population with educational qualifications;women | total
+65,1;population with educational qualifications;men | %
+1 403 494;population with educational qualifications;men | total
+65,5;population with educational qualifications;population, | %
+2 903 158;population with educational qualifications;population, | total
+34,2;basic education or less (isced 2 or less);women | %
+779 010;basic education or less (isced 2 or less);women | total
+34,9;basic education or less (isced 2 or less);men | %
+752 984;basic education or less (isced 2 or less);men | total
+34,5;basic education or less (isced 2 or less);population, | %
+1 531 994;basic education or less (isced 2 or less);population, | total
+100;total;women | %
+2 278 674;total;women | total
+100;total;men | %
+2 156 478;total;men | total
+100;total;population, | %
+4 435 152;total;population, | total

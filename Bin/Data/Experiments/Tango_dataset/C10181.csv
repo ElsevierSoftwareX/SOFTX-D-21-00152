@@ -1,0 +1,191 @@
+DATA;RowHeading1;ColumnHeading
+70,14;2008;total
+2,2;2008;waste
+5,83;2008;agriculture
+0,09;2008;solvents and other product use
+1,05;2008;industrial processes | f-gases
+5,99;2008;industrial processes | industrial processes (excl. f-gases)
+6,28;2008;energy | other energy
+13,63;2008;energy | transport
+10,8;2008;energy | manufacturing industries and construction
+24,28;2008;energy | energy industries
+78,07;2007;total
+2,38;2007;waste
+5,72;2007;agriculture
+0,1;2007;solvents and other product use
+0,95;2007;industrial processes | f-gases
+5,74;2007;industrial processes | industrial processes (excl. f-gases)
+6,64;2007;energy | other energy
+14,26;2007;energy | transport
+11,45;2007;energy | manufacturing industries and construction
+30,82;2007;energy | energy industries
+79,65;2006;total
+2,46;2006;waste
+5,73;2006;agriculture
+0,1;2006;solvents and other product use
+0,8;2006;industrial processes | f-gases
+5,35;2006;industrial processes | industrial processes (excl. f-gases)
+6,8;2006;energy | other energy
+13,9;2006;energy | transport
+11,63;2006;energy | manufacturing industries and construction
+32,88;2006;energy | energy industries
+68,43;2005;total
+2,41;2005;waste
+5,74;2005;agriculture
+0,11;2005;solvents and other product use
+0,91;2005;industrial processes | f-gases
+5,3;2005;industrial processes | industrial processes (excl. f-gases)
+6,98;2005;energy | other energy
+13,72;2005;energy | transport
+11,34;2005;energy | manufacturing industries and construction
+21,92;2005;energy | energy industries
+80,21;2004;total
+2,61;2004;waste
+5,74;2004;agriculture
+0,11;2004;solvents and other product use
+0,74;2004;industrial processes | f-gases
+5,45;2004;industrial processes | industrial processes (excl. f-gases)
+7,28;2004;energy | other energy
+13,69;2004;energy | transport
+11,64;2004;energy | manufacturing industries and construction
+32,97;2004;energy | energy industries
+84,25;2003;total
+2,75;2003;waste
+5,81;2003;agriculture
+0,1;2003;solvents and other product use
+0,72;2003;industrial processes | f-gases
+5,17;2003;industrial processes | industrial processes (excl. f-gases)
+7,6;2003;energy | other energy
+13,35;2003;energy | transport
+11,54;2003;energy | manufacturing industries and construction
+37,21;2003;energy | energy industries
+76,48;2002;total
+2,92;2002;waste
+5,81;2002;agriculture
+0,11;2002;solvents and other product use
+0,53;2002;industrial processes | f-gases
+4,86;2002;industrial processes | industrial processes (excl. f-gases)
+7,66;2002;energy | other energy
+13,14;2002;energy | transport
+11,17;2002;energy | manufacturing industries and construction
+30,26;2002;energy | energy industries
+74,36;2001;total
+3,14;2001;waste
+5,77;2001;agriculture
+0,12;2001;solvents and other product use
+0,72;2001;industrial processes | f-gases
+4,92;2001;industrial processes | industrial processes (excl. f-gases)
+7,72;2001;energy | other energy
+12,96;2001;energy | transport
+11,49;2001;energy | manufacturing industries and construction
+27,51;2001;energy | energy industries
+69,11;2000;total
+3,27;2000;waste
+5,81;2000;agriculture
+0,12;2000;solvents and other product use
+0,57;2000;industrial processes | f-gases
+4,94;2000;industrial processes | industrial processes (excl. f-gases)
+7,49;2000;energy | other energy
+12,84;2000;energy | transport
+11,94;2000;energy | manufacturing industries and construction
+22,12;2000;energy | energy industries
+71,04;1999;total
+3,48;1999;waste
+5,74;1999;agriculture
+0,14;1999;solvents and other product use
+0,4;1999;industrial processes | f-gases
+4,92;1999;industrial processes | industrial processes (excl. f-gases)
+7,85;1999;energy | other energy
+12,94;1999;energy | transport
+11,92;1999;energy | manufacturing industries and construction
+23,66;1999;energy | energy industries
+71,69;1998;total
+3,55;1998;waste
+5,85;1998;agriculture
+0,14;1998;solvents and other product use
+0,3;1998;industrial processes | f-gases
+4,85;1998;industrial processes | industrial processes (excl. f-gases)
+8,14;1998;energy | other energy
+12,74;1998;energy | transport
+11,94;1998;energy | manufacturing industries and construction
+24,18;1998;energy | energy industries
+75,18;1997;total
+3,72;1997;waste
+5,99;1997;agriculture
+0,14;1997;solvents and other product use
+0,24;1997;industrial processes | f-gases
+4,92;1997;industrial processes | industrial processes (excl. f-gases)
+7,87;1997;energy | other energy
+12,59;1997;energy | transport
+12,28;1997;energy | manufacturing industries and construction
+27,44;1997;energy | energy industries
+76,58;1996;total
+3,82;1996;waste
+6,01;1996;agriculture
+0,14;1996;solvents and other product use
+0,15;1996;industrial processes | f-gases
+4,71;1996;industrial processes | industrial processes (excl. f-gases)
+7,92;1996;energy | other energy
+12;1996;energy | transport
+12;1996;energy | manufacturing industries and construction
+29,83;1996;energy | energy industries
+70,78;1995;total
+3,91;1995;waste
+6,02;1995;agriculture
+0,14;1995;solvents and other product use
+0,1;1995;industrial processes | f-gases
+4,54;1995;industrial processes | industrial processes (excl. f-gases)
+7,78;1995;energy | other energy
+12,02;1995;energy | transport
+12,14;1995;energy | manufacturing industries and construction
+24,12;1995;energy | energy industries
+74,24;1994;total
+3,97;1994;waste
+5,94;1994;agriculture
+0,15;1994;solvents and other product use
+0,04;1994;industrial processes | f-gases
+4,6;1994;industrial processes | industrial processes (excl. f-gases)
+8,22;1994;energy | other energy
+12,23;1994;energy | transport
+12,7;1994;energy | manufacturing industries and construction
+26,4;1994;energy | energy industries
+68,85;1993;total
+4,02;1993;waste
+5,91;1993;agriculture
+0,15;1993;solvents and other product use
+0,03;1993;industrial processes | f-gases
+4,42;1993;industrial processes | industrial processes (excl. f-gases)
+8,55;1993;energy | other energy
+11,88;1993;energy | transport
+12,41;1993;energy | manufacturing industries and construction
+21,47;1993;energy | energy industries
+66,75;1992;total
+4,03;1992;waste
+5,82;1992;agriculture
+0,16;1992;solvents and other product use
+0,04;1992;industrial processes | f-gases
+4,35;1992;industrial processes | industrial processes (excl. f-gases)
+8,97;1992;energy | other energy
+12,35;1992;energy | transport
+12,3;1992;energy | manufacturing industries and construction
+18,73;1992;energy | energy industries
+68,17;1991;total
+4,01;1991;waste
+6,23;1991;agriculture
+0,17;1991;solvents and other product use
+0,07;1991;industrial processes | f-gases
+4,61;1991;industrial processes | industrial processes (excl. f-gases)
+8,85;1991;energy | other energy
+12,43;1991;energy | transport
+12,83;1991;energy | manufacturing industries and construction
+18,96;1991;energy | energy industries
+70,36;1990;total
+3,97;1990;waste
+6,62;1990;agriculture
+0,18;1990;solvents and other product use
+0,09;1990;industrial processes | f-gases
+4,98;1990;industrial processes | industrial processes (excl. f-gases)
+9,18;1990;energy | other energy
+12,79;1990;energy | transport
+13,36;1990;energy | manufacturing industries and construction
+19,19;1990;energy | energy industries

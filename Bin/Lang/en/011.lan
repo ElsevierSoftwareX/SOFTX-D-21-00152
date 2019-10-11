@@ -1,0 +1,171 @@
+2
+The Knowledge Base Explorer
+The Knowledge Base Explorer provides to preview available knowledge bases (projects). To do this, you must either create a new knowledge base with the aid of a menu item or button "Create new knowledge base", or open an existing.
+3
+Create new knowledge base 
+By clicking this button you can create a new knowledge base (project).
+4
+Create a new rule 
+By clicking this button you can create a new rule. The new rule can be created only with the existence of any templates and generalized rules.
+5
+Create a new template 
+By clicking this button you can create a new template for facts and describe their properties (slots).
+6
+Create a new fact 
+By clicking this button you can create a new fact. The new fact can be created only with the existence of any templates.
+7
+Description area 
+In this area you cane preview a description of the object selected in the Knowledge Base Explorer.
+8
+Programm code area 
+In this area you cane preview a description of the object on a specific programm language.
+9
+Transliterate 
+By clicking this button you can transliterate the captions (en->ru or ru->en) of all objects in the knowledge base.
+10
+Changing the template
+Here you can change the template including description and slots (properties).
+11
+Short name
+The short name is used while representing the object in the knowledge representation language.  
+12
+Properties (slots) area
+In this area the properties (slots) of the template are presented. You can change the description of these properties.
+13
+Available knowledge bases
+In this area you can select one of the available knowledge bases to contain the object (template / fact / rule).
+14
+Changing the knowledge base
+Here you can change the knowledge base including description and a type (for cases or rules).
+15
+Changing the fact (case)
+Here you can change the fact (or the case).
+16
+Creating a new fact (case)
+Here you can create a new fact (or a case)
+17
+Edit 
+By clicking this button you can edit an object of a knowledge base.
+18
+Delete 
+By clicking this button you can delete an object or close a knowledge base.
+19
+Run
+By clicking this button you can run rule-base. To do this, you must specify initial facts and run the inference machine. Further results will be presented, in which the expert can evaluate the correctness of tested knowledge base.
+20
+Open
+By clicking this button you can open an existing (previously created) knowledge base (project).
+21
+Save
+By clicking this button you can  save an opened knowledge base (project).
+22
+Saving the knowledge base
+To perform the procedure you must choose a project and saved objects.
+23
+Export
+To perform the procedure you must choose a project and exported objects.
+24
+Create a new pakage
+By clicking this button you can create a new packege.
+33
+Preview of results
+Here you can see the results of the case rertieval procedure in the form of a list ordered by case similarity. You can also compare the description of the targeted case and analogues.
+34
+Createing a new fact (case)
+To create a new fact you have to select a knowledge base (Step 1) and a template (Step 2), based on which a new fact (case) will be created.
+35
+Decision making by cases
+To do this you need to select a knowledge base (Step 1) and a template (Step 2), describing the cases that will be used to find a solution.
+36
+Editing
+To edit the description you need to enter the new value of properties (Step 1).
+37
+Entering the values of properties
+To describe a new fact you need to select the possible values of properties (Step 3).
+38
+Entering the values of a targerted case (the current problem description)
+To describe a targerted case (the current problem) you need to select the possible values of properties and enter their importance with accordance of a scale (Step 3).
+39
+Preview (checking) of entered data
+Please, preview the entered data before you close the window.
+40
+Create a new rule
+To create a new rule is necessary to select a knowledge base (Step 1) and a generalized rules (Step 2), on the basis of which will create a new rule.
+41
+Entering the conditions
+The rule has a structure: IF condition THEN action. To describe the conditions of the rule (Step 3) you need to select the possible values of the properties of the facts.
+42
+Preview (checking) of entered data
+Here you can check the formal correctness of the conditions of the rules (Step 2). If at least one rule conditions do not enter a value that the system reports "unknown" and does not allow to continue the process of entry rules to ensure formal correctness of the created rule.
+43
+Entering the actions
+The rule has a structure: IF condition THEN action. To describe the actions (Step 5) you need to select the possible values of the properties of the facts.
+44
+Preview (checking) of entered data
+Here you can check the formal correctness of the actions of the rules (Step 4). If at least one rule actions do not enter a value that the system reports "unknown" and does not allow to continue the process of entry rules to ensure formal correctness of the created rule.
+45
+Preview (checking) of entered data in the form of the RVML-scheme
+Here you can check the formal correctness of the rule represented in the form of the RVML-scheme.
+46
+Results of multicreteria decision making methods
+Here you can check the correctness of the case-based solution by comparing the results obtained with the results of the multicriteria decision making methods.
+51
+Entering the rules
+Here you can create / delete / edit the rules. To do this you need to: - select the knowledge base for new rules (Step 1); - create (edit) rules (Step 2).
+61
+Entering the initial facts
+To do this you need to: - select the knowledge base (Step 1); - check the formal correctness of the initial facts (Step 2). Press the Next button to proceed.
+62
+Preview the results of the inference machine
+Here you can preview the results of the inference machine in the form of the list entered facts and activated rules (Step 3).
+63
+ѕросмотр результатов работы машины вывода
+Ќа данном экране вы можете просмотреть результаты работы машины вывода в виде описани€ возможных последовательных состо€ний (шаг 4).
+64
+ѕросмотр активированных правил 
+Ќа данном экране вы можете просмотреть содержание активированных в процессе вывода правил (шаг 5).
+71
+Ctreating a new generalized rule
+To do this you need to: - select the knowledge base (Step 1); - select the template (Step 2) that will be used to create a new rule.
+72
+Cahnging the generalized rule
+To do this you need to: - select the knowledge base (Step 1); - select the template (Step 2) that will be used to create a new rule.
+73
+Creating (editing) the condition (IF) and the action (THEN)
+To create (edit) the generalized rule you need to (Step 3) select the constituent elements of the rule.
+74
+Preview (checking) of entered data in the form of the RVML-scheme
+Here you can check the formal correctness of the generalized rule represented in the form of the RVML-scheme.
+81
+Creating (editing) the template for facts (cases)
+To do this you need to: - select the knowledge base (Step 1); - select the template (Step 2) and enter the values of slots (properties).
+82
+Creating (editing) the properties (slots)
+To do this you need to (Step 3) clarify the properties: by entering names, datatypes, possible default values and descriptions.
+83
+Preview (checking) of entered data
+Here you can check the formal correctness of the template represented in the form of the table.
+101
+Create a new generalized rule
+By clicking this button you can create a new generalized rule.
+102
+Run
+By clicking this button you can testing the available knowledge bases
+201
+Opening the knowledge base
+Here you can preview the available objects of the knowledge base and select some of them for opening.
+202
+Saving the knowledge base
+Here you can preview the available objects of the knowledge base and select some of them for saving.
+203
+Import the knowledge base
+Here you can preview the available objects of the knowledge base (discovered in the file) and select some of them for import.
+204
+Export the knowledge base
+Here you can preview the available objects of the knowledge base and select some of them for export.
+205
+Import data for cases (facts): select a datasource
+Here you can select a datasource file and preview its contents.
+206
+Import data for cases (facts): relationships definition
+Here you can select a knowledge base and fact (case) template, and to define relationships between the slots of the template and the columns of the table imported.

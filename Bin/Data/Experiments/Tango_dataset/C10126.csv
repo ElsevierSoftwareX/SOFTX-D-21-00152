@@ -1,0 +1,9 @@
+DATA;RowHeading2;RowHeading1;ColumnHeading
+2,1;other products;50103, 50230, 50303, 50401, 50402, 50403, 50404;industries
+2,1;maintenance and repair of other motor vehicles;50202;industries
+4,3;maintenance and repair of passenger cars;50201;industries
+5,3;retail trade of automotive fuel;50501;industries
+6,7;wholesale trade of motor vehicle parts and accessories;50301;industries
+8,3;retail trade of motor vehicle parts and accessories;50302;industries
+28,4;wholesale trade of motor vehicles;50101;industries
+42,8;retail trade of motor vehicles;50102;industries

@@ -1,0 +1,148 @@
+DATA;RowHeading1;ColumnHeading
+0;svalbard;of which pupils in special groups | other pupils outside ordinary groups
+0;svalbard;of which pupils in special groups | pupils which receive special education at another school
+0;svalbard;of which pupils in special groups | pupils in foreign language classes
+0;svalbard;of which pupils in special groups | pupils in special classes
+68;svalbard;8th-10th grade
+166;svalbard;1st-7th grade
+234;svalbard;pupils, total
+7;finnmark finnm?rku;of which pupils in special groups | other pupils outside ordinary groups
+4;finnmark finnm?rku;of which pupils in special groups | pupils which receive special education at another school
+105;finnmark finnm?rku;of which pupils in special groups | pupils in foreign language classes
+46;finnmark finnm?rku;of which pupils in special groups | pupils in special classes
+3 076;finnmark finnm?rku;8th-10th grade
+6 669;finnmark finnm?rku;1st-7th grade
+9 745;finnmark finnm?rku;pupils, total
+62;troms romsa;of which pupils in special groups | other pupils outside ordinary groups
+18;troms romsa;of which pupils in special groups | pupils which receive special education at another school
+289;troms romsa;of which pupils in special groups | pupils in foreign language classes
+397;troms romsa;of which pupils in special groups | pupils in special classes
+6 527;troms romsa;8th-10th grade
+13 536;troms romsa;1st-7th grade
+20 063;troms romsa;pupils, total
+68;nordland;of which pupils in special groups | other pupils outside ordinary groups
+10;nordland;of which pupils in special groups | pupils which receive special education at another school
+229;nordland;of which pupils in special groups | pupils in foreign language classes
+380;nordland;of which pupils in special groups | pupils in special classes
+10 140;nordland;8th-10th grade
+20 729;nordland;1st-7th grade
+30 869;nordland;pupils, total
+60;nord-tr?ndelag;of which pupils in special groups | other pupils outside ordinary groups
+15;nord-tr?ndelag;of which pupils in special groups | pupils which receive special education at another school
+81;nord-tr?ndelag;of which pupils in special groups | pupils in foreign language classes
+99;nord-tr?ndelag;of which pupils in special groups | pupils in special classes
+5 770;nord-tr?ndelag;8th-10th grade
+12 183;nord-tr?ndelag;1st-7th grade
+17 953;nord-tr?ndelag;pupils, total
+33;s?r-tr?ndelag;of which pupils in special groups | other pupils outside ordinary groups
+51;s?r-tr?ndelag;of which pupils in special groups | pupils which receive special education at another school
+238;s?r-tr?ndelag;of which pupils in special groups | pupils in foreign language classes
+310;s?r-tr?ndelag;of which pupils in special groups | pupils in special classes
+11 232;s?r-tr?ndelag;8th-10th grade
+24 916;s?r-tr?ndelag;1st-7th grade
+36 148;s?r-tr?ndelag;pupils, total
+75;m?re og romsdal;of which pupils in special groups | other pupils outside ordinary groups
+14;m?re og romsdal;of which pupils in special groups | pupils which receive special education at another school
+249;m?re og romsdal;of which pupils in special groups | pupils in foreign language classes
+191;m?re og romsdal;of which pupils in special groups | pupils in special classes
+10 385;m?re og romsdal;8th-10th grade
+22 825;m?re og romsdal;1st-7th grade
+33 210;m?re og romsdal;pupils, total
+22;sogn og fjordane;of which pupils in special groups | other pupils outside ordinary groups
+4;sogn og fjordane;of which pupils in special groups | pupils which receive special education at another school
+84;sogn og fjordane;of which pupils in special groups | pupils in foreign language classes
+159;sogn og fjordane;of which pupils in special groups | pupils in special classes
+4 740;sogn og fjordane;8th-10th grade
+9 931;sogn og fjordane;1st-7th grade
+14 671;sogn og fjordane;pupils, total
+299;hordaland;of which pupils in special groups | other pupils outside ordinary groups
+24;hordaland;of which pupils in special groups | pupils which receive special education at another school
+316;hordaland;of which pupils in special groups | pupils in foreign language classes
+471;hordaland;of which pupils in special groups | pupils in special classes
+19 385;hordaland;8th-10th grade
+42 742;hordaland;1st-7th grade
+62 127;hordaland;pupils, total
+240;rogaland;of which pupils in special groups | other pupils outside ordinary groups
+72;rogaland;of which pupils in special groups | pupils which receive special education at another school
+364;rogaland;of which pupils in special groups | pupils in foreign language classes
+571;rogaland;of which pupils in special groups | pupils in special classes
+18 027;rogaland;8th-10th grade
+40 878;rogaland;1st-7th grade
+58 905;rogaland;pupils, total
+62;vest-agder;of which pupils in special groups | other pupils outside ordinary groups
+17;vest-agder;of which pupils in special groups | pupils which receive special education at another school
+243;vest-agder;of which pupils in special groups | pupils in foreign language classes
+225;vest-agder;of which pupils in special groups | pupils in special classes
+7 427;vest-agder;8th-10th grade
+15 723;vest-agder;1st-7th grade
+23 150;vest-agder;pupils, total
+27;aust-agder;of which pupils in special groups | other pupils outside ordinary groups
+19;aust-agder;of which pupils in special groups | pupils which receive special education at another school
+117;aust-agder;of which pupils in special groups | pupils in foreign language classes
+79;aust-agder;of which pupils in special groups | pupils in special classes
+4 449;aust-agder;8th-10th grade
+9 885;aust-agder;1st-7th grade
+14 334;aust-agder;pupils, total
+53;telemark;of which pupils in special groups | other pupils outside ordinary groups
+36;telemark;of which pupils in special groups | pupils which receive special education at another school
+187;telemark;of which pupils in special groups | pupils in foreign language classes
+305;telemark;of which pupils in special groups | pupils in special classes
+6 729;telemark;8th-10th grade
+14 066;telemark;1st-7th grade
+20 795;telemark;pupils, total
+75;vestfold;of which pupils in special groups | other pupils outside ordinary groups
+29;vestfold;of which pupils in special groups | pupils which receive special education at another school
+256;vestfold;of which pupils in special groups | pupils in foreign language classes
+349;vestfold;of which pupils in special groups | pupils in special classes
+9 462;vestfold;8th-10th grade
+20 063;vestfold;1st-7th grade
+29 525;vestfold;pupils, total
+65;buskerud;of which pupils in special groups | other pupils outside ordinary groups
+47;buskerud;of which pupils in special groups | pupils which receive special education at another school
+179;buskerud;of which pupils in special groups | pupils in foreign language classes
+350;buskerud;of which pupils in special groups | pupils in special classes
+9 871;buskerud;8th-10th grade
+22 361;buskerud;1st-7th grade
+32 232;buskerud;pupils, total
+59;oppland;of which pupils in special groups | other pupils outside ordinary groups
+0;oppland;of which pupils in special groups | pupils which receive special education at another school
+90;oppland;of which pupils in special groups | pupils in foreign language classes
+122;oppland;of which pupils in special groups | pupils in special classes
+7 150;oppland;8th-10th grade
+15 578;oppland;1st-7th grade
+22 728;oppland;pupils, total
+98;hedmark;of which pupils in special groups | other pupils outside ordinary groups
+20;hedmark;of which pupils in special groups | pupils which receive special education at another school
+123;hedmark;of which pupils in special groups | pupils in foreign language classes
+243;hedmark;of which pupils in special groups | pupils in special classes
+7 324;hedmark;8th-10th grade
+15 591;hedmark;1st-7th grade
+22 915;hedmark;pupils, total
+53;oslo;of which pupils in special groups | other pupils outside ordinary groups
+26;oslo;of which pupils in special groups | pupils which receive special education at another school
+481;oslo;of which pupils in special groups | pupils in foreign language classes
+478;oslo;of which pupils in special groups | pupils in special classes
+15 785;oslo;8th-10th grade
+39 671;oslo;1st-7th grade
+55 456;oslo;pupils, total
+183;akershus;of which pupils in special groups | other pupils outside ordinary groups
+74;akershus;of which pupils in special groups | pupils which receive special education at another school
+290;akershus;of which pupils in special groups | pupils in foreign language classes
+315;akershus;of which pupils in special groups | pupils in special classes
+22 454;akershus;8th-10th grade
+51 989;akershus;1st-7th grade
+74 443;akershus;pupils, total
+44;?stfold;of which pupils in special groups | other pupils outside ordinary groups
+51;?stfold;of which pupils in special groups | pupils which receive special education at another school
+199;?stfold;of which pupils in special groups | pupils in foreign language classes
+320;?stfold;of which pupils in special groups | pupils in special classes
+10 732;?stfold;8th-10th grade
+23 696;?stfold;1st-7th grade
+34 428;?stfold;pupils, total
+1 585;total;of which pupils in special groups | other pupils outside ordinary groups
+531;total;of which pupils in special groups | pupils which receive special education at another school
+4 120;total;of which pupils in special groups | pupils in foreign language classes
+5 410;total;of which pupils in special groups | pupils in special classes
+190 733;total;8th-10th grade
+423 198;total;1st-7th grade
+613 931;total;pupils, total

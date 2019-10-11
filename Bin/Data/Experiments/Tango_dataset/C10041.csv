@@ -1,0 +1,126 @@
+DATA;RowHeading1;ColumnHeading
+1 599;victoria (b.c.);2004 trips (destination) thousands
+1 568;victoria (b.c.);2003 trips (destination) thousands
+1 801;victoria (b.c.);2002 trips (destination) thousands
+1 630;victoria (b.c.);2001 trips (destination) thousands
+1 800;victoria (b.c.);2000 trips (destination) thousands
+2 765;vancouver (b.c.);2004 trips (destination) thousands
+3 029;vancouver (b.c.);2003 trips (destination) thousands
+3 437;vancouver (b.c.);2002 trips (destination) thousands
+3 904;vancouver (b.c.);2001 trips (destination) thousands
+3 942;vancouver (b.c.);2000 trips (destination) thousands
+3 564;edmonton (alta.);2004 trips (destination) thousands
+3 782;edmonton (alta.);2003 trips (destination) thousands
+4 448;edmonton (alta.);2002 trips (destination) thousands
+4 813;edmonton (alta.);2001 trips (destination) thousands
+4 450;edmonton (alta.);2000 trips (destination) thousands
+2 963;calgary (alta.);2004 trips (destination) thousands
+2 976;calgary (alta.);2003 trips (destination) thousands
+3 701;calgary (alta.);2002 trips (destination) thousands
+3 734;calgary (alta.);2001 trips (destination) thousands
+3 535;calgary (alta.);2000 trips (destination) thousands
+1 854;saskatoon (sask.);2004 trips (destination) thousands
+1 888;saskatoon (sask.);2003 trips (destination) thousands
+1 951;saskatoon (sask.);2002 trips (destination) thousands
+1 980;saskatoon (sask.);2001 trips (destination) thousands
+1 991;saskatoon (sask.);2000 trips (destination) thousands
+1 447;regina (sask.);2004 trips (destination) thousands
+1 305;regina (sask.);2003 trips (destination) thousands
+1 357;regina (sask.);2002 trips (destination) thousands
+1 422;regina (sask.);2001 trips (destination) thousands
+1 289;regina (sask.);2000 trips (destination) thousands
+2 294;winnipeg (man.);2004 trips (destination) thousands
+2 305;winnipeg (man.);2003 trips (destination) thousands
+2 297;winnipeg (man.);2002 trips (destination) thousands
+2 533;winnipeg (man.);2001 trips (destination) thousands
+2 395;winnipeg (man.);2000 trips (destination) thousands
+402;thunder bay (ont.);2004 trips (destination) thousands
+423;thunder bay (ont.);2003 trips (destination) thousands
+311;thunder bay (ont.);2002 trips (destination) thousands
+412;thunder bay (ont.);2001 trips (destination) thousands
+306;thunder bay (ont.);2000 trips (destination) thousands
+1 005;greater sudbury / grand sudbury (ont.);2004 trips (destination) thousands
+965;greater sudbury / grand sudbury (ont.);2003 trips (destination) thousands
+1 002;greater sudbury / grand sudbury (ont.);2002 trips (destination) thousands
+1 164;greater sudbury / grand sudbury (ont.);2001 trips (destination) thousands
+927;greater sudbury / grand sudbury (ont.);2000 trips (destination) thousands
+1 067;windsor (ont.);2004 trips (destination) thousands
+864;windsor (ont.);2003 trips (destination) thousands
+851;windsor (ont.);2002 trips (destination) thousands
+1 033;windsor (ont.);2001 trips (destination) thousands
+1 243;windsor (ont.);2000 trips (destination) thousands
+3 341;london (ont.);2004 trips (destination) thousands
+3 282;london (ont.);2003 trips (destination) thousands
+3 478;london (ont.);2002 trips (destination) thousands
+3 107;london (ont.);2001 trips (destination) thousands
+3 124;london (ont.);2000 trips (destination) thousands
+2 337;kitchener (ont.);2004 trips (destination) thousands
+2 031;kitchener (ont.);2003 trips (destination) thousands
+2 833;kitchener (ont.);2002 trips (destination) thousands
+2 371;kitchener (ont.);2001 trips (destination) thousands
+2 618;kitchener (ont.);2000 trips (destination) thousands
+4 157;st. catharines–niagara (ont.);2004 trips (destination) thousands
+3 806;st. catharines–niagara (ont.);2003 trips (destination) thousands
+3 949;st. catharines–niagara (ont.);2002 trips (destination) thousands
+4 056;st. catharines–niagara (ont.);2001 trips (destination) thousands
+4 110;st. catharines–niagara (ont.);2000 trips (destination) thousands
+1 766;hamilton (ont.);2004 trips (destination) thousands
+1 675;hamilton (ont.);2003 trips (destination) thousands
+1 966;hamilton (ont.);2002 trips (destination) thousands
+2 308;hamilton (ont.);2001 trips (destination) thousands
+1 712;hamilton (ont.);2000 trips (destination) thousands
+13 738;toronto (ont.);2004 trips (destination) thousands
+12 706;toronto (ont.);2003 trips (destination) thousands
+13 894;toronto (ont.);2002 trips (destination) thousands
+14 144;toronto (ont.);2001 trips (destination) thousands
+14 708;toronto (ont.);2000 trips (destination) thousands
+970;oshawa (ont.);2004 trips (destination) thousands
+779;oshawa (ont.);2003 trips (destination) thousands
+859;oshawa (ont.);2002 trips (destination) thousands
+1 031;oshawa (ont.);2001 trips (destination) thousands
+827;oshawa (ont.);2000 trips (destination) thousands
+6 194;ottawa–gatineau (ont.-que.);2004 trips (destination) thousands
+6 110;ottawa–gatineau (ont.-que.);2003 trips (destination) thousands
+5 936;ottawa–gatineau (ont.-que.);2002 trips (destination) thousands
+5 924;ottawa–gatineau (ont.-que.);2001 trips (destination) thousands
+5 487;ottawa–gatineau (ont.-que.);2000 trips (destination) thousands
+11 000;montr?al (que.);2004 trips (destination) thousands
+11 023;montr?al (que.);2003 trips (destination) thousands
+10 913;montr?al (que.);2002 trips (destination) thousands
+10 117;montr?al (que.);2001 trips (destination) thousands
+9 470;montr?al (que.);2000 trips (destination) thousands
+1 512;trois-rivi?res (que.);2004 trips (destination) thousands
+1 434;trois-rivi?res (que.);2003 trips (destination) thousands
+1 293;trois-rivi?res (que.);2002 trips (destination) thousands
+985;trois-rivi?res (que.);2001 trips (destination) thousands
+1 188;trois-rivi?res (que.);2000 trips (destination) thousands
+1 654;sherbrooke (que.);2004 trips (destination) thousands
+1 521;sherbrooke (que.);2003 trips (destination) thousands
+1 992;sherbrooke (que.);2002 trips (destination) thousands
+1 746;sherbrooke (que.);2001 trips (destination) thousands
+1 274;sherbrooke (que.);2000 trips (destination) thousands
+7 075;quebec (que.);2004 trips (destination) thousands
+6 836;quebec (que.);2003 trips (destination) thousands
+7 114;quebec (que.);2002 trips (destination) thousands
+6 087;quebec (que.);2001 trips (destination) thousands
+6 256;quebec (que.);2000 trips (destination) thousands
+773;saguenay (que.);2004 trips (destination) thousands
+652;saguenay (que.);2003 trips (destination) thousands
+770;saguenay (que.);2002 trips (destination) thousands
+713;saguenay (que.);2001 trips (destination) thousands
+609;saguenay (que.);2000 trips (destination) thousands
+619;saint john (n.b.);2004 trips (destination) thousands
+802;saint john (n.b.);2003 trips (destination) thousands
+770;saint john (n.b.);2002 trips (destination) thousands
+815;saint john (n.b.);2001 trips (destination) thousands
+738;saint john (n.b.);2000 trips (destination) thousands
+2 870;halifax (n.s.);2004 trips (destination) thousands
+2 769;halifax (n.s.);2003 trips (destination) thousands
+3 513;halifax (n.s.);2002 trips (destination) thousands
+2 999;halifax (n.s.);2001 trips (destination) thousands
+2 905;halifax (n.s.);2000 trips (destination) thousands
+1 129;st. john's (n.l.);2004 trips (destination) thousands
+1 018;st. john's (n.l.);2003 trips (destination) thousands
+1 068;st. john's (n.l.);2002 trips (destination) thousands
+1 357;st. john's (n.l.);2001 trips (destination) thousands
+1 416;st. john's (n.l.);2000 trips (destination) thousands

@@ -1,0 +1,162 @@
+DATA;RowHeading1;ColumnHeading
+507;canada | nunavut | females;2007 number of persons
+396;canada | nunavut | females;2003 number of persons
+617;canada | nunavut;2008 number of persons
+614;canada | nunavut;2007 number of persons
+643;canada | nunavut;2005 number of persons
+555;canada | nunavut;2003 number of persons
+1,325;canada | northwest territories | females;2008 number of persons
+1,272;canada | northwest territories | females;2007 number of persons
+2,050;canada | northwest territories | females;2005 number of persons
+1,341;canada | northwest territories | females;2003 number of persons
+901;canada | northwest territories | males;2008 number of persons
+958;canada | northwest territories | males;2005 number of persons
+1,271;canada | northwest territories | males;2003 number of persons
+2,226;canada | northwest territories;2008 number of persons
+1,821;canada | northwest territories;2007 number of persons
+3,008;canada | northwest territories;2005 number of persons
+2,613;canada | northwest territories;2003 number of persons
+1,545;canada | yukon territory | females;2008 number of persons
+1,438;canada | yukon territory | females;2007 number of persons
+1,516;canada | yukon territory | females;2005 number of persons
+1,420;canada | yukon territory | females;2003 number of persons
+698;canada | yukon territory | males;2008 number of persons
+867;canada | yukon territory | males;2007 number of persons
+857;canada | yukon territory | males;2005 number of persons
+851;canada | yukon territory | males;2003 number of persons
+2,242;canada | yukon territory;2008 number of persons
+2,305;canada | yukon territory;2007 number of persons
+2,373;canada | yukon territory;2005 number of persons
+2,271;canada | yukon territory;2003 number of persons
+155,031;canada | british columbia | females;2008 number of persons
+137,246;canada | british columbia | females;2007 number of persons
+173,871;canada | british columbia | females;2005 number of persons
+142,497;canada | british columbia | females;2003 number of persons
+125,596;canada | british columbia | males;2008 number of persons
+113,694;canada | british columbia | males;2007 number of persons
+118,767;canada | british columbia | males;2005 number of persons
+113,486;canada | british columbia | males;2003 number of persons
+280,626;canada | british columbia;2008 number of persons
+250,940;canada | british columbia;2007 number of persons
+292,638;canada | british columbia;2005 number of persons
+255,983;canada | british columbia;2003 number of persons
+127,264;canada | alberta | females;2008 number of persons
+149,505;canada | alberta | females;2007 number of persons
+131,784;canada | alberta | females;2005 number of persons
+132,566;canada | alberta | females;2003 number of persons
+100,411;canada | alberta | males;2008 number of persons
+107,192;canada | alberta | males;2007 number of persons
+98,751;canada | alberta | males;2005 number of persons
+104,055;canada | alberta | males;2003 number of persons
+227,674;canada | alberta;2008 number of persons
+256,697;canada | alberta;2007 number of persons
+230,535;canada | alberta;2005 number of persons
+236,621;canada | alberta;2003 number of persons
+34,241;canada | saskatchewan | females;2008 number of persons
+34,219;canada | saskatchewan | females;2007 number of persons
+36,444;canada | saskatchewan | females;2005 number of persons
+37,245;canada | saskatchewan | females;2003 number of persons
+35,676;canada | saskatchewan | males;2008 number of persons
+32,167;canada | saskatchewan | males;2007 number of persons
+30,590;canada | saskatchewan | males;2005 number of persons
+27,149;canada | saskatchewan | males;2003 number of persons
+69,917;canada | saskatchewan;2008 number of persons
+66,386;canada | saskatchewan;2007 number of persons
+67,034;canada | saskatchewan;2005 number of persons
+64,394;canada | saskatchewan;2003 number of persons
+60,258;canada | manitoba | females;2008 number of persons
+40,250;canada | manitoba | females;2007 number of persons
+37,727;canada | manitoba | females;2005 number of persons
+45,986;canada | manitoba | females;2003 number of persons
+39,346;canada | manitoba | males;2008 number of persons
+28,178;canada | manitoba | males;2007 number of persons
+35,700;canada | manitoba | males;2005 number of persons
+35,217;canada | manitoba | males;2003 number of persons
+99,603;canada | manitoba;2008 number of persons
+68,429;canada | manitoba;2007 number of persons
+73,427;canada | manitoba;2005 number of persons
+81,203;canada | manitoba;2003 number of persons
+524,922;canada | ontario | females;2008 number of persons
+534,674;canada | ontario | females;2007 number of persons
+498,278;canada | ontario | females;2005 number of persons
+510,328;canada | ontario | females;2003 number of persons
+386,433;canada | ontario | males;2008 number of persons
+347,353;canada | ontario | males;2007 number of persons
+345,060;canada | ontario | males;2005 number of persons
+345,452;canada | ontario | males;2003 number of persons
+911,355;canada | ontario;2008 number of persons
+882,027;canada | ontario;2007 number of persons
+843,339;canada | ontario;2005 number of persons
+855,781;canada | ontario;2003 number of persons
+342,083;canada | quebec | females;2008 number of persons
+318,148;canada | quebec | females;2007 number of persons
+342,592;canada | quebec | females;2005 number of persons
+316,752;canada | quebec | females;2003 number of persons
+246,207;canada | quebec | males;2008 number of persons
+218,222;canada | quebec | males;2007 number of persons
+213,000;canada | quebec | males;2005 number of persons
+227,997;canada | quebec | males;2003 number of persons
+588,291;canada | quebec;2008 number of persons
+536,370;canada | quebec;2007 number of persons
+555,592;canada | quebec;2005 number of persons
+544,749;canada | quebec;2003 number of persons
+33,234;canada | new brunswick | females;2008 number of persons
+35,719;canada | new brunswick | females;2007 number of persons
+30,030;canada | new brunswick | females;2005 number of persons
+33,604;canada | new brunswick | females;2003 number of persons
+22,463;canada | new brunswick | males;2008 number of persons
+19,626;canada | new brunswick | males;2007 number of persons
+25,075;canada | new brunswick | males;2005 number of persons
+22,612;canada | new brunswick | males;2003 number of persons
+55,697;canada | new brunswick;2008 number of persons
+55,345;canada | new brunswick;2007 number of persons
+55,105;canada | new brunswick;2005 number of persons
+56,216;canada | new brunswick;2003 number of persons
+48,484;canada | nova scotia | females;2008 number of persons
+54,194;canada | nova scotia | females;2007 number of persons
+42,462;canada | nova scotia | females;2005 number of persons
+43,858;canada | nova scotia | females;2003 number of persons
+30,627;canada | nova scotia | males;2008 number of persons
+31,815;canada | nova scotia | males;2007 number of persons
+31,886;canada | nova scotia | males;2005 number of persons
+30,066;canada | nova scotia | males;2003 number of persons
+79,111;canada | nova scotia;2008 number of persons
+86,009;canada | nova scotia;2007 number of persons
+74,348;canada | nova scotia;2005 number of persons
+73,924;canada | nova scotia;2003 number of persons
+4,501;canada | prince edward island | females;2008 number of persons
+6,098;canada | prince edward island | females;2007 number of persons
+6,536;canada | prince edward island | females;2005 number of persons
+6,472;canada | prince edward island | females;2003 number of persons
+4,460;canada | prince edward island | males;2008 number of persons
+4,409;canada | prince edward island | males;2007 number of persons
+3,935;canada | prince edward island | males;2005 number of persons
+4,408;canada | prince edward island | males;2003 number of persons
+8,961;canada | prince edward island;2008 number of persons
+10,507;canada | prince edward island;2007 number of persons
+10,472;canada | prince edward island;2005 number of persons
+10,881;canada | prince edward island;2003 number of persons
+21,233;canada | newfoundland and labrador | females;2008 number of persons
+13,066;canada | newfoundland and labrador | females;2007 number of persons
+23,666;canada | newfoundland and labrador | females;2005 number of persons
+21,400;canada | newfoundland and labrador | females;2003 number of persons
+15,348;canada | newfoundland and labrador | males;2008 number of persons
+9,904;canada | newfoundland and labrador | males;2007 number of persons
+17,525;canada | newfoundland and labrador | males;2005 number of persons
+20,120;canada | newfoundland and labrador | males;2003 number of persons
+36,581;canada | newfoundland and labrador;2008 number of persons
+22,970;canada | newfoundland and labrador;2007 number of persons
+41,190;canada | newfoundland and labrador;2005 number of persons
+41,520;canada | newfoundland and labrador;2003 number of persons
+1,354,447;canada | females;2008 number of persons
+1,326,337;canada | females;2007 number of persons
+1,327,397;canada | females;2005 number of persons
+1,293,866;canada | females;2003 number of persons
+1,008,455;canada | males;2008 number of persons
+914,083;canada | males;2007 number of persons
+922,306;canada | males;2005 number of persons
+932,844;canada | males;2003 number of persons
+2,362,902;canada;2008 number of persons
+2,240,420;canada;2007 number of persons
+2,249,703;canada;2005 number of persons
+2,226,710;canada;2003 number of persons

@@ -1,0 +1,26 @@
+DATA;RowHeading1;ColumnHeading
+120,168;total;2008
+136,600;total;2007
+137,226;total;2006
+130,473;total;2005
+94,441;total;2000
+610;other and unknown;2008
+392;other and unknown;2007
+312;other and unknown;2006
+544;other and unknown;2005
+297;other and unknown;2000
+413;pipeline;2008
+369;pipeline;2007
+319;pipeline;2006
+166;pipeline;2005
+78;pipeline;2000
+17,957;rail;2008
+21,427;rail;2007
+21,486;rail;2006
+20,975;rail;2005
+8,598;rail;2000
+101,188;truck;2008
+114,411;truck;2007
+115,108;truck;2006
+108,788;truck;2005
+85,468;truck;2000

@@ -1,0 +1,16 @@
+\Config
+\Config\pkbd.cfg
+\Data
+\Dic
+\Dll
+\Dll\cs.dll
+\Dll\001.dll
+\Dll\003.dll
+\Dll\004.dll
+\Lang
+\Lang\en
+\Lang\en\011.lan
+\Lang\en\012.lan
+\Lang\ru
+\Lang\ru\011.lan
+\Lang\ru\012.lan

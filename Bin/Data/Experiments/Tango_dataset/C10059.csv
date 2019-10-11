@@ -1,0 +1,13 @@
+DATA;RowHeading1;ColumnHeading
+96 571;capacity (deadweight tons, thousands);total
+4 281;capacity (deadweight tons, thousands);other
+3 135;capacity (deadweight tons, thousands);general
+4 826;capacity (deadweight tons, thousands);dry bulk
+7 707;capacity (deadweight tons, thousands);tanker
+76 622;capacity (deadweight tons, thousands);container
+2 160;calls;total
+230;calls;other
+80;calls;general
+92;calls;dry bulk
+169;calls;tanker
+1 589;calls;container

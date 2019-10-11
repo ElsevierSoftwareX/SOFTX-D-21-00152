@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.owl-ontologies.com/Ontology1477923492.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://www.owl-ontologies.com/Ontology1477923492.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Неисправность"/>
+  <owl:Class rdf:ID="Индикатор"/>
+  <owl:Class rdf:ID="Проверка_шнура_питания"/>
+  <owl:Class rdf:ID="Блок_питания"/>
+  <owl:DatatypeProperty rdf:ID="Вид">
+    <rdfs:domain rdf:resource="#Неисправность"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Хлеб не поджаривается</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Индикация">
+    <rdfs:domain rdf:resource="#Индикатор"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Не работает</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Результат">
+    <rdfs:domain rdf:resource="#Проверка_шнура_питания"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Работает</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="Работоспособность">
+    <rdfs:domain rdf:resource="#Блок_питания"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Не работает</rdfs:comment>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+

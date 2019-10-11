@@ -1,0 +1,11 @@
+RzButton1c=Отмена
+RzButton1h=Отменить текущую операцию
+RzButton2c=Готово
+RzButton2h=Создать базу знаний
+
+GroupBox1c= Описание: 
+GroupBox1h=Описание базы знаний
+
+Label1c=Название:
+Label2c=Служебное название:
+Label3c=Тип:

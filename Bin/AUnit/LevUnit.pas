@@ -1,0 +1,101 @@
+{------------------------------------------------------------------------------}
+{                                                                              }
+{  Personal Knowledge Base Designer                                            }
+{  by A.Yu. Yurin                                             }
+{                                                                              }
+{  iskander@icc.ru                                                             }
+{  http://knowledge-core.ru/                                                   }
+{                                                                              }
+{------------------------------------------------------------------------------}
+
+unit LevUnit;
+
+interface
+//function from
+// https://ru.wikibooks.org/wiki/%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%BE%D0%B2/%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5_%D0%9B%D0%B5%D0%B2%D0%B5%D0%BD%D1%88%D1%82%D0%B5%D0%B9%D0%BD%D0%B0#Delphi
+
+const
+  cuthalf = 100; // константа, ограничивающа€ макс. длину
+  // обрабатываемых строк
+
+var
+  buf: array[0..((cuthalf * 2) - 1)] of integer; // рабочий буфер, замен€ет
+  // матрицу, представленную
+  // в описании
+
+  function LeveDist(s, t: string): integer;
+
+
+implementation
+ function min3(a, b, c: integer): integer; // вспомогательна€ функци€
+begin
+  Result := a;
+  if b < Result then
+    Result := b;
+  if c < Result then
+    Result := c;
+end;
+
+// реализаци€ функции в принципе соответствует описанию с одной оговоркой:
+// матрица из описани€ заменена статическим буфером, длина которого
+// равна удвоенной максимальной длине строк
+// это сделано дл€ 1) экономии пам€ти и во избежание еЄ перераспределений
+// 2) повышени€ быстродействи€ (у мен€ функци€ работает
+// в обработчике onfilterRecord)
+// таким образом, в реализации половинами буфера представлены только
+// две последние строки матрицы, которые мен€ютс€ местами каждую
+// итерацию внешнего цикла (по i)... дл€ определени€ того, кака€ из половин
+// буфера €вл€етс€ "нижней строкой", служит переменна€ flip
+// т. е. при flip = false перва€ половина буфера €вл€етс€ предпоследней
+// строкой, а втора€ - последней; при flip = true наоборот,
+// перва€ половина - последн€€ строка, втора€ половина - предпоследн€€
+
+function LeveDist(s, t: string): integer;
+var
+  i, j, m, n: integer;
+  cost: integer;
+  flip: boolean;
+begin
+  s := copy(s, 1, cuthalf - 1);
+  t := copy(t, 1, cuthalf - 1);
+  m := length(s);
+  n := length(t);
+  if m = 0 then
+    Result := n
+  else if n = 0 then
+    Result := m
+  else
+  begin
+    flip := false;
+    for i := 0 to n do
+      buf[i] := i;
+    for i := 1 to m do
+    begin
+      if flip then
+        buf[0] := i
+      else
+        buf[cuthalf] := i;
+      for j := 1 to n do
+      begin
+        if s[i] = t[j] then
+          cost := 0
+        else
+          cost := 1;
+        if flip then
+          buf[j] := min3((buf[cuthalf + j] + 1),
+            (buf[j - 1] + 1),
+            (buf[cuthalf + j - 1] + cost))
+        else
+          buf[cuthalf + j] := min3((buf[j] + 1),
+            (buf[cuthalf + j - 1] + 1),
+            (buf[j - 1] + cost));
+      end;
+      flip := not flip;
+    end;
+    if flip then
+      Result := buf[cuthalf + n]
+    else
+      Result := buf[n];
+  end;
+end;
+end.

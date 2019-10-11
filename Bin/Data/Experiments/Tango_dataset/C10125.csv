@@ -1,0 +1,156 @@
+DATA;RowHeading1;ColumnHeading
+1,9;all causes of death [a00-y89] | assault (homicide) [x85-y09, y87.1];2005 both sexes rate per 100,000 population
+1,7;all causes of death [a00-y89] | assault (homicide) [x85-y09, y87.1];2004 both sexes rate per 100,000 population
+1,5;all causes of death [a00-y89] | assault (homicide) [x85-y09, y87.1];2003 both sexes rate per 100,000 population
+1,5;all causes of death [a00-y89] | assault (homicide) [x85-y09, y87.1];2002 both sexes rate per 100,000 population
+1,5;all causes of death [a00-y89] | assault (homicide) [x85-y09, y87.1];2001 both sexes rate per 100,000 population
+10,9;all causes of death [a00-y89] | intentional self-harm (suicide) [x60-x84, y87.0];2005 both sexes rate per 100,000 population
+10,8;all causes of death [a00-y89] | intentional self-harm (suicide) [x60-x84, y87.0];2004 both sexes rate per 100,000 population
+11,3;all causes of death [a00-y89] | intentional self-harm (suicide) [x60-x84, y87.0];2003 both sexes rate per 100,000 population
+11,2;all causes of death [a00-y89] | intentional self-harm (suicide) [x60-x84, y87.0];2002 both sexes rate per 100,000 population
+11,4;all causes of death [a00-y89] | intentional self-harm (suicide) [x60-x84, y87.0];2001 both sexes rate per 100,000 population
+3;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | accidental poisoning and exposure to noxious substances [x40-x49];2005 both sexes rate per 100,000 population
+2,8;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | accidental poisoning and exposure to noxious substances [x40-x49];2004 both sexes rate per 100,000 population
+2,7;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | accidental poisoning and exposure to noxious substances [x40-x49];2003 both sexes rate per 100,000 population
+3,1;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | accidental poisoning and exposure to noxious substances [x40-x49];2002 both sexes rate per 100,000 population
+3;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | accidental poisoning and exposure to noxious substances [x40-x49];2001 both sexes rate per 100,000 population
+5,4;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | falls [w00-w19];2005 both sexes rate per 100,000 population
+5,4;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | falls [w00-w19];2004 both sexes rate per 100,000 population
+5;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | falls [w00-w19];2003 both sexes rate per 100,000 population
+4,6;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | falls [w00-w19];2002 both sexes rate per 100,000 population
+4,6;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | falls [w00-w19];2001 both sexes rate per 100,000 population
+9,2;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | motor vehicle accidents;2005 both sexes rate per 100,000 population
+8,7;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | motor vehicle accidents;2004 both sexes rate per 100,000 population
+9;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | motor vehicle accidents;2003 both sexes rate per 100,000 population
+9,2;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | motor vehicle accidents;2002 both sexes rate per 100,000 population
+8,3;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86] | motor vehicle accidents;2001 both sexes rate per 100,000 population
+25,6;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86];2005 both sexes rate per 100,000 population
+24,7;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86];2004 both sexes rate per 100,000 population
+25,5;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86];2003 both sexes rate per 100,000 population
+26;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86];2002 both sexes rate per 100,000 population
+25,1;all causes of death [a00-y89] | accidents (unintentional injuries) [v01-x59, y85-y86];2001 both sexes rate per 100,000 population
+3,2;all causes of death [a00-y89] | congenital malformations, deformations and chromosomal abnormalities [q00-q99];2005 both sexes rate per 100,000 population
+3,1;all causes of death [a00-y89] | congenital malformations, deformations and chromosomal abnormalities [q00-q99];2004 both sexes rate per 100,000 population
+3,3;all causes of death [a00-y89] | congenital malformations, deformations and chromosomal abnormalities [q00-q99];2003 both sexes rate per 100,000 population
+3,3;all causes of death [a00-y89] | congenital malformations, deformations and chromosomal abnormalities [q00-q99];2002 both sexes rate per 100,000 population
+3,3;all causes of death [a00-y89] | congenital malformations, deformations and chromosomal abnormalities [q00-q99];2001 both sexes rate per 100,000 population
+4,4;all causes of death [a00-y89] | certain conditions originating in the perinatal period [p00-p96];2005 both sexes rate per 100,000 population
+4,3;all causes of death [a00-y89] | certain conditions originating in the perinatal period [p00-p96];2004 both sexes rate per 100,000 population
+4,2;all causes of death [a00-y89] | certain conditions originating in the perinatal period [p00-p96];2003 both sexes rate per 100,000 population
+4;all causes of death [a00-y89] | certain conditions originating in the perinatal period [p00-p96];2002 both sexes rate per 100,000 population
+4;all causes of death [a00-y89] | certain conditions originating in the perinatal period [p00-p96];2001 both sexes rate per 100,000 population
+8,3;all causes of death [a00-y89] | renal failure [n17-n19];2005 both sexes rate per 100,000 population
+8,3;all causes of death [a00-y89] | renal failure [n17-n19];2004 both sexes rate per 100,000 population
+8,5;all causes of death [a00-y89] | renal failure [n17-n19];2003 both sexes rate per 100,000 population
+8,6;all causes of death [a00-y89] | renal failure [n17-n19];2002 both sexes rate per 100,000 population
+8,3;all causes of death [a00-y89] | renal failure [n17-n19];2001 both sexes rate per 100,000 population
+3;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | other chronic liver disease and cirrhosis [k73-k74];2005 both sexes rate per 100,000 population
+3;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | other chronic liver disease and cirrhosis [k73-k74];2004 both sexes rate per 100,000 population
+3,2;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | other chronic liver disease and cirrhosis [k73-k74];2003 both sexes rate per 100,000 population
+3,3;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | other chronic liver disease and cirrhosis [k73-k74];2002 both sexes rate per 100,000 population
+3,3;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | other chronic liver disease and cirrhosis [k73-k74];2001 both sexes rate per 100,000 population
+3;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | alcoholic liver disease [k70];2005 both sexes rate per 100,000 population
+3;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | alcoholic liver disease [k70];2004 both sexes rate per 100,000 population
+3,1;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | alcoholic liver disease [k70];2003 both sexes rate per 100,000 population
+3,2;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | alcoholic liver disease [k70];2002 both sexes rate per 100,000 population
+3,2;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74] | alcoholic liver disease [k70];2001 both sexes rate per 100,000 population
+6,1;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74];2005 both sexes rate per 100,000 population
+6;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74];2004 both sexes rate per 100,000 population
+6,4;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74];2003 both sexes rate per 100,000 population
+6,6;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74];2002 both sexes rate per 100,000 population
+6,5;all causes of death [a00-y89] | chronic liver disease and cirrhosis [k70, k73-k74];2001 both sexes rate per 100,000 population
+25,1;all causes of death [a00-y89] | chronic lower respiratory diseases [j40-j47];2005 both sexes rate per 100,000 population
+24,8;all causes of death [a00-y89] | chronic lower respiratory diseases [j40-j47];2004 both sexes rate per 100,000 population
+25,8;all causes of death [a00-y89] | chronic lower respiratory diseases [j40-j47];2003 both sexes rate per 100,000 population
+25,9;all causes of death [a00-y89] | chronic lower respiratory diseases [j40-j47];2002 both sexes rate per 100,000 population
+26,3;all causes of death [a00-y89] | chronic lower respiratory diseases [j40-j47];2001 both sexes rate per 100,000 population
+11,7;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | pneumonia [j12-j18];2005 both sexes rate per 100,000 population
+12,7;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | pneumonia [j12-j18];2004 both sexes rate per 100,000 population
+11,5;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | pneumonia [j12-j18];2003 both sexes rate per 100,000 population
+11,3;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | pneumonia [j12-j18];2002 both sexes rate per 100,000 population
+12;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | pneumonia [j12-j18];2001 both sexes rate per 100,000 population
+1,5;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | influenza [j10-j11];2005 both sexes rate per 100,000 population
+0,7;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | influenza [j10-j11];2004 both sexes rate per 100,000 population
+0,5;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | influenza [j10-j11];2003 both sexes rate per 100,000 population
+0,6;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | influenza [j10-j11];2002 both sexes rate per 100,000 population
+0,2;all causes of death [a00-y89] | influenza and pneumonia [j10-j18] | influenza [j10-j11];2001 both sexes rate per 100,000 population
+13,2;all causes of death [a00-y89] | influenza and pneumonia [j10-j18];2005 both sexes rate per 100,000 population
+13,4;all causes of death [a00-y89] | influenza and pneumonia [j10-j18];2004 both sexes rate per 100,000 population
+12;all causes of death [a00-y89] | influenza and pneumonia [j10-j18];2003 both sexes rate per 100,000 population
+11,9;all causes of death [a00-y89] | influenza and pneumonia [j10-j18];2002 both sexes rate per 100,000 population
+12,2;all causes of death [a00-y89] | influenza and pneumonia [j10-j18];2001 both sexes rate per 100,000 population
+32,5;all causes of death [a00-y89] | cerebrovascular diseases [i60-i69];2005 both sexes rate per 100,000 population
+34,9;all causes of death [a00-y89] | cerebrovascular diseases [i60-i69];2004 both sexes rate per 100,000 population
+37,7;all causes of death [a00-y89] | cerebrovascular diseases [i60-i69];2003 both sexes rate per 100,000 population
+39,5;all causes of death [a00-y89] | cerebrovascular diseases [i60-i69];2002 both sexes rate per 100,000 population
+40,4;all causes of death [a00-y89] | cerebrovascular diseases [i60-i69];2001 both sexes rate per 100,000 population
+27,7;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | other heart diseases [i26-i51];2005 both sexes rate per 100,000 population
+27,7;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | other heart diseases [i26-i51];2004 both sexes rate per 100,000 population
+27,8;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | other heart diseases [i26-i51];2003 both sexes rate per 100,000 population
+29,7;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | other heart diseases [i26-i51];2002 both sexes rate per 100,000 population
+29,8;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | other heart diseases [i26-i51];2001 both sexes rate per 100,000 population
+91;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | ischaemic heart diseases [i20-i25];2005 both sexes rate per 100,000 population
+96,2;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | ischaemic heart diseases [i20-i25];2004 both sexes rate per 100,000 population
+102,4;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | ischaemic heart diseases [i20-i25];2003 both sexes rate per 100,000 population
+105,8;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | ischaemic heart diseases [i20-i25];2002 both sexes rate per 100,000 population
+110,6;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51] | ischaemic heart diseases [i20-i25];2001 both sexes rate per 100,000 population
+121,5;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51];2005 both sexes rate per 100,000 population
+126,8;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51];2004 both sexes rate per 100,000 population
+133,3;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51];2003 both sexes rate per 100,000 population
+138,6;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51];2002 both sexes rate per 100,000 population
+143,1;all causes of death [a00-y89] | diseases of heart [i00-i09, i11, i13, i20-i51];2001 both sexes rate per 100,000 population
+12,7;all causes of death [a00-y89] | alzheimer's disease [g30];2005 both sexes rate per 100,000 population
+12,7;all causes of death [a00-y89] | alzheimer's disease [g30];2004 both sexes rate per 100,000 population
+13,1;all causes of death [a00-y89] | alzheimer's disease [g30];2003 both sexes rate per 100,000 population
+13,7;all causes of death [a00-y89] | alzheimer's disease [g30];2002 both sexes rate per 100,000 population
+13,9;all causes of death [a00-y89] | alzheimer's disease [g30];2001 both sexes rate per 100,000 population
+19,1;all causes of death [a00-y89] | diabetes mellitus [e10-e14];2005 both sexes rate per 100,000 population
+19,6;all causes of death [a00-y89] | diabetes mellitus [e10-e14];2004 both sexes rate per 100,000 population
+20,5;all causes of death [a00-y89] | diabetes mellitus [e10-e14];2003 both sexes rate per 100,000 population
+20,9;all causes of death [a00-y89] | diabetes mellitus [e10-e14];2002 both sexes rate per 100,000 population
+19,3;all causes of death [a00-y89] | diabetes mellitus [e10-e14];2001 both sexes rate per 100,000 population
+12,5;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of breast [c50];2005 both sexes rate per 100,000 population
+12,8;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of breast [c50];2004 both sexes rate per 100,000 population
+13,3;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of breast [c50];2003 both sexes rate per 100,000 population
+13,5;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of breast [c50];2002 both sexes rate per 100,000 population
+13,9;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of breast [c50];2001 both sexes rate per 100,000 population
+46,2;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of trachea, bronchus and lung [c33-c34];2005 both sexes rate per 100,000 population
+46,6;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of trachea, bronchus and lung [c33-c34];2004 both sexes rate per 100,000 population
+47;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of trachea, bronchus and lung [c33-c34];2003 both sexes rate per 100,000 population
+47,8;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of trachea, bronchus and lung [c33-c34];2002 both sexes rate per 100,000 population
+47,3;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of trachea, bronchus and lung [c33-c34];2001 both sexes rate per 100,000 population
+8,8;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of pancreas [c25];2005 both sexes rate per 100,000 population
+9,3;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of pancreas [c25];2004 both sexes rate per 100,000 population
+9,1;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of pancreas [c25];2003 both sexes rate per 100,000 population
+8,7;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of pancreas [c25];2002 both sexes rate per 100,000 population
+8,9;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasm of pancreas [c25];2001 both sexes rate per 100,000 population
+18,6;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of colon, rectum and anus [c18-c21];2005 both sexes rate per 100,000 population
+18,7;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of colon, rectum and anus [c18-c21];2004 both sexes rate per 100,000 population
+18,3;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of colon, rectum and anus [c18-c21];2003 both sexes rate per 100,000 population
+19,1;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of colon, rectum and anus [c18-c21];2002 both sexes rate per 100,000 population
+18,4;all causes of death [a00-y89] | malignant neoplasms [c00-c97] | malignant neoplasms of colon, rectum and anus [c18-c21];2001 both sexes rate per 100,000 population
+170,3;all causes of death [a00-y89] | malignant neoplasms [c00-c97];2005 both sexes rate per 100,000 population
+173,7;all causes of death [a00-y89] | malignant neoplasms [c00-c97];2004 both sexes rate per 100,000 population
+175,6;all causes of death [a00-y89] | malignant neoplasms [c00-c97];2003 both sexes rate per 100,000 population
+178,2;all causes of death [a00-y89] | malignant neoplasms [c00-c97];2002 both sexes rate per 100,000 population
+178,7;all causes of death [a00-y89] | malignant neoplasms [c00-c97];2001 both sexes rate per 100,000 population
+1,3;all causes of death [a00-y89] | human immunodeficiency virus [hiv] disease [b20-b24];2005 both sexes rate per 100,000 population
+1,2;all causes of death [a00-y89] | human immunodeficiency virus [hiv] disease [b20-b24];2004 both sexes rate per 100,000 population
+1,3;all causes of death [a00-y89] | human immunodeficiency virus [hiv] disease [b20-b24];2003 both sexes rate per 100,000 population
+1,2;all causes of death [a00-y89] | human immunodeficiency virus [hiv] disease [b20-b24];2002 both sexes rate per 100,000 population
+1,3;all causes of death [a00-y89] | human immunodeficiency virus [hiv] disease [b20-b24];2001 both sexes rate per 100,000 population
+1;all causes of death [a00-y89] | viral hepatitis [b15-b19];2005 both sexes rate per 100,000 population
+1;all causes of death [a00-y89] | viral hepatitis [b15-b19];2004 both sexes rate per 100,000 population
+1;all causes of death [a00-y89] | viral hepatitis [b15-b19];2003 both sexes rate per 100,000 population
+1;all causes of death [a00-y89] | viral hepatitis [b15-b19];2002 both sexes rate per 100,000 population
+0,9;all causes of death [a00-y89] | viral hepatitis [b15-b19];2001 both sexes rate per 100,000 population
+4,1;all causes of death [a00-y89] | septicaemia [a40-a41];2005 both sexes rate per 100,000 population
+4;all causes of death [a00-y89] | septicaemia [a40-a41];2004 both sexes rate per 100,000 population
+4;all causes of death [a00-y89] | septicaemia [a40-a41];2003 both sexes rate per 100,000 population
+3,9;all causes of death [a00-y89] | septicaemia [a40-a41];2002 both sexes rate per 100,000 population
+3,8;all causes of death [a00-y89] | septicaemia [a40-a41];2001 both sexes rate per 100,000 population
+563,7;all causes of death [a00-y89];2005 both sexes rate per 100,000 population
+571,9;all causes of death [a00-y89];2004 both sexes rate per 100,000 population
+586,9;all causes of death [a00-y89];2003 both sexes rate per 100,000 population
+598,2;all causes of death [a00-y89];2002 both sexes rate per 100,000 population
+600,8;all causes of death [a00-y89];2001 both sexes rate per 100,000 population

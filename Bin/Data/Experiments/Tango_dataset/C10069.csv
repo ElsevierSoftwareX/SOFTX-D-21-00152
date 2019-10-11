@@ -1,0 +1,71 @@
+DATA;RowHeading1;ColumnHeading
+1,399.7;energy use, final demand | commercial and other institutional;2008 petajoules
+1,349.7;energy use, final demand | commercial and other institutional;2007 petajoules
+1,283.8;energy use, final demand | commercial and other institutional;2006 petajoules
+1,346.1;energy use, final demand | commercial and other institutional;2005 petajoules
+1,337.5;energy use, final demand | commercial and other institutional;2004 petajoules
+123.6;energy use, final demand | public administration;2008 petajoules
+122.1;energy use, final demand | public administration;2007 petajoules
+127.6;energy use, final demand | public administration;2006 petajoules
+136.1;energy use, final demand | public administration;2005 petajoules
+131.9;energy use, final demand | public administration;2004 petajoules
+1,360.3;energy use, final demand | residential;2008 petajoules
+1,336.5;energy use, final demand | residential;2007 petajoules
+1,243.4;energy use, final demand | residential;2006 petajoules
+1,296.6;energy use, final demand | residential;2005 petajoules
+1,313.0;energy use, final demand | residential;2004 petajoules
+217.2;energy use, final demand | agriculture;2008 petajoules
+215.6;energy use, final demand | agriculture;2007 petajoules
+211.4;energy use, final demand | agriculture;2006 petajoules
+208.5;energy use, final demand | agriculture;2005 petajoules
+208.9;energy use, final demand | agriculture;2004 petajoules
+2,395.9;energy use, final demand | total transportation;2008 petajoules
+2,484.0;energy use, final demand | total transportation;2007 petajoules
+2,372.3;energy use, final demand | total transportation;2006 petajoules
+2,388.8;energy use, final demand | total transportation;2005 petajoules
+2,347.3;energy use, final demand | total transportation;2004 petajoules
+2,306.2;energy use, final demand | total industrial;2008 petajoules
+2,450.7;energy use, final demand | total industrial;2007 petajoules
+2,314.0;energy use, final demand | total industrial;2006 petajoules
+2,312.8;energy use, final demand | total industrial;2005 petajoules
+2,343.2;energy use, final demand | total industrial;2004 petajoules
+7,793.1;energy use, final demand;2008 petajoules
+7,958.4;energy use, final demand;2007 petajoules
+7,552.4;energy use, final demand;2006 petajoules
+7,688.5;energy use, final demand;2005 petajoules
+7,681.6;energy use, final demand;2004 petajoules
+1,041.7;net supply | non-energy use;2008 petajoules
+1,083.7;net supply | non-energy use;2007 petajoules
+1,044.9;net supply | non-energy use;2006 petajoules
+983.7;net supply | non-energy use;2005 petajoules
+1,029.3;net supply | non-energy use;2004 petajoules
+1,285.5;net supply | producer consumption;2008 petajoules
+1,363.9;net supply | producer consumption;2007 petajoules
+1,282.3;net supply | producer consumption;2006 petajoules
+1,274.0;net supply | producer consumption;2005 petajoules
+1,303.2;net supply | producer consumption;2004 petajoules
+10,120.2;net supply;2008 petajoules
+10,405.8;net supply;2007 petajoules
+9,879.6;net supply;2006 petajoules
+9,946.1;net supply;2005 petajoules
+10,014.0;net supply;2004 petajoules
+11,545.1;primary production | energy availability;2008 petajoules
+11,969.1;primary production | energy availability;2007 petajoules
+11,176.9;primary production | energy availability;2006 petajoules
+11,307.1;primary production | energy availability;2005 petajoules
+11,527.5;primary production | energy availability;2004 petajoules
+3,115.9;primary production | imports;2008 petajoules
+3,124.1;primary production | imports;2007 petajoules
+2,977.4;primary production | imports;2006 petajoules
+3,139.2;primary production | imports;2005 petajoules
+3,107.6;primary production | imports;2004 petajoules
+9,206.0;primary production | exports;2008 petajoules
+9,331.0;primary production | exports;2007 petajoules
+8,898.6;primary production | exports;2006 petajoules
+8,662.2;primary production | exports;2005 petajoules
+8,822.7;primary production | exports;2004 petajoules
+16,660.5;primary production;2008 petajoules
+17,147.9;primary production;2007 petajoules
+16,815.5;primary production;2006 petajoules
+16,489.9;primary production;2005 petajoules
+16,553.7;primary production;2004 petajoules

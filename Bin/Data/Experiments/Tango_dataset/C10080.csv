@@ -1,0 +1,188 @@
+DATA;RowHeading1;ColumnHeading
+11 771;total (1)+(2);year | 2008
+8 535;total (1)+(2);year | 2007
+7 577;total (1)+(2);year | 2006
+7 740;total (1)+(2);year | 2005
+6 007;total (1)+(2);year | 2004
+5 717;total (1)+(2);year | 2003
+5 531;total (1)+(2);year | 2002
+1 593;other countries (2) | other;year | 2008
+1 238;other countries (2) | other;year | 2007
+970;other countries (2) | other;year | 2006
+938;other countries (2) | other;year | 2005
+624;other countries (2) | other;year | 2004
+839;other countries (2) | other;year | 2003
+704;other countries (2) | other;year | 2002
+324;other countries (2) | india;year | 2008
+182;other countries (2) | india;year | 2007
+137;other countries (2) | india;year | 2006
+374;other countries (2) | india;year | 2005
+238;other countries (2) | india;year | 2004
+101;other countries (2) | india;year | 2003
+363;other countries (2) | china;year | 2008
+222;other countries (2) | china;year | 2007
+162;other countries (2) | china;year | 2006
+54;other countries (2) | china;year | 2005
+77;other countries (2) | china;year | 2004
+19;other countries (2) | china;year | 2003
+118;other countries (2) | japan;year | 2008
+77;other countries (2) | japan;year | 2007
+96;other countries (2) | japan;year | 2006
+55;other countries (2) | japan;year | 2005
+80;other countries (2) | japan;year | 2004
+34;other countries (2) | japan;year | 2003
+41;other countries (2) | japan;year | 2002
+1 504;other countries (2) | united states;year | 2008
+1 320;other countries (2) | united states;year | 2007
+1 520;other countries (2) | united states;year | 2006
+986;other countries (2) | united states;year | 2005
+924;other countries (2) | united states;year | 2004
+825;other countries (2) | united states;year | 2003
+1 044;other countries (2) | united states;year | 2002
+133;other countries (2) | canada;year | 2008
+100;other countries (2) | canada;year | 2007
+110;other countries (2) | canada;year | 2006
+57;other countries (2) | canada;year | 2005
+45;other countries (2) | canada;year | 2004
+30;other countries (2) | canada;year | 2003
+44;other countries (2) | canada;year | 2002
+289;other countries (2) | switzerland;year | 2008
+212;other countries (2) | switzerland;year | 2007
+157;other countries (2) | switzerland;year | 2006
+251;other countries (2) | switzerland;year | 2005
+154;other countries (2) | switzerland;year | 2004
+133;other countries (2) | switzerland;year | 2003
+103;other countries (2) | switzerland;year | 2002
+268;other countries (2) | russia;year | 2008
+327;other countries (2) | russia;year | 2007
+267;other countries (2) | russia;year | 2006
+387;other countries (2) | russia;year | 2005
+334;other countries (2) | russia;year | 2004
+234;other countries (2) | russia;year | 2003
+194;other countries (2) | russia;year | 2002
+177;other countries (2) | estonia;year | 2008
+111;other countries (2) | estonia;year | 2007
+92;other countries (2) | estonia;year | 2006
+98;other countries (2) | estonia;year | 2005
+56;other countries (2) | estonia;year | 2004
+58;other countries (2) | estonia;year | 2003
+57;other countries (2) | estonia;year | 2002
+202;other countries (2) | norway;year | 2008
+195;other countries (2) | norway;year | 2007
+151;other countries (2) | norway;year | 2006
+179;other countries (2) | norway;year | 2005
+128;other countries (2) | norway;year | 2004
+140;other countries (2) | norway;year | 2003
+144;other countries (2) | norway;year | 2002
+4 971;other countries (2);year | 2008
+3 984;other countries (2);year | 2007
+3 662;other countries (2);year | 2006
+3 379;other countries (2);year | 2005
+2 660;other countries (2);year | 2004
+2 413;other countries (2);year | 2003
+2 331;other countries (2);year | 2002
+511;eu15-countries (1) | denmark;year | 2008
+464;eu15-countries (1) | denmark;year | 2007
+412;eu15-countries (1) | denmark;year | 2006
+287;eu15-countries (1) | denmark;year | 2005
+193;eu15-countries (1) | denmark;year | 2004
+219;eu15-countries (1) | denmark;year | 2003
+169;eu15-countries (1) | denmark;year | 2002
+2 505;eu15-countries (1) | germany;year | 2008
+984;eu15-countries (1) | germany;year | 2007
+694;eu15-countries (1) | germany;year | 2006
+665;eu15-countries (1) | germany;year | 2005
+561;eu15-countries (1) | germany;year | 2004
+497;eu15-countries (1) | germany;year | 2003
+448;eu15-countries (1) | germany;year | 2002
+870;eu15-countries (1) | sweden;year | 2008
+876;eu15-countries (1) | sweden;year | 2007
+724;eu15-countries (1) | sweden;year | 2006
+953;eu15-countries (1) | sweden;year | 2005
+620;eu15-countries (1) | sweden;year | 2004
+606;eu15-countries (1) | sweden;year | 2003
+668;eu15-countries (1) | sweden;year | 2002
+224;eu15-countries (1) | france;year | 2008
+182;eu15-countries (1) | france;year | 2007
+177;eu15-countries (1) | france;year | 2006
+246;eu15-countries (1) | france;year | 2005
+213;eu15-countries (1) | france;year | 2004
+181;eu15-countries (1) | france;year | 2003
+182;eu15-countries (1) | france;year | 2002
+58;eu15-countries (1) | portugal;year | 2008
+6;eu15-countries (1) | portugal;year | 2007
+7;eu15-countries (1) | portugal;year | 2006
+9;eu15-countries (1) | portugal;year | 2005
+5;eu15-countries (1) | portugal;year | 2004
+7;eu15-countries (1) | portugal;year | 2003
+7;eu15-countries (1) | portugal;year | 2002
+13;eu15-countries (1) | luxembourg;year | 2008
+10;eu15-countries (1) | luxembourg;year | 2007
+14;eu15-countries (1) | luxembourg;year | 2006
+24;eu15-countries (1) | luxembourg;year | 2005
+10;eu15-countries (1) | luxembourg;year | 2004
+12;eu15-countries (1) | luxembourg;year | 2003
+9;eu15-countries (1) | luxembourg;year | 2002
+42;eu15-countries (1) | greece;year | 2008
+14;eu15-countries (1) | greece;year | 2007
+19;eu15-countries (1) | greece;year | 2006
+29;eu15-countries (1) | greece;year | 2005
+19;eu15-countries (1) | greece;year | 2004
+38;eu15-countries (1) | greece;year | 2003
+14;eu15-countries (1) | greece;year | 2002
+95;eu15-countries (1) | austria;year | 2008
+72;eu15-countries (1) | austria;year | 2007
+74;eu15-countries (1) | austria;year | 2006
+57;eu15-countries (1) | austria;year | 2005
+64;eu15-countries (1) | austria;year | 2004
+48;eu15-countries (1) | austria;year | 2003
+52;eu15-countries (1) | austria;year | 2002
+244;eu15-countries (1) | italy;year | 2008
+68;eu15-countries (1) | italy;year | 2007
+66;eu15-countries (1) | italy;year | 2006
+74;eu15-countries (1) | italy;year | 2005
+67;eu15-countries (1) | italy;year | 2004
+90;eu15-countries (1) | italy;year | 2003
+75;eu15-countries (1) | italy;year | 2002
+196;eu15-countries (1) | ireland;year | 2008
+137;eu15-countries (1) | ireland;year | 2007
+125;eu15-countries (1) | ireland;year | 2006
+202;eu15-countries (1) | ireland;year | 2005
+177;eu15-countries (1) | ireland;year | 2004
+146;eu15-countries (1) | ireland;year | 2003
+80;eu15-countries (1) | ireland;year | 2002
+81;eu15-countries (1) | spain;year | 2008
+59;eu15-countries (1) | spain;year | 2007
+60;eu15-countries (1) | spain;year | 2006
+71;eu15-countries (1) | spain;year | 2005
+49;eu15-countries (1) | spain;year | 2004
+38;eu15-countries (1) | spain;year | 2003
+37;eu15-countries (1) | spain;year | 2002
+1 459;eu15-countries (1) | united kingdom;year | 2008
+1 240;eu15-countries (1) | united kingdom;year | 2007
+1 101;eu15-countries (1) | united kingdom;year | 2006
+1 173;eu15-countries (1) | united kingdom;year | 2005
+859;eu15-countries (1) | united kingdom;year | 2004
+934;eu15-countries (1) | united kingdom;year | 2003
+965;eu15-countries (1) | united kingdom;year | 2002
+145;eu15-countries (1) | belgium;year | 2008
+135;eu15-countries (1) | belgium;year | 2007
+125;eu15-countries (1) | belgium;year | 2006
+144;eu15-countries (1) | belgium;year | 2005
+150;eu15-countries (1) | belgium;year | 2004
+162;eu15-countries (1) | belgium;year | 2003
+152;eu15-countries (1) | belgium;year | 2002
+357;eu15-countries (1) | netherlands;year | 2008
+304;eu15-countries (1) | netherlands;year | 2007
+317;eu15-countries (1) | netherlands;year | 2006
+427;eu15-countries (1) | netherlands;year | 2005
+360;eu15-countries (1) | netherlands;year | 2004
+326;eu15-countries (1) | netherlands;year | 2003
+342;eu15-countries (1) | netherlands;year | 2002
+6 800;eu15-countries (1);year | 2008
+4 551;eu15-countries (1);year | 2007
+3 915;eu15-countries (1);year | 2006
+4 361;eu15-countries (1);year | 2005
+3 347;eu15-countries (1);year | 2004
+3 304;eu15-countries (1);year | 2003
+3 200;eu15-countries (1);year | 2002

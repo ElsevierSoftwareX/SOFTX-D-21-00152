@@ -1,0 +1,97 @@
+DATA;RowHeading1;ColumnHeading
+68,7;above bachelor's degree | 45 and over;2009 | women %
+67,7;above bachelor's degree | 45 and over;2009 | men %
+68,1;above bachelor's degree | 45 and over;2009 | both sexes %
+83,6;above bachelor's degree | 25 to 44 years;2009 | women %
+88,1;above bachelor's degree | 25 to 44 years;2009 | men %
+85,8;above bachelor's degree | 25 to 44 years;2009 | both sexes %
+74,1;above bachelor's degree | 15 to 24 years;2009 | women %
+73,9;above bachelor's degree | 15 to 24 years;2009 | men %
+74;above bachelor's degree | 15 to 24 years;2009 | both sexes %
+76,6;above bachelor's degree;2009 | women %
+76,3;above bachelor's degree;2009 | men %
+76,4;above bachelor's degree;2009 | both sexes %
+62,4;bachelor's degree | 45 and over;2009 | women %
+67,2;bachelor's degree | 45 and over;2009 | men %
+64,8;bachelor's degree | 45 and over;2009 | both sexes %
+82,5;bachelor's degree | 25 to 44 years;2009 | women %
+88,5;bachelor's degree | 25 to 44 years;2009 | men %
+85,1;bachelor's degree | 25 to 44 years;2009 | both sexes %
+73,5;bachelor's degree | 15 to 24 years;2009 | women %
+73,8;bachelor's degree | 15 to 24 years;2009 | men %
+73,6;bachelor's degree | 15 to 24 years;2009 | both sexes %
+74;bachelor's degree;2009 | women %
+77,9;bachelor's degree;2009 | men %
+75,8;bachelor's degree;2009 | both sexes %
+57,3;postsecondary certificate or diploma | 45 and over;2009 | women %
+62,6;postsecondary certificate or diploma | 45 and over;2009 | men %
+59,9;postsecondary certificate or diploma | 45 and over;2009 | both sexes %
+82,1;postsecondary certificate or diploma | 25 to 44 years;2009 | women %
+86,8;postsecondary certificate or diploma | 25 to 44 years;2009 | men %
+84,5;postsecondary certificate or diploma | 25 to 44 years;2009 | both sexes %
+77,2;postsecondary certificate or diploma | 15 to 24 years;2009 | women %
+73;postsecondary certificate or diploma | 15 to 24 years;2009 | men %
+75,1;postsecondary certificate or diploma | 15 to 24 years;2009 | both sexes %
+69,2;postsecondary certificate or diploma;2009 | women %
+73,5;postsecondary certificate or diploma;2009 | men %
+71,3;postsecondary certificate or diploma;2009 | both sexes %
+52;some postsecondary | 45 and over;2009 | women %
+56,7;some postsecondary | 45 and over;2009 | men %
+54,2;some postsecondary | 45 and over;2009 | both sexes %
+68,7;some postsecondary | 25 to 44 years;2009 | women %
+79,1;some postsecondary | 25 to 44 years;2009 | men %
+74,2;some postsecondary | 25 to 44 years;2009 | both sexes %
+58,7;some postsecondary | 15 to 24 years;2009 | women %
+55,5;some postsecondary | 15 to 24 years;2009 | men %
+57,2;some postsecondary | 15 to 24 years;2009 | both sexes %
+59,1;some postsecondary;2009 | women %
+62,9;some postsecondary;2009 | men %
+60,9;some postsecondary;2009 | both sexes %
+47,7;high school graduate | 45 and over;2009 | women %
+59,3;high school graduate | 45 and over;2009 | men %
+52,7;high school graduate | 45 and over;2009 | both sexes %
+69,6;high school graduate | 25 to 44 years;2009 | women %
+81,3;high school graduate | 25 to 44 years;2009 | men %
+75,9;high school graduate | 25 to 44 years;2009 | both sexes %
+65,1;high school graduate | 15 to 24 years;2009 | women %
+64,9;high school graduate | 15 to 24 years;2009 | men %
+65;high school graduate | 15 to 24 years;2009 | both sexes %
+56,2;high school graduate;2009 | women %
+67,7;high school graduate;2009 | men %
+61,8;high school graduate;2009 | both sexes %
+26,4;some secondary school | 45 and over;2009 | women %
+44,8;some secondary school | 45 and over;2009 | men %
+35,2;some secondary school | 45 and over;2009 | both sexes %
+52;some secondary school | 25 to 44 years;2009 | women %
+71;some secondary school | 25 to 44 years;2009 | men %
+63,4;some secondary school | 25 to 44 years;2009 | both sexes %
+40,5;some secondary school | 15 to 24 years;2009 | women %
+37,6;some secondary school | 15 to 24 years;2009 | men %
+39;some secondary school | 15 to 24 years;2009 | both sexes %
+35;some secondary school;2009 | women %
+47;some secondary school;2009 | men %
+41,2;some secondary school;2009 | both sexes %
+10,8;less than grade 9 | 45 and over;2009 | women %
+22,7;less than grade 9 | 45 and over;2009 | men %
+16,1;less than grade 9 | 45 and over;2009 | both sexes %
+40,8;less than grade 9 | 25 to 44 years;2009 | women %
+59,1;less than grade 9 | 25 to 44 years;2009 | men %
+51,2;less than grade 9 | 25 to 44 years;2009 | both sexes %
+19,4;less than grade 9 | 15 to 24 years;2009 | women %
+26;less than grade 9 | 15 to 24 years;2009 | men %
+23,3;less than grade 9 | 15 to 24 years;2009 | both sexes %
+13,7;less than grade 9;2009 | women %
+27,1;less than grade 9;2009 | men %
+20;less than grade 9;2009 | both sexes %
+46,3;45 and over;2009 | women %
+56,1;45 and over;2009 | men %
+51;45 and over;2009 | both sexes %
+77,1;25 to 44 years;2009 | women %
+83,8;25 to 44 years;2009 | men %
+80,4;25 to 44 years;2009 | both sexes %
+57,1;15 to 24 years;2009 | women %
+53,6;15 to 24 years;2009 | men %
+55,3;15 to 24 years;2009 | both sexes %
+58,3;total;2009 | women %
+65,2;total;2009 | men %
+61,7;total;2009 | both sexes %

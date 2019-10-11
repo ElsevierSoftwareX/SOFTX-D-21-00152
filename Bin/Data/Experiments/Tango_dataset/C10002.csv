@@ -1,0 +1,127 @@
+DATA;RowHeading1;ColumnHeading
+286 599;total;level 4 certificate gained post-school
+128 622;total;level 1, 2 or 3 certificate gained post-school
+172 590;total;overseas secondary school qualification
+170 055;total;level 3 or 4 certificate gained at school
+263 847;total;level 2 certificate gained at school
+386 070;total;level 1 certificate gained at school
+708 432;total;no qualification
+60;area outside region;level 4 certificate gained post-school
+18;area outside region;level 1, 2 or 3 certificate gained post-school
+12;area outside region;overseas secondary school qualification
+12;area outside region;level 3 or 4 certificate gained at school
+39;area outside region;level 2 certificate gained at school
+54;area outside region;level 1 certificate gained at school
+141;area outside region;no qualification
+3 915;marlborough region;level 4 certificate gained post-school
+1 398;marlborough region;level 1, 2 or 3 certificate gained post-school
+1 155;marlborough region;overseas secondary school qualification
+1 233;marlborough region;level 3 or 4 certificate gained at school
+3 027;marlborough region;level 2 certificate gained at school
+4 977;marlborough region;level 1 certificate gained at school
+8 997;marlborough region;no qualification
+3 798;nelson region;level 4 certificate gained post-school
+1 596;nelson region;level 1, 2 or 3 certificate gained post-school
+1 488;nelson region;overseas secondary school qualification
+1 326;nelson region;level 3 or 4 certificate gained at school
+3 165;nelson region;level 2 certificate gained at school
+4 437;nelson region;level 1 certificate gained at school
+7 989;nelson region;no qualification
+3 984;tasman region;level 4 certificate gained post-school
+1 467;tasman region;level 1, 2 or 3 certificate gained post-school
+1 347;tasman region;overseas secondary school qualification
+1 182;tasman region;level 3 or 4 certificate gained at school
+3 303;tasman region;level 2 certificate gained at school
+5 058;tasman region;level 1 certificate gained at school
+8 583;tasman region;no qualification
+7 119;southland region;level 4 certificate gained post-school
+2 874;southland region;level 1, 2 or 3 certificate gained post-school
+1 284;southland region;overseas secondary school qualification
+2 163;southland region;level 3 or 4 certificate gained at school
+6 144;southland region;level 2 certificate gained at school
+11 214;southland region;level 1 certificate gained at school
+22 959;southland region;no qualification
+15 726;otago region;level 4 certificate gained post-school
+6 594;otago region;level 1, 2 or 3 certificate gained post-school
+5 676;otago region;overseas secondary school qualification
+14 787;otago region;level 3 or 4 certificate gained at school
+12 855;otago region;level 2 certificate gained at school
+18 837;otago region;level 1 certificate gained at school
+34 335;otago region;no qualification
+39 870;canterbury region;level 4 certificate gained post-school
+14 685;canterbury region;level 1, 2 or 3 certificate gained post-school
+18 519;canterbury region;overseas secondary school qualification
+24 960;canterbury region;level 3 or 4 certificate gained at school
+38 580;canterbury region;level 2 certificate gained at school
+55 218;canterbury region;level 1 certificate gained at school
+98 439;canterbury region;no qualification
+2 652;west coast region;level 4 certificate gained post-school
+1 080;west coast region;level 1, 2 or 3 certificate gained post-school
+474;west coast region;overseas secondary school qualification
+780;west coast region;level 3 or 4 certificate gained at school
+2 019;west coast region;level 2 certificate gained at school
+3 570;west coast region;level 1 certificate gained at school
+7 989;west coast region;no qualification
+29 679;wellington region;level 4 certificate gained post-school
+14 928;wellington region;level 1, 2 or 3 certificate gained post-school
+17 973;wellington region;overseas secondary school qualification
+23 457;wellington region;level 3 or 4 certificate gained at school
+31 344;wellington region;level 2 certificate gained at school
+38 166;wellington region;level 1 certificate gained at school
+64 614;wellington region;no qualification
+16 377;manawatu-wanganui region;level 4 certificate gained post-school
+7 686;manawatu-wanganui region;level 1, 2 or 3 certificate gained post-school
+4 827;manawatu-wanganui region;overseas secondary school qualification
+9 060;manawatu-wanganui region;level 3 or 4 certificate gained at school
+14 841;manawatu-wanganui region;level 2 certificate gained at school
+23 457;manawatu-wanganui region;level 1 certificate gained at school
+48 198;manawatu-wanganui region;no qualification
+8 526;taranaki region;level 4 certificate gained post-school
+3 651;taranaki region;level 1, 2 or 3 certificate gained post-school
+2 022;taranaki region;overseas secondary school qualification
+2 424;taranaki region;level 3 or 4 certificate gained at school
+6 462;taranaki region;level 2 certificate gained at school
+11 697;taranaki region;level 1 certificate gained at school
+23 607;taranaki region;no qualification
+11 154;hawke's bay region;level 4 certificate gained post-school
+4 830;hawke's bay region;level 1, 2 or 3 certificate gained post-school
+3 651;hawke's bay region;overseas secondary school qualification
+4 017;hawke's bay region;level 3 or 4 certificate gained at school
+9 912;hawke's bay region;level 2 certificate gained at school
+16 005;hawke's bay region;level 1 certificate gained at school
+31 347;hawke's bay region;no qualification
+3 072;gisborne region;level 4 certificate gained post-school
+1 473;gisborne region;level 1, 2 or 3 certificate gained post-school
+687;gisborne region;overseas secondary school qualification
+1 140;gisborne region;level 3 or 4 certificate gained at school
+2 769;gisborne region;level 2 certificate gained at school
+4 512;gisborne region;level 1 certificate gained at school
+9 570;gisborne region;no qualification
+21 501;bay of plenty region;level 4 certificate gained post-school
+9 579;bay of plenty region;level 1, 2 or 3 certificate gained post-school
+7 542;bay of plenty region;overseas secondary school qualification
+6 648;bay of plenty region;level 3 or 4 certificate gained at school
+16 296;bay of plenty region;level 2 certificate gained at school
+27 396;bay of plenty region;level 1 certificate gained at school
+50 685;bay of plenty region;no qualification
+28 914;waikato region;level 4 certificate gained post-school
+12 519;waikato region;level 1, 2 or 3 certificate gained post-school
+11 421;waikato region;overseas secondary school qualification
+13 161;waikato region;level 3 or 4 certificate gained at school
+24 708;waikato region;level 2 certificate gained at school
+39 975;waikato region;level 1 certificate gained at school
+76 197;waikato region;no qualification
+78 630;auckland region;level 4 certificate gained post-school
+39 534;auckland region;level 1, 2 or 3 certificate gained post-school
+90 546;auckland region;overseas secondary school qualification
+60 444;auckland region;level 3 or 4 certificate gained at school
+79 686;auckland region;level 2 certificate gained at school
+105 348;auckland region;level 1 certificate gained at school
+183 681;auckland region;no qualification
+11 625;northland region;level 4 certificate gained post-school
+4 701;northland region;level 1, 2 or 3 certificate gained post-school
+3 963;northland region;overseas secondary school qualification
+3 267;northland region;level 3 or 4 certificate gained at school
+8 694;northland region;level 2 certificate gained at school
+16 158;northland region;level 1 certificate gained at school
+31 101;northland region;no qualification

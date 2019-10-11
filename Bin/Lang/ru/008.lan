@@ -1,0 +1,15 @@
+GroupBox1c= ШАГ 1: Выбор базы знаний: 
+GroupBox1h=
+GroupBox2c= ШАГ 3: Просмотр результатов в виде отдельных фактов и правил: 
+GroupBox2h=
+GroupBox3c= ШАГ 2: Просмотр начальных условий (фактов): 
+GroupBox3h=
+
+RzButton1c=Отмена
+RzButton1h=
+RzButton2c=Готово
+RzButton2h=Завершить процесс
+RzButton21c=Далее >>
+RzButton21h=Продложить процесс
+RzButton3c=<< Назад
+RzButton3h=

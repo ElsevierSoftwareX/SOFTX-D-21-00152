@@ -1,0 +1,231 @@
+DATA;RowHeading1;ColumnHeading
+0,31;oecd/dac  countries total;percentage of gni | 2008*
+0,28;oecd/dac  countries total;percentage of gni | 2007*
+0,31;oecd/dac  countries total;percentage of gni | 2006*
+0,33;oecd/dac  countries total;percentage of gni | 2005
+0,26;oecd/dac  countries total;percentage of gni | 2004
+121 483;oecd/dac  countries total;million dollar | 2008*
+103 485;oecd/dac  countries total;million dollar | 2007*
+104 368;oecd/dac  countries total;million dollar | 2006*
+107 078;oecd/dac  countries total;million dollar | 2005
+79 432;oecd/dac  countries total;million dollar | 2004
+0,3;new zealand;percentage of gni | 2008*
+0,27;new zealand;percentage of gni | 2007*
+0,27;new zealand;percentage of gni | 2006*
+0,27;new zealand;percentage of gni | 2005
+0,23;new zealand;percentage of gni | 2004
+348;new zealand;million dollar | 2008*
+320;new zealand;million dollar | 2007*
+259;new zealand;million dollar | 2006*
+274;new zealand;million dollar | 2005
+212;new zealand;million dollar | 2004
+0,32;australia;percentage of gni | 2008*
+0,32;australia;percentage of gni | 2007*
+0,3;australia;percentage of gni | 2006*
+0,25;australia;percentage of gni | 2005
+0,25;australia;percentage of gni | 2004
+2 954;australia;million dollar | 2008*
+2 669;australia;million dollar | 2007*
+2 123;australia;million dollar | 2006*
+1 680;australia;million dollar | 2005
+1 460;australia;million dollar | 2004
+0,19;japan;percentage of gni | 2008*
+0,17;japan;percentage of gni | 2007*
+0,25;japan;percentage of gni | 2006*
+0,28;japan;percentage of gni | 2005
+0,19;japan;percentage of gni | 2004
+9 579;japan;million dollar | 2008*
+7 679;japan;million dollar | 2007*
+11 136;japan;million dollar | 2006*
+13 126;japan;million dollar | 2005
+8 922;japan;million dollar | 2004
+0,19;united states;percentage of gni | 2008*
+0,16;united states;percentage of gni | 2007*
+0,18;united states;percentage of gni | 2006*
+0,23;united states;percentage of gni | 2005
+0,17;united states;percentage of gni | 2004
+26 842;united states;million dollar | 2008*
+21 787;united states;million dollar | 2007*
+23 532;united states;million dollar | 2006*
+27 935;united states;million dollar | 2005
+19 705;united states;million dollar | 2004
+0,32;canada;percentage of gni | 2008*
+0,29;canada;percentage of gni | 2007*
+0,29;canada;percentage of gni | 2006*
+0,34;canada;percentage of gni | 2005
+0,27;canada;percentage of gni | 2004
+4 785;canada;million dollar | 2008*
+4 080;canada;million dollar | 2007*
+3 683;canada;million dollar | 2006*
+3 756;canada;million dollar | 2005
+2 599;canada;million dollar | 2004
+0,43;austria;percentage of gni | 2008*
+0,5;austria;percentage of gni | 2007*
+0,47;austria;percentage of gni | 2006*
+0,52;austria;percentage of gni | 2005
+0,23;austria;percentage of gni | 2004
+1 714;austria;million dollar | 2008*
+1 808;austria;million dollar | 2007*
+1 498;austria;million dollar | 2006*
+1 573;austria;million dollar | 2005
+678;austria;million dollar | 2004
+0,38;germany;percentage of gni | 2008*
+0,37;germany;percentage of gni | 2007*
+0,36;germany;percentage of gni | 2006*
+0,36;germany;percentage of gni | 2005
+0,28;germany;percentage of gni | 2004
+13 981;germany;million dollar | 2008*
+12 291;germany;million dollar | 2007*
+10 435;germany;million dollar | 2006*
+10 082;germany;million dollar | 2005
+7 534;germany;million dollar | 2004
+0,42;switzerland;percentage of gni | 2008*
+0,38;switzerland;percentage of gni | 2007*
+0,39;switzerland;percentage of gni | 2006*
+0,43;switzerland;percentage of gni | 2005
+0,4;switzerland;percentage of gni | 2004
+2 038;switzerland;million dollar | 2008*
+1 685;switzerland;million dollar | 2007*
+1 646;switzerland;million dollar | 2006*
+1 772;switzerland;million dollar | 2005
+1 545;switzerland;million dollar | 2004
+0,43;united kingdom;percentage of gni | 2008*
+0,35;united kingdom;percentage of gni | 2007*
+0,51;united kingdom;percentage of gni | 2006*
+0,47;united kingdom;percentage of gni | 2005
+0,36;united kingdom;percentage of gni | 2004
+11 500;united kingdom;million dollar | 2008*
+9 849;united kingdom;million dollar | 2007*
+12 459;united kingdom;million dollar | 2006*
+10 772;united kingdom;million dollar | 2005
+7 905;united kingdom;million dollar | 2004
+0,45;spain;percentage of gni | 2008*
+0,37;spain;percentage of gni | 2007*
+0,32;spain;percentage of gni | 2006*
+0,27;spain;percentage of gni | 2005
+0,24;spain;percentage of gni | 2004
+6 867;spain;million dollar | 2008*
+5 140;spain;million dollar | 2007*
+3 814;spain;million dollar | 2006*
+3 018;spain;million dollar | 2005
+2 437;spain;million dollar | 2004
+0,27;portugal;percentage of gni | 2008*
+0,22;portugal;percentage of gni | 2007*
+0,21;portugal;percentage of gni | 2006*
+0,21;portugal;percentage of gni | 2005
+0,63;portugal;percentage of gni | 2004
+620;portugal;million dollar | 2008*
+471;portugal;million dollar | 2007*
+396;portugal;million dollar | 2006*
+377;portugal;million dollar | 2005
+1 031;portugal;million dollar | 2004
+0,8;netherlands;percentage of gni | 2008*
+0,81;netherlands;percentage of gni | 2007*
+0,81;netherlands;percentage of gni | 2006*
+0,82;netherlands;percentage of gni | 2005
+0,73;netherlands;percentage of gni | 2004
+6 993;netherlands;million dollar | 2008*
+6 224;netherlands;million dollar | 2007*
+5 452;netherlands;million dollar | 2006*
+5 115;netherlands;million dollar | 2005
+4 204;netherlands;million dollar | 2004
+0,97;luxembourg;percentage of gni | 2008*
+0,92;luxembourg;percentage of gni | 2007*
+0,89;luxembourg;percentage of gni | 2006*
+0,79;luxembourg;percentage of gni | 2005
+0,79;luxembourg;percentage of gni | 2004
+415;luxembourg;million dollar | 2008*
+376;luxembourg;million dollar | 2007*
+291;luxembourg;million dollar | 2006*
+256;luxembourg;million dollar | 2005
+236;luxembourg;million dollar | 2004
+0,22;italy;percentage of gni | 2008*
+0,19;italy;percentage of gni | 2007*
+0,2;italy;percentage of gni | 2006*
+0,29;italy;percentage of gni | 2005
+0,15;italy;percentage of gni | 2004
+4 861;italy;million dollar | 2008*
+3 971;italy;million dollar | 2007*
+3 641;italy;million dollar | 2006*
+5 091;italy;million dollar | 2005
+2 462;italy;million dollar | 2004
+0,59;ireland;percentage of gni | 2008*
+0,55;ireland;percentage of gni | 2007*
+0,54;ireland;percentage of gni | 2006*
+0,42;ireland;percentage of gni | 2005
+0,39;ireland;percentage of gni | 2004
+1 328;ireland;million dollar | 2008*
+1 192;ireland;million dollar | 2007*
+1 022;ireland;million dollar | 2006*
+719;ireland;million dollar | 2005
+607;ireland;million dollar | 2004
+0,21;greece;percentage of gni | 2008*
+0,16;greece;percentage of gni | 2007*
+0,17;greece;percentage of gni | 2006*
+0,17;greece;percentage of gni | 2005
+0,16;greece;percentage of gni | 2004
+703;greece;million dollar | 2008*
+501;greece;million dollar | 2007*
+424;greece;million dollar | 2006*
+384;greece;million dollar | 2005
+321;greece;million dollar | 2004
+0,39;france;percentage of gni | 2008*
+0,38;france;percentage of gni | 2007*
+0,47;france;percentage of gni | 2006*
+0,47;france;percentage of gni | 2005
+0,41;france;percentage of gni | 2004
+10 908;france;million dollar | 2008*
+9 884;france;million dollar | 2007*
+10 601;france;million dollar | 2006*
+10 026;france;million dollar | 2005
+8 473;france;million dollar | 2004
+0,48;belgium;percentage of gni | 2008*
+0,43;belgium;percentage of gni | 2007*
+0,5;belgium;percentage of gni | 2006*
+0,53;belgium;percentage of gni | 2005
+0,41;belgium;percentage of gni | 2004
+2 386;belgium;million dollar | 2008*
+1 951;belgium;million dollar | 2007*
+1 977;belgium;million dollar | 2006*
+1 963;belgium;million dollar | 2005
+1 463;belgium;million dollar | 2004
+0,98;sweden;percentage of gni | 2008*
+0,93;sweden;percentage of gni | 2007*
+1,02;sweden;percentage of gni | 2006*
+0,94;sweden;percentage of gni | 2005
+0,78;sweden;percentage of gni | 2004
+4 732;sweden;million dollar | 2008*
+4 339;sweden;million dollar | 2007*
+3 955;sweden;million dollar | 2006*
+3 362;sweden;million dollar | 2005
+2 722;sweden;million dollar | 2004
+0,44;finland;percentage of gni | 2008*
+0,39;finland;percentage of gni | 2007*
+0,4;finland;percentage of gni | 2006*
+0,46;finland;percentage of gni | 2005
+0,37;finland;percentage of gni | 2004
+1 166;finland;million dollar | 2008*
+981;finland;million dollar | 2007*
+834;finland;million dollar | 2006*
+902;finland;million dollar | 2005
+680;finland;million dollar | 2004
+0,82;denmark;percentage of gni | 2008*
+0,81;denmark;percentage of gni | 2007*
+0,8;denmark;percentage of gni | 2006*
+0,81;denmark;percentage of gni | 2005
+0,85;denmark;percentage of gni | 2004
+2 803;denmark;million dollar | 2008*
+2 562;denmark;million dollar | 2007*
+2 236;denmark;million dollar | 2006*
+2 109;denmark;million dollar | 2005
+2 037;denmark;million dollar | 2004
+0,88;norway;percentage of gni | 2008*
+0,95;norway;percentage of gni | 2007*
+0,89;norway;percentage of gni | 2006*
+0,94;norway;percentage of gni | 2005
+0,87;norway;percentage of gni | 2004
+3 963;norway;million dollar | 2008*
+3 728;norway;million dollar | 2007*
+2 954;norway;million dollar | 2006*
+2 786;norway;million dollar | 2005
+2 199;norway;million dollar | 2004

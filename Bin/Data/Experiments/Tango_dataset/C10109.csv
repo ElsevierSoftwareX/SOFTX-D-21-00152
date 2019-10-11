@@ -1,0 +1,49 @@
+DATA;RowHeading3;RowHeading2;RowHeading1;ColumnHeading
+100;total, all commodities;;;percent of total
+364 381;total, all commodities;;;imports
+269 182;total, all commodities;;;exports
+633 563;total, all commodities;;;total
+71,6;total, top ten commodities;;;percent of total
+268 419;total, top ten commodities;;;imports
+185 251;total, top ten commodities;;;exports
+453 670;total, top ten commodities;;;total
+2,3;furniture, lamps and prefabricated buildings;94;10;percent of total
+10 655;furniture, lamps and prefabricated buildings;94;10;imports
+4 061;furniture, lamps and prefabricated buildings;94;10;exports
+14 717;furniture, lamps and prefabricated buildings;94;10;total
+2,4;measuring and testing instruments;90;9;percent of total
+7 122;measuring and testing instruments;90;9;imports
+7 997;measuring and testing instruments;90;9;exports
+15 119;measuring and testing instruments;90;9;total
+2,6;paper and paperboard;48;8;percent of total
+10 228;paper and paperboard;48;8;imports
+6 497;paper and paperboard;48;8;exports
+16 725;paper and paperboard;48;8;total
+2,6;wood and articles;44;7;percent of total
+14 207;wood and articles;44;7;imports
+2 565;wood and articles;44;7;exports
+16 772;wood and articles;44;7;total
+3,4;**special classification provisions;98;6;percent of total
+12 276;**special classification provisions;98;6;imports
+9 255;**special classification provisions;98;6;exports
+21 531;**special classification provisions;98;6;total
+4,3;plastics and articles thereof;39;5;percent of total
+10 917;plastics and articles thereof;39;5;imports
+16 375;plastics and articles thereof;39;5;exports
+27 292;plastics and articles thereof;39;5;total
+7,3;mineral fuels, oils and waxes;27;4;percent of total
+41 299;mineral fuels, oils and waxes;27;4;imports
+4 775;mineral fuels, oils and waxes;27;4;exports
+46 074;mineral fuels, oils and waxes;27;4;total
+12,6;electrical machinery and equipment and parts;85;3;percent of total
+43 625;electrical machinery and equipment and parts;85;3;imports
+36 362;electrical machinery and equipment and parts;85;3;exports
+79 987;electrical machinery and equipment and parts;85;3;total
+13,1;*nuclear reactors, boilers, machinery and parts;84;2;percent of total
+35 606;*nuclear reactors, boilers, machinery and parts;84;2;imports
+47 694;*nuclear reactors, boilers, machinery and parts;84;2;exports
+83 300;*nuclear reactors, boilers, machinery and parts;84;2;total
+20,9;motor vehicles and parts;87;1;percent of total
+82 484;motor vehicles and parts;87;1;imports
+49 670;motor vehicles and parts;87;1;exports
+132 154;motor vehicles and parts;87;1;total

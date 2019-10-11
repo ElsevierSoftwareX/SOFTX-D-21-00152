@@ -1,0 +1,96 @@
+DATA;RowHeading1;ColumnHeading
+8.4;total current expenditure on health | hc r.1 capital formation of health care provider institutions;privat sector
+0.0;total current expenditure on health | hc r.1 capital formation of health care provider institutions;social security fund
+39.6;total current expenditure on health | hc r.1 capital formation of health care provider institutions;local government
+52.0;total current expenditure on health | hc r.1 capital formation of health care provider institutions;central government
+10 262;total current expenditure on health | hc r.1 capital formation of health care provider institutions;total. nok million
+16.8;total current expenditure on health;privat sector
+16.1;total current expenditure on health;social security fund
+27.5;total current expenditure on health;local government
+39.5;total current expenditure on health;central government
+149 312;total current expenditure on health;total. nok million
+0.1;total expenditure on health | hc.7 health administration and health insurance;privat sector
+0.0;total expenditure on health | hc.7 health administration and health insurance;social security fund
+0.0;total expenditure on health | hc.7 health administration and health insurance;local government
+99.9;total expenditure on health | hc.7 health administration and health insurance;central government
+1 187;total expenditure on health | hc.7 health administration and health insurance;total. nok million
+14.2;total expenditure on health | hc.6 prevention and public health services;privat sector
+0.0;total expenditure on health | hc.6 prevention and public health services;social security fund
+59.9;total expenditure on health | hc.6 prevention and public health services;local government
+25.8;total expenditure on health | hc.6 prevention and public health services;central government
+3 077;total expenditure on health | hc.6 prevention and public health services;total. nok million
+36.7;total expenditure on health | hc.5.2 therapeutic appliances and medical equipment (durables);privat sector
+63.3;total expenditure on health | hc.5.2 therapeutic appliances and medical equipment (durables);social security fund
+0.0;total expenditure on health | hc.5.2 therapeutic appliances and medical equipment (durables);local government
+0.0;total expenditure on health | hc.5.2 therapeutic appliances and medical equipment (durables);central government
+7 252;total expenditure on health | hc.5.2 therapeutic appliances and medical equipment (durables);total. nok million
+41.2;total expenditure on health | hc.5.1 pharmaceuticals and other medical non-durables;privat sector
+58.8;total expenditure on health | hc.5.1 pharmaceuticals and other medical non-durables;social security fund
+0.0;total expenditure on health | hc.5.1 pharmaceuticals and other medical non-durables;local government
+0.0;total expenditure on health | hc.5.1 pharmaceuticals and other medical non-durables;central government
+14 748;total expenditure on health | hc.5.1 pharmaceuticals and other medical non-durables;total. nok million
+39.7;total expenditure on health | hc.5 medical goods dispensed to out-patients;privat sector
+60.3;total expenditure on health | hc.5 medical goods dispensed to out-patients;social security fund
+0.0;total expenditure on health | hc.5 medical goods dispensed to out-patients;local government
+0.0;total expenditure on health | hc.5 medical goods dispensed to out-patients;central government
+22 000;total expenditure on health | hc.5 medical goods dispensed to out-patients;total. nok million
+1.4;total expenditure on health | hc.4.3 patient transport and emergency rescue;privat sector
+52.5;total expenditure on health | hc.4.3 patient transport and emergency rescue;social security fund
+0.0;total expenditure on health | hc.4.3 patient transport and emergency rescue;local government
+46.1;total expenditure on health | hc.4.3 patient transport and emergency rescue;central government
+3 834;total expenditure on health | hc.4.3 patient transport and emergency rescue;total. nok million
+9.3;total expenditure on health | hc.4.1 clinical laboratory and diagnostic imaging;privat sector
+11.4;total expenditure on health | hc.4.1 clinical laboratory and diagnostic imaging;social security fund
+0.0;total expenditure on health | hc.4.1 clinical laboratory and diagnostic imaging;local government
+79.3;total expenditure on health | hc.4.1 clinical laboratory and diagnostic imaging;central government
+5 657;total expenditure on health | hc.4.1 clinical laboratory and diagnostic imaging;total. nok million
+6.1;total expenditure on health | hc.4 ancillary services to health care;privat sector
+28.0;total expenditure on health | hc.4 ancillary services to health care;social security fund
+0.0;total expenditure on health | hc.4 ancillary services to health care;local government
+65.9;total expenditure on health | hc.4 ancillary services to health care;central government
+9 491;total expenditure on health | hc.4 ancillary services to health care;total. nok million
+3.0;total expenditure on health | hc.3.3 long-term nursing care: home care;privat sector
+0.0;total expenditure on health | hc.3.3 long-term nursing care: home care;social security fund
+97.0;total expenditure on health | hc.3.3 long-term nursing care: home care;local government
+0.0;total expenditure on health | hc.3.3 long-term nursing care: home care;central government
+12 769;total expenditure on health | hc.3.3 long-term nursing care: home care;total. nok million
+16.5;total expenditure on health | hc.3.1 in-patient long-term nursing care;privat sector
+0.0;total expenditure on health | hc.3.1 in-patient long-term nursing care;social security fund
+83.5;total expenditure on health | hc.3.1 in-patient long-term nursing care;local government
+0.0;total expenditure on health | hc.3.1 in-patient long-term nursing care;central government
+25 060;total expenditure on health | hc.3.1 in-patient long-term nursing care;total. nok million
+12.0;total expenditure on health | hc.3 service og long term nursing care;privat sector
+0.0;total expenditure on health | hc.3 service og long term nursing care;social security fund
+88.0;total expenditure on health | hc.3 service og long term nursing care;local government
+0.0;total expenditure on health | hc.3 service og long term nursing care;central government
+37 829;total expenditure on health | hc.3 service og long term nursing care;total. nok million
+6.2;total expenditure on health | hc.2 services of rehabilitative care;privat sector
+18.0;total expenditure on health | hc.2 services of rehabilitative care;social security fund
+0.0;total expenditure on health | hc.2 services of rehabilitative care;local government
+75.7;total expenditure on health | hc.2 services of rehabilitative care;central government
+2 106;total expenditure on health | hc.2 services of rehabilitative care;total. nok million
+36.0;total expenditure on health | hc.1.3-1.4 out-patient curative care;privat sector
+24.5;total expenditure on health | hc.1.3-1.4 out-patient curative care;social security fund
+20.3;total expenditure on health | hc.1.3-1.4 out-patient curative care;local government
+19.2;total expenditure on health | hc.1.3-1.4 out-patient curative care;central government
+29 298;total expenditure on health | hc.1.3-1.4 out-patient curative care;total. nok million
+1.2;total expenditure on health | hc.1.2 day cases of curative care;privat sector
+0.3;total expenditure on health | hc.1.2 day cases of curative care;social security fund
+0.0;total expenditure on health | hc.1.2 day cases of curative care;local government
+98.5;total expenditure on health | hc.1.2 day cases of curative care;central government
+5 749;total expenditure on health | hc.1.2 day cases of curative care;total. nok million
+0.3;total expenditure on health | hc.1.1 in-patient curative care;privat sector
+1.5;total expenditure on health | hc.1.1 in-patient curative care;social security fund
+0.0;total expenditure on health | hc.1.1 in-patient curative care;local government
+98.2;total expenditure on health | hc.1.1 in-patient curative care;central government
+38 575;total expenditure on health | hc.1.1 in-patient curative care;total. nok million
+14.6;total expenditure on health | hc.1 service of curative care;privat sector
+10.6;total expenditure on health | hc.1 service of curative care;social security fund
+8.1;total expenditure on health | hc.1 service of curative care;local government
+66.8;total expenditure on health | hc.1 service of curative care;central government
+73 622;total expenditure on health | hc.1 service of curative care;total. nok million
+16.3;total expenditure on health;privat sector
+15.1;total expenditure on health;social security fund
+28.3;total expenditure on health;local government
+40.3;total expenditure on health;central government
+159 574;total expenditure on health;total. nok million

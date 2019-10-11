@@ -1,0 +1,36 @@
+DATA;RowHeading1;ColumnHeading
+-15;employees | more than 100;change (%) 2009/iv - 2008/iv
+-800;employees | more than 100;change 2009/iv - 2008/iv
+5 000;employees | more than 100;year/quarter | 2008/iv
+9 900;employees | more than 100;year/quarter | 2009/i
+4 700;employees | more than 100;year/quarter | 2009/ii
+4 100;employees | more than 100;year/quarter | 2009/iii
+4 200;employees | more than 100;year/quarter | 2009/iv
+-4;employees | 11-99 persons;change (%) 2009/iv - 2008/iv
+-400;employees | 11-99 persons;change 2009/iv - 2008/iv
+9 300;employees | 11-99 persons;year/quarter | 2008/iv
+16 900;employees | 11-99 persons;year/quarter | 2009/i
+17 500;employees | 11-99 persons;year/quarter | 2009/ii
+13 300;employees | 11-99 persons;year/quarter | 2009/iii
+8 900;employees | 11-99 persons;year/quarter | 2009/iv
+-34;employees | 5-10 persons;change (%) 2009/iv - 2008/iv
+-1 500;employees | 5-10 persons;change 2009/iv - 2008/iv
+4 500;employees | 5-10 persons;year/quarter | 2008/iv
+9 700;employees | 5-10 persons;year/quarter | 2009/i
+6 300;employees | 5-10 persons;year/quarter | 2009/ii
+7 900;employees | 5-10 persons;year/quarter | 2009/iii
+2 900;employees | 5-10 persons;year/quarter | 2009/iv
+-35;employees | 1-4 persons;change (%) 2009/iv - 2008/iv
+-3 200;employees | 1-4 persons;change 2009/iv - 2008/iv
+9 000;employees | 1-4 persons;year/quarter | 2008/iv
+9 600;employees | 1-4 persons;year/quarter | 2009/i
+9 300;employees | 1-4 persons;year/quarter | 2009/ii
+5 800;employees | 1-4 persons;year/quarter | 2009/iii
+5 800;employees | 1-4 persons;year/quarter | 2009/iv
+-21;employees | total;change (%) 2009/iv - 2008/iv
+-5 900;employees | total;change 2009/iv - 2008/iv
+27 800;employees | total;year/quarter | 2008/iv
+46 100;employees | total;year/quarter | 2009/i
+37 800;employees | total;year/quarter | 2009/ii
+31 100;employees | total;year/quarter | 2009/iii
+21 900;employees | total;year/quarter | 2009/iv

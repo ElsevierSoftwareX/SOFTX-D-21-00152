@@ -1,0 +1,37 @@
+DATA;RowHeading1;ColumnHeading
+565 329;total;census year | 2006
+526 281;total;census year | 2001
+366;area outside region;census year | 2006
+393;area outside region;census year | 2001
+10 422;southland region;census year | 2006
+10 038;southland region;census year | 2001
+12 270;otago region;census year | 2006
+10 542;otago region;census year | 2001
+36 669;canterbury region;census year | 2006
+31 632;canterbury region;census year | 2001
+2 916;west coast region;census year | 2006
+2 547;west coast region;census year | 2001
+4 275;marlborough region;census year | 2006
+3 894;marlborough region;census year | 2001
+3 615;nelson region;census year | 2006
+3 219;nelson region;census year | 2001
+3 063;tasman region;census year | 2006
+2 778;tasman region;census year | 2001
+55 434;wellington region;census year | 2006
+51 120;wellington region;census year | 2001
+42 288;manawatu-wanganui region;census year | 2006
+39 267;manawatu-wanganui region;census year | 2001
+15 801;taranaki region;census year | 2006
+14 562;taranaki region;census year | 2001
+33 555;hawke's bay region;census year | 2006
+32 088;hawke's bay region;census year | 2001
+19 758;gisborne region;census year | 2006
+19 362;gisborne region;census year | 2001
+67 662;bay of plenty region;census year | 2006
+63 654;bay of plenty region;census year | 2001
+76 572;waikato region;census year | 2006
+72 822;waikato region;census year | 2001
+137 136;auckland region;census year | 2006
+127 626;auckland region;census year | 2001
+43 527;northland region;census year | 2006
+40 734;northland region;census year | 2001

@@ -1,0 +1,16 @@
+DATA;RowHeading1;ColumnHeading
+20;other/unknown treatment;1997
+14;other/unknown treatment;1996
+20;other/unknown treatment;1995
+3;export;1997
+3;export;1996
+2;export;1995
+60;landfill;1997
+66;landfill;1996
+63;landfill;1995
+14;incineration;1997
+15;incineration;1996
+15;incineration;1995
+2;material recovery;1997
+2;material recovery;1996
+0;material recovery;1995

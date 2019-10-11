@@ -1,0 +1,341 @@
+DATA;RowHeading1;ColumnHeading
+x;wyoming;"kindergarten education, 2008 | school districts
+required to offer | half day"
+7 to 16;wyoming;compulsory age of attendance | 2007
+7 to 16;wyoming;compulsory age of attendance | 2006
+7 to 16;wyoming;compulsory age of attendance | 2004
+6 to 16;wyoming;compulsory age of attendance | 2002
+6 to 16;wyoming;compulsory age of attendance | 2000
+x;wisconsin;"kindergarten education, 2008 | school districts
+required to offer | half day"
+6 to 18;wisconsin;compulsory age of attendance | 2007
+6 to 18;wisconsin;compulsory age of attendance | 2006
+6 to 18;wisconsin;compulsory age of attendance | 2004
+6 to 18;wisconsin;compulsory age of attendance | 2002
+6 to 18;wisconsin;compulsory age of attendance | 2000
+x;west virginia;"kindergarten education, 2008 | school districts
+required to offer | full day"
+x;west virginia;"kindergarten education, 2008 | attendance
+required"
+6 to 16;west virginia;compulsory age of attendance | 2007
+6 to 16;west virginia;compulsory age of attendance | 2006
+6 to 16;west virginia;compulsory age of attendance | 2004
+6 to 16;west virginia;compulsory age of attendance | 2002
+6 to 16;west virginia;compulsory age of attendance | 2000
+x;washington;"kindergarten education, 2008 | school districts
+required to offer | half day"
+8 to 18;washington;compulsory age of attendance | 2007
+8 to 18;washington;compulsory age of attendance | 2006
+8 to 16;washington;compulsory age of attendance | 2004
+8 to 17;washington;compulsory age of attendance | 2002
+8 to 17;washington;compulsory age of attendance | 2000
+x;virginia;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;virginia;"kindergarten education, 2008 | attendance
+required"
+5 to 18;virginia;compulsory age of attendance | 2007
+5 to 18;virginia;compulsory age of attendance | 2006
+5 to 18;virginia;compulsory age of attendance | 2004
+5 to 18;virginia;compulsory age of attendance | 2002
+5 to 18;virginia;compulsory age of attendance | 2000
+x;vermont;"kindergarten education, 2008 | school districts
+required to offer | half day"
+6 to 16;vermont;compulsory age of attendance | 2007
+6 to 16;vermont;compulsory age of attendance | 2006
+6 to 16;vermont;compulsory age of attendance | 2004
+6 to 16;vermont;compulsory age of attendance | 2002
+7 to 16;vermont;compulsory age of attendance | 2000
+x;utah;"kindergarten education, 2008 | school districts
+required to offer | half day"
+6 to 18;utah;compulsory age of attendance | 2007
+6 to 18;utah;compulsory age of attendance | 2006
+6 to 18;utah;compulsory age of attendance | 2004
+6 to 18;utah;compulsory age of attendance | 2002
+6 to 18;utah;compulsory age of attendance | 2000
+x;texas;"kindergarten education, 2008 | school districts
+required to offer | half day"
+6 to 18;texas;compulsory age of attendance | 2007
+6 to 18;texas;compulsory age of attendance | 2006
+6 to 18;texas;compulsory age of attendance | 2004
+6 to 18;texas;compulsory age of attendance | 2002
+6 to 18;texas;compulsory age of attendance | 2000
+x;tennessee;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;tennessee;"kindergarten education, 2008 | attendance
+required"
+6 to 17;tennessee;compulsory age of attendance | 2007
+6 to 17;tennessee;compulsory age of attendance | 2006
+6 to 17;tennessee;compulsory age of attendance | 2004
+6 to 17;tennessee;compulsory age of attendance | 2002
+6 to 17;tennessee;compulsory age of attendance | 2000
+x;south dakota;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;south dakota;kindergarten education, 2008 | attendance required
+6 to 16;south dakota;compulsory age of attendance | 2007
+6 to 16;south dakota;compulsory age of attendance | 2006
+6 to 16;south dakota;compulsory age of attendance | 2004
+6 to 16;south dakota;compulsory age of attendance | 2002
+6 to 16;south dakota;compulsory age of attendance | 2000
+x;south carolina;"kindergarten education, 2008 | school districts
+required to offer | full day"
+x;south carolina;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;south carolina;kindergarten education, 2008 | attendance required
+5 to 17;south carolina;compulsory age of attendance | 2007
+5 to 17;south carolina;compulsory age of attendance | 2006
+5 to 16;south carolina;compulsory age of attendance | 2004
+5 to 16;south carolina;compulsory age of attendance | 2002
+5 to 16;south carolina;compulsory age of attendance | 2000
+x;rhode island;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;rhode island;kindergarten education, 2008 | attendance required
+6 to 16;rhode island;compulsory age of attendance | 2007
+6 to 16;rhode island;compulsory age of attendance | 2006
+6 to 16;rhode island;compulsory age of attendance | 2004
+6 to 16;rhode island;compulsory age of attendance | 2002
+6 to 16;rhode island;compulsory age of attendance | 2000
+8 to 17;pennsylvania;compulsory age of attendance | 2007
+8 to 17;pennsylvania;compulsory age of attendance | 2006
+8 to 17;pennsylvania;compulsory age of attendance | 2004
+8 to 17;pennsylvania;compulsory age of attendance | 2002
+8 to 17;pennsylvania;compulsory age of attendance | 2000
+x;oregon;kindergarten education, 2008 | school districts required to offer | half day
+7 to 18;oregon;compulsory age of attendance | 2007
+7 to 18;oregon;compulsory age of attendance | 2006
+7 to 18;oregon;compulsory age of attendance | 2004
+7 to 18;oregon;compulsory age of attendance | 2002
+7 to 18;oregon;compulsory age of attendance | 2000
+x;oklahoma;kindergarten education, 2008 | school districts required to offer | full day
+x;oklahoma;kindergarten education, 2008 | school districts required to offer | half day
+x;oklahoma;kindergarten education, 2008 | attendance required
+5 to 18;oklahoma;compulsory age of attendance | 2007
+5 to 18;oklahoma;compulsory age of attendance | 2006
+5 to 18;oklahoma;compulsory age of attendance | 2004
+5 to 18;oklahoma;compulsory age of attendance | 2002
+5 to 18;oklahoma;compulsory age of attendance | 2000
+x;ohio;kindergarten education, 2008 | school districts required to offer | half day
+x;ohio;kindergarten education, 2008 | attendance required
+6 to 18;ohio;compulsory age of attendance | 2007
+6 to 18;ohio;compulsory age of attendance | 2006
+6 to 18;ohio;compulsory age of attendance | 2004
+6 to 18;ohio;compulsory age of attendance | 2002
+6 to 18;ohio;compulsory age of attendance | 2000
+7 to 16;north dakota;compulsory age of attendance | 2007
+7 to 16;north dakota;compulsory age of attendance | 2006
+7 to 16;north dakota;compulsory age of attendance | 2004
+7 to 16;north dakota;compulsory age of attendance | 2002
+7 to 16;north dakota;compulsory age of attendance | 2000
+x;north carolina;kindergarten education, 2008 | school districts required to offer | full day
+7 to 16;north carolina;compulsory age of attendance | 2007
+7 to 16;north carolina;compulsory age of attendance | 2006
+7 to 16;north carolina;compulsory age of attendance | 2004
+7 to 16;north carolina;compulsory age of attendance | 2002
+7 to 16;north carolina;compulsory age of attendance | 2000
+6 to 16;new york;compulsory age of attendance | 2007
+6 to 16;new york;compulsory age of attendance | 2006
+6 to 16;new york;compulsory age of attendance | 2004
+6 to 16;new york;compulsory age of attendance | 2002
+6 to 16;new york;compulsory age of attendance | 2000
+x;new mexico;kindergarten education, 2008 | school districts required to offer | half day
+x;new mexico;kindergarten education, 2008 | attendance required
+5 to 18;new mexico;compulsory age of attendance | 2007
+5 to 18;new mexico;compulsory age of attendance | 2006
+5 to 18;new mexico;compulsory age of attendance | 2004
+5 to 18;new mexico;compulsory age of attendance | 2002
+5 to 18;new mexico;compulsory age of attendance | 2000
+6 to 16;new jersey;compulsory age of attendance | 2007
+6 to 16;new jersey;compulsory age of attendance | 2006
+6 to 16;new jersey;compulsory age of attendance | 2004
+6 to 16;new jersey;compulsory age of attendance | 2002
+6 to 16;new jersey;compulsory age of attendance | 2000
+6 to 16;new hampshire;compulsory age of attendance | 2007
+6 to 16;new hampshire;compulsory age of attendance | 2006
+6 to 16;new hampshire;compulsory age of attendance | 2004
+6 to 16;new hampshire;compulsory age of attendance | 2002
+6 to 16;new hampshire;compulsory age of attendance | 2000
+x;nevada;kindergarten education, 2008 | school districts required to offer | half day
+x;nevada;kindergarten education, 2008 | attendance required
+7 to 17;nevada;compulsory age of attendance | 2007
+7 to 17;nevada;compulsory age of attendance | 2006
+7 to 17;nevada;compulsory age of attendance | 2004
+7 to 17;nevada;compulsory age of attendance | 2002
+7 to 17;nevada;compulsory age of attendance | 2000
+x;nebraska;kindergarten education, 2008 | school districts required to offer | half day
+6 to 18;nebraska;compulsory age of attendance | 2007
+6 to 18;nebraska;compulsory age of attendance | 2006
+7 to 16;nebraska;compulsory age of attendance | 2004
+7 to 16;nebraska;compulsory age of attendance | 2002
+7 to 16;nebraska;compulsory age of attendance | 2000
+x;montana;kindergarten education, 2008 | school districts required to offer | half day
+7 to 16;montana;compulsory age of attendance | 2007
+7 to 16;montana;compulsory age of attendance | 2006
+7 to 16;montana;compulsory age of attendance | 2004
+7 to 16;montana;compulsory age of attendance | 2002
+7 to 16;montana;compulsory age of attendance | 2000
+x;missouri;kindergarten education, 2008 | school districts required to offer | half day
+7 to 16;missouri;compulsory age of attendance | 2007
+7 to 16;missouri;compulsory age of attendance | 2006
+7 to 16;missouri;compulsory age of attendance | 2004
+7 to 16;missouri;compulsory age of attendance | 2002
+7 to 16;missouri;compulsory age of attendance | 2000
+x;mississippi;kindergarten education, 2008 | school districts required to offer | full day
+6 to 17;mississippi;compulsory age of attendance | 2007
+6 to 16;mississippi;compulsory age of attendance | 2006
+6 to 16;mississippi;compulsory age of attendance | 2004
+6 to 17;mississippi;compulsory age of attendance | 2002
+6 to 17;mississippi;compulsory age of attendance | 2000
+x;minnesota;kindergarten education, 2008 | school districts required to offer | half day
+7 to 16;minnesota;compulsory age of attendance | 2007
+7 to 16;minnesota;compulsory age of attendance | 2006
+7 to 16;minnesota;compulsory age of attendance | 2004
+7 to 16;minnesota;compulsory age of attendance | 2002
+7 to 18;minnesota;compulsory age of attendance | 2000
+x;michigan;kindergarten education, 2008 | school districts required to offer | half day
+6 to 16;michigan;compulsory age of attendance | 2007
+6 to 16;michigan;compulsory age of attendance | 2006
+6 to 16;michigan;compulsory age of attendance | 2004
+6 to 16;michigan;compulsory age of attendance | 2002
+6 to 16;michigan;compulsory age of attendance | 2000
+x;massachusetts;kindergarten education, 2008 | school districts required to offer | half day
+6 to 16;massachusetts;compulsory age of attendance | 2007
+6 to 16;massachusetts;compulsory age of attendance | 2006
+6 to 16;massachusetts;compulsory age of attendance | 2004
+6 to 16;massachusetts;compulsory age of attendance | 2002
+6 to 16;massachusetts;compulsory age of attendance | 2000
+x;maryland;kindergarten education, 2008 | school districts required to offer | full day
+x;maryland;kindergarten education, 2008 | attendance required
+5 to 16;maryland;compulsory age of attendance | 2007
+5 to 16;maryland;compulsory age of attendance | 2006
+5 to 16;maryland;compulsory age of attendance | 2004
+5 to 16;maryland;compulsory age of attendance | 2002
+5 to 16;maryland;compulsory age of attendance | 2000
+x;maine;kindergarten education, 2008 | school districts required to offer | half day
+7 to 17;maine;compulsory age of attendance | 2007
+7 to 17;maine;compulsory age of attendance | 2006
+7 to 17;maine;compulsory age of attendance | 2004
+7 to 17;maine;compulsory age of attendance | 2002
+7 to 17;maine;compulsory age of attendance | 2000
+x;louisiana;kindergarten education, 2008 | school districts required to offer | full day
+x;louisiana;kindergarten education, 2008 | attendance required
+7 to 18;louisiana;compulsory age of attendance | 2007
+7 to 18;louisiana;compulsory age of attendance | 2006
+7 to 17;louisiana;compulsory age of attendance | 2004
+7 to 17;louisiana;compulsory age of attendance | 2002
+7 to 17;louisiana;compulsory age of attendance | 2000
+x;kentucky;kindergarten education, 2008 | school districts required to offer | half day
+6 to 16;kentucky;compulsory age of attendance | 2007
+6 to 16;kentucky;compulsory age of attendance | 2006
+6 to 16;kentucky;compulsory age of attendance | 2004
+6 to 16;kentucky;compulsory age of attendance | 2002
+6 to 16;kentucky;compulsory age of attendance | 2000
+x;kansas;kindergarten education, 2008 | school districts required to offer | half day
+7 to 18;kansas;compulsory age of attendance | 2007
+7 to 18;kansas;compulsory age of attendance | 2006
+7 to 18;kansas;compulsory age of attendance | 2004
+7 to 18;kansas;compulsory age of attendance | 2002
+7 to 18;kansas;compulsory age of attendance | 2000
+x;iowa;kindergarten education, 2008 | school districts required to offer | half day
+6 to 16;iowa;compulsory age of attendance | 2007
+6 to 16;iowa;compulsory age of attendance | 2006
+6 to 16;iowa;compulsory age of attendance | 2004
+6 to 16;iowa;compulsory age of attendance | 2002
+6 to 16;iowa;compulsory age of attendance | 2000
+x;indiana;kindergarten education, 2008 | school districts required to offer | half day
+7 to 18;indiana;compulsory age of attendance | 2007
+7 to 18;indiana;compulsory age of attendance | 2006
+7 to 16;indiana;compulsory age of attendance | 2004
+7 to 16;indiana;compulsory age of attendance | 2002
+7 to 16;indiana;compulsory age of attendance | 2000
+x;illinois;kindergarten education, 2008 | school districts required to offer | half day
+7 to 17;illinois;compulsory age of attendance | 2007
+7 to 17;illinois;compulsory age of attendance | 2006
+7 to 17;illinois;compulsory age of attendance | 2004
+7 to 16;illinois;compulsory age of attendance | 2002
+7 to 16;illinois;compulsory age of attendance | 2000
+7 to 16;idaho;compulsory age of attendance | 2007
+7 to 16;idaho;compulsory age of attendance | 2006
+7 to 16;idaho;compulsory age of attendance | 2004
+7 to 16;idaho;compulsory age of attendance | 2002
+7 to 16;idaho;compulsory age of attendance | 2000
+x;hawaii;kindergarten education, 2008 | school districts required to offer | half day
+6 to 18;hawaii;compulsory age of attendance | 2007
+6 to 18;hawaii;compulsory age of attendance | 2006
+6 to 18;hawaii;compulsory age of attendance | 2004
+6 to 18;hawaii;compulsory age of attendance | 2002
+6 to 18;hawaii;compulsory age of attendance | 2000
+x;georgia;"kindergarten education, 2008 | school districts
+required to offer | full day"
+6 to 16;georgia;compulsory age of attendance | 2007
+6 to 16;georgia;compulsory age of attendance | 2006
+6 to 16;georgia;compulsory age of attendance | 2004
+6 to 16;georgia;compulsory age of attendance | 2002
+6 to 16;georgia;compulsory age of attendance | 2000
+x;florida;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;florida;kindergarten education, 2008 | attendance required
+6 to 16;florida;compulsory age of attendance | 2007
+6 to 16;florida;compulsory age of attendance | 2006
+6 to 16;florida;compulsory age of attendance | 2004
+6 to 16;florida;compulsory age of attendance | 2002
+6 to 16;florida;compulsory age of attendance | 2000
+x;district of columbia;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;district of columbia;kindergarten education, 2008 | attendance required
+5 to 18;district of columbia;compulsory age of attendance | 2007
+5 to 18;district of columbia;compulsory age of attendance | 2006
+5 to 18;district of columbia;compulsory age of attendance | 2004
+5 to 18;district of columbia;compulsory age of attendance | 2002
+x;delaware;"kindergarten education, 2008 | school districts
+required to offer | full day"
+x;delaware;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;delaware;kindergarten education, 2008 | attendance required
+5 to 16;delaware;compulsory age of attendance | 2007
+5 to 16;delaware;compulsory age of attendance | 2006
+5 to 16;delaware;compulsory age of attendance | 2004
+5 to 16;delaware;compulsory age of attendance | 2002
+5 to 16;delaware;compulsory age of attendance | 2000
+x;connecticut;"kindergarten education, 2008 | school districts
+required to offer | half day"
+x;connecticut;kindergarten education, 2008 | attendance required
+5 to 18;connecticut;compulsory age of attendance | 2007
+5 to 18;connecticut;compulsory age of attendance | 2006
+7 to 18;connecticut;compulsory age of attendance | 2004
+7 to 18;connecticut;compulsory age of attendance | 2002
+7 to 16;connecticut;compulsory age of attendance | 2000
+x;colorado;kindergarten education, 2008 | school districts required to offer | half day
+6 to 17;colorado;compulsory age of attendance | 2007
+7 to 16;colorado;compulsory age of attendance | 2006
+7 to 16;colorado;compulsory age of attendance | 2004
+x;california;"kindergarten education, 2008 | school districts
+required to offer | half day"
+6 to 18;california;compulsory age of attendance | 2007
+6 to 18;california;compulsory age of attendance | 2006
+6 to 18;california;compulsory age of attendance | 2004
+6 to 18;california;compulsory age of attendance | 2002
+6 to 18;california;compulsory age of attendance | 2000
+x;arkansas;"kindergarten education, 2008 | school districts
+required to offer | full day"
+x;arkansas;kindergarten education, 2008 | attendance required
+5 to 17;arkansas;compulsory age of attendance | 2007
+5 to 17;arkansas;compulsory age of attendance | 2006
+5 to 17;arkansas;compulsory age of attendance | 2004
+5 to 17;arkansas;compulsory age of attendance | 2002
+5 to 17;arkansas;compulsory age of attendance | 2000
+x;arizona;kindergarten education, 2008 | school districts required to offer | half day
+6 to 16;arizona;compulsory age of attendance | 2007
+6 to 16;arizona;compulsory age of attendance | 2006
+6 to 16;arizona;compulsory age of attendance | 2004
+6 to 16;arizona;compulsory age of attendance | 2002
+6 to 16;arizona;compulsory age of attendance | 2000
+7 to 16;alaska;compulsory age of attendance | 2007
+7 to 16;alaska;compulsory age of attendance | 2006
+7 to 16;alaska;compulsory age of attendance | 2004
+7 to 16;alaska;compulsory age of attendance | 2002
+7 to 16;alaska;compulsory age of attendance | 2000
+x;alabama;kindergarten education, 2008 | school districts required to offer | full day
+7 to 16;alabama;compulsory age of attendance | 2007
+7 to 16;alabama;compulsory age of attendance | 2006
+7 to 16;alabama;compulsory age of attendance | 2004
+7 to 16;alabama;compulsory age of attendance | 2002
+7 to 16;alabama;compulsory age of attendance | 2000

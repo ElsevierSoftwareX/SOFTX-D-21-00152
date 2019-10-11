@@ -1,0 +1,81 @@
+DATA;RowHeading1;ColumnHeading
+283;unknown/foreign countries;school outside county of residence
+283;unknown/foreign countries;total
+86;finnmark finnm?rku;school outside county of residence
+13;finnmark finnm?rku;school in county of residence
+6;finnmark finnm?rku;school in municipality of residence
+105;finnmark finnm?rku;total
+130;troms romsa;school outside county of residence
+29;troms romsa;school in county of residence
+7;troms romsa;school in municipality of residence
+166;troms romsa;total
+229;nordland;school outside county of residence
+25;nordland;school in county of residence
+4;nordland;school in municipality of residence
+258;nordland;total
+227;nord-tr?ndelag;school outside county of residence
+17;nord-tr?ndelag;school in county of residence
+6;nord-tr?ndelag;school in municipality of residence
+250;nord-tr?ndelag;total
+318;s?r-tr?ndelag;school outside county of residence
+44;s?r-tr?ndelag;school in county of residence
+9;s?r-tr?ndelag;school in municipality of residence
+371;s?r-tr?ndelag;total
+325;m?re og romsdal;school outside county of residence
+40;m?re og romsdal;school in county of residence
+14;m?re og romsdal;school in municipality of residence
+379;m?re og romsdal;total
+193;sogn og fjordane;school outside county of residence
+14;sogn og fjordane;school in county of residence
+7;sogn og fjordane;school in municipality of residence
+214;sogn og fjordane;total
+513;hordaland;school outside county of residence
+103;hordaland;school in county of residence
+32;hordaland;school in municipality of residence
+648;hordaland;total
+454;rogaland;school outside county of residence
+41;rogaland;school in county of residence
+7;rogaland;school in municipality of residence
+502;rogaland;total
+218;vest-agder;school outside county of residence
+4;vest-agder;school in county of residence
+7;vest-agder;school in municipality of residence
+229;vest-agder;total
+172;aust-agder;school outside county of residence
+20;aust-agder;school in county of residence
+9;aust-agder;school in municipality of residence
+201;aust-agder;total
+219;telemark;school outside county of residence
+5;telemark;school in county of residence
+224;telemark;total
+309;vestfold;school outside county of residence
+5;vestfold;school in county of residence
+7;vestfold;school in municipality of residence
+321;vestfold;total
+280;buskerud;school outside county of residence
+30;buskerud;school in county of residence
+11;buskerud;school in municipality of residence
+321;buskerud;total
+188;oppland;school outside county of residence
+14;oppland;school in county of residence
+9;oppland;school in municipality of residence
+211;oppland;total
+210;hedmark;school outside county of residence
+25;hedmark;school in county of residence
+20;hedmark;school in municipality of residence
+255;hedmark;total
+359;oslo;school outside county of residence
+3;oslo;school in municipality of residence
+362;oslo;total
+560;akershus;school outside county of residence
+30;akershus;school in county of residence
+4;akershus;school in municipality of residence
+594;akershus;total
+247;?stfold;school outside county of residence
+16;?stfold;school in county of residence
+12;?stfold;school in municipality of residence
+275;?stfold;total
+5 520;i alt;school outside county of residence
+475;i alt;school in county of residence
+174;i alt;school in municipality of residence
+6 169;i alt;total

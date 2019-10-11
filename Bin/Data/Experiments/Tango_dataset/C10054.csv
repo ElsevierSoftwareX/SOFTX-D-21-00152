@@ -1,0 +1,307 @@
+DATA;RowHeading1;ColumnHeading
+$20 900;total;total personal income | median income
+365 406;total;total personal income | total
+41 979;total;total personal income | not stated
+4 083;total;total personal income | $100,001 or more
+7 044;total;total personal income | $70,001– $100,000
+21 942;total;total personal income | $50,001– $70,000
+26 355;total;total personal income | $40,001– $50,000
+23 835;total;total personal income | $35,001– $40,000
+25 416;total;total personal income | $30,001– $35,000
+29 397;total;total personal income | $25,001– $30,000
+29 031;total;total personal income | $20,001– $25,000
+32 430;total;total personal income | $15,001– $20,000
+41 322;total;total personal income | $10,001– $15,000
+31 968;total;total personal income | $5,001– $10,000
+28 911;total;total personal income | $1–$5,000
+19 413;total;total personal income | zero income
+2 277;total;total personal income | loss
+$24 500;area outside region;total personal income | median income
+264;area outside region;total personal income | total
+12;area outside region;total personal income | not stated
+15;area outside region;total personal income | $100,001 or more
+9;area outside region;total personal income | $70,001– $100,000
+18;area outside region;total personal income | $50,001– $70,000
+18;area outside region;total personal income | $40,001– $50,000
+21;area outside region;total personal income | $35,001– $40,000
+24;area outside region;total personal income | $30,001– $35,000
+18;area outside region;total personal income | $25,001– $30,000
+30;area outside region;total personal income | $20,001– $25,000
+21;area outside region;total personal income | $15,001– $20,000
+24;area outside region;total personal income | $10,001– $15,000
+33;area outside region;total personal income | $5,001– $10,000
+15;area outside region;total personal income | $1–$5,000
+6;area outside region;total personal income | zero income
+0;area outside region;total personal income | loss
+$20 700;southland region;total personal income | median income
+6 717;southland region;total personal income | total
+633;southland region;total personal income | not stated
+42;southland region;total personal income | $100,001 or more
+93;southland region;total personal income | $70,001– $100,000
+471;southland region;total personal income | $50,001– $70,000
+462;southland region;total personal income | $40,001– $50,000
+426;southland region;total personal income | $35,001– $40,000
+477;southland region;total personal income | $30,001– $35,000
+558;southland region;total personal income | $25,001– $30,000
+606;southland region;total personal income | $20,001– $25,000
+642;southland region;total personal income | $15,001– $20,000
+810;southland region;total personal income | $10,001– $15,000
+546;southland region;total personal income | $5,001– $10,000
+606;southland region;total personal income | $1–$5,000
+315;southland region;total personal income | zero income
+39;southland region;total personal income | loss
+$19 700;otago region;total personal income | median income
+8 286;otago region;total personal income | total
+603;otago region;total personal income | not stated
+90;otago region;total personal income | $100,001 or more
+120;otago region;total personal income | $70,001– $100,000
+501;otago region;total personal income | $50,001– $70,000
+603;otago region;total personal income | $40,001– $50,000
+549;otago region;total personal income | $35,001– $40,000
+576;otago region;total personal income | $30,001– $35,000
+681;otago region;total personal income | $25,001– $30,000
+675;otago region;total personal income | $20,001– $25,000
+732;otago region;total personal income | $15,001– $20,000
+924;otago region;total personal income | $10,001– $15,000
+891;otago region;total personal income | $5,001– $10,000
+948;otago region;total personal income | $1–$5,000
+339;otago region;total personal income | zero income
+48;otago region;total personal income | loss
+$22 100;canterbury region;total personal income | median income
+23 655;canterbury region;total personal income | total
+2 007;canterbury region;total personal income | not stated
+282;canterbury region;total personal income | $100,001 or more
+390;canterbury region;total personal income | $70,001– $100,000
+1 443;canterbury region;total personal income | $50,001– $70,000
+1 875;canterbury region;total personal income | $40,001– $50,000
+1 659;canterbury region;total personal income | $35,001– $40,000
+1 845;canterbury region;total personal income | $30,001– $35,000
+2 145;canterbury region;total personal income | $25,001– $30,000
+2 058;canterbury region;total personal income | $20,001– $25,000
+2 139;canterbury region;total personal income | $15,001– $20,000
+2 574;canterbury region;total personal income | $10,001– $15,000
+1 956;canterbury region;total personal income | $5,001– $10,000
+2 019;canterbury region;total personal income | $1–$5,000
+1 119;canterbury region;total personal income | zero income
+141;canterbury region;total personal income | loss
+$19 100;west coast region;total personal income | median income
+1 821;west coast region;total personal income | total
+183;west coast region;total personal income | not stated
+15;west coast region;total personal income | $100,001 or more
+24;west coast region;total personal income | $70,001– $100,000
+96;west coast region;total personal income | $50,001– $70,000
+132;west coast region;total personal income | $40,001– $50,000
+105;west coast region;total personal income | $35,001– $40,000
+129;west coast region;total personal income | $30,001– $35,000
+135;west coast region;total personal income | $25,001– $30,000
+150;west coast region;total personal income | $20,001– $25,000
+189;west coast region;total personal income | $15,001– $20,000
+225;west coast region;total personal income | $10,001– $15,000
+183;west coast region;total personal income | $5,001– $10,000
+159;west coast region;total personal income | $1–$5,000
+87;west coast region;total personal income | zero income
+9;west coast region;total personal income | loss
+$21 600;marlborough region;total personal income | median income
+2 877;marlborough region;total personal income | total
+273;marlborough region;total personal income | not stated
+24;marlborough region;total personal income | $100,001 or more
+36;marlborough region;total personal income | $70,001– $100,000
+168;marlborough region;total personal income | $50,001– $70,000
+222;marlborough region;total personal income | $40,001– $50,000
+192;marlborough region;total personal income | $35,001– $40,000
+222;marlborough region;total personal income | $30,001– $35,000
+261;marlborough region;total personal income | $25,001– $30,000
+264;marlborough region;total personal income | $20,001– $25,000
+291;marlborough region;total personal income | $15,001– $20,000
+315;marlborough region;total personal income | $10,001– $15,000
+249;marlborough region;total personal income | $5,001– $10,000
+249;marlborough region;total personal income | $1–$5,000
+96;marlborough region;total personal income | zero income
+15;marlborough region;total personal income | loss
+$20 700;nelson region;total personal income | median income
+2 328;nelson region;total personal income | total
+219;nelson region;total personal income | not stated
+21;nelson region;total personal income | $100,001 or more
+27;nelson region;total personal income | $70,001– $100,000
+114;nelson region;total personal income | $50,001– $70,000
+168;nelson region;total personal income | $40,001– $50,000
+147;nelson region;total personal income | $35,001– $40,000
+171;nelson region;total personal income | $30,001– $35,000
+225;nelson region;total personal income | $25,001– $30,000
+210;nelson region;total personal income | $20,001– $25,000
+249;nelson region;total personal income | $15,001– $20,000
+270;nelson region;total personal income | $10,001– $15,000
+180;nelson region;total personal income | $5,001– $10,000
+219;nelson region;total personal income | $1–$5,000
+87;nelson region;total personal income | zero income
+18;nelson region;total personal income | loss
+$20 000;tasman region;total personal income | median income
+1 932;tasman region;total personal income | total
+156;tasman region;total personal income | not stated
+21;tasman region;total personal income | $100,001 or more
+39;tasman region;total personal income | $70,001– $100,000
+99;tasman region;total personal income | $50,001– $70,000
+141;tasman region;total personal income | $40,001– $50,000
+123;tasman region;total personal income | $35,001– $40,000
+117;tasman region;total personal income | $30,001– $35,000
+168;tasman region;total personal income | $25,001– $30,000
+183;tasman region;total personal income | $20,001– $25,000
+198;tasman region;total personal income | $15,001– $20,000
+237;tasman region;total personal income | $10,001– $15,000
+174;tasman region;total personal income | $5,001– $10,000
+177;tasman region;total personal income | $1–$5,000
+84;tasman region;total personal income | zero income
+18;tasman region;total personal income | loss
+$24 100;wellington region;total personal income | median income
+36 396;wellington region;total personal income | total
+3 513;wellington region;total personal income | not stated
+705;wellington region;total personal income | $100,001 or more
+1 158;wellington region;total personal income | $70,001– $100,000
+2 736;wellington region;total personal income | $50,001– $70,000
+3 063;wellington region;total personal income | $40,001– $50,000
+2 649;wellington region;total personal income | $35,001– $40,000
+2 676;wellington region;total personal income | $30,001– $35,000
+2 940;wellington region;total personal income | $25,001– $30,000
+2 787;wellington region;total personal income | $20,001– $25,000
+2 868;wellington region;total personal income | $15,001– $20,000
+3 672;wellington region;total personal income | $10,001– $15,000
+2 787;wellington region;total personal income | $5,001– $10,000
+2 805;wellington region;total personal income | $1–$5,000
+1 863;wellington region;total personal income | zero income
+174;wellington region;total personal income | loss
+$19 400;manawatu-wanganui region;total personal income | median income
+26 862;manawatu-wanganui region;total personal income | total
+3 297;manawatu-wanganui region;total personal income | not stated
+150;manawatu-wanganui region;total personal income | $100,001 or more
+294;manawatu-wanganui region;total personal income | $70,001– $100,000
+1 254;manawatu-wanganui region;total personal income | $50,001– $70,000
+1 680;manawatu-wanganui region;total personal income | $40,001– $50,000
+1 599;manawatu-wanganui region;total personal income | $35,001– $40,000
+1 929;manawatu-wanganui region;total personal income | $30,001– $35,000
+2 358;manawatu-wanganui region;total personal income | $25,001– $30,000
+2 199;manawatu-wanganui region;total personal income | $20,001– $25,000
+2 619;manawatu-wanganui region;total personal income | $15,001– $20,000
+3 228;manawatu-wanganui region;total personal income | $10,001– $15,000
+2 550;manawatu-wanganui region;total personal income | $5,001– $10,000
+2 160;manawatu-wanganui region;total personal income | $1–$5,000
+1 401;manawatu-wanganui region;total personal income | zero income
+144;manawatu-wanganui region;total personal income | loss
+$19 400;taranaki region;total personal income | median income
+10 128;taranaki region;total personal income | total
+1 545;taranaki region;total personal income | not stated
+99;taranaki region;total personal income | $100,001 or more
+168;taranaki region;total personal income | $70,001– $100,000
+528;taranaki region;total personal income | $50,001– $70,000
+657;taranaki region;total personal income | $40,001– $50,000
+561;taranaki region;total personal income | $35,001– $40,000
+645;taranaki region;total personal income | $30,001– $35,000
+702;taranaki region;total personal income | $25,001– $30,000
+837;taranaki region;total personal income | $20,001– $25,000
+870;taranaki region;total personal income | $15,001– $20,000
+1 257;taranaki region;total personal income | $10,001– $15,000
+900;taranaki region;total personal income | $5,001– $10,000
+762;taranaki region;total personal income | $1–$5,000
+546;taranaki region;total personal income | zero income
+57;taranaki region;total personal income | loss
+$19 200;hawke's bay region;total personal income | median income
+21 486;hawke's bay region;total personal income | total
+2 898;hawke's bay region;total personal income | not stated
+105;hawke's bay region;total personal income | $100,001 or more
+210;hawke's bay region;total personal income | $70,001– $100,000
+873;hawke's bay region;total personal income | $50,001– $70,000
+1 317;hawke's bay region;total personal income | $40,001– $50,000
+1 311;hawke's bay region;total personal income | $35,001– $40,000
+1 542;hawke's bay region;total personal income | $30,001– $35,000
+1 764;hawke's bay region;total personal income | $25,001– $30,000
+1 815;hawke's bay region;total personal income | $20,001– $25,000
+2 106;hawke's bay region;total personal income | $15,001– $20,000
+2 688;hawke's bay region;total personal income | $10,001– $15,000
+1 917;hawke's bay region;total personal income | $5,001– $10,000
+1 803;hawke's bay region;total personal income | $1–$5,000
+1 020;hawke's bay region;total personal income | zero income
+114;hawke's bay region;total personal income | loss
+$17 500;gisborne region;total personal income | median income
+12 954;gisborne region;total personal income | total
+1 530;gisborne region;total personal income | not stated
+66;gisborne region;total personal income | $100,001 or more
+138;gisborne region;total personal income | $70,001– $100,000
+492;gisborne region;total personal income | $50,001– $70,000
+678;gisborne region;total personal income | $40,001– $50,000
+717;gisborne region;total personal income | $35,001– $40,000
+786;gisborne region;total personal income | $30,001– $35,000
+1 071;gisborne region;total personal income | $25,001– $30,000
+1 041;gisborne region;total personal income | $20,001– $25,000
+1 425;gisborne region;total personal income | $15,001– $20,000
+1 929;gisborne region;total personal income | $10,001– $15,000
+1 308;gisborne region;total personal income | $5,001– $10,000
+1 068;gisborne region;total personal income | $1–$5,000
+609;gisborne region;total personal income | zero income
+93;gisborne region;total personal income | loss
+$19 000;bay of plenty region;total personal income | median income
+43 539;bay of plenty region;total personal income | total
+5 478;bay of plenty region;total personal income | not stated
+333;bay of plenty region;total personal income | $100,001 or more
+759;bay of plenty region;total personal income | $70,001– $100,000
+2 295;bay of plenty region;total personal income | $50,001– $70,000
+2 607;bay of plenty region;total personal income | $40,001– $50,000
+2 394;bay of plenty region;total personal income | $35,001– $40,000
+2 694;bay of plenty region;total personal income | $30,001– $35,000
+3 381;bay of plenty region;total personal income | $25,001– $30,000
+3 666;bay of plenty region;total personal income | $20,001– $25,000
+4 335;bay of plenty region;total personal income | $15,001– $20,000
+5 508;bay of plenty region;total personal income | $10,001– $15,000
+4 260;bay of plenty region;total personal income | $5,001– $10,000
+3 321;bay of plenty region;total personal income | $1–$5,000
+2 265;bay of plenty region;total personal income | zero income
+249;bay of plenty region;total personal income | loss
+$20 000;waikato region;total personal income | median income
+49 407;waikato region;total personal income | total
+6 033;waikato region;total personal income | not stated
+423;waikato region;total personal income | $100,001 or more
+828;waikato region;total personal income | $70,001– $100,000
+2 829;waikato region;total personal income | $50,001– $70,000
+3 135;waikato region;total personal income | $40,001– $50,000
+3 138;waikato region;total personal income | $35,001– $40,000
+3 390;waikato region;total personal income | $30,001– $35,000
+3 981;waikato region;total personal income | $25,001– $30,000
+3 936;waikato region;total personal income | $20,001– $25,000
+4 335;waikato region;total personal income | $15,001– $20,000
+5 712;waikato region;total personal income | $10,001– $15,000
+4 629;waikato region;total personal income | $5,001– $10,000
+4 023;waikato region;total personal income | $1–$5,000
+2 685;waikato region;total personal income | zero income
+339;waikato region;total personal income | loss
+$24 700;auckland region;total personal income | median income
+88 806;auckland region;total personal income | total
+9 951;auckland region;total personal income | not stated
+1 476;auckland region;total personal income | $100,001 or more
+2 406;auckland region;total personal income | $70,001– $100,000
+6 807;auckland region;total personal income | $50,001– $70,000
+8 127;auckland region;total personal income | $40,001– $50,000
+6 726;auckland region;total personal income | $35,001– $40,000
+6 549;auckland region;total personal income | $30,001– $35,000
+6 897;auckland region;total personal income | $25,001– $30,000
+6 279;auckland region;total personal income | $20,001– $25,000
+6 627;auckland region;total personal income | $15,001– $20,000
+8 010;auckland region;total personal income | $10,001– $15,000
+6 570;auckland region;total personal income | $5,001– $10,000
+6 477;auckland region;total personal income | $1–$5,000
+5 250;auckland region;total personal income | zero income
+651;auckland region;total personal income | loss
+$17 600;northland region;total personal income | median income
+27 948;northland region;total personal income | total
+3 654;northland region;total personal income | not stated
+219;northland region;total personal income | $100,001 or more
+339;northland region;total personal income | $70,001– $100,000
+1 224;northland region;total personal income | $50,001– $70,000
+1 470;northland region;total personal income | $40,001– $50,000
+1 521;northland region;total personal income | $35,001– $40,000
+1 638;northland region;total personal income | $30,001– $35,000
+2 115;northland region;total personal income | $25,001– $30,000
+2 295;northland region;total personal income | $20,001– $25,000
+2 787;northland region;total personal income | $15,001– $20,000
+3 933;northland region;total personal income | $10,001– $15,000
+2 844;northland region;total personal income | $5,001– $10,000
+2 103;northland region;total personal income | $1–$5,000
+1 641;northland region;total personal income | zero income
+168;northland region;total personal income | loss

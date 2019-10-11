@@ -1,0 +1,111 @@
+DATA;RowHeading1;ColumnHeading
+83 146,80;canada | housing;construction intentions $ millions | 2010
+81 680,50;canada | housing;preliminary actual construction $ millions | 2009
+92 116,70;canada | housing;actual construction $ millions | 2008
+89 117,70;canada | housing;actual construction $ millions | 2007
+81 708,80;canada | housing;actual construction $ millions | 2006
+37 006,40;canada | public administration;construction intentions $ millions | 2010
+31 698,70;canada | public administration;preliminary actual construction $ millions | 2009
+26 966,80;canada | public administration;actual construction $ millions | 2008
+22 813,90;canada | public administration;actual construction $ millions | 2007
+19 504,90;canada | public administration;actual construction $ millions | 2006
+513,4;canada | other services (except public administration);construction intentions $ millions | 2010
+572,4;canada | other services (except public administration);preliminary actual construction $ millions | 2009
+571,3;canada | other services (except public administration);actual construction $ millions | 2008
+493,6;canada | other services (except public administration);actual construction $ millions | 2007
+489,7;canada | other services (except public administration);actual construction $ millions | 2006
+2 069,80;canada | accommodation and food services;construction intentions $ millions | 2010
+2 126,20;canada | accommodation and food services;preliminary actual construction $ millions | 2009
+2 278,30;canada | accommodation and food services;actual construction $ millions | 2008
+1 853,20;canada | accommodation and food services;actual construction $ millions | 2007
+1 786,20;canada | accommodation and food services;actual construction $ millions | 2006
+811,9;canada | arts, entertainment and recreation;construction intentions $ millions | 2010
+1 016,30;canada | arts, entertainment and recreation;preliminary actual construction $ millions | 2009
+1 480,20;canada | arts, entertainment and recreation;actual construction $ millions | 2008
+1 123,10;canada | arts, entertainment and recreation;actual construction $ millions | 2007
+837,5;canada | arts, entertainment and recreation;actual construction $ millions | 2006
+5 316,10;canada | health care and social assistance;construction intentions $ millions | 2010
+5 776,20;canada | health care and social assistance;preliminary actual construction $ millions | 2009
+5 198,50;canada | health care and social assistance;actual construction $ millions | 2008
+4 222,40;canada | health care and social assistance;actual construction $ millions | 2007
+4 506,80;canada | health care and social assistance;actual construction $ millions | 2006
+6 431,70;canada | educational services;construction intentions $ millions | 2010
+6 092,00;canada | educational services;preliminary actual construction $ millions | 2009
+5 539,60;canada | educational services;actual construction $ millions | 2008
+5 441,80;canada | educational services;actual construction $ millions | 2007
+5 192,10;canada | educational services;actual construction $ millions | 2006
+220,9;canada | administrative and support, waste management and remediation services;construction intentions $ millions | 2010
+259,2;canada | administrative and support, waste management and remediation services;preliminary actual construction $ millions | 2009
+557,3;canada | administrative and support, waste management and remediation services;actual construction $ millions | 2008
+453,4;canada | administrative and support, waste management and remediation services;actual construction $ millions | 2007
+384,6;canada | administrative and support, waste management and remediation services;actual construction $ millions | 2006
+25,6;canada | management of companies and enterprises;construction intentions $ millions | 2010
+22,5;canada | management of companies and enterprises;preliminary actual construction $ millions | 2009
+54,8;canada | management of companies and enterprises;actual construction $ millions | 2008
+26,5;canada | management of companies and enterprises;actual construction $ millions | 2007
+44,1;canada | management of companies and enterprises;actual construction $ millions | 2006
+622,4;canada | professional, scientific and technical services;construction intentions $ millions | 2010
+622,3;canada | professional, scientific and technical services;preliminary actual construction $ millions | 2009
+805,9;canada | professional, scientific and technical services;actual construction $ millions | 2008
+442,1;canada | professional, scientific and technical services;actual construction $ millions | 2007
+481,7;canada | professional, scientific and technical services;actual construction $ millions | 2006
+3 858,80;canada | real estate and rental and leasing;construction intentions $ millions | 2010
+4 040,90;canada | real estate and rental and leasing;preliminary actual construction $ millions | 2009
+5 760,60;canada | real estate and rental and leasing;actual construction $ millions | 2008
+4 584,50;canada | real estate and rental and leasing;actual construction $ millions | 2007
+4 385,50;canada | real estate and rental and leasing;actual construction $ millions | 2006
+1 180,40;canada | finance and insurance;construction intentions $ millions | 2010
+1 433,70;canada | finance and insurance;preliminary actual construction $ millions | 2009
+1 108,20;canada | finance and insurance;actual construction $ millions | 2008
+914,9;canada | finance and insurance;actual construction $ millions | 2007
+868,2;canada | finance and insurance;actual construction $ millions | 2006
+2 823,10;canada | information and cultural industries;construction intentions $ millions | 2010
+2 656,70;canada | information and cultural industries;preliminary actual construction $ millions | 2009
+2 200,20;canada | information and cultural industries;actual construction $ millions | 2008
+2 127,40;canada | information and cultural industries;actual construction $ millions | 2007
+2 124,40;canada | information and cultural industries;actual construction $ millions | 2006
+10 138,50;canada | transportation and warehousing;construction intentions $ millions | 2010
+10 261,90;canada | transportation and warehousing;preliminary actual construction $ millions | 2009
+10 316,40;canada | transportation and warehousing;actual construction $ millions | 2008
+6 201,90;canada | transportation and warehousing;actual construction $ millions | 2007
+5 767,20;canada | transportation and warehousing;actual construction $ millions | 2006
+3 820,90;canada | retail trade;construction intentions $ millions | 2010
+3 607,10;canada | retail trade;preliminary actual construction $ millions | 2009
+5 177,20;canada | retail trade;actual construction $ millions | 2008
+4 886,20;canada | retail trade;actual construction $ millions | 2007
+4 170,70;canada | retail trade;actual construction $ millions | 2006
+1 072,60;canada | wholesale trade;construction intentions $ millions | 2010
+1 409,20;canada | wholesale trade;preliminary actual construction $ millions | 2009
+1 641,70;canada | wholesale trade;actual construction $ millions | 2008
+1 486,30;canada | wholesale trade;actual construction $ millions | 2007
+1 540,70;canada | wholesale trade;actual construction $ millions | 2006
+2 857,30;canada | manufacturing;construction intentions $ millions | 2010
+1 898,80;canada | manufacturing;preliminary actual construction $ millions | 2009
+2 749,50;canada | manufacturing;actual construction $ millions | 2008
+3 192,60;canada | manufacturing;actual construction $ millions | 2007
+2 665,90;canada | manufacturing;actual construction $ millions | 2006
+763;canada | construction;construction intentions $ millions | 2010
+747,8;canada | construction;preliminary actual construction $ millions | 2009
+740,8;canada | construction;actual construction $ millions | 2008
+671,2;canada | construction;actual construction $ millions | 2007
+586,6;canada | construction;actual construction $ millions | 2006
+18 505,50;canada | utilities;construction intentions $ millions | 2010
+18 168,30;canada | utilities;preliminary actual construction $ millions | 2009
+15 521,20;canada | utilities;actual construction $ millions | 2008
+14 025,40;canada | utilities;actual construction $ millions | 2007
+11 687,80;canada | utilities;actual construction $ millions | 2006
+39 455,40;canada | mining and oil and gas extraction;construction intentions $ millions | 2010
+35 771,00;canada | mining and oil and gas extraction;preliminary actual construction $ millions | 2009
+52 637,10;canada | mining and oil and gas extraction;actual construction $ millions | 2008
+48 316,40;canada | mining and oil and gas extraction;actual construction $ millions | 2007
+45 800,80;canada | mining and oil and gas extraction;actual construction $ millions | 2006
+1 745,80;canada | agriculture, forestry, fishing and hunting;construction intentions $ millions | 2010
+1 743,40;canada | agriculture, forestry, fishing and hunting;preliminary actual construction $ millions | 2009
+1 860,00;canada | agriculture, forestry, fishing and hunting;actual construction $ millions | 2008
+1 832,10;canada | agriculture, forestry, fishing and hunting;actual construction $ millions | 2007
+1 228,50;canada | agriculture, forestry, fishing and hunting;actual construction $ millions | 2006
+222 386,40;canada;construction intentions $ millions | 2010
+211 605,00;canada;preliminary actual construction $ millions | 2009
+235 282,20;canada;actual construction $ millions | 2008
+214 226,80;canada;actual construction $ millions | 2007
+195 762,90;canada;actual construction $ millions | 2006

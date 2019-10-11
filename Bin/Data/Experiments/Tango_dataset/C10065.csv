@@ -1,0 +1,146 @@
+DATA;RowHeading1;ColumnHeading
+65,151;equity | retained earnings;2009 balance sheet $ millions
+60,211;equity | retained earnings;2008 balance sheet $ millions
+58,482;equity | retained earnings;2007 balance sheet $ millions
+51,655;equity | retained earnings;2006 balance sheet $ millions
+45,971;equity | retained earnings;2005 balance sheet $ millions
+20,711;equity | contributed surplus and other;2009 balance sheet $ millions
+20,397;equity | contributed surplus and other;2008 balance sheet $ millions
+20,456;equity | contributed surplus and other;2007 balance sheet $ millions
+19,674;equity | contributed surplus and other;2006 balance sheet $ millions
+18,775;equity | contributed surplus and other;2005 balance sheet $ millions
+56,152;equity | share capital;2009 balance sheet $ millions
+54,006;equity | share capital;2008 balance sheet $ millions
+53,559;equity | share capital;2007 balance sheet $ millions
+49,523;equity | share capital;2006 balance sheet $ millions
+49,301;equity | share capital;2005 balance sheet $ millions
+142,014;equity;2009 balance sheet $ millions
+134,615;equity;2008 balance sheet $ millions
+132,498;equity;2007 balance sheet $ millions
+120,851;equity;2006 balance sheet $ millions
+114,047;equity;2005 balance sheet $ millions
+25,724;liabilities | other liabilities;2009 balance sheet $ millions
+23,775;liabilities | other liabilities;2008 balance sheet $ millions
+23,922;liabilities | other liabilities;2007 balance sheet $ millions
+22,956;liabilities | other liabilities;2006 balance sheet $ millions
+19,890;liabilities | other liabilities;2005 balance sheet $ millions
+0;liabilities | bank customers' liabilities under acceptances;2009 balance sheet $ millions
+0;liabilities | bank customers' liabilities under acceptances;2008 balance sheet $ millions
+0;liabilities | bank customers' liabilities under acceptances;2007 balance sheet $ millions
+0;liabilities | bank customers' liabilities under acceptances;2006 balance sheet $ millions
+0;liabilities | bank customers' liabilities under acceptances;2005 balance sheet $ millions
+4,806;liabilities | future income tax;2009 balance sheet $ millions
+4,569;liabilities | future income tax;2008 balance sheet $ millions
+4,837;liabilities | future income tax;2007 balance sheet $ millions
+4,637;liabilities | future income tax;2006 balance sheet $ millions
+4,707;liabilities | future income tax;2005 balance sheet $ millions
+2,425;liabilities | borrowings | mortgages;2009 balance sheet $ millions
+2,326;liabilities | borrowings | mortgages;2008 balance sheet $ millions
+3,395;liabilities | borrowings | mortgages;2007 balance sheet $ millions
+4,413;liabilities | borrowings | mortgages;2006 balance sheet $ millions
+2,788;liabilities | borrowings | mortgages;2005 balance sheet $ millions
+4,975;liabilities | borrowings | bonds and debentures;2009 balance sheet $ millions
+4,169;liabilities | borrowings | bonds and debentures;2008 balance sheet $ millions
+4,265;liabilities | borrowings | bonds and debentures;2007 balance sheet $ millions
+4,734;liabilities | borrowings | bonds and debentures;2006 balance sheet $ millions
+5,778;liabilities | borrowings | bonds and debentures;2005 balance sheet $ millions
+853;liabilities | borrowings | bankers' acceptances and paper;2009 balance sheet $ millions
+1,208;liabilities | borrowings | bankers' acceptances and paper;2008 balance sheet $ millions
+881;liabilities | borrowings | bankers' acceptances and paper;2007 balance sheet $ millions
+830;liabilities | borrowings | bankers' acceptances and paper;2006 balance sheet $ millions
+1,220;liabilities | borrowings | bankers' acceptances and paper;2005 balance sheet $ millions
+24,728;liabilities | borrowings | loans and other borrowings;2009 balance sheet $ millions
+25,777;liabilities | borrowings | loans and other borrowings;2008 balance sheet $ millions
+24,625;liabilities | borrowings | loans and other borrowings;2007 balance sheet $ millions
+18,841;liabilities | borrowings | loans and other borrowings;2006 balance sheet $ millions
+16,459;liabilities | borrowings | loans and other borrowings;2005 balance sheet $ millions
+32,981;liabilities | borrowings;2009 balance sheet $ millions
+33,481;liabilities | borrowings;2008 balance sheet $ millions
+33,166;liabilities | borrowings;2007 balance sheet $ millions
+28,818;liabilities | borrowings;2006 balance sheet $ millions
+26,245;liabilities | borrowings;2005 balance sheet $ millions
+55,214;liabilities | loans and accounts with affiliates;2009 balance sheet $ millions
+53,692;liabilities | loans and accounts with affiliates;2008 balance sheet $ millions
+54,888;liabilities | loans and accounts with affiliates;2007 balance sheet $ millions
+50,261;liabilities | loans and accounts with affiliates;2006 balance sheet $ millions
+48,324;liabilities | loans and accounts with affiliates;2005 balance sheet $ millions
+31,876;liabilities | accounts payable and accrued liabilities;2009 balance sheet $ millions
+30,291;liabilities | accounts payable and accrued liabilities;2008 balance sheet $ millions
+40,677;liabilities | accounts payable and accrued liabilities;2007 balance sheet $ millions
+37,012;liabilities | accounts payable and accrued liabilities;2006 balance sheet $ millions
+29,850;liabilities | accounts payable and accrued liabilities;2005 balance sheet $ millions
+0;liabilities | actuarial liabilities of insurers;2009 balance sheet $ millions
+0;liabilities | actuarial liabilities of insurers;2008 balance sheet $ millions
+0;liabilities | actuarial liabilities of insurers;2007 balance sheet $ millions
+0;liabilities | actuarial liabilities of insurers;2006 balance sheet $ millions
+0;liabilities | actuarial liabilities of insurers;2005 balance sheet $ millions
+0;liabilities | deposits;2009 balance sheet $ millions
+24;liabilities | deposits;2008 balance sheet $ millions
+27;liabilities | deposits;2007 balance sheet $ millions
+36;liabilities | deposits;2006 balance sheet $ millions
+0;liabilities | deposits;2005 balance sheet $ millions
+150,601;liabilities;2009 balance sheet $ millions
+145,833;liabilities;2008 balance sheet $ millions
+157,517;liabilities;2007 balance sheet $ millions
+143,720;liabilities;2006 balance sheet $ millions
+129,015;liabilities;2005 balance sheet $ millions
+28,219;assets | other assets;2009 balance sheet $ millions
+24,425;assets | other assets;2008 balance sheet $ millions
+20,453;assets | other assets;2007 balance sheet $ millions
+14,484;assets | other assets;2006 balance sheet $ millions
+14,568;assets | other assets;2005 balance sheet $ millions
+21,954;assets | net capital assets;2009 balance sheet $ millions
+19,834;assets | net capital assets;2008 balance sheet $ millions
+20,133;assets | net capital assets;2007 balance sheet $ millions
+19,681;assets | net capital assets;2006 balance sheet $ millions
+19,989;assets | net capital assets;2005 balance sheet $ millions
+0;assets | bank customers' liabilities under acceptances;2009 balance sheet $ millions
+0;assets | bank customers' liabilities under acceptances;2008 balance sheet $ millions
+0;assets | bank customers' liabilities under acceptances;2007 balance sheet $ millions
+0;assets | bank customers' liabilities under acceptances;2006 balance sheet $ millions
+0;assets | bank customers' liabilities under acceptances;2005 balance sheet $ millions
+-209;assets | allowance for losses on investments and loans;2009 balance sheet $ millions
+-208;assets | allowance for losses on investments and loans;2008 balance sheet $ millions
+-215;assets | allowance for losses on investments and loans;2007 balance sheet $ millions
+-208;assets | allowance for losses on investments and loans;2006 balance sheet $ millions
+-202;assets | allowance for losses on investments and loans;2005 balance sheet $ millions
+7,351;assets | loans | non-mortgage;2009 balance sheet $ millions
+7,585;assets | loans | non-mortgage;2008 balance sheet $ millions
+7,366;assets | loans | non-mortgage;2007 balance sheet $ millions
+6,035;assets | loans | non-mortgage;2006 balance sheet $ millions
+4,480;assets | loans | non-mortgage;2005 balance sheet $ millions
+8,690;assets | loans | mortgage;2009 balance sheet $ millions
+9,306;assets | loans | mortgage;2008 balance sheet $ millions
+6,777;assets | loans | mortgage;2007 balance sheet $ millions
+6,043;assets | loans | mortgage;2006 balance sheet $ millions
+5,726;assets | loans | mortgage;2005 balance sheet $ millions
+16,041;assets | loans;2009 balance sheet $ millions
+16,891;assets | loans;2008 balance sheet $ millions
+14,143;assets | loans;2007 balance sheet $ millions
+12,077;assets | loans;2006 balance sheet $ millions
+10,206;assets | loans;2005 balance sheet $ millions
+112,519;assets | portfolio investments;2009 balance sheet $ millions
+106,039;assets | portfolio investments;2008 balance sheet $ millions
+115,252;assets | portfolio investments;2007 balance sheet $ millions
+109,969;assets | portfolio investments;2006 balance sheet $ millions
+99,361;assets | portfolio investments;2005 balance sheet $ millions
+52,429;assets | investments and accounts with affiliates;2009 balance sheet $ millions
+56,611;assets | investments and accounts with affiliates;2008 balance sheet $ millions
+54,923;assets | investments and accounts with affiliates;2007 balance sheet $ millions
+51,294;assets | investments and accounts with affiliates;2006 balance sheet $ millions
+49,325;assets | investments and accounts with affiliates;2005 balance sheet $ millions
+34,084;assets | accounts receivable and accrued revenue;2009 balance sheet $ millions
+30,724;assets | accounts receivable and accrued revenue;2008 balance sheet $ millions
+38,744;assets | accounts receivable and accrued revenue;2007 balance sheet $ millions
+33,951;assets | accounts receivable and accrued revenue;2006 balance sheet $ millions
+28,781;assets | accounts receivable and accrued revenue;2005 balance sheet $ millions
+27,577;assets | cash and deposits;2009 balance sheet $ millions
+26,131;assets | cash and deposits;2008 balance sheet $ millions
+26,580;assets | cash and deposits;2007 balance sheet $ millions
+23,324;assets | cash and deposits;2006 balance sheet $ millions
+21,034;assets | cash and deposits;2005 balance sheet $ millions
+292,615;assets;2009 balance sheet $ millions
+280,448;assets;2008 balance sheet $ millions
+290,014;assets;2007 balance sheet $ millions
+264,572;assets;2006 balance sheet $ millions
+243,062;assets;2005 balance sheet $ millions

@@ -1,0 +1,41 @@
+DATA;RowHeading1;ColumnHeading
+24,1;2008;share of isdn channels, % 2)
+31,1;2008;subscriber lines/100 pop.
+-5,4;2008;change, %
+1 654 647;2008;subscriber lines
+25,8;2007;share of isdn channels, % 2)
+33,0;2007;subscriber lines/100 pop.
+-9,2;2007;change, %
+1 749 858;2007;subscriber lines
+24,9;2006;share of isdn channels, % 2)
+36,5;2006;subscriber lines/100 pop.
+-9,9;2006;change, %
+1 927 813;2006;subscriber lines
+25,6;2005;share of isdn channels, % 2)
+40,7;2005;subscriber lines/100 pop.
+-10,5;2005;change, %
+2 139 713;2005;subscriber lines
+28,4;2004;share of isdn channels, % 2)
+45,6;2004;subscriber lines/100 pop.
+-6,9;2004;change, %
+2 390 197;2004;subscriber lines
+30,9;2003;share of isdn channels, % 2)
+49,2;2003;subscriber lines/100 pop.
+-5,8;2003;change, %
+2 567 592;2003;subscriber lines
+26,1;2002;share of isdn channels, % 2)
+52,4;2002;subscriber lines/100 pop.
+-2,9;2002;change, %
+2 725 607;2002;subscriber lines
+23,3;2001;share of isdn channels, % 2)
+54,0;2001;subscriber lines/100 pop.
+-1,5;2001;change, %
+2 806 172;2001;subscriber lines
+21,6;2000;share of isdn channels, % 2)
+55,0;2000;subscriber lines/100 pop.
+2 848 809;2000;subscriber lines
+0,8;1995;share of isdn channels, % 2)
+54,7;1995;subscriber lines/100 pop.
+2 799 379;1995;subscriber lines
+53,4;1990;subscriber lines/100 pop.
+2 669 697;1990;subscriber lines

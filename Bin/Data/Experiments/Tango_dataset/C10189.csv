@@ -1,0 +1,163 @@
+DATA;RowHeading1;ColumnHeading
+42 146;income subject to state taxation;disposable income - euro | all households
+201 120;income subject to state taxation;disposable income - euro | 100000 -
+109 382;income subject to state taxation;disposable income - euro | 80000 -99999
+84 495;income subject to state taxation;disposable income - euro | 60000 -79999
+66 123;income subject to state taxation;disposable income - euro | 50000 -59999
+45 444;income subject to state taxation;disposable income - euro | 30000 -49999
+26 718;income subject to state taxation;disposable income - euro | 20000 -29999
+15 131;income subject to state taxation;disposable income - euro | 12000 -19999
+7 276;income subject to state taxation;disposable income - euro | 0-11999
+45 001;cash income;disposable income - euro | all households
+228 920;cash income;disposable income - euro | 100000 -
+116 642;cash income;disposable income - euro | 80000 -99999
+88 178;cash income;disposable income - euro | 60000 -79999
+68 688;cash income;disposable income - euro | 50000 -59999
+47 488;cash income;disposable income - euro | 30000 -49999
+28 283;cash income;disposable income - euro | 20000 -29999
+16 935;cash income;disposable income - euro | 12000 -19999
+9 762;cash income;disposable income - euro | 0-11999
+33 899;disposable cash income;disposable income - euro | all households
+161 545;disposable cash income;disposable income - euro | 100000 -
+80 752;disposable cash income;disposable income - euro | 80000 -99999
+62 613;disposable cash income;disposable income - euro | 60000 -79999
+50 541;disposable cash income;disposable income - euro | 50000 -59999
+36 287;disposable cash income;disposable income - euro | 30000 -49999
+22 446;disposable cash income;disposable income - euro | 20000 -29999
+14 294;disposable cash income;disposable income - euro | 12000 -19999
+8 958;disposable cash income;disposable income - euro | 0-11999
+36 786;8. disposable income (6–7);disposable income - euro | all households
+170 048;8. disposable income (6–7);disposable income - euro | 100000 -
+88 149;8. disposable income (6–7);disposable income - euro | 80000 -99999
+68 079;8. disposable income (6–7);disposable income - euro | 60000 -79999
+54 585;8. disposable income (6–7);disposable income - euro | 50000 -59999
+39 402;8. disposable income (6–7);disposable income - euro | 30000 -49999
+24 698;8. disposable income (6–7);disposable income - euro | 20000 -29999
+15 909;8. disposable income (6–7);disposable income - euro | 12000 -19999
+9 398;8. disposable income (6–7);disposable income - euro | 0-11999
+11 102;7. current transfers paid;disposable income - euro | all households
+67 375;7. current transfers paid;disposable income - euro | 100000 -
+35 890;7. current transfers paid;disposable income - euro | 80000 -99999
+25 565;7. current transfers paid;disposable income - euro | 60000 -79999
+18 147;7. current transfers paid;disposable income - euro | 50000 -59999
+11 200;7. current transfers paid;disposable income - euro | 30000 -49999
+5 837;7. current transfers paid;disposable income - euro | 20000 -29999
+2 642;7. current transfers paid;disposable income - euro | 12000 -19999
+804;7. current transfers paid;disposable income - euro | 0-11999
+47 888;6. gross income (4+5);disposable income - euro | all households
+237 422;6. gross income (4+5);disposable income - euro | 100000 -
+124 039;6. gross income (4+5);disposable income - euro | 80000 -99999
+93 644;6. gross income (4+5);disposable income - euro | 60000 -79999
+72 732;6. gross income (4+5);disposable income - euro | 50000 -59999
+50 602;6. gross income (4+5);disposable income - euro | 30000 -49999
+30 535;6. gross income (4+5);disposable income - euro | 20000 -29999
+18 551;6. gross income (4+5);disposable income - euro | 12000 -19999
+10 200;6. gross income (4+5);disposable income - euro | 0-11999
+10 926;5. current transfers received;disposable income - euro | all households
+10 426;5. current transfers received;disposable income - euro | 100000 -
+11 597;5. current transfers received;disposable income - euro | 80000 -99999
+9 361;5. current transfers received;disposable income - euro | 60000 -79999
+9 505;5. current transfers received;disposable income - euro | 50000 -59999
+12 514;5. current transfers received;disposable income - euro | 30000 -49999
+11 453;5. current transfers received;disposable income - euro | 20000 -29999
+10 789;5. current transfers received;disposable income - euro | 12000 -19999
+7 829;5. current transfers received;disposable income - euro | 0-11999
+36 962;4. factor income (1+2+3);disposable income - euro | all households
+226 997;4. factor income (1+2+3);disposable income - euro | 100000 -
+112 442;4. factor income (1+2+3);disposable income - euro | 80000 -99999
+84 283;4. factor income (1+2+3);disposable income - euro | 60000 -79999
+63 227;4. factor income (1+2+3);disposable income - euro | 50000 -59999
+38 088;4. factor income (1+2+3);disposable income - euro | 30000 -49999
+19 082;4. factor income (1+2+3);disposable income - euro | 20000 -29999
+7 762;4. factor income (1+2+3);disposable income - euro | 12000 -19999
+2 371;4. factor income (1+2+3);disposable income - euro | 0-11999
+7 078;3. income from property;disposable income - euro | all households
+110 724;3. income from property;disposable income - euro | 100000 -
+21 400;3. income from property;disposable income - euro | 80000 -99999
+10 883;3. income from property;disposable income - euro | 60000 -79999
+7 296;3. income from property;disposable income - euro | 50000 -59999
+4 789;3. income from property;disposable income - euro | 30000 -49999
+2 956;3. income from property;disposable income - euro | 20000 -29999
+1 947;3. income from property;disposable income - euro | 12000 -19999
+524;3. income from property;disposable income - euro | 0-11999
+2 640;2. entrepreneurial income;disposable income - euro | all households
+24 357;2. entrepreneurial income;disposable income - euro | 100000 -
+12 390;2. entrepreneurial income;disposable income - euro | 80000 -99999
+6 574;2. entrepreneurial income;disposable income - euro | 60000 -79999
+4 127;2. entrepreneurial income;disposable income - euro | 50000 -59999
+2 204;2. entrepreneurial income;disposable income - euro | 30000 -49999
+827;2. entrepreneurial income;disposable income - euro | 20000 -29999
+319;2. entrepreneurial income;disposable income - euro | 12000 -19999
+139;2. entrepreneurial income;disposable income - euro | 0-11999
+27 244;1. wages and salaries;disposable income - euro | all households
+91 916;1. wages and salaries;disposable income - euro | 100000 -
+78 652;1. wages and salaries;disposable income - euro | 80000 -99999
+66 825;1. wages and salaries;disposable income - euro | 60000 -79999
+51 804;1. wages and salaries;disposable income - euro | 50000 -59999
+31 095;1. wages and salaries;disposable income - euro | 30000 -49999
+15 299;1. wages and salaries;disposable income - euro | 20000 -29999
+5 496;1. wages and salaries;disposable income - euro | 12000 -19999
+1 708;1. wages and salaries;disposable income - euro | 0-11999
+0,92;average number of economically active household members;disposable income - euro | all households
+1,66;average number of economically active household members;disposable income - euro | 100000 -
+1,84;average number of economically active household members;disposable income - euro | 80000 -99999
+1,83;average number of economically active household members;disposable income - euro | 60000 -79999
+1,68;average number of economically active household members;disposable income - euro | 50000 -59999
+1,19;average number of economically active household members;disposable income - euro | 30000 -49999
+0,64;average number of economically active household members;disposable income - euro | 20000 -29999
+0,31;average number of economically active household members;disposable income - euro | 12000 -19999
+0,10;average number of economically active household members;disposable income - euro | 0-11999
+1,48;average number of consumption units;disposable income - euro | all households
+1,91;average number of consumption units;disposable income - euro | 100000 -
+2,03;average number of consumption units;disposable income - euro | 80000 -99999
+1,99;average number of consumption units;disposable income - euro | 60000 -79999
+1,90;average number of consumption units;disposable income - euro | 50000 -59999
+1,67;average number of consumption units;disposable income - euro | 30000 -49999
+1,33;average number of consumption units;disposable income - euro | 20000 -29999
+1,10;average number of consumption units;disposable income - euro | 12000 -19999
+1,02;average number of consumption units;disposable income - euro | 0-11999
+0,44;average number of children;disposable income - euro | all households
+0,87;average number of children;disposable income - euro | 100000 -
+0,92;average number of children;disposable income - euro | 80000 -99999
+0,95;average number of children;disposable income - euro | 60000 -79999
+0,93;average number of children;disposable income - euro | 50000 -59999
+0,59;average number of children;disposable income - euro | 30000 -49999
+0,24;average number of children;disposable income - euro | 20000 -29999
+0,09;average number of children;disposable income - euro | 12000 -19999
+0,03;average number of children;disposable income - euro | 0-11999
+1,66;average number of adults;disposable income - euro | all households
+2,18;average number of adults;disposable income - euro | 100000 -
+2,38;average number of adults;disposable income - euro | 80000 -99999
+2,31;average number of adults;disposable income - euro | 60000 -79999
+2,15;average number of adults;disposable income - euro | 50000 -59999
+1,93;average number of adults;disposable income - euro | 30000 -49999
+1,50;average number of adults;disposable income - euro | 20000 -29999
+1,13;average number of adults;disposable income - euro | 12000 -19999
+1,02;average number of adults;disposable income - euro | 0-11999
+2,10;average size of households;disposable income - euro | all households
+3,05;average size of households;disposable income - euro | 100000 -
+3,30;average size of households;disposable income - euro | 80000 -99999
+3,25;average size of households;disposable income - euro | 60000 -79999
+3,08;average size of households;disposable income - euro | 50000 -59999
+2,52;average size of households;disposable income - euro | 30000 -49999
+1,74;average size of households;disposable income - euro | 20000 -29999
+1,22;average size of households;disposable income - euro | 12000 -19999
+1,05;average size of households;disposable income - euro | 0-11999
+2 483,5;number of households in population, 1000;disposable income - euro | all households
+59,3;number of households in population, 1000;disposable income - euro | 100000 -
+59,0;number of households in population, 1000;disposable income - euro | 80000 -99999
+198,3;number of households in population, 1000;disposable income - euro | 60000 -79999
+216,8;number of households in population, 1000;disposable income - euro | 50000 -59999
+711,1;number of households in population, 1000;disposable income - euro | 30000 -49999
+514,6;number of households in population, 1000;disposable income - euro | 20000 -29999
+490,4;number of households in population, 1000;disposable income - euro | 12000 -19999
+233,9;number of households in population, 1000;disposable income - euro | 0-11999
+10 472;number of households interviewed;disposable income - euro | all households
+480;number of households interviewed;disposable income - euro | 100000 -
+509;number of households interviewed;disposable income - euro | 80000 -99999
+1 397;number of households interviewed;disposable income - euro | 60000 -79999
+1 213;number of households interviewed;disposable income - euro | 50000 -59999
+3 248;number of households interviewed;disposable income - euro | 30000 -49999
+1 731;number of households interviewed;disposable income - euro | 20000 -29999
+1 225;number of households interviewed;disposable income - euro | 12000 -19999
+669;number of households interviewed;disposable income - euro | 0-11999

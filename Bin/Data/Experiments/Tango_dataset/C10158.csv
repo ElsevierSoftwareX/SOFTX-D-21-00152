@@ -1,0 +1,157 @@
+DATA;RowHeading1;ColumnHeading
+100.0;net worth (assets less debts);2005 | % holding assets and debts
+13,342;net worth (assets less debts);2005 | number of family units (thousands)
+148,350;net worth (assets less debts);2005 | median amount in 2005 constant dollars
+99.9;net worth (assets less debts);1999 | % holding assets and debts
+12,209;net worth (assets less debts);1999 | number of family units (thousands)
+120,451;net worth (assets less debts);1999 | median amount in 2005 constant dollars
+14.1;debts | other debt;2005 | % holding assets and debts
+1,878;debts | other debt;2005 | number of family units (thousands)
+6,000;debts | other debt;2005 | median amount in 2005 constant dollars
+16.2;debts | other debt;1999 | % holding assets and debts
+1,983;debts | other debt;1999 | number of family units (thousands)
+4,608;debts | other debt;1999 | median amount in 2005 constant dollars
+25.8;debts | vehicle loans;2005 | % holding assets and debts
+3,449;debts | vehicle loans;2005 | number of family units (thousands)
+11,000;debts | vehicle loans;2005 | median amount in 2005 constant dollars
+20.8;debts | vehicle loans;1999 | % holding assets and debts
+2,541;debts | vehicle loans;1999 | number of family units (thousands)
+10,368;debts | vehicle loans;1999 | median amount in 2005 constant dollars
+11.8;debts | student loans;2005 | % holding assets and debts
+1,574;debts | student loans;2005 | number of family units (thousands)
+9,000;debts | student loans;2005 | median amount in 2005 constant dollars
+11.7;debts | student loans;1999 | % holding assets and debts
+1,435;debts | student loans;1999 | number of family units (thousands)
+8,295;debts | student loans;1999 | median amount in 2005 constant dollars
+39.3;debts | credit card and installment debt;2005 | % holding assets and debts
+5,252;debts | credit card and installment debt;2005 | number of family units (thousands)
+2,400;debts | credit card and installment debt;2005 | median amount in 2005 constant dollars
+38.0;debts | credit card and installment debt;1999 | % holding assets and debts
+4,648;debts | credit card and installment debt;1999 | number of family units (thousands)
+2,074;debts | credit card and installment debt;1999 | median amount in 2005 constant dollars
+24.9;debts | line of credit;2005 | % holding assets and debts
+3,323;debts | line of credit;2005 | number of family units (thousands)
+9,000;debts | line of credit;2005 | median amount in 2005 constant dollars
+15.4;debts | line of credit;1999 | % holding assets and debts
+1,880;debts | line of credit;1999 | number of family units (thousands)
+5,760;debts | line of credit;1999 | median amount in 2005 constant dollars
+4.7;debts | mortgages | other real estate;2005 | % holding assets and debts
+624;debts | mortgages | other real estate;2005 | number of family units (thousands)
+90,000;debts | mortgages | other real estate;2005 | median amount in 2005 constant dollars
+4.6;debts | mortgages | other real estate;1999 | % holding assets and debts
+563;debts | mortgages | other real estate;1999 | number of family units (thousands)
+69,122;debts | mortgages | other real estate;1999 | median amount in 2005 constant dollars
+34.1;debts | mortgages | principal residence;2005 | % holding assets and debts
+4,557;debts | mortgages | principal residence;2005 | number of family units (thousands)
+90,000;debts | mortgages | principal residence;2005 | median amount in 2005 constant dollars
+32.0;debts | mortgages | principal residence;1999 | % holding assets and debts
+3,908;debts | mortgages | principal residence;1999 | number of family units (thousands)
+76,610;debts | mortgages | principal residence;1999 | median amount in 2005 constant dollars
+36.5;debts | mortgages;2005 | % holding assets and debts
+4,870;debts | mortgages;2005 | number of family units (thousands)
+93,000;debts | mortgages;2005 | median amount in 2005 constant dollars
+34.3;debts | mortgages;1999 | % holding assets and debts
+4,191;debts | mortgages;1999 | number of family units (thousands)
+79,490;debts | mortgages;1999 | median amount in 2005 constant dollars
+69.4;debts;2005 | % holding assets and debts
+9,263;debts;2005 | number of family units (thousands)
+44,500;debts;2005 | median amount in 2005 constant dollars
+67.3;debts;1999 | % holding assets and debts
+8,215;debts;1999 | number of family units (thousands)
+32,257;debts;1999 | median amount in 2005 constant dollars
+16.6;assets | equity in business;2005 | % holding assets and debts
+2,221;assets | equity in business;2005 | number of family units (thousands)
+15,794;assets | equity in business;2005 | median amount in 2005 constant dollars
+19.0;assets | equity in business;1999 | % holding assets and debts
+2,325;assets | equity in business;1999 | number of family units (thousands)
+10,368;assets | equity in business;1999 | median amount in 2005 constant dollars
+100.0;assets | non-financial assets | other non-financial assets;2005 | % holding assets and debts
+13,348;assets | non-financial assets | other non-financial assets;2005 | number of family units (thousands)
+10,000;assets | non-financial assets | other non-financial assets;2005 | median amount in 2005 constant dollars
+100.0;assets | non-financial assets | other non-financial assets;1999 | % holding assets and debts
+12,216;assets | non-financial assets | other non-financial assets;1999 | number of family units (thousands)
+11,520;assets | non-financial assets | other non-financial assets;1999 | median amount in 2005 constant dollars
+75.4;assets | non-financial assets | vehicles;2005 | % holding assets and debts
+10,062;assets | non-financial assets | vehicles;2005 | number of family units (thousands)
+11,557;assets | non-financial assets | vehicles;2005 | median amount in 2005 constant dollars
+76.5;assets | non-financial assets | vehicles;1999 | % holding assets and debts
+9,346;assets | non-financial assets | vehicles;1999 | number of family units (thousands)
+10,368;assets | non-financial assets | vehicles;1999 | median amount in 2005 constant dollars
+16.1;assets | non-financial assets | other real estate;2005 | % holding assets and debts
+2,142;assets | non-financial assets | other real estate;2005 | number of family units (thousands)
+85,000;assets | non-financial assets | other real estate;2005 | median amount in 2005 constant dollars
+16.3;assets | non-financial assets | other real estate;1999 | % holding assets and debts
+1,987;assets | non-financial assets | other real estate;1999 | number of family units (thousands)
+72,578;assets | non-financial assets | other real estate;1999 | median amount in 2005 constant dollars
+61.9;assets | non-financial assets | principal residence;2005 | % holding assets and debts
+8,265;assets | non-financial assets | principal residence;2005 | number of family units (thousands)
+180,000;assets | non-financial assets | principal residence;2005 | median amount in 2005 constant dollars
+59.6;assets | non-financial assets | principal residence;1999 | % holding assets and debts
+7,278;assets | non-financial assets | principal residence;1999 | number of family units (thousands)
+144,005;assets | non-financial assets | principal residence;1999 | median amount in 2005 constant dollars
+100.0;assets | non-financial assets;2005 | % holding assets and debts
+13,348;assets | non-financial assets;2005 | number of family units (thousands)
+141,700;assets | non-financial assets;2005 | median amount in 2005 constant dollars
+100.0;assets | non-financial assets;1999 | % holding assets and debts
+12,216;assets | non-financial assets;1999 | number of family units (thousands)
+115,204;assets | non-financial assets;1999 | median amount in 2005 constant dollars
+17.5;assets | financial assets, non pension | other financial assets;2005 | % holding assets and debts
+2,329;assets | financial assets, non pension | other financial assets;2005 | number of family units (thousands)
+6,000;assets | financial assets, non pension | other financial assets;2005 | median amount in 2005 constant dollars
+13.2;assets | financial assets, non pension | other financial assets;1999 | % holding assets and debts
+1,615;assets | financial assets, non pension | other financial assets;1999 | number of family units (thousands)
+5,530;assets | financial assets, non pension | other financial assets;1999 | median amount in 2005 constant dollars
+10.4;assets | financial assets, non pension | bonds (savings and other);2005 | % holding assets and debts
+1,394;assets | financial assets, non pension | bonds (savings and other);2005 | number of family units (thousands)
+2,500;assets | financial assets, non pension | bonds (savings and other);2005 | median amount in 2005 constant dollars
+14.0;assets | financial assets, non pension | bonds (savings and other);1999 | % holding assets and debts
+1,715;assets | financial assets, non pension | bonds (savings and other);1999 | number of family units (thousands)
+2,880;assets | financial assets, non pension | bonds (savings and other);1999 | median amount in 2005 constant dollars
+9.9;assets | financial assets, non pension | stocks;2005 | % holding assets and debts
+1,321;assets | financial assets, non pension | stocks;2005 | number of family units (thousands)
+11,500;assets | financial assets, non pension | stocks;2005 | median amount in 2005 constant dollars
+9.9;assets | financial assets, non pension | stocks;1999 | % holding assets and debts
+1,207;assets | financial assets, non pension | stocks;1999 | number of family units (thousands)
+10,368;assets | financial assets, non pension | stocks;1999 | median amount in 2005 constant dollars
+12.3;assets | financial assets, non pension | mutual funds, investment funds and income trusts;2005 | % holding assets and debts
+1,641;assets | financial assets, non pension | mutual funds, investment funds and income trusts;2005 | number of family units (thousands)
+24,200;assets | financial assets, non pension | mutual funds, investment funds and income trusts;2005 | median amount in 2005 constant dollars
+14.0;assets | financial assets, non pension | mutual funds, investment funds and income trusts;1999 | % holding assets and debts
+1,706;assets | financial assets, non pension | mutual funds, investment funds and income trusts;1999 | number of family units (thousands)
+14,976;assets | financial assets, non pension | mutual funds, investment funds and income trusts;1999 | median amount in 2005 constant dollars
+87.0;assets | financial assets, non pension | deposits in financial institutions;2005 | % holding assets and debts
+11,613;assets | financial assets, non pension | deposits in financial institutions;2005 | number of family units (thousands)
+3,600;assets | financial assets, non pension | deposits in financial institutions;2005 | median amount in 2005 constant dollars
+87.5;assets | financial assets, non pension | deposits in financial institutions;1999 | % holding assets and debts
+10,685;assets | financial assets, non pension | deposits in financial institutions;1999 | number of family units (thousands)
+2,880;assets | financial assets, non pension | deposits in financial institutions;1999 | median amount in 2005 constant dollars
+89.4;assets | financial assets, non pension;2005 | % holding assets and debts
+11,932;assets | financial assets, non pension;2005 | number of family units (thousands)
+6,100;assets | financial assets, non pension;2005 | median amount in 2005 constant dollars
+89.8;assets | financial assets, non pension;1999 | % holding assets and debts
+10,965;assets | financial assets, non pension;1999 | number of family units (thousands)
+5,299;assets | financial assets, non pension;1999 | median amount in 2005 constant dollars
+48.6;assets | private pension assets | epps;2005 | % holding assets and debts
+6,490;assets | private pension assets | epps;2005 | number of family units (thousands)
+68,305;assets | private pension assets | epps;2005 | median amount in 2005 constant dollars
+45.9;assets | private pension assets | epps;1999 | % holding assets and debts
+5,611;assets | private pension assets | epps;1999 | number of family units (thousands)
+56,214;assets | private pension assets | epps;1999 | median amount in 2005 constant dollars
+58.0;assets | private pension assets | rrsps, liras, rrifs and other;2005 | % holding assets and debts
+7,748;assets | private pension assets | rrsps, liras, rrifs and other;2005 | number of family units (thousands)
+30,000;assets | private pension assets | rrsps, liras, rrifs and other;2005 | median amount in 2005 constant dollars
+58.9;assets | private pension assets | rrsps, liras, rrifs and other;1999 | % holding assets and debts
+7,197;assets | private pension assets | rrsps, liras, rrifs and other;1999 | number of family units (thousands)
+23,041;assets | private pension assets | rrsps, liras, rrifs and other;1999 | median amount in 2005 constant dollars
+70.6;assets | private pension assets;2005 | % holding assets and debts
+9,417;assets | private pension assets;2005 | number of family units (thousands)
+68,020;assets | private pension assets;2005 | median amount in 2005 constant dollars
+69.7;assets | private pension assets;1999 | % holding assets and debts
+8,511;assets | private pension assets;1999 | number of family units (thousands)
+57,602;assets | private pension assets;1999 | median amount in 2005 constant dollars
+100.0;assets;2005 | % holding assets and debts
+13,348;assets;2005 | number of family units (thousands)
+229,930;assets;2005 | median amount in 2005 constant dollars
+100.0;assets;1999 | % holding assets and debts
+12,216;assets;1999 | number of family units (thousands)
+184,622;assets;1999 | median amount in 2005 constant dollars

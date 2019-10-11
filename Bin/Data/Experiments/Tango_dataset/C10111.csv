@@ -1,0 +1,88 @@
+DATA;RowHeading1;ColumnHeading
+0,20;total factor productivity, of which r&d capital contribution;2005-2008
+0,24;total factor productivity, of which r&d capital contribution;2000-2004
+1,3;total factor productivity;2005-2008
+1,4;total factor productivity;2000-2004
+1,6;total factor productivity;1995-1999
+1,3;total factor productivity;1990-1994
+1,6;total factor productivity;1976-1989
+0,53;contribution of capital input | …other capital;2005-2008
+0,46;contribution of capital input | …other capital;2000-2004
+0,39;contribution of capital input | …other capital;1995-1999
+0,26;contribution of capital input | …other capital;1990-1994
+0,58;contribution of capital input | …other capital;1976-1989
+0,06;contribution of capital input | …other machinery and equipment;2005-2008
+0,14;contribution of capital input | …other machinery and equipment;2000-2004
+-0,01;contribution of capital input | …other machinery and equipment;1995-1999
+-0,08;contribution of capital input | …other machinery and equipment;1990-1994
+0,41;contribution of capital input | …other machinery and equipment;1976-1989
+0,13;contribution of capital input | …ict capital | - software;2005-2008
+0,22;contribution of capital input | …ict capital | - software;2000-2004
+0,13;contribution of capital input | …ict capital | - software;1995-1999
+0,10;contribution of capital input | …ict capital | - software;1990-1994
+0,09;contribution of capital input | …ict capital | - software;1976-1989
+0,11;contribution of capital input | …ict capital | - communication equipment;2005-2008
+0,06;contribution of capital input | …ict capital | - communication equipment;2000-2004
+0,08;contribution of capital input | …ict capital | - communication equipment;1995-1999
+0,02;contribution of capital input | …ict capital | - communication equipment;1990-1994
+0,01;contribution of capital input | …ict capital | - communication equipment;1976-1989
+0,04;contribution of capital input | …ict capital | - computers;2005-2008
+0,03;contribution of capital input | …ict capital | - computers;2000-2004
+0,27;contribution of capital input | …ict capital | - computers;1995-1999
+0,13;contribution of capital input | …ict capital | - computers;1990-1994
+0,02;contribution of capital input | …ict capital | - computers;1976-1989
+0,28;contribution of capital input | …ict capital;2005-2008
+0,31;contribution of capital input | …ict capital;2000-2004
+0,48;contribution of capital input | …ict capital;1995-1999
+0,25;contribution of capital input | …ict capital;1990-1994
+0,12;contribution of capital input | …ict capital;1976-1989
+0,9;contribution of capital input;2005-2008
+0,9;contribution of capital input;2000-2004
+0,9;contribution of capital input;1995-1999
+0,4;contribution of capital input;1990-1994
+1,1;contribution of capital input;1976-1989
+0,1;contribution of labour input | …labour composition;2005-2008
+0,2;contribution of labour input | …labour composition;2000-2004
+0,2;contribution of labour input | …labour composition;1995-1999
+0,8;contribution of labour input | …labour composition;1990-1994
+0,5;contribution of labour input | …labour composition;1976-1989
+0,9;contribution of labour input | ...hours worked;2005-2008
+0,3;contribution of labour input | ...hours worked;2000-2004
+0,9;contribution of labour input | ...hours worked;1995-1999
+-3,4;contribution of labour input | ...hours worked;1990-1994
+0,1;contribution of labour input | ...hours worked;1976-1989
+1,0;contribution of labour input;2005-2008
+0,5;contribution of labour input;2000-2004
+1,1;contribution of labour input;1995-1999
+-2,6;contribution of labour input;1990-1994
+0,5;contribution of labour input;1976-1989
+2,4;change in capital input;2005-2008
+2,4;change in capital input;2000-2004
+2,2;change in capital input;1995-1999
+1,5;change in capital input;1990-1994
+3,7;change in capital input;1976-1989
+1,8;labour productivity;2005-2008
+2,4;labour productivity;2000-2004
+1,5;labour productivity;1995-1999
+3,6;labour productivity;1990-1994
+3,2;labour productivity;1976-1989
+0,2;change in labour input | …labour composition;2005-2008
+0,3;change in labour input | …labour composition;2000-2004
+0,3;change in labour input | …labour composition;1995-1999
+1,1;change in labour input | …labour composition;1990-1994
+0,6;change in labour input | …labour composition;1976-1989
+1,4;change in labour input | ...hours worked;2005-2008
+0,5;change in labour input | ...hours worked;2000-2004
+2,0;change in labour input | ...hours worked;1995-1999
+-4,5;change in labour input | ...hours worked;1990-1994
+0,1;change in labour input | ...hours worked;1976-1989
+1,6;change in labour input;2005-2008
+0,8;change in labour input;2000-2004
+2,3;change in labour input;1995-1999
+-3,4;change in labour input;1990-1994
+0,7;change in labour input;1976-1989
+3,2;gross domestic product;2005-2008
+2,9;gross domestic product;2000-2004
+3,5;gross domestic product;1995-1999
+-0,9;gross domestic product;1990-1994
+3,3;gross domestic product;1976-1989

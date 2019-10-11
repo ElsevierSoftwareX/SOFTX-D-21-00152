@@ -1,0 +1,83 @@
+DATA;RowHeading1;ColumnHeading
+2 148 143;pacific noncontiguous;total
+239 196;pacific noncontiguous;wind
+1 383 566;pacific noncontiguous;hydroelectric conventional
+229 886;pacific noncontiguous;geothermal
+0;pacific noncontiguous;biomass | wood and derived fuels
+126 023;pacific noncontiguous;biomass | waste | other biomass
+169 450;pacific noncontiguous;biomass | waste | msw biogenic
+170 548 489;pacific contiguous;total
+9 269 751;pacific contiguous;wind
+556 969;pacific contiguous;solar/pv
+139 744 385;pacific contiguous;hydroelectric conventional
+12 990 711;pacific contiguous;geothermal
+5 366 361;pacific contiguous;biomass | wood and derived fuels
+699 936;pacific contiguous;biomass | waste | other biomass
+359 651;pacific contiguous;biomass | waste | msw biogenic
+1 560 725;pacific contiguous;biomass | waste | landfill gas
+36 534 369;mountain;total
+4 107 679;mountain;wind
+54 824;mountain;solar/pv
+30 252 605;mountain;hydroelectric conventional
+1 416 616;mountain;geothermal
+591 526;mountain;biomass | wood and derived fuels
+51 582;mountain;biomass | waste | other biomass
+5 954;mountain;biomass | waste | msw biogenic
+53 583;mountain;biomass | waste | landfill gas
+25 793 931;west south central;total
+10 855 527;west south central;wind
+8 773 694;west south central;hydroelectric conventional
+5 669 471;west south central;biomass | wood and derived fuels
+135 809;west south central;biomass | waste | other biomass
+3 721;west south central;biomass | waste | msw biogenic
+355 710;west south central;biomass | waste | landfill gas
+17 474 436;east south central;total
+49 937;east south central;wind
+10 744 302;east south central;hydroelectric conventional
+6 510 550;east south central;biomass | wood and derived fuels
+53 460;east south central;biomass | waste | other biomass
+116 188;east south central;biomass | waste | landfill gas
+25 856 811;south atlantic;total
+167 588;south atlantic;wind
+11 085 581;south atlantic;hydroelectric conventional
+10 768 125;south atlantic;biomass | wood and derived fuels
+637 049;south atlantic;biomass | waste | other biomass
+2 606 046;south atlantic;biomass | waste | msw biogenic
+592 421;south atlantic;biomass | waste | landfill gas
+16 485 697;west north central;total
+7 535 581;west north central;wind
+7 401 115;west north central;hydroelectric conventional
+727 590;west north central;biomass | wood and derived fuels
+207 085;west north central;biomass | waste | other biomass
+358 319;west north central;biomass | waste | msw biogenic
+256 007;west north central;biomass | waste | landfill gas
+9 497 579;east north central;total
+791 181;east north central;wind
+3 800 171;east north central;hydroelectric conventional
+2 876 659;east north central;biomass | wood and derived fuels
+49 068;east north central;biomass | waste | other biomass
+257 066;east north central;biomass | waste | msw biogenic
+1 723 434;east north central;biomass | waste | landfill gas
+33 674 303;middle atlantic;total
+1 323 906;middle atlantic;wind
+27 509 447;middle atlantic;hydroelectric conventional
+1 111 828;middle atlantic;biomass | wood and derived fuels
+24 057;middle atlantic;biomass | waste | other biomass
+2 600 360;middle atlantic;biomass | waste | msw biogenic
+1 104 706;middle atlantic;biomass | waste | landfill gas
+14 733 728;new england;total
+109 582;new england;wind
+6 815 108;new england;hydroelectric conventional
+5 391 892;new england;biomass | wood and derived fuels
+78 898;new england;biomass | waste | other biomass
+1 943 271;new england;biomass | waste | msw biogenic
+394 977;new england;biomass | waste | landfill gas
+352 747 486;total;total
+34 449 927;total;wind
+611 793;total;solar/pv
+247 509 974;total;hydroelectric conventional
+14 637 213;total;geothermal
+39 014 024;total;biomass | wood and derived fuels
+2 062 966;total;biomass | waste | other biomass
+8 303 838;total;biomass | waste | msw biogenic
+6 157 750;total;biomass | waste | landfill gas

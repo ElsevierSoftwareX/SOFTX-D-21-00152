@@ -1,0 +1,91 @@
+DATA;RowHeading1;ColumnHeading
+2,9;canada | canada except quebec;french | regularly %
+2,1;canada | canada except quebec;french | most often %
+5;canada | canada except quebec;french | total %
+1,7;canada | canada except quebec;english | regularly %
+96,7;canada | canada except quebec;english | most often %
+98,4;canada | canada except quebec;english | total %
+1,9;canada | nunavut;french | regularly %
+0,6;canada | nunavut;french | most often %
+2,4;canada | nunavut;french | total %
+20,5;canada | nunavut;english | regularly %
+70,7;canada | nunavut;english | most often %
+91,2;canada | nunavut;english | total %
+1,8;canada | northwest territories;french | regularly %
+0,8;canada | northwest territories;french | most often %
+2,7;canada | northwest territories;french | total %
+1,8;canada | northwest territories;english | regularly %
+97,5;canada | northwest territories;english | most often %
+99,2;canada | northwest territories;english | total %
+2,9;canada | yukon;french | regularly %
+1,1;canada | yukon;french | most often %
+4;canada | yukon;french | total %
+0,8;canada | yukon;english | regularly %
+98,5;canada | yukon;english | most often %
+99,3;canada | yukon;english | total %
+1,1;canada | british columbia;french | regularly %
+0,4;canada | british columbia;french | most often %
+1,5;canada | british columbia;french | total %
+1,5;canada | british columbia;english | regularly %
+96,5;canada | british columbia;english | most often %
+98;canada | british columbia;english | total %
+1,1;canada | alberta;french | regularly %
+0,4;canada | alberta;french | most often %
+1,5;canada | alberta;french | total %
+0,7;canada | alberta;english | regularly %
+98,6;canada | alberta;english | most often %
+99,3;canada | alberta;english | total %
+0,8;canada | saskatchewan;french | regularly %
+0,4;canada | saskatchewan;french | most often %
+1,2;canada | saskatchewan;french | total %
+0,8;canada | saskatchewan;english | regularly %
+98,6;canada | saskatchewan;english | most often %
+99,4;canada | saskatchewan;english | total %
+2,3;canada | manitoba;french | regularly %
+1,4;canada | manitoba;french | most often %
+3,6;canada | manitoba;french | total %
+1,7;canada | manitoba;english | regularly %
+97,2;canada | manitoba;english | most often %
+98,8;canada | manitoba;english | total %
+3,8;canada | ontario;french | regularly %
+2;canada | ontario;french | most often %
+5,8;canada | ontario;french | total %
+1,6;canada | ontario;english | regularly %
+97;canada | ontario;english | most often %
+98,6;canada | ontario;english | total %
+7,6;canada | quebec;french | regularly %
+86,7;canada | quebec;french | most often %
+94,3;canada | quebec;french | total %
+23,2;canada | quebec;english | regularly %
+17,1;canada | quebec;english | most often %
+40,4;canada | quebec;english | total %
+10,7;canada | new brunswick;french | regularly %
+26,8;canada | new brunswick;french | most often %
+37,5;canada | new brunswick;french | total %
+12,1;canada | new brunswick;english | regularly %
+76;canada | new brunswick;english | most often %
+88,1;canada | new brunswick;english | total %
+2,8;canada | nova scotia;french | regularly %
+1,8;canada | nova scotia;french | most often %
+4,6;canada | nova scotia;french | total %
+1,2;canada | nova scotia;english | regularly %
+98,4;canada | nova scotia;english | most often %
+99,5;canada | nova scotia;english | total %
+3,7;canada | prince edward island;french | regularly %
+1,8;canada | prince edward island;french | most often %
+5,5;canada | prince edward island;french | total %
+0,9;canada | prince edward island;english | regularly %
+98,7;canada | prince edward island;english | most often %
+99,6;canada | prince edward island;english | total %
+1;canada | newfoundland and labrador;french | regularly %
+0,4;canada | newfoundland and labrador;french | most often %
+1,5;canada | newfoundland and labrador;french | total %
+0,3;canada | newfoundland and labrador;english | regularly %
+99,5;canada | newfoundland and labrador;english | most often %
+99,8;canada | newfoundland and labrador;english | total %
+4;canada;french | regularly %
+21,7;canada;french | most often %
+25,7;canada;french | total %
+6,7;canada;english | regularly %
+78,3;canada;english | most often %
+85;canada;english | total %

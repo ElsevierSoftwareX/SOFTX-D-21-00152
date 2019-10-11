@@ -1,0 +1,76 @@
+DATA;RowHeading1;ColumnHeading
+25;services, total | 500 -;all elements 1) %
+79;services, total | 500 -;innovation activity, broadly defined %
+67;services, total | 500 -;marketing or organisational innovations %
+34;services, total | 500 -;marketing innovations %
+59;services, total | 500 -;organisational innovations %
+18;services, total | 250 - 499;all elements 1) %
+66;services, total | 250 - 499;innovation activity, broadly defined %
+54;services, total | 250 - 499;marketing or organisational innovations %
+36;services, total | 250 - 499;marketing innovations %
+45;services, total | 250 - 499;organisational innovations %
+11;services, total | 100 - 249;all elements 1) %
+73;services, total | 100 - 249;innovation activity, broadly defined %
+56;services, total | 100 - 249;marketing or organisational innovations %
+31;services, total | 100 - 249;marketing innovations %
+51;services, total | 100 - 249;organisational innovations %
+3;services, total | 50 - 99;all elements 1) %
+48;services, total | 50 - 99;innovation activity, broadly defined %
+36;services, total | 50 - 99;marketing or organisational innovations %
+20;services, total | 50 - 99;marketing innovations %
+28;services, total | 50 - 99;organisational innovations %
+7;services, total | 20 - 49;all elements 1) %
+55;services, total | 20 - 49;innovation activity, broadly defined %
+43;services, total | 20 - 49;marketing or organisational innovations %
+25;services, total | 20 - 49;marketing innovations %
+35;services, total | 20 - 49;organisational innovations %
+5;services, total | 10 - 19;all elements 1) %
+42;services, total | 10 - 19;innovation activity, broadly defined %
+26;services, total | 10 - 19;marketing or organisational innovations %
+17;services, total | 10 - 19;marketing innovations %
+18;services, total | 10 - 19;organisational innovations %
+6;services, total;all elements 1) %
+50;services, total;innovation activity, broadly defined %
+35;services, total;marketing or organisational innovations %
+21;services, total;marketing innovations %
+28;services, total;organisational innovations %
+50;manufacturing, total | 500 -;all elements 1) %
+96;manufacturing, total | 500 -;innovation activity, broadly defined %
+83;manufacturing, total | 500 -;marketing or organisational innovations %
+64;manufacturing, total | 500 -;marketing innovations %
+79;manufacturing, total | 500 -;organisational innovations %
+24;manufacturing, total | 250 - 499;all elements 1) %
+88;manufacturing, total | 250 - 499;innovation activity, broadly defined %
+55;manufacturing, total | 250 - 499;marketing or organisational innovations %
+39;manufacturing, total | 250 - 499;marketing innovations %
+51;manufacturing, total | 250 - 499;organisational innovations %
+9;manufacturing, total | 100 - 249;all elements 1) %
+72;manufacturing, total | 100 - 249;innovation activity, broadly defined %
+47;manufacturing, total | 100 - 249;marketing or organisational innovations %
+30;manufacturing, total | 100 - 249;marketing innovations %
+37;manufacturing, total | 100 - 249;organisational innovations %
+8;manufacturing, total | 50 - 99;all elements 1) %
+64;manufacturing, total | 50 - 99;innovation activity, broadly defined %
+40;manufacturing, total | 50 - 99;marketing or organisational innovations %
+26;manufacturing, total | 50 - 99;marketing innovations %
+29;manufacturing, total | 50 - 99;organisational innovations %
+5;manufacturing, total | 20 - 49;all elements 1) %
+59;manufacturing, total | 20 - 49;innovation activity, broadly defined %
+33;manufacturing, total | 20 - 49;marketing or organisational innovations %
+23;manufacturing, total | 20 - 49;marketing innovations %
+19;manufacturing, total | 20 - 49;organisational innovations %
+4;manufacturing, total | 10 - 19;all elements 1) %
+45;manufacturing, total | 10 - 19;innovation activity, broadly defined %
+21;manufacturing, total | 10 - 19;marketing or organisational innovations %
+15;manufacturing, total | 10 - 19;marketing innovations %
+13;manufacturing, total | 10 - 19;organisational innovations %
+7;manufacturing, total;all elements 1) %
+57;manufacturing, total;innovation activity, broadly defined %
+32;manufacturing, total;marketing or organisational innovations %
+22;manufacturing, total;marketing innovations %
+22;manufacturing, total;organisational innovations %
+7;total;all elements 1) %
+54;total;innovation activity, broadly defined %
+34;total;marketing or organisational innovations %
+22;total;marketing innovations %
+25;total;organisational innovations %

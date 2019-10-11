@@ -1,0 +1,13 @@
+DATA;RowHeading1;ColumnHeading
+-3,7;sex | females;change 2010/02 - 2009/02 per cent (%)
+250;sex | females;year/month | 2009/02 1000 persons
+230;sex | females;year/month | 2010/01 1000 persons
+241;sex | females;year/month | 2010/02 1000 persons
+12,3;sex | males;change 2010/02 - 2009/02 per cent (%)
+118;sex | males;year/month | 2009/02 1000 persons
+127;sex | males;year/month | 2010/01 1000 persons
+132;sex | males;year/month | 2010/02 1000 persons
+1,4;sex | both sexes;change 2010/02 - 2009/02 per cent (%)
+368;sex | both sexes;year/month | 2009/02 1000 persons
+357;sex | both sexes;year/month | 2010/01 1000 persons
+373;sex | both sexes;year/month | 2010/02 1000 persons

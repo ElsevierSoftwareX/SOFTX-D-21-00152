@@ -1,0 +1,91 @@
+DATA;RowHeading1;ColumnHeading
+43;services, total | 500 -;all elements %
+69;services, total | 500 -;innovation activity %
+57;services, total | 500 -;innovation projects %
+66;services, total | 500 -;product or process innovations %
+56;services, total | 500 -;process innovations %
+58;services, total | 500 -;product innovations (goods and services) %
+28;services, total | 250 - 499;all elements %
+54;services, total | 250 - 499;innovation activity %
+38;services, total | 250 - 499;innovation projects %
+51;services, total | 250 - 499;product or process innovations %
+44;services, total | 250 - 499;process innovations %
+40;services, total | 250 - 499;product innovations (goods and services) %
+21;services, total | 100 - 249;all elements %
+62;services, total | 100 - 249;innovation activity %
+35;services, total | 100 - 249;innovation projects %
+59;services, total | 100 - 249;product or process innovations %
+48;services, total | 100 - 249;process innovations %
+44;services, total | 100 - 249;product innovations (goods and services) %
+6;services, total | 50 - 99;all elements %
+40;services, total | 50 - 99;innovation activity %
+20;services, total | 50 - 99;innovation projects %
+35;services, total | 50 - 99;product or process innovations %
+26;services, total | 50 - 99;process innovations %
+26;services, total | 50 - 99;product innovations (goods and services) %
+15;services, total | 20 - 49;all elements %
+48;services, total | 20 - 49;innovation activity %
+21;services, total | 20 - 49;innovation projects %
+46;services, total | 20 - 49;product or process innovations %
+39;services, total | 20 - 49;process innovations %
+36;services, total | 20 - 49;product innovations (goods and services) %
+10;services, total | 10 - 19;all elements %
+36;services, total | 10 - 19;innovation activity %
+19;services, total | 10 - 19;innovation projects %
+32;services, total | 10 - 19;product or process innovations %
+25;services, total | 10 - 19;process innovations %
+22;services, total | 10 - 19;product innovations (goods and services) %
+13;services, total;all elements %
+43;services, total;innovation activity %
+22;services, total;innovation projects %
+39;services, total;product or process innovations %
+32;services, total;process innovations %
+29;services, total;product innovations (goods and services) %
+63;manufacturing, total | 500 -;all elements %
+96;manufacturing, total | 500 -;innovation activity %
+85;manufacturing, total | 500 -;innovation projects %
+91;manufacturing, total | 500 -;product or process innovations %
+73;manufacturing, total | 500 -;process innovations %
+82;manufacturing, total | 500 -;product innovations (goods and services) %
+44;manufacturing, total | 250 - 499;all elements %
+86;manufacturing, total | 250 - 499;innovation activity %
+70;manufacturing, total | 250 - 499;innovation projects %
+80;manufacturing, total | 250 - 499;product or process innovations %
+64;manufacturing, total | 250 - 499;process innovations %
+66;manufacturing, total | 250 - 499;product innovations (goods and services) %
+26;manufacturing, total | 100 - 249;all elements %
+68;manufacturing, total | 100 - 249;innovation activity %
+42;manufacturing, total | 100 - 249;innovation projects %
+63;manufacturing, total | 100 - 249;product or process innovations %
+51;manufacturing, total | 100 - 249;process innovations %
+50;manufacturing, total | 100 - 249;product innovations (goods and services) %
+14;manufacturing, total | 50 - 99;all elements %
+60;manufacturing, total | 50 - 99;innovation activity %
+32;manufacturing, total | 50 - 99;innovation projects %
+54;manufacturing, total | 50 - 99;product or process innovations %
+41;manufacturing, total | 50 - 99;process innovations %
+39;manufacturing, total | 50 - 99;product innovations (goods and services) %
+15;manufacturing, total | 20 - 49;all elements %
+54;manufacturing, total | 20 - 49;innovation activity %
+32;manufacturing, total | 20 - 49;innovation projects %
+50;manufacturing, total | 20 - 49;product or process innovations %
+39;manufacturing, total | 20 - 49;process innovations %
+33;manufacturing, total | 20 - 49;product innovations (goods and services) %
+10;manufacturing, total | 10 - 19;all elements %
+43;manufacturing, total | 10 - 19;innovation activity %
+19;manufacturing, total | 10 - 19;innovation projects %
+40;manufacturing, total | 10 - 19;product or process innovations %
+33;manufacturing, total | 10 - 19;process innovations %
+23;manufacturing, total | 10 - 19;product innovations (goods and services) %
+16;manufacturing, total;all elements %
+54;manufacturing, total;innovation activity %
+31;manufacturing, total;innovation projects %
+50;manufacturing, total;product or process innovations %
+40;manufacturing, total;process innovations %
+34;manufacturing, total;product innovations (goods and services) %
+14;total;all elements %
+48;total;innovation activity %
+26;total;innovation projects %
+45;total;product or process innovations %
+36;total;process innovations %
+31;total;product innovations (goods and services) %

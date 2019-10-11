@@ -1,0 +1,26 @@
+DATA;RowHeading1;ColumnHeading
+78 763;total;2003
+79 279;total;2002
+79 607;total;2001
+83 674;total;2000
+64 695;total;1999
+203;other and unknown;2003
+213;other and unknown;2002
+130;other and unknown;2001
+162;other and unknown;2000
+116;other and unknown;1999
+0,2;pipeline;2003
+0,4;pipeline;2002
+0,2;pipeline;2001
+0,3;pipeline;2000
+0;pipeline;1999
+23 940;rail;2003
+23 265;rail;2002
+24 179;rail;2001
+23 465;rail;2000
+13 934;rail;1999
+54 620;truck;2003
+55 801;truck;2002
+55 298;truck;2001
+60 047;truck;2000
+50 646;truck;1999

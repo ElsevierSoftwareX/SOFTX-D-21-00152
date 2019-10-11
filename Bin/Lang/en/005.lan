@@ -1,0 +1,11 @@
+RzButton1c=Cancel
+RzButton1h=Cancel the operation
+RzButton2c=Ok
+RzButton2h=Comlete the operation
+
+GroupBox1c= Description: 
+GroupBox1h=Description of the knowledge base
+
+Label1c=Name:
+Label2c=Internal name:
+Label3c=Type:

@@ -1,0 +1,43 @@
+DATA;RowHeading1;ColumnHeading
+-77;province | oulu+lapland;change (%) 2009/iv - 2008/iv
+-1 100;province | oulu+lapland;change 2009/iv - 2008/iv
+1 400;province | oulu+lapland;year/quarter | 2008/iv
+500;province | oulu+lapland;year/quarter | 2009/i
+1 000;province | oulu+lapland;year/quarter | 2009/ii
+600;province | oulu+lapland;year/quarter | 2009/iii
+300;province | oulu+lapland;year/quarter | 2009/iv
+-60;province | eastern finland;change (%) 2009/iv - 2008/iv
+-200;province | eastern finland;change 2009/iv - 2008/iv
+300;province | eastern finland;year/quarter | 2008/iv
+1 400;province | eastern finland;year/quarter | 2009/i
+700;province | eastern finland;year/quarter | 2009/ii
+800;province | eastern finland;year/quarter | 2009/iii
+100;province | eastern finland;year/quarter | 2009/iv
+-33;province | western finland;change (%) 2009/iv - 2008/iv
+-400;province | western finland;change 2009/iv - 2008/iv
+1 300;province | western finland;year/quarter | 2008/iv
+3 200;province | western finland;year/quarter | 2009/i
+2 500;province | western finland;year/quarter | 2009/ii
+1 500;province | western finland;year/quarter | 2009/iii
+900;province | western finland;year/quarter | 2009/iv
+177;province | southern finland (excl. uusimaa);change (%) 2009/iv - 2008/iv
+800;province | southern finland (excl. uusimaa);change 2009/iv - 2008/iv
+500;province | southern finland (excl. uusimaa);year/quarter | 2008/iv
+1 200;province | southern finland (excl. uusimaa);year/quarter | 2009/i
+1 100;province | southern finland (excl. uusimaa);year/quarter | 2009/ii
+1 100;province | southern finland (excl. uusimaa);year/quarter | 2009/iii
+1 300;province | southern finland (excl. uusimaa);year/quarter | 2009/iv
+86;province | uusimaa;change (%) 2009/iv - 2008/iv
+700;province | uusimaa;change 2009/iv - 2008/iv
+800;province | uusimaa;year/quarter | 2008/iv
+3 600;province | uusimaa;year/quarter | 2009/i
+2 600;province | uusimaa;year/quarter | 2009/ii
+3 700;province | uusimaa;year/quarter | 2009/iii
+1 500;province | uusimaa;year/quarter | 2009/iv
+-5;province | total;change (%) 2009/iv - 2008/iv
+-200;province | total;change 2009/iv - 2008/iv
+4 400;province | total;year/quarter | 2008/iv
+9 900;province | total;year/quarter | 2009/i
+7 900;province | total;year/quarter | 2009/ii
+7 700;province | total;year/quarter | 2009/iii
+4 100;province | total;year/quarter | 2009/iv

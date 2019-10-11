@@ -1,0 +1,71 @@
+DATA;RowHeading1;ColumnHeading
+63;material | scrapped vehicles;health and social work
+3;material | scrapped vehicles;education
+0;material | scrapped vehicles;defence
+67;material | scrapped vehicles;public administration and compulsory  social security
+133;material | scrapped vehicles;total
+345;material | hazardous waste;health and social work
+149;material | hazardous waste;education
+2 443;material | hazardous waste;defence
+524;material | hazardous waste;public administration and compulsory  social security
+3 461;material | hazardous waste;total
+30 976;material | mixed waste;health and social work
+7 612;material | mixed waste;education
+7 860;material | mixed waste;defence
+6 999;material | mixed waste;public administration and compulsory  social security
+53 447;material | mixed waste;total
+1 194;material | other;health and social work
+92;material | other;education
+335;material | other;defence
+39;material | other;public administration and compulsory  social security
+1 660;material | other;total
+781;material | ee-waste;health and social work
+191;material | ee-waste;education
+148;material | ee-waste;defence
+351;material | ee-waste;public administration and compulsory  social security
+1 471;material | ee-waste;total
+647;material | sludge;health and social work
+309;material | sludge;education
+3;material | sludge;defence
+3;material | sludge;public administration and compulsory  social security
+962;material | sludge;total
+138;material | concrete and bricks;health and social work
+0;material | concrete and bricks;education
+72;material | concrete and bricks;defence
+72;material | concrete and bricks;public administration and compulsory  social security
+282;material | concrete and bricks;total
+2 487;material | wetorganic waste;health and social work
+737;material | wetorganic waste;education
+857;material | wetorganic waste;defence
+474;material | wetorganic waste;public administration and compulsory  social security
+4 555;material | wetorganic waste;total
+777;material | wood waste;health and social work
+100;material | wood waste;education
+1 250;material | wood waste;defence
+80;material | wood waste;public administration and compulsory  social security
+2 207;material | wood waste;total
+122;material | glas;health and social work
+563;material | glas;education
+82;material | glas;defence
+42;material | glas;public administration and compulsory  social security
+809;material | glas;total
+90;material | plastics;health and social work
+10;material | plastics;education
+41;material | plastics;defence
+47;material | plastics;public administration and compulsory  social security
+188;material | plastics;total
+676;material | metals;health and social work
+13;material | metals;education
+1 310;material | metals;defence
+38;material | metals;public administration and compulsory  social security
+2 037;material | metals;total
+6 858;material | paper, cardboard and pasteboard;health and social work
+4 155;material | paper, cardboard and pasteboard;education
+2 410;material | paper, cardboard and pasteboard;defence
+4 657;material | paper, cardboard and pasteboard;public administration and compulsory  social security
+18 080;material | paper, cardboard and pasteboard;total
+45 154;total;health and social work
+13 934;total;education
+16 811;total;defence
+13 393;total;public administration and compulsory  social security
+89 292;total;total

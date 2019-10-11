@@ -1,0 +1,28 @@
+GroupBox1c= STEP 1: Knowledge base selection: 
+GroupBox1h=
+GroupBox2c= STEP 1: Entering the conditions: 
+GroupBox2h=
+GroupBox3c= STEP 2: Generalized rule selection: 
+GroupBox3h=
+GroupBox4c= STEP 2: Entered data preview: 
+GroupBox4h=
+GroupBox5c= STEP 5: RVML - Scheme: 
+GroupBox5h=
+GroupBox6c= STEP 3: Entering the actions: 
+GroupBox6h=
+GroupBox7c= STEP 4: Entered data preview: 
+GroupBox7h=
+
+RzLabel3c=Rule:
+RzLabel6c=Rule:
+RzLabel7c=Rule:
+RzLabel11c=Rule:
+
+RzButton1c=Cancel
+RzButton1h=
+RzButton2c=Ok
+RzButton2h=Done the process
+RzButton21c=Next >>
+RzButton21h=Proceed the process
+RzButton3c=<< Back
+RzButton3h=

@@ -1,0 +1,82 @@
+DATA;RowHeading3;RowHeading2;RowHeading1;RowHeading4;ColumnHeading
+22.9;;;total u.s. merchandise trade -all ports;;percent change, 1999-2003 | imports
+4.5;;;total u.s. merchandise trade -all ports;;percent change, 1999-2003 | exports
+15.5;;;total u.s. merchandise trade -all ports;;percent change, 1999-2003 | total trade
+19.2;;;top 25 ports;;percent change, 1999-2003 | imports
+6.5;;;top 25 ports;;percent change, 1999-2003 | exports
+14.3;;;top 25 ports;;percent change, 1999-2003 | total trade
+20.2;port of otay mesa station, ca;25;24;land;percent change, 1999-2003 | imports
+33.3;port of otay mesa station, ca;25;24;land;percent change, 1999-2003 | exports
+25.3;port of otay mesa station, ca;25;24;land;percent change, 1999-2003 | total trade
+65.8;port of savannah, ga;24;30;water;percent change, 1999-2003 | imports
+45.5;port of savannah, ga;24;30;water;percent change, 1999-2003 | exports
+58.1;port of savannah, ga;24;30;water;percent change, 1999-2003 | total trade
+7.1;anchorage, ak;23;20;air;percent change, 1999-2003 | imports
+-10.5;anchorage, ak;23;20;air;percent change, 1999-2003 | exports
+2.0;anchorage, ak;23;20;air;percent change, 1999-2003 | total trade
+9.4;miami international airport, fl;22;19;air;percent change, 1999-2003 | imports
+-7.5;miami international airport, fl;22;19;air;percent change, 1999-2003 | exports
+-1.6;miami international airport, fl;22;19;air;percent change, 1999-2003 | total trade
+-33.6;port of seattle, wa;21;14;water;percent change, 1999-2003 | imports
+3.4;port of seattle, wa;21;14;water;percent change, 1999-2003 | exports
+-27.2;port of seattle, wa;21;14;water;percent change, 1999-2003 | total trade
+56.0;dallas-fort worth, tx;20;27;air;percent change, 1999-2003 | imports
+83.7;dallas-fort worth, tx;20;27;air;percent change, 1999-2003 | exports
+68.3;dallas-fort worth, tx;20;27;air;percent change, 1999-2003 | total trade
+16.7;port of oakland, ca;19;16;water;percent change, 1999-2003 | imports
+-23.1;port of oakland, ca;19;16;water;percent change, 1999-2003 | exports
+0.6;port of oakland, ca;19;16;water;percent change, 1999-2003 | total trade
+43.8;port of baltimore, md;18;21;water;percent change, 1999-2003 | imports
+7.3;port of baltimore, md;18;21;water;percent change, 1999-2003 | exports
+33.8;port of baltimore, md;18;21;water;percent change, 1999-2003 | total trade
+61.3;port of tacoma, wa;17;23;water;percent change, 1999-2003 | imports
+36.9;port of tacoma, wa;17;23;water;percent change, 1999-2003 | exports
+55.8;port of tacoma, wa;17;23;water;percent change, 1999-2003 | total trade
+6.9;new orleans, la;16;18;air;percent change, 1999-2003 | imports
+31.7;new orleans, la;16;18;air;percent change, 1999-2003 | exports
+18.0;new orleans, la;16;18;air;percent change, 1999-2003 | total trade
+38.9;port of norfolk harbor, va;15;17;water;percent change, 1999-2003 | imports
+-3.3;port of norfolk harbor, va;15;17;water;percent change, 1999-2003 | exports
+19.4;port of norfolk harbor, va;15;17;water;percent change, 1999-2003 | total trade
+18.4;port of el paso, tx;14;13;land;percent change, 1999-2003 | imports
+21.1;port of el paso, tx;14;13;land;percent change, 1999-2003 | exports
+19.5;port of el paso, tx;14;13;land;percent change, 1999-2003 | total trade
+42.1;port of charleston, sc;13;15;water;percent change, 1999-2003 | imports
+19.4;port of charleston, sc;13;15;water;percent change, 1999-2003 | exports
+33.5;port of charleston, sc;13;15;water;percent change, 1999-2003 | total trade
+-34.5;san francisco international airport, ca;12;6;air;percent change, 1999-2003 | imports
+-35.9;san francisco international airport, ca;12;6;air;percent change, 1999-2003 | exports
+-35.2;san francisco international airport, ca;12;6;air;percent change, 1999-2003 | total trade
+64.5;port of houston, tx;11;12;water;percent change, 1999-2003 | imports
+29.1;port of houston, tx;11;12;water;percent change, 1999-2003 | exports
+47.2;port of houston, tx;11;12;water;percent change, 1999-2003 | total trade
+56.9;chicago, il;10;11;air;percent change, 1999-2003 | imports
+13.8;chicago, il;10;11;air;percent change, 1999-2003 | exports
+37.2;chicago, il;10;11;air;percent change, 1999-2003 | total trade
+-10.1;port of buffalo-niagara falls, ny;9;7;land;percent change, 1999-2003 | imports
+-22.3;port of buffalo-niagara falls, ny;9;7;land;percent change, 1999-2003 | exports
+-16.1;port of buffalo-niagara falls, ny;9;7;land;percent change, 1999-2003 | total trade
+22.2;port huron, mi;8;10;land;percent change, 1999-2003 | imports
+31.2;port huron, mi;8;10;land;percent change, 1999-2003 | exports
+25.3;port huron, mi;8;10;land;percent change, 1999-2003 | total trade
+-0.2;los angeles international airport, ca;7;8;air;percent change, 1999-2003 | imports
+-9.2;los angeles international airport, ca;7;8;air;percent change, 1999-2003 | exports
+-5.0;los angeles international airport, ca;7;8;air;percent change, 1999-2003 | total trade
+32.9;port of laredo, tx;6;9;land;percent change, 1999-2003 | imports
+8.7;port of laredo, tx;6;9;land;percent change, 1999-2003 | exports
+21.7;port of laredo, tx;6;9;land;percent change, 1999-2003 | total trade
+4.7;port of long beach, ca;5;3;water;percent change, 1999-2003 | imports
+20.0;port of long beach, ca;5;3;water;percent change, 1999-2003 | exports
+7.1;port of long beach, ca;5;3;water;percent change, 1999-2003 | total trade
+41.8;port of new york and new jersey;4;5;water;percent change, 1999-2003 | imports
+35.8;port of new york and new jersey;4;5;water;percent change, 1999-2003 | exports
+40.3;port of new york and new jersey;4;5;water;percent change, 1999-2003 | total trade
+7.3;port of detroit, mi;3;2;land;percent change, 1999-2003 | imports
+12.5;port of detroit, mi;3;2;land;percent change, 1999-2003 | exports
+10.0;port of detroit, mi;3;2;land;percent change, 1999-2003 | total trade
+7.8;jfk international airport;2;1;air;percent change, 1999-2003 | imports
+5.0;jfk international airport;2;1;air;percent change, 1999-2003 | exports
+6.6;jfk international airport;2;1;air;percent change, 1999-2003 | total trade
+52.2;port of los angeles, ca;1;4;water;percent change, 1999-2003 | imports
+19.6;port of los angeles, ca;1;4;water;percent change, 1999-2003 | exports
+46.7;port of los angeles, ca;1;4;water;percent change, 1999-2003 | total trade

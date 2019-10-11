@@ -1,0 +1,61 @@
+DATA;RowHeading1;ColumnHeading
+2;total households | other dwelling | average number of persons in household;2006 | saint john (n.b.) number
+2;total households | other dwelling | average number of persons in household;2006 | moncton (n.b.) number
+2;total households | other dwelling | average number of persons in household;2006 | halifax (n.s.) number
+2,2;total households | other dwelling | average number of persons in household;2006 | st. john's (n.l.) number
+33 835;total households | other dwelling | total persons in households;2006 | saint john (n.b.) number
+33 615;total households | other dwelling | total persons in households;2006 | moncton (n.b.) number
+115 295;total households | other dwelling | total persons in households;2006 | halifax (n.s.) number
+69 390;total households | other dwelling | total persons in households;2006 | st. john's (n.l.) number
+16 615;total households | other dwelling;2006 | saint john (n.b.) number
+17 055;total households | other dwelling;2006 | moncton (n.b.) number
+56 825;total households | other dwelling;2006 | halifax (n.s.) number
+31 410;total households | other dwelling;2006 | st. john's (n.l.) number
+2,3;total households | movable dwelling | average number of persons in household;2006 | saint john (n.b.) number
+2,3;total households | movable dwelling | average number of persons in household;2006 | moncton (n.b.) number
+2,2;total households | movable dwelling | average number of persons in household;2006 | halifax (n.s.) number
+2,4;total households | movable dwelling | average number of persons in household;2006 | st. john's (n.l.) number
+3 345;total households | movable dwelling | total persons in households;2006 | saint john (n.b.) number
+5 930;total households | movable dwelling | total persons in households;2006 | moncton (n.b.) number
+7 855;total households | movable dwelling | total persons in households;2006 | halifax (n.s.) number
+705;total households | movable dwelling | total persons in households;2006 | st. john's (n.l.) number
+1 450;total households | movable dwelling;2006 | saint john (n.b.) number
+2 620;total households | movable dwelling;2006 | moncton (n.b.) number
+3 525;total households | movable dwelling;2006 | halifax (n.s.) number
+295;total households | movable dwelling;2006 | st. john's (n.l.) number
+1,4;total households | apartment, five or more storeys | average number of persons in household;2006 | saint john (n.b.) number
+1,3;total households | apartment, five or more storeys | average number of persons in household;2006 | moncton (n.b.) number
+1,6;total households | apartment, five or more storeys | average number of persons in household;2006 | halifax (n.s.) number
+1,3;total households | apartment, five or more storeys | average number of persons in household;2006 | st. john's (n.l.) number
+2 485;total households | apartment, five or more storeys | total persons in households;2006 | saint john (n.b.) number
+1 720;total households | apartment, five or more storeys | total persons in households;2006 | moncton (n.b.) number
+23 600;total households | apartment, five or more storeys | total persons in households;2006 | halifax (n.s.) number
+770;total households | apartment, five or more storeys | total persons in households;2006 | st. john's (n.l.) number
+1 720;total households | apartment, five or more storeys;2006 | saint john (n.b.) number
+1 360;total households | apartment, five or more storeys;2006 | moncton (n.b.) number
+14 785;total households | apartment, five or more storeys;2006 | halifax (n.s.) number
+595;total households | apartment, five or more storeys;2006 | st. john's (n.l.) number
+2,7;total households | single-detached house | average number of persons in household;2006 | saint john (n.b.) number
+2,7;total households | single-detached house | average number of persons in household;2006 | moncton (n.b.) number
+2,8;total households | single-detached house | average number of persons in household;2006 | halifax (n.s.) number
+2,8;total households | single-detached house | average number of persons in household;2006 | st. john's (n.l.) number
+80 520;total households | single-detached house | total persons in households;2006 | saint john (n.b.) number
+82 460;total households | single-detached house | total persons in households;2006 | moncton (n.b.) number
+221 255;total households | single-detached house | total persons in households;2006 | halifax (n.s.) number
+107 845;total households | single-detached house | total persons in households;2006 | st. john's (n.l.) number
+29 320;total households | single-detached house;2006 | saint john (n.b.) number
+30 560;total households | single-detached house;2006 | moncton (n.b.) number
+80 000;total households | single-detached house;2006 | halifax (n.s.) number
+38 360;total households | single-detached house;2006 | st. john's (n.l.) number
+2,4;total households | average number of persons in household;2006 | saint john (n.b.) number
+2,4;total households | average number of persons in household;2006 | moncton (n.b.) number
+2,4;total households | average number of persons in household;2006 | halifax (n.s.) number
+2,5;total households | average number of persons in household;2006 | st. john's (n.l.) number
+120 185;total households | total persons in households;2006 | saint john (n.b.) number
+123 720;total households | total persons in households;2006 | moncton (n.b.) number
+368 005;total households | total persons in households;2006 | halifax (n.s.) number
+178 710;total households | total persons in households;2006 | st. john's (n.l.) number
+49 105;total households;2006 | saint john (n.b.) number
+51 590;total households;2006 | moncton (n.b.) number
+155 135;total households;2006 | halifax (n.s.) number
+70 665;total households;2006 | st. john's (n.l.) number

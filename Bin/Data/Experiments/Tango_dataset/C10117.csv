@@ -1,0 +1,210 @@
+DATA;RowHeading1;ColumnHeading
+5 839,3;total;2008
+6 017,0;total;2007
+5 928,7;total;2006
+6 029,0;total;2005
+6 009,9;total;2004
+5 908,8;total;2003
+5 849,1;total;2002
+5 796,5;total;2001
+5 886,4;total;2000
+5 695,2;total;1999
+5 627,0;total;1998
+5 594,8;total;1997
+5 526,4;total;1996
+5 341,5;total;1995
+5 289,7;total;1994
+5 203,4;total;1993
+5 082,5;total;1992
+4 976,4;total;1991
+5 022,3;total;1990
+103,8;other sources;2008
+105,6;other sources;2007
+106,0;other sources;2006
+103,5;other sources;2005
+102,0;other sources;2004
+98,9;other sources;2003
+97,7;other sources;2002
+97,0;other sources;2001
+97,8;other sources;2000
+97,3;other sources;1999
+96,5;other sources;1998
+104,5;other sources;1997
+103,5;other sources;1996
+102,3;other sources;1995
+97,2;other sources;1994
+93,7;other sources;1993
+87,6;other sources;1992
+86,0;other sources;1991
+85,1;other sources;1990
+5 735,5;adjusted energy subtotal;2008
+5 911,5;adjusted energy subtotal;2007
+5 822,8;adjusted energy subtotal;2006
+5 925,5;adjusted energy subtotal;2005
+5 907,9;adjusted energy subtotal;2004
+5 809,9;adjusted energy subtotal;2003
+5 751,4;adjusted energy subtotal;2002
+5 699,5;adjusted energy subtotal;2001
+5 788,7;adjusted energy subtotal;2000
+5 597,9;adjusted energy subtotal;1999
+5 530,5;adjusted energy subtotal;1998
+5 490,3;adjusted energy subtotal;1997
+5 422,8;adjusted energy subtotal;1996
+5 239,1;adjusted energy subtotal;1995
+5 192,5;adjusted energy subtotal;1994
+5 109,7;adjusted energy subtotal;1993
+4 994,9;adjusted energy subtotal;1992
+4 890,4;adjusted energy subtotal;1991
+4 937,2;adjusted energy subtotal;1990
+-79,0;adjustments to energy;2008
+-74,9;adjustments to energy;2007
+-70,9;adjustments to energy;2006
+-48,8;adjustments to energy;2005
+-44,6;adjustments to energy;2004
+-28,7;adjustments to energy;2003
+-38,2;adjustments to energy;2002
+-45,9;adjustments to energy;2001
+-61,7;adjustments to energy;2000
+-67,3;adjustments to energy;1999
+-74,5;adjustments to energy;1998
+-71,6;adjustments to energy;1997
+-65,0;adjustments to energy;1996
+-63,1;adjustments to energy;1995
+-58,2;adjustments to energy;1994
+-62,0;adjustments to energy;1993
+-74,2;adjustments to energy;1992
+-84,5;adjustments to energy;1991
+-82,9;adjustments to energy;1990
+264,2;carbon dioxide sequestered by nonfuel uses**;2008
+293,7;carbon dioxide sequestered by nonfuel uses**;2007
+301,9;carbon dioxide sequestered by nonfuel uses**;2006
+305,1;carbon dioxide sequestered by nonfuel uses**;2005
+315,4;carbon dioxide sequestered by nonfuel uses**;2004
+292,1;carbon dioxide sequestered by nonfuel uses**;2003
+296,0;carbon dioxide sequestered by nonfuel uses**;2002
+293,6;carbon dioxide sequestered by nonfuel uses**;2001
+308,2;carbon dioxide sequestered by nonfuel uses**;2000
+326,1;carbon dioxide sequestered by nonfuel uses**;1999
+315,0;carbon dioxide sequestered by nonfuel uses**;1998
+303,7;carbon dioxide sequestered by nonfuel uses**;1997
+291,4;carbon dioxide sequestered by nonfuel uses**;1996
+286,6;carbon dioxide sequestered by nonfuel uses**;1995
+284,4;carbon dioxide sequestered by nonfuel uses**;1994
+268,3;carbon dioxide sequestered by nonfuel uses**;1993
+260,6;carbon dioxide sequestered by nonfuel uses**;1992
+251,7;carbon dioxide sequestered by nonfuel uses**;1991
+252,7;carbon dioxide sequestered by nonfuel uses**;1990
+100,2;carbon dioxide emitted by nonfuel uses*;2008
+106,7;carbon dioxide emitted by nonfuel uses*;2007
+108,9;carbon dioxide emitted by nonfuel uses*;2006
+104,7;carbon dioxide emitted by nonfuel uses*;2005
+110,8;carbon dioxide emitted by nonfuel uses*;2004
+101,7;carbon dioxide emitted by nonfuel uses*;2003
+103,7;carbon dioxide emitted by nonfuel uses*;2002
+104,5;carbon dioxide emitted by nonfuel uses*;2001
+109,8;carbon dioxide emitted by nonfuel uses*;2000
+124,1;carbon dioxide emitted by nonfuel uses*;1999
+118,7;carbon dioxide emitted by nonfuel uses*;1998
+110,6;carbon dioxide emitted by nonfuel uses*;1997
+105,8;carbon dioxide emitted by nonfuel uses*;1996
+104,9;carbon dioxide emitted by nonfuel uses*;1995
+106,9;carbon dioxide emitted by nonfuel uses*;1994
+103,2;carbon dioxide emitted by nonfuel uses*;1993
+105,6;carbon dioxide emitted by nonfuel uses*;1992
+97,9;carbon dioxide emitted by nonfuel uses*;1991
+97,1;carbon dioxide emitted by nonfuel uses*;1990
+5 814,4;energy consumption | energy subtotal;2008
+5 986,4;energy consumption | energy subtotal;2007
+5 893,7;energy consumption | energy subtotal;2006
+5 974,3;energy consumption | energy subtotal;2005
+5 952,5;energy consumption | energy subtotal;2004
+5 838,6;energy consumption | energy subtotal;2003
+5 789,6;energy consumption | energy subtotal;2002
+5 745,4;energy consumption | energy subtotal;2001
+5 850,4;energy consumption | energy subtotal;2000
+5 665,3;energy consumption | energy subtotal;1999
+5 605,0;energy consumption | energy subtotal;1998
+5 561,9;energy consumption | energy subtotal;1997
+5 487,8;energy consumption | energy subtotal;1996
+5 302,3;energy consumption | energy subtotal;1995
+5 250,7;energy consumption | energy subtotal;1994
+5 171,8;energy consumption | energy subtotal;1993
+5 069,1;energy consumption | energy subtotal;1992
+4 974,9;energy consumption | energy subtotal;1991
+5 020,1;energy consumption | energy subtotal;1990
+11,6;energy consumption | non-biogenic msw and geothermal;2008
+11,6;energy consumption | non-biogenic msw and geothermal;2007
+11,8;energy consumption | non-biogenic msw and geothermal;2006
+11,5;energy consumption | non-biogenic msw and geothermal;2005
+11,4;energy consumption | non-biogenic msw and geothermal;2004
+11,7;energy consumption | non-biogenic msw and geothermal;2003
+13,0;energy consumption | non-biogenic msw and geothermal;2002
+11,1;energy consumption | non-biogenic msw and geothermal;2001
+10,4;energy consumption | non-biogenic msw and geothermal;2000
+10,5;energy consumption | non-biogenic msw and geothermal;1999
+10,4;energy consumption | non-biogenic msw and geothermal;1998
+10,6;energy consumption | non-biogenic msw and geothermal;1997
+10,2;energy consumption | non-biogenic msw and geothermal;1996
+10,2;energy consumption | non-biogenic msw and geothermal;1995
+9,6;energy consumption | non-biogenic msw and geothermal;1994
+8,9;energy consumption | non-biogenic msw and geothermal;1993
+8,8;energy consumption | non-biogenic msw and geothermal;1992
+7,5;energy consumption | non-biogenic msw and geothermal;1991
+6,1;energy consumption | non-biogenic msw and geothermal;1990
+1 241,8;energy consumption | natural gas;2008
+1 231,7;energy consumption | natural gas;2007
+1 157,1;energy consumption | natural gas;2006
+1 176,1;energy consumption | natural gas;2005
+1 195,4;energy consumption | natural gas;2004
+1 194,6;energy consumption | natural gas;2003
+1 229,5;energy consumption | natural gas;2002
+1 186,7;energy consumption | natural gas;2001
+1 240,6;energy consumption | natural gas;2000
+1 191,9;energy consumption | natural gas;1999
+1 188,8;energy consumption | natural gas;1998
+1 211,3;energy consumption | natural gas;1997
+1 205,5;energy consumption | natural gas;1996
+1 183,7;energy consumption | natural gas;1995
+1 134,3;energy consumption | natural gas;1994
+1 109,5;energy consumption | natural gas;1993
+1 082,2;energy consumption | natural gas;1992
+1 046,9;energy consumption | natural gas;1991
+1 024,7;energy consumption | natural gas;1990
+2 125,2;energy consumption | coal;2008
+2 154,5;energy consumption | coal;2007
+2 129,9;energy consumption | coal;2006
+2 161,0;energy consumption | coal;2005
+2 140,3;energy consumption | coal;2004
+2 115,6;energy consumption | coal;2003
+2 077,2;energy consumption | coal;2002
+2 074,2;energy consumption | coal;2001
+2 138,1;energy consumption | coal;2000
+2 045,7;energy consumption | coal;1999
+2 049,9;energy consumption | coal;1998
+2 027,4;energy consumption | coal;1997
+1 981,7;energy consumption | coal;1996
+1 899,9;energy consumption | coal;1995
+1 881,2;energy consumption | coal;1994
+1 869,6;energy consumption | coal;1993
+1 801,9;energy consumption | coal;1992
+1 787,9;energy consumption | coal;1991
+1 803,4;energy consumption | coal;1990
+2 436,0;energy consumption | petroleum;2008
+2 588,6;energy consumption | petroleum;2007
+2 594,9;energy consumption | petroleum;2006
+2 625,7;energy consumption | petroleum;2005
+2 605,4;energy consumption | petroleum;2004
+2 516,7;energy consumption | petroleum;2003
+2 469,9;energy consumption | petroleum;2002
+2 473,3;energy consumption | petroleum;2001
+2 461,3;energy consumption | petroleum;2000
+2 417,1;energy consumption | petroleum;1999
+2 355,9;energy consumption | petroleum;1998
+2 312,6;energy consumption | petroleum;1997
+2 290,5;energy consumption | petroleum;1996
+2 208,4;energy consumption | petroleum;1995
+2 225,6;energy consumption | petroleum;1994
+2 183,7;energy consumption | petroleum;1993
+2 176,2;energy consumption | petroleum;1992
+2 132,5;energy consumption | petroleum;1991
+2 185,9;energy consumption | petroleum;1990

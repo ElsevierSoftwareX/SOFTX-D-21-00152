@@ -1,0 +1,12 @@
+ESDescriptionFormc= Creation of the expert system
+GroupBox5c= General information: 
+
+RzLabel1c=Description:
+RzLabel2c=Name: 
+RzLabel3c=Author(s): 
+RzLabel4c=Version:
+RzLabel5c=Platform: 
+RzLabel7c=Creation date:
+
+RzButton1c=Edit
+RzButton2c=Ok

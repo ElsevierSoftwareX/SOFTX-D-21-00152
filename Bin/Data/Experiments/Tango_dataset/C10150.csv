@@ -1,0 +1,116 @@
+DATA;RowHeading1;ColumnHeading
+8;?land | ?land;students, women
+8;?land | ?land;students, total
+8;?land;students, women
+8;?land;students, total
+3 270;continental finland | lapland;students, women
+1 373;continental finland | lapland;students, men
+4 643;continental finland | lapland;students, total
+499;continental finland | lapland;new students, women
+151;continental finland | lapland;new students, men
+650;continental finland | lapland;new students, total
+415;continental finland | kainuu;students, women
+220;continental finland | kainuu;students, men
+635;continental finland | kainuu;students, total
+77;continental finland | kainuu;new students, women
+50;continental finland | kainuu;new students, men
+127;continental finland | kainuu;new students, total
+7 190;continental finland | north ostrobothnia;students, women
+7 892;continental finland | north ostrobothnia;students, men
+15 082;continental finland | north ostrobothnia;students, total
+826;continental finland | north ostrobothnia;new students, women
+850;continental finland | north ostrobothnia;new students, men
+1 676;continental finland | north ostrobothnia;new students, total
+109;continental finland | central ostrobothnia;students, women
+55;continental finland | central ostrobothnia;students, men
+164;continental finland | central ostrobothnia;students, total
+34;continental finland | central ostrobothnia;new students, women
+18;continental finland | central ostrobothnia;new students, men
+52;continental finland | central ostrobothnia;new students, total
+3 854;continental finland | ostrobothnia;students, women
+2 790;continental finland | ostrobothnia;students, men
+6 644;continental finland | ostrobothnia;students, total
+661;continental finland | ostrobothnia;new students, women
+425;continental finland | ostrobothnia;new students, men
+1 086;continental finland | ostrobothnia;new students, total
+2;continental finland | south ostrobothnia;students, women
+45;continental finland | south ostrobothnia;students, men
+47;continental finland | south ostrobothnia;students, total
+8 284;continental finland | central finland;students, women
+5 000;continental finland | central finland;students, men
+13 284;continental finland | central finland;students, total
+1 215;continental finland | central finland;new students, women
+710;continental finland | central finland;new students, men
+1 925;continental finland | central finland;new students, total
+4 094;continental finland | north karelia;students, women
+2 927;continental finland | north karelia;students, men
+7 021;continental finland | north karelia;students, total
+638;continental finland | north karelia;new students, women
+464;continental finland | north karelia;new students, men
+1 102;continental finland | north karelia;new students, total
+3 937;continental finland | pohjois-savo;students, women
+2 045;continental finland | pohjois-savo;students, men
+5 982;continental finland | pohjois-savo;students, total
+598;continental finland | pohjois-savo;new students, women
+286;continental finland | pohjois-savo;new students, men
+884;continental finland | pohjois-savo;new students, total
+881;continental finland | etel?-savo;students, women
+239;continental finland | etel?-savo;students, men
+1 120;continental finland | etel?-savo;students, total
+166;continental finland | etel?-savo;new students, women
+59;continental finland | etel?-savo;new students, men
+225;continental finland | etel?-savo;new students, total
+1 664;continental finland | south karelia;students, women
+4 042;continental finland | south karelia;students, men
+5 706;continental finland | south karelia;students, total
+280;continental finland | south karelia;new students, women
+600;continental finland | south karelia;new students, men
+880;continental finland | south karelia;new students, total
+182;continental finland | p?ij?t-h?me;students, women
+54;continental finland | p?ij?t-h?me;students, men
+236;continental finland | p?ij?t-h?me;students, total
+16;continental finland | p?ij?t-h?me;new students, women
+7;continental finland | p?ij?t-h?me;new students, men
+23;continental finland | p?ij?t-h?me;new students, total
+11 766;continental finland | pirkanmaa;students, women
+13 347;continental finland | pirkanmaa;students, men
+25 113;continental finland | pirkanmaa;students, total
+1 224;continental finland | pirkanmaa;new students, women
+1 221;continental finland | pirkanmaa;new students, men
+2 445;continental finland | pirkanmaa;new students, total
+363;continental finland | kanta-h?me;students, women
+142;continental finland | kanta-h?me;students, men
+505;continental finland | kanta-h?me;students, total
+49;continental finland | kanta-h?me;new students, women
+24;continental finland | kanta-h?me;new students, men
+73;continental finland | kanta-h?me;new students, total
+1 280;continental finland | satakunta;students, women
+1 049;continental finland | satakunta;students, men
+2 329;continental finland | satakunta;students, total
+247;continental finland | satakunta;new students, women
+142;continental finland | satakunta;new students, men
+389;continental finland | satakunta;new students, total
+12 809;continental finland | varsinais-suomi;students, women
+8 951;continental finland | varsinais-suomi;students, men
+21 760;continental finland | varsinais-suomi;students, total
+1 422;continental finland | varsinais-suomi;new students, women
+1 013;continental finland | varsinais-suomi;new students, men
+2 435;continental finland | varsinais-suomi;new students, total
+30 075;continental finland | uusimaa;students, women
+28 121;continental finland | uusimaa;students, men
+58 196;continental finland | uusimaa;students, total
+3 254;continental finland | uusimaa;new students, women
+2 943;continental finland | uusimaa;new students, men
+6 197;continental finland | uusimaa;new students, total
+90 175;continental finland;students, women
+78 292;continental finland;students, men
+168 467;continental finland;students, total
+11 206;continental finland;new students, women
+8 963;continental finland;new students, men
+20 169;continental finland;new students, total
+90 183;whole country;students, women
+78 292;whole country;students, men
+168 475;whole country;students, total
+11 206;whole country;new students, women
+8 963;whole country;new students, men
+20 169;whole country;new students, total

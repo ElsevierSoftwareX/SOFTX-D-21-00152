@@ -1,0 +1,13 @@
+DATA;RowHeading1;ColumnHeading
+100;women;number of visits, % | total
+8;women;number of visits, % | more then 12 times
+3;women;number of visits, % | 7-12 times
+7;women;number of visits, % | 4-6 times
+22;women;number of visits, % | 1-3 times
+61;women;number of visits, % | no visits
+100;men;number of visits, % | total
+14;men;number of visits, % | more then 12 times
+6;men;number of visits, % | 7-12 times
+10;men;number of visits, % | 4-6 times
+25;men;number of visits, % | 1-3 times
+45;men;number of visits, % | no visits
