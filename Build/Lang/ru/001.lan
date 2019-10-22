@@ -1,0 +1,20 @@
+GroupBox1c= ШАГ 1: Выбор базы знаний:  
+GroupBox1h=
+GroupBox2c= ШАГ 2: Ввод имени и описания шаблона правила: 
+GroupBox2h=
+GroupBox4c= ШАГ 3: Назначение условий и действий: 
+GroupBox4h=
+GroupBox5c= ШАГ 4: RVML - Схема: 
+GroupBox5h=
+
+RzButton1c=Отмена
+RzButton1h=
+RzButton2c=Готово
+RzButton2h=Завершить процесс
+RzButton21c=Далее >>
+RzButton21h=Продложить процесс
+RzButton3c=<< Назад
+RzButton3h=
+
+RzLabel2c=Шаблон правила:
+RzLabel5c=Шаблон правила:

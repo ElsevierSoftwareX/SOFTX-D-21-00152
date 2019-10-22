@@ -115,7 +115,7 @@ begin
     ComboBox1.Items.Add(MainForm.LS('New knowledge base'));
     ComboBox1.ItemIndex:=0;
   end;
-  4,5,6,7,8,9:begin //export
+  4,5,6,7,8,9,44:begin //export
     MainForm.ImageList1.GetIcon(74,Exp.Icon);
     MainForm.ReloadHelpMessage(ScrollBox3,23);
     Exp.Caption:=' '+MainForm.LS('Export');
@@ -277,6 +277,50 @@ try
      MainForm.MMessageBox(1,0,'0=К сожалению выполнить данное действие невозможно ввиду отсутвия модулей поддержки языков представления знаний')
     end;
  end; //end clips export
+ //--------------------------------------------------------
+ 44:begin  //drl export
+  SaveDialog1.Title:=Application.Title+': '+MainForm.LS('Export');
+
+  if (DllIndex<>-1)and(DllList.Count>0) then
+   begin
+    if pos('DROOLS',DllList.ValueFromIndex[DllIndex])<>0 then
+     ext:='.drl' else ext:='.*';
+
+
+  SaveDialog1.Filter:=DllList.ValueFromIndex[DllIndex]+' files |'
+   +'*'+ext+'|'+MainForm.LS('All')+'|*.*';
+  SaveDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'\Data';
+
+  if SaveDialog1.Execute() then
+   if (SaveDialog1.FileName<>'') then
+   begin
+    tmKB:=TKnowledgeBase.Create;
+    tmKB.Init;
+
+    c:=ComboBox1.Items.IndexOf(ComboBox1.Text);
+    if c>-1 then  KB:=TKnowledgeBase(KBList.Items[c]);
+
+//    tmKB.ID:=MainForm.GetKBID(KBList);
+    tmKB.Name:=KB.Name;
+    tmKB.Kind:=KB.Kind;
+    tmKB.Description:=KB.Description;
+
+   //save selected items to selected KB
+//    eF:=tmKB.CopyRFT(KB,
+//     L1,L2,L3,L4,L5);
+    eF:=tmKB.CopyRFT_V2(RzCheckTree1);
+
+    if pos(ext,SaveDialog1.FileName)=0 then
+     SaveDialog1.FileName:=SaveDialog1.FileName+ext;
+    tmKB.SaveAs(DllList.Names[DllIndex],SaveDialog1.FileName);
+    MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
+   end;
+  end
+   else
+    begin
+     MainForm.MMessageBox(1,0,'0=К сожалению выполнить данное действие невозможно ввиду отсутвия модулей поддержки языков представления знаний')
+    end;
+ end; //end drl export
  //--------------------------------------------------------
  5:begin  //rrose export
   try
@@ -492,7 +536,7 @@ begin
  if TComboBox(Sender).Items.IndexOf(TComboBox(Sender).Text)=-1 then
   TComboBox(Sender).ItemIndex:=0;
  case Tag of
- 2,4,5,6,7,8,9:begin  //save
+ 2,4,5,6,7,8,9,44:begin  //save
   i:=TComboBox(Sender).Items.IndexOf(TComboBox(Sender).Text);
    if i>-1 then  KB:=TKnowledgeBase(KBList.Items[i]);
 //  RzCheckList1.Clear;

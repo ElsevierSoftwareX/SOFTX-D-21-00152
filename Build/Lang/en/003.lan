@@ -1,0 +1,39 @@
+GroupBox1c= STEP 1: Knowledge base selection:  
+GroupBox1h=
+GroupBox2c= STEP 3: Properies (slots) description: 
+GroupBox2h=
+GroupBox3c= STEP 2: Template selection: 
+GroupBox3h=
+GroupBox4c= STEP 4: Entered data preview: 
+GroupBox4h=
+GroupBox5c= STEP 5: Retrieval results: 
+GroupBox5h=
+GroupBox6c= STEP 6: Results of multi-criterial decision-making methods: 
+GroupBox6h=
+RzPanel1h=
+RzPanel6h=
+
+Panel1h=
+
+RzButton1c=Cancel
+RzButton1h=
+RzButton2c=Ok
+RzButton2h=Done the process
+RzButton21c=Next >>
+RzButton21h=Proceed the process
+RzButton3c=<< Back
+RzButton3h=
+
+Label1c=Выбранная база знаний:
+Label2c=Имя факта:
+Label3c=[ID]
+RzLabel3c=Fact
+RzLabel31c=Case
+RzLabel6c=Fact
+RzLabel61c=Case
+
+ListBox1h=
+btn1c=+
+btn1h=Create a new tepmlate
+
+ComboBox1h=

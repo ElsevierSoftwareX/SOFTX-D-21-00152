@@ -1,0 +1,28 @@
+GroupBox1c= STEP 2: Entering count of values and selection thr similar scale: 
+GroupBox1h=
+GroupBox3c= STEP 1: Entering the scale name and description: 
+GroupBox3h=
+GroupBox4c= STEP 4: Entered data preview: 
+GroupBox4h=
+GroupBox5c= STEP 4: Entering the values: 
+GroupBox5h=
+GroupBox6c= STEP 3: Entering the interval of values: 
+GroupBox6h=
+
+
+RzLabel3c=Case:
+RzLabel7c=Scale:
+RzLabel13c=Description
+RzLabel14c=Slot name
+RzLabel15c=Datatype
+RzLabel16c=Value by default
+RzLabel17c=Count of values:
+
+RzButton1c=Cancel
+RzButton1h=
+RzButton2c=Ok
+RzButton2h=Done the process
+RzButton21c=Next >>
+RzButton21h=Proceed the process
+RzButton3c=<< Back
+RzButton3h=

@@ -1,0 +1,28 @@
+GroupBox1c= ШАГ 1: Выбор базы знаний: 
+GroupBox1h=
+GroupBox2c= ШАГ 1: Описание условия: 
+GroupBox2h=
+GroupBox3c= ШАГ 2: Выбор шаблона правила: 
+GroupBox3h=
+GroupBox4c= ШАГ 2: Проверка (просмотр) введенных данных: 
+GroupBox4h=
+GroupBox5c= ШАГ 5: RVML - Схема: 
+GroupBox5h=
+GroupBox6c= ШАГ 3: Описание действия: 
+GroupBox6h=
+GroupBox7c= ШАГ 4: Проверка (просмотр) введенных данных: 
+GroupBox7h=
+
+RzLabel3c=Правило:
+RzLabel6c=Правило:
+RzLabel7c=Правило:
+RzLabel11c=Правило:
+
+RzButton1c=Отмена
+RzButton1h=
+RzButton2c=Готово
+RzButton2h=Завершить процесс
+RzButton21c=Далее >>
+RzButton21h=Продложить процесс
+RzButton3c=<< Назад
+RzButton3h=

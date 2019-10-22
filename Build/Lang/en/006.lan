@@ -1,0 +1,32 @@
+GroupBox1c= STEP 1: Knowledge base selection: 
+GroupBox1h=
+GroupBox2c= STEP 3: Entering the properties: 
+GroupBox2h=
+GroupBox3c= STEP 2: Entering the name and description of the template: 
+GroupBox3h=
+GroupBox4c= STEP 4: Entered data preview: 
+GroupBox4h=
+
+RzLabel3c=Template:
+RzLabel6c=Template:
+RzLabel7c=Template:
+RzLabel9c=Slot name
+RzLabel10c=Description
+RzLabel11c=Datatype
+RzLabel12c=Value by default
+RzLabel13c=Description
+RzLabel14c=Slot name
+RzLabel15c=Datatype
+RzLabel16c=Value by default
+
+RzButton1c=Cancel
+RzButton1h=
+RzButton2c=Ok
+RzButton2h=Done the process
+RzButton21c=Next >>
+RzButton21h=Proceed the process
+RzButton3c=<< Back
+RzButton3h=
+
+
+

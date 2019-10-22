@@ -233,6 +233,7 @@ type
     CanonicalTablescsvbeta1: TMenuItem;
     Join1: TMenuItem;
     RDF1: TMenuItem;
+    Droolsdrl1: TMenuItem;
 
     procedure N14Click(Sender: TObject);
     procedure N13Click(Sender: TObject);
@@ -325,7 +326,6 @@ type
       Change: TItemChange);
     procedure Edit1Click(Sender: TObject);
     procedure PopupMenu3Popup(Sender: TObject);
-    procedure ScrollBox4StartDrag(Sender: TObject; var DragObject: TDragObject);
     procedure RzPageControl1DragOver(Sender, Source: TObject; X, Y: Integer;
       State: TDragState; var Accept: Boolean);
     procedure RzSplitter3ULDockOver(Sender: TObject; Source: TDragDockObject; X,
@@ -359,6 +359,10 @@ type
     procedure Importdata1Click(Sender: TObject);
     procedure CanonicalTablescsvbeta1Click(Sender: TObject);
     procedure RDF1Click(Sender: TObject);
+    procedure Droolsdrl1Click(Sender: TObject);
+    procedure ImgMouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure ImgClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -477,6 +481,8 @@ var
   pName : String;     //platform name
 
   fUpadate : String; //update flag
+
+  ToolImg1, ToolImg2 : TImage;
 
 implementation
 
@@ -1933,7 +1939,7 @@ begin
     tmKb.LoadFromFileAs(DllList.Names[DllIndex],OpenDialog1.FileName);
 
      Application.CreateForm(TExp, Exp);
-
+     DllIndex:=0; //for clisps
      Exp.KB:=tmKb;
      Exp.Tag:=3;
      Exp.ShowModal;
@@ -2535,6 +2541,7 @@ begin
  DllListForAbout.Add('CLIPS Inference machine=6.1');
  DllListForAbout.Add('CBR Inference machine=002.dll');
  DllListForAbout.Add('DM Support: ARAMIS=1.2014');
+ DllListForAbout.Add('DROOLS Support=DRLS.dll');
  DllListForAbout.Add('MDL Importer for IBM Rational Rose=2.2016');
  DllListForAbout.Add('MDL Exporter for IBM Rational Rose=1.2016 [beta]');
  DllListForAbout.Add('MDJ Importer for StarUML=1.2016');
@@ -4900,6 +4907,16 @@ begin
   end;
 end;
 
+procedure TMainForm.Droolsdrl1Click(Sender: TObject);
+begin
+ Application.CreateForm(TExp, Exp);
+
+ DllIndex:=1; //for drl
+ Exp.KB:=nil;
+ Exp.Tag:=44;
+ Exp.ShowModal;
+end;
+
 procedure TMainForm.Edit1Click(Sender: TObject);
 begin
  if TreeView1.Selected<>nil then
@@ -5467,6 +5484,11 @@ begin
   end;
 end;
 
+procedure TMainForm.ImgClick(Sender: TObject);
+begin
+ ShowMessage('1');
+end;
+
 procedure TMainForm.ScrollBox4DragDrop(Sender, Source: TObject; X, Y: Integer);
 var
  x1,y1 : Integer;
@@ -5475,13 +5497,17 @@ try
  if Source is TImage then // Если перетаскиваем компонент Image то
   if TImage(Source).Tag>0 then
   begin
+
    X:=tmPSO1.Left;
    Y:=tmPSO1.Top;
 
    x1:=TImage(Source).Left;
    y1:=TImage(Source).Top;
+
    if TObject(CurrentRVMLObject) is TTemplate then
     begin
+//     RzListView1.AddItem('Template: '+TTemplate(CurrentRVMLObject).Name,nil);
+
      TTemplate(CurrentRVMLObject).DrawParams.Values['x']:=IntToStr(x);
      TTemplate(CurrentRVMLObject).DrawParams.Values['y']:=IntToStr(y);
      TImage(Source).Left := X; //Переместить компонент Image в координаты //курсора по X
@@ -5489,6 +5515,8 @@ try
     end;
    if TObject(CurrentRVMLObject) is TFact then
     begin
+//     RzListView1.AddItem('Fact: '+TFact(CurrentRVMLObject).Name,nil);
+
      TFact(CurrentRVMLObject).DrawParams.Values['x']:=IntToStr(x);
      TFact(CurrentRVMLObject).DrawParams.Values['y']:=IntToStr(y);
      TImage(Source).Left := X; //Переместить компонент Image в координаты //курсора по X
@@ -5497,6 +5525,8 @@ try
 
     if TObject(TreeView1.Selected.Data) is TGRule then
     begin
+//     RzListView1.AddItem('GRule: '+TGRule(CurrentRVMLObject).Name,nil);
+
      TGRule(TreeView1.Selected.Data).UpdateElementPosition(x1,y1,x,y);
      TGRule(TreeView1.Selected.Data).DrawArrows(
       TGRule(TreeView1.Selected.Data).RVMLImage.Canvas,
@@ -5506,6 +5536,8 @@ try
     end;
     if TObject(TreeView1.Selected.Data) is TRule then
     begin
+//     RzListView1.AddItem('Rule: '+TRule(CurrentRVMLObject).Name,nil);
+
      TRule(TreeView1.Selected.Data).UpdateElementPosition(x1,y1,x,y);
      TRule(TreeView1.Selected.Data).DrawArrows(
       TRule(TreeView1.Selected.Data).RVMLImage.Canvas,
@@ -5513,6 +5545,10 @@ try
        TScrollBox(TRule(TreeView1.Selected.Data).RVMLImage.Parent).VertScrollBar.Position
       );
     end;
+
+//   RzListView1.AddItem('X1:Y1 ['+IntToStr(x1)+':'+IntToStr(y1)+'] -> x:y ['
+//    +IntToStr(x)+':'+IntToStr(y)+']',nil);
+
 //   TreeView1Click(TreeView1);
   end;
  except
@@ -5541,6 +5577,7 @@ begin
      try
      if tmPSO1=nil then
       begin //create a frame
+
        X:= TImage(Source).Left;
        Y:= TImage(Source).Top;
 
@@ -5622,10 +5659,24 @@ begin
   end;
 end;
 
-procedure TMainForm.ScrollBox4StartDrag(Sender: TObject;
-  var DragObject: TDragObject);
+procedure TMainForm.ImgMouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+var
+ x1,y1 : Integer;
 begin
- //
+ if Sender is TImage then // Если перетаскиваем компонент Image то
+  if TImage(Sender).Tag>0 then
+  begin
+   //showpanel
+   ToolImg1.Free;
+   ToolImg2.Free;
+   x1:=TImage(Sender).Left;
+   y1:=TImage(Sender).Top;
+   ShowMessage('1');
+   ToolImg1:=STDIClass.AddImage(ScrollBox4,x1,y1-10,10,10,ImageList1,alClient);
+   ToolImg2:=STDIClass.AddImage(ScrollBox4,x1+10,y1-10,10,11,ImageList1,alClient);
+
+  end;
 end;
 
 procedure TMainForm.CheckBox1Click(Sender: TObject);

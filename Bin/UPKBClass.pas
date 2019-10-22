@@ -3009,7 +3009,7 @@ begin
  end;
 end;
 //----------------------------------------------------------------------------
-Function TKnowledgeBase.LoadFromCSVFile(fName:String):Integer;
+Function TKnowledgeBase.LoadFromCSVFile(fName:String):Integer;   //for TabbyXL
 var
   tmTs, tmTs1, tmTs2 : TStringList;
   i, i1, j, k, k1, k_rh, k_gr: Integer;
@@ -3399,7 +3399,7 @@ begin
    //---------------------------------------------------------------
 }
 
-   //remove trash grules (relationships)
+ {  //remove trash grules (relationships)
    for i := GRules.Count-1 downto 0 do
     begin
      if (TGRule(GRules.Items[i]).Actions.Count=0)or
@@ -3413,7 +3413,7 @@ begin
      if (TTemplate(Templates.Items[i]).Slots.Count=0)then
       Templates.Delete(i);
     end;
-
+                  }
    Result:=Templates.Count;
   except
    Result:=-1;
@@ -4469,6 +4469,17 @@ begin
 end;
 //------------------------------------------------------------------------
 Function TTemplate.Draw(WC:TWinControl):TImage;
+function TrancString(s:ShortString;i:Integer):ShortString;
+begin
+ Result:=s;
+ if Length(s)>i then
+  try
+   Result:=Copy(s,1,i)+'...';
+  except
+   Result:='';
+  end;
+end;
+
 var
  r: TRect;
  canvas: TCanvas;
@@ -4476,8 +4487,8 @@ var
  tmI : TImage;
  i : Integer;
  tmT : TStringList;
+ s1 : ShortString;
 begin
-// MainForm.RzPanel24.Caption:=DrawParams.Text;
 
 try
  if DrawParams.Values['x']='' then
@@ -4487,19 +4498,30 @@ try
  x:=StrToInt(DrawParams.Values['x']);
  y:=StrToInt(DrawParams.Values['y']);
 
-// w:=StrToInt(DrawParams.Values['w']);
-// h:=StrToInt(DrawParams.Values['h']);
- pw:=Length(Name)+10;
+ pw:=0;
+
  //!!!
  tmT:=TStringList.Create;
-// pw:=0;
+
  for i := 0 to Slots.Count-1 do
 //  if Trim(TSlot(Slots.Items[i]).Value)<>'' then
   begin
-   tmT.Add(TSlot(Slots.Items[i]).Name+'='+TSlot(Slots.Items[i]).DataType);
-   if Length(tmT.Strings[tmT.Count-1])+2>pw then
+   if TSlot(Slots.Items[i]).DataType='' then
+    TSlot(Slots.Items[i]).DataType:='String';
+
+   s1:=TrancString(TSlot(Slots.Items[i]).Name,25)+'='+
+     TrancString(TSlot(Slots.Items[i]).DataType,10);
+   if Trim(TSlot(Slots.Items[i]).Value)<>'' then
+    s1:=s1+' = '+TrancString(TSlot(Slots.Items[i]).Value,10);
+
+   tmT.Add(s1);
+   if Length(tmT.Strings[tmT.Count-1])>pw then
     pw:=Length(tmT.Strings[tmT.Count-1])+2;
   end;
+
+ s1:=TrancString(Name,30);
+ if Length(s1)+8>pw then pw:=Length(s1)+8;
+
  h:=(13+2)*(tmT.Count+1)+20;
 // h:=(tmT.Count+1)*20;
  w:=pw*6+10;
@@ -4547,13 +4569,8 @@ try
 
   canvas.Font.style := [fsbold];
 
-  canvas.TextOut(((x+w) div 2)-(canvas.TextWidth(Name) div 2),
-    y + 2, Name); //template name
-//  canvas.TextOut(x+ (w div 2)-(pw*8 div 2),
-//    y + 2, Name); //template name
-//  canvas.TextOut(  //cf
-//   x + w - 14,
-//    y + 2, '1');
+  canvas.TextOut(((x+w) div 2)-(canvas.TextWidth(s1) div 2),
+    y + 2, s1); //template name
 
   //show slots
   canvas.Font.style := [];
@@ -4946,6 +4963,17 @@ begin
 end;
 //------------------------------------------------------------------------
 Function TGRule.Draw(WC:TWinControl):TImage;
+function TrancString(s:ShortString;i:Integer):ShortString;
+begin
+ Result:=s;
+ if Length(s)>i then
+  try
+   Result:=Copy(s,1,i)+'...';
+  except
+   Result:='';
+  end;
+end;
+
 var
  x,y,y1,y2,i,w,h,cfh,cfw,pw,delta_cf : Integer;
  tmT : TTemplate;
@@ -4953,6 +4981,7 @@ var
  canvas : TCanvas;
  cf : string;
  needForOrder : Boolean;
+ s1 : ShortString;
 begin
 try
  //-----------------------------------
@@ -5001,11 +5030,14 @@ try
  if DrawParams.Values['y']='' then DrawParams.Add('y='+IntToStr(y))
   else y:=StrToInt(DrawParams.Values['y']);
 
- w:=(Length(Name)+2)*7+30;
+ s1:= TrancString(Name,35);
+ w:=(Length(s1)+2)*7+30;
+ if w>300 then w:=300;
 // if cf='' then
  cf:='-';
 
- w:=(Length(Name)+2)*7+30;
+// w:=(Length(Name)+2)*7+30;
+
  cfh:=20;     //20
  cfw:=Length(cf)*6+8;
  delta_cf:=4;
@@ -5044,8 +5076,8 @@ try
  canvas.Rectangle(x+w-cfw-1,y+cfh-1,x+w,y+h);  //s contur
  canvas.Font.style := [fsbold];
 
-  canvas.TextOut(((x+w-20) div 2)-(canvas.TextWidth(Name) div 2),
-    y + 12, Name); //rule name
+  canvas.TextOut(((x+w-20) div 2)-(canvas.TextWidth(s1) div 2),
+    y + 12, s1); //rule name
 
   canvas.TextOut(  //cf
    x + w - cfw + delta_cf,
@@ -5100,6 +5132,17 @@ try
 end;
 //------------------------------------------------------------------------
 Function TRule.Draw(WC:TWinControl):TImage;
+function TrancString(s:ShortString;i:Integer):ShortString;
+begin
+ Result:=s;
+ if Length(s)>i then
+  try
+   Result:=Copy(s,1,i)+'...';
+  except
+   Result:='';
+  end;
+end;
+
 var
  x,y,y1,y2,i,w,h,cfh,cfw,pw,delta_cf : Integer;
  tmLHS : TCondition;
@@ -5108,6 +5151,8 @@ var
  canvas : TCanvas;
  cf : string;
  needForOrder : Boolean;
+ s1 : ShortString;
+ cf_f : Extended;
 begin
  //-----------------------------------
  tmI2:=TImage.Create(WC);
@@ -5159,9 +5204,12 @@ try
   else y:=StrToInt(DrawParams.Values['y']);
 
 // if cf='' then
- cf:='-';
+ if not TryStrToFloat(cf,cf_f) then cf:='-';
 
- w:=(Length(Name)+2)*7+30;
+ s1:= TrancString(Name,35);
+ w:=(Length(s1)+2)*7+30;
+ if w>300 then w:=300;
+
  cfh:=20;     //20
  cfw:=Length(cf)*6+8;
  delta_cf:=4;
@@ -5199,8 +5247,8 @@ try
  canvas.Rectangle(x+w-cfw-1,y+cfh-1,x+w,y+h);  //s contur
  canvas.Font.style := [fsbold];
 
-  canvas.TextOut(((x+w-cfw) div 2)-(canvas.TextWidth(Name) div 2),
-    y + 12, Name); //rule name
+  canvas.TextOut(((x+w-cfw) div 2)-(canvas.TextWidth(s1) div 2),
+    y + 12, s1); //rule name
 
   canvas.TextOut(  //cf
    x + w - cfw + delta_cf,
@@ -5356,6 +5404,17 @@ for i := 0 to Slots.Count-1 do
 end;
 //------------------------------------------------------------------------
 Function TFact.Draw(WC:TWinControl;K:Integer):TImage;
+function TrancString(s:ShortString;i:Integer):ShortString;
+begin
+ Result:=s;
+ if Length(s)>i then
+  try
+   Result:=Copy(s,1,i)+'...';
+  except
+   Result:='';
+  end;
+end;
+
 var
  r: TRect;
  canvas: TCanvas;
@@ -5363,20 +5422,20 @@ var
  tmI : TImage;
  i : Integer;
  tmT : TStringList;
- cf : string;
+ cf,s1 : ShortString;
+ cf_f : Extended;
 begin
 try
 // cf:='1'; //value cf by default
  if DrawParams.Values['x']='' then
   begin
-   DrawParams.Add('x=5');
-   DrawParams.Add('y=5');
+   DrawParams.Add('x=15');
+   DrawParams.Add('y=15');
   end;
  x:=StrToInt(DrawParams.Values['x']);
  y:=StrToInt(DrawParams.Values['y']);
-// w:=StrToInt(DrawParams.Values['w']);
-// h:=StrToInt(DrawParams.Values['h']);
- pw:=Length(Name)+10;
+
+ pw:=0;
  //!!!
  tmT:=TStringList.Create;
  for i := 0 to Slots.Count-1 do
@@ -5390,17 +5449,24 @@ try
        end
      else
       begin
-        tmT.Add(TSlot(Slots.Items[i]).Name+'='+
-         AnsiLowerCase(TSlot(Slots.Items[i]).Value)
+        tmT.Add(
+         TrancString(TSlot(Slots.Items[i]).Name,25)
+          +'='+
+          TrancString(AnsiLowerCase(TSlot(Slots.Items[i]).Value),20)
           );
-        if Length(tmT.Strings[tmT.Count-1])+2>pw then
-         pw:=Length(tmT.Strings[tmT.Count-1])+2;
+        if Length(tmT.Strings[tmT.Count-1])>pw then
+         pw:=Length(tmT.Strings[tmT.Count-1]);
       end;
    end;
+ s1:=TrancString(Name,30);
+ if Length(s1)+6>pw then pw:=Length(s1)+6;
+
 // h:=(tmT.Count+1)*20;
 //heigth of string = 13 for 8 pt
 //width = 7 for 8 pt
- if cf='' then cf:='-';
+
+ if not TryStrToFloat(cf,cf_f) then cf:='-';
+// if cf='' then cf:='-';
 
  h:=(13+2)*(tmT.Count+1)+10;
 
@@ -5418,8 +5484,10 @@ try
  tmI:=TImage.Create(WC);
  tmI.Parent:=WC;
  tmI.Tag:=5;
+
  tmI.OnDragOver:=MainForm.ScrollBox4.onDragOver;
  tmI.OnDragDrop:=MainForm.ScrollBox4.OnDragDrop;
+// tmI.OnClick:=MainForm.ImgClick;
 
  tmI.Top:=y;
  tmI.Left:=x;
@@ -5455,8 +5523,8 @@ try
  canvas.Rectangle(x+w-cfw-1,y,x+w,y+cfh);  //cf contur
 
   canvas.Font.style := [fsbold];
-  canvas.TextOut(((x+w-cfw) div 2)-(canvas.TextWidth(Name) div 2),
-    y + 2, Name); //template name
+  canvas.TextOut(((x+w-cfw) div 2)-(canvas.TextWidth(s1) div 2),
+    y + 2, s1); //template name
 
   canvas.TextOut(  //cf
    x + w - cfw + delta_cf,
@@ -5474,6 +5542,10 @@ try
    end;
   canvas.Pen.Width := 1;
   canvas.Brush.Color := clWhite;
+
+ //!!!
+// tmI.OnMouseMove:=MainForm.ImgMouseMove;
+
  Result:=tmI;
 except
  Result:=nil;
@@ -7145,7 +7217,7 @@ end;
 var
  i,j,k:Integer;
  tmO : TTmObj;
- tN,vN,nN, nN1,nN2 : TTreeNode;
+ tN,nN, nN1,nN2 : TTreeNode;
  tmTs : TList;
 begin
  try
@@ -8483,7 +8555,7 @@ end;
 
 function TKnowledgeBase.CopyTask(M:Integer; T1:TObject; var T2:TObject):Integer;
 var
- c  : Integer;
+// c  : Integer;
  tmT1,tmT2 : TTask;
 begin
 try
@@ -8753,16 +8825,16 @@ end;
 function TKnowledgeBase.CopyRFT(KB1:TKnowledgeBase; RL,FL,TL,VL,FuL:String):Integer;
 var
   i: integer;
-  c,c1 : Integer;
+//  c,c1 : Integer;
   tmRule  : TRule;
   tmFact  : TFact;
   tmTemplate  : TTemplate;
-  tmSlot  : TSlot;
-  tmAction  : TRAction;
-  tmCondition : TCondition;
-  tmGV  : TGlobalVar;
-  tmFunct : TFunct;
-  tmAr  : TArgument;
+//  tmSlot  : TSlot;
+ // tmAction  : TRAction;
+//  tmCondition : TCondition;
+//  tmGV  : TGlobalVar;
+//  tmFunct : TFunct;
+//  tmAr  : TArgument;
   tmTask : TTask;
   tmGRule : TGRule;
 begin
@@ -8980,7 +9052,7 @@ var
  XmlRoot:array[0..20]of IXMLNode;
  i,j,k,k1,k2 : Integer;
  tmT : TTemplate;
- tmGR : TGRule;
+// tmGR : TGRule;
  s,s1 : ShortString;
 begin
  tKB:=Self;
@@ -9197,13 +9269,13 @@ end;
 
 var
  tKB : TKnowledgeBase;
- XMLDocument2 : TXMLDocument;
+// XMLDocument2 : TXMLDocument;
 // XmlRoot:array[0..20]of IXMLNode;
- N,N1,tN,tN1 : IXMLNode;
- i,j,k,k1,k2 : Integer;
+// N,N1,tN,tN1 : IXMLNode;
+ i,j,k,k1 : Integer;
  tmT,tmT1 : TTemplate;
- tmGR : TGRule;
- s,s1 : ShortString;
+// tmGR : TGRule;
+ s,s1,s2 : ShortString;
 
  tmTs : TStringList;
 begin
@@ -9253,21 +9325,37 @@ begin
          end; }
 //        end;
 
+      tmTs.Add('@prefix owl: <http://www.w3.org/2002/07/owl#> .');
+      tmTs.Add('@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .');
+      tmTs.Add('@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .');
        //calss properties
       for j:=0 to tKB.Templates.Count-1 do
        begin
         tmT:=TTemplate(tKB.Templates.Items[j]);
         s:=ONm(tmT.ShortName);
+        s2:=':'+s+' a owl:Class .';
+        if tmTs.IndexOf(s2)=-1 then tmTs.Add(s2);
 
-        tmTs.Add(':'+s+' a :Class');
         for i := 0 to tmT.Slots.Count-1 do
          begin
           s1:=ONm(TSlot(tmT.Slots.Items[i]).ShortName);
-          tmTs.Add(':'+s+' :hasProperty :'+ s1);
-          tmTs.Add(':'+s1+' a :Property');
-          tmTs.Add(':'+s1+' :hasDatatype :'+TSlot(tmT.Slots.Items[i]).DataType);
+          s2:=':'+s+' :hasProperty :'+ s1+' .';
+          if tmTs.IndexOf(s2)=-1 then tmTs.Add(s2);
+
+          s2:=':'+s1+' a owl:Property .';
+          if tmTs.IndexOf(s2)=-1 then tmTs.Add(s2);
+
+          if Trim(TSlot(tmT.Slots.Items[i]).DataType)<>'' then
+           begin
+            s2:=':'+s1+' :hasDatatype xsd:'+TSlot(tmT.Slots.Items[i]).DataType+' .';
+            if tmTs.IndexOf(s2)=-1 then tmTs.Add(s2);
+           end;
+
           if Trim(TSlot(tmT.Slots.Items[i]).Value)<>'' then
-           tmTs.Add(':'+s1+' :hasValue :'+TSlot(tmT.Slots.Items[i]).Value);
+           begin
+            s2:=':'+s1+' :hasValue :'+TSlot(tmT.Slots.Items[i]).Value+' .';
+            if tmTs.IndexOf(s2)=-1 then tmTs.Add(s2);
+           end;
          end;
         end;
 
@@ -9284,7 +9372,8 @@ begin
 
                   tmT1:=TTemplate(TGRule(tKB.GRules.Items[j]).Conditions.Items[k1]);
                   s1:=ONm(tmT1.ShortName);
-                  tmTs.Add(':'+s+' :hasRelationship :'+ s1);
+                  s2:=':'+s+' :hasRelationship :'+ s1+' .';
+                  if tmTs.IndexOf(s2)=-1 then tmTs.Add(s2);
                  end;
               end;
     end;
@@ -9301,10 +9390,10 @@ var
  tKB : TKnowledgeBase;
  XMLDocument2 : TXMLDocument;
 // XmlRoot:array[0..20]of IXMLNode;
- N,N1,tN,tN1 : IXMLNode;
- i,j,k,k1,k2 : Integer;
+ N1,tN,tN1 : IXMLNode;
+ i,j,k,k1 : Integer;
  tmT : TTemplate;
- tmGR : TGRule;
+// tmGR : TGRule;
  s,s1 : ShortString;
 begin
  tKB:=Self;

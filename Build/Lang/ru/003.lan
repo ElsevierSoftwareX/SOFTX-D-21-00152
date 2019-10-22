@@ -1,0 +1,40 @@
+GroupBox1c= ШАГ 1: Выбор базы знаний:  
+GroupBox1h=
+GroupBox2c= ШАГ 3: Описание свойств: 
+GroupBox2h=
+GroupBox3c= ШАГ 2: Выбор шаблона факта (прецедента): 
+GroupBox3h=
+GroupBox4c= ШАГ 4: Проверка (просмотр) введенных данных: 
+GroupBox4h=
+GroupBox5c= ШАГ 5: Результыты поиска: 
+GroupBox5h=
+GroupBox6c= ШАГ 6: Результыты методов многокритериального выбора: 
+GroupBox6h=
+RzPanel1h=
+RzPanel6h=
+
+Panel1h=
+
+RzButton1c=Отмена
+RzButton1h=
+RzButton2c=Готово
+RzButton2h=Завершить процесс описания факта (прецедента)
+RzButton21c=Далее >>
+RzButton21h=Продложить процесс описания факта (прецедента)
+RzButton3c=<< Назад
+RzButton3h=
+
+Label1c=Выбранная база знаний:
+Label2c=Имя факта:
+Label3c=[ID]
+RzLabel3c=Факт
+RzLabel31c=Прецедент
+RzLabel6c=Факт
+RzLabel61c=Прецедент
+
+ListBox1h=
+btn1c=+
+btn1h=Добавить новый образец/шаблон для факта
+
+ComboBox1h=
+

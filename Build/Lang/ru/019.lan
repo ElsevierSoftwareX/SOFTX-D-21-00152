@@ -1,0 +1,12 @@
+ESDescriptionFormc= Создание экспертной системы
+GroupBox5c= Основная информация: 
+
+RzLabel1c=Описание:
+RzLabel2c=Название: 
+RzLabel3c=Авторы: 
+RzLabel4c=Версия:
+RzLabel5c=Платформа: 
+RzLabel7c=Дата создания: 
+
+RzButton1c=Изменить
+RzButton2c=Готово

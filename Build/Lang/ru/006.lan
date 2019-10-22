@@ -1,0 +1,32 @@
+GroupBox1c= ШАГ 1: Выбор базы знаний: 
+GroupBox1h=
+GroupBox2c= ШАГ 3: Описание свойств: 
+GroupBox2h=
+GroupBox3c= ШАГ 2: Ввод имени и описания шаблона факта (прецедента): 
+GroupBox3h=
+GroupBox4c= ШАГ 4: Проверка (просмотр) введенных данных: 
+GroupBox4h=
+
+RzLabel3c=Шаблон:
+RzLabel6c=Шаблон:
+RzLabel7c=Шаблон:
+RzLabel9c=Имя слота (свойства)
+RzLabel10c=Описание
+RzLabel11c=Тип данных
+RzLabel12c=Значение по умолчанию
+RzLabel13c=Описание
+RzLabel14c=Имя слота (свойства)
+RzLabel15c=Тип данных
+RzLabel16c=Значение по умолчанию
+
+RzButton1c=Отмена
+RzButton1h=
+RzButton2c=Готово
+RzButton2h=Завершить процесс
+RzButton21c=Далее >>
+RzButton21h=Продложить процесс
+RzButton3c=<< Назад
+RzButton3h=
+
+
+
