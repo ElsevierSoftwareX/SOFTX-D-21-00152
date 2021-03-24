@@ -3,8 +3,8 @@ object StartProjectForm: TStartProjectForm
   Top = 367
   BorderStyle = bsDialog
   Caption = ' Start'
-  ClientHeight = 248
-  ClientWidth = 374
+  ClientHeight = 287
+  ClientWidth = 626
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,8 +19,8 @@ object StartProjectForm: TStartProjectForm
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 374
-    Height = 248
+    Width = 626
+    Height = 287
     Align = alClient
     BevelOuter = bvLowered
     TabOrder = 0
@@ -28,7 +28,7 @@ object StartProjectForm: TStartProjectForm
       AlignWithMargins = True
       Left = 4
       Top = 92
-      Width = 366
+      Width = 618
       Height = 41
       FrameColor = 7617536
       Align = alTop
@@ -50,7 +50,7 @@ object StartProjectForm: TStartProjectForm
       AlignWithMargins = True
       Left = 4
       Top = 4
-      Width = 366
+      Width = 618
       Height = 41
       FrameColor = 7617536
       Align = alTop
@@ -73,7 +73,7 @@ object StartProjectForm: TStartProjectForm
       AlignWithMargins = True
       Left = 4
       Top = 48
-      Width = 366
+      Width = 618
       Height = 41
       Margins.Top = 0
       Margins.Bottom = 0
@@ -98,7 +98,8 @@ object StartProjectForm: TStartProjectForm
       AlignWithMargins = True
       Left = 4
       Top = 139
-      Width = 366
+      Width = 618
+      Height = 144
       Align = alClient
       Caption = ' Recent Files: '
       Font.Charset = DEFAULT_CHARSET
@@ -112,8 +113,8 @@ object StartProjectForm: TStartProjectForm
         AlignWithMargins = True
         Left = 4
         Top = 17
-        Width = 358
-        Height = 84
+        Width = 610
+        Height = 123
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText

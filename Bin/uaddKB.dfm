@@ -4,8 +4,8 @@ object addKB: TaddKB
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = ' '#1057#1086#1079#1076#1072#1085#1080#1077' '#1085#1086#1074#1086#1081' '#1073#1072#1079#1099' '#1079#1085#1072#1085#1080#1081' ('#1087#1088#1086#1077#1082#1090#1072')'
-  ClientHeight = 245
-  ClientWidth = 358
+  ClientHeight = 227
+  ClientWidth = 365
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -51,8 +51,8 @@ object addKB: TaddKB
   object RzPanel2: TRzPanel
     AlignWithMargins = True
     Left = 3
-    Top = 210
-    Width = 352
+    Top = 192
+    Width = 359
     Height = 32
     Align = alBottom
     BorderOuter = fsGroove
@@ -63,6 +63,8 @@ object addKB: TaddKB
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    ExplicitTop = 210
+    ExplicitWidth = 352
     object RzButton1: TRzButton
       AlignWithMargins = True
       Left = 4
@@ -92,7 +94,7 @@ object addKB: TaddKB
       AlignWithMargins = True
       Left = 106
       Top = 4
-      Width = 242
+      Width = 249
       Height = 24
       Margins.Left = 0
       Margins.Top = 2
@@ -112,15 +114,15 @@ object addKB: TaddKB
       ParentFont = False
       TabOrder = 1
       OnClick = RzButton2Click
-      ExplicitTop = -1
+      ExplicitWidth = 242
     end
   end
   object RzPanel6: TRzPanel
     AlignWithMargins = True
     Left = 3
     Top = 3
-    Width = 352
-    Height = 204
+    Width = 359
+    Height = 186
     Margins.Bottom = 0
     Align = alClient
     BorderOuter = fsGroove
@@ -132,6 +134,8 @@ object addKB: TaddKB
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    ExplicitWidth = 352
+    ExplicitHeight = 204
     object Label1: TLabel
       Left = 6
       Top = 10
@@ -241,8 +245,8 @@ object addKB: TaddKB
     object GroupBox1: TRzGroupBox
       AlignWithMargins = True
       Left = 7
-      Top = 99
-      Width = 338
+      Top = 81
+      Width = 345
       Height = 98
       Align = alBottom
       Caption = ' '#1054#1087#1080#1089#1072#1085#1080#1077': '
@@ -253,16 +257,19 @@ object addKB: TaddKB
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 3
+      ExplicitTop = 99
+      ExplicitWidth = 338
       object Memo1: TMemo
         AlignWithMargins = True
         Left = 4
         Top = 17
-        Width = 330
+        Width = 337
         Height = 77
         Align = alClient
         Ctl3D = False
         ParentCtl3D = False
         TabOrder = 0
+        ExplicitWidth = 330
       end
     end
   end

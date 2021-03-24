@@ -1,0 +1,15 @@
+DATA;Row Heading;Column Heading
+499;parameter | inner diameter, mm;lower split connection of the inclined separator
+500;parameter | inner diameter, mm;lower split connection of the inclined separator
+-;parameter | thread size of studs;dimension
+w94x1/4'';parameter | thread size of studs;lower split connection of the inclined separator
+29 degree 55 min;parameter | angle of inclination of the sealing surface to the connection axis;lower split connection of the inclined separator
+30 degree;parameter | angle of inclination of the sealing surface to the connection axis;lower split connection of the inclined separator
+0,5;parameter | roughness of the sealing surface;lower split connection of the inclined separator
+0,5;parameter | roughness of the sealing surface;lower split connection of the inclined separator
+100;parameter | inner diameter, mm;dimension
+100;parameter | inner diameter, mm;dimension
+-;parameter | angle of inclination of the sealing surface to the connection axis;dimension
+-;parameter | angle of inclination of the sealing surface to the connection axis;dimension
+-;parameter | roughness of the sealing surface;dimension
+-;parameter | roughness of the sealing surface;dimension

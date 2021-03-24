@@ -1,24 +1,16 @@
-GroupBox1c= ШАГ 2: Ввод количества значений и выбор похожей шкалы: 
+GroupBox1c= ШАГ 2. Ввод значений термов: 
 GroupBox1h=
-GroupBox2c= ШАГ 1: Описание условия: 
-GroupBox2h=
-GroupBox3c= ШАГ 1: Ввод имени шкалы и ее описания: 
+GroupBox3c= ШАГ 1. Выбор или описание шкалы (лингвистической переменной):  
 GroupBox3h=
-GroupBox4c= ШАГ 4: Проверка (просмотр) введенных данных: 
-GroupBox4h=
-GroupBox5c= ШАГ 4: Описание значений: 
-GroupBox5h=
-GroupBox6c= ШАГ 3: Ввод интервала значений: 
-GroupBox6h=
+GroupBox8c= Описание: 
+GroupBox8h=
 
-
-RzLabel3c=Прецедент:
-RzLabel7c=Шкала:
-RzLabel13c=Описание
-RzLabel14c=Имя слота (свойства)
-RzLabel15c=Тип данных
-RzLabel16c=Значение по умолчанию
-RzLabel17c=Количество значений:
+RzLabel4c=Имя:
+RzLabel5c=Единица измерения:
+RzLabel6c=Тип функции:
+RzLabel7c=Количество термов:
+RzLabel8c=Min:
+RzLabel10c=Max:
 
 RzButton1c=Отмена
 RzButton1h=
@@ -28,3 +20,8 @@ RzButton21c=Далее >>
 RzButton21h=Продложить процесс
 RzButton3c=<< Назад
 RzButton3h=
+
+RzRadioButton1c=Введена ранее:
+RzRadioButton1h=
+RzRadioButton2c=Новая
+RzRadioButton2h=

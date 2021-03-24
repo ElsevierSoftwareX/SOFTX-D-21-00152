@@ -234,6 +234,17 @@ type
     Join1: TMenuItem;
     RDF1: TMenuItem;
     Droolsdrl1: TMenuItem;
+    N43: TMenuItem;
+    doc2: TMenuItem;
+    txt1: TMenuItem;
+    PHP1: TMenuItem;
+    Decision1: TMenuItem;
+    Importrules: TMenuItem;
+    N44: TMenuItem;
+    N45: TMenuItem;
+    inyDecisionTablesEditor1: TMenuItem;
+    inyRVMLEditor1: TMenuItem;
+    FuzzyCLIPSclp1: TMenuItem;
 
     procedure N14Click(Sender: TObject);
     procedure N13Click(Sender: TObject);
@@ -291,7 +302,6 @@ type
     procedure Clips1Click(Sender: TObject);
     procedure N15Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure N18Click(Sender: TObject);
     procedure RzMaskEdit1Click(Sender: TObject);
     procedure N19Click(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
@@ -363,6 +373,25 @@ type
     procedure ImgMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
     procedure ImgClick(Sender: TObject);
+    procedure N43Click(Sender: TObject);
+    procedure doc2Click(Sender: TObject);
+    procedure txt1Click(Sender: TObject);
+    procedure PHP1Click(Sender: TObject);
+    procedure Decision1Click(Sender: TObject);
+    procedure ImportrulesClick(Sender: TObject);
+    procedure N44Click(Sender: TObject);
+    procedure TinyDecisionTablesEditor1Click(Sender: TObject);
+    procedure TinyRVMLEditor1Click(Sender: TObject);
+
+    procedure ElementDragDrop(Sender, Source: TObject; X, Y: Integer);
+//    procedure ElementMouseDown(Sender: TObject; Button: TMouseButton;
+//      Shift: TShiftState; X, Y: Integer);
+    procedure ElementEndDrag(Sender, Target: TObject; X, Y: Integer);
+    procedure ElementDragOver(Sender, Source: TObject; X, Y: Integer;
+      State: TDragState; var Accept: Boolean);
+    procedure FormResize(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure FuzzyCLIPSclp1Click(Sender: TObject);
 
   private
     { Private declarations }
@@ -375,6 +404,8 @@ type
    procedure MenuItemClick(Sender: TObject);
 
    Function LoadTree(tmKBList:TList; Tree:TTreeView):Integer;
+   Function LoadTreeV2(tmKBList:TList; Tree:TTreeView):Integer;
+
    function PutChildCount(pN:TTreeNode):String;
    Function RebulidImagesOnTree(Tree:TTreeView):Integer;
 
@@ -483,6 +514,8 @@ var
   fUpadate : String; //update flag
 
   ToolImg1, ToolImg2 : TImage;
+  AggStrategesList : TStringList;
+  CreateInstancesFlag : Integer;
 
 implementation
 
@@ -492,7 +525,428 @@ uses  uaddKB,about,SDXML,uExp, USTDIClass, UDicForm, USSClass,
       uTrans, USEClass, UStartProjectForm, UMsgBoxForm, AddFactForm2Unit,
   CRPManagerUnit, UViewReportForm, AddRuleForm2Unit, RBRFormUnit,
   AddRuleForm3Unit, AddTempFormUnit, AddGRuleForm4Unit, URVMLElementEditUnit,
-  UESDescriptionForm, RRPManagerUnit, UImportDataForCasesForm;
+  UESDescriptionForm, RRPManagerUnit, UImportDataForCasesForm,
+  UAggStrategesSelectForm, TDTEUnit, TRMLEUnit;
+//-----------------------------------------------------------------------------
+procedure TMainForm.ElementDragDrop(Sender, Source: TObject; X,
+  Y: Integer);
+var
+ x1,y1 : Integer;
+begin
+try
+ if Source is TRzPanel then // Если перетаскиваем компонент
+  begin
+     TRzPanel(Source).Left := X; //Переместить компонент Image в координаты //курсора по X
+     TRzPanel(Source).Top := Y; //Переместить компонент Image в координаты //курсора по Y
+  end;
+ except
+ end;
+end;
+//-----------------------------------------------------------------------------
+procedure TMainForm.ElementEndDrag(Sender, Target: TObject; X, Y: Integer);
+var
+ MovedObj : TWinControl;
+ i,j,j1,j2,j3,j4,j5,j6,j7 : Integer;
+ s,doi : string;
+ tmKB1 : TKnowledgeBase;
+begin
+ try
+ if (Sender is TImage)and(TImage(Target).Tag=2) then
+  MovedObj:=TImage(Sender).Parent;
+ if (Sender is TRzPanel) then
+  if TRzPanel(Sender).Tag=1 then //1 - main container
+   MovedObj:=TRzPanel(Sender)
+   else
+    MovedObj:=TRzPanel(Sender).Parent;
+
+if Target<>nil then
+ begin
+   //------------------------
+   if (Target is TScrollBox) then
+    begin
+//     Caption:='to Scroll';
+     MovedObj.Top:=Y;
+     MovedObj.Left:=X;
+    end
+   else
+    begin
+    if (Target is TImage) then
+      begin
+       if (TImage(Target).Tag=2) then
+        begin  //sinlge element
+//         Caption:='to Image  2';
+         MovedObj.Top:=TImage(Sender).Parent.Top+TImage(Sender).Top+Y;
+         MovedObj.Left:=TImage(Sender).Parent.Left+TImage(Sender).Left+X;
+        end
+       else //group
+        begin
+//         Caption:='to Image Base';
+         MovedObj.Top:=Y;
+         MovedObj.Left:=X;
+        end;
+      end
+     else //sinlge element
+      if TRzPanel(Target).Tag=1 then
+        begin
+//         Caption:='to Panel Main';
+         MovedObj.Top:=TRzPanel(Sender).Top+Y;
+         MovedObj.Left:=TRzPanel(Sender).Left+X;
+        end
+       else
+        begin
+//         Caption:='to Panel child';
+         MovedObj.Top:=TRzPanel(Sender).Parent.Top+TRzPanel(Sender).Top+Y;
+         MovedObj.Left:=TRzPanel(Sender).Parent.Left+TRzPanel(Sender).Left+X;
+        end
+    end;
+   //------------------------
+ end
+  else
+    begin
+     MovedObj.Top:=Y;
+     MovedObj.Left:=X;
+    end;
+
+  tmPSO1.Free;
+  tmPSO1:=nil;
+  tmPSO2.Free;
+  tmPSO2:=nil;
+  tmPSO3.Free;
+  tmPSO3:=nil;
+  tmPSO4.Free;
+  tmPSO4:=nil;
+
+  //save position
+//  Caption:=IntToStr(MovedObj.ComponentIndex);
+  j1:=MovedObj.ComponentIndex;
+
+  //-------------------
+  if TObject(TreeView1.Selected.Data) is TTemplate then
+   begin
+    doi:=TTemplate(TreeView1.Selected.Data).ID;
+    tmKB1:=GetKBForNode(TreeView1.Selected);
+    if j1=1 then
+      begin
+       TTemplate(TreeView1.Selected.Data).
+        DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+       TTemplate(TreeView1.Selected.Data).
+        DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+      end
+     else   //scales
+      begin
+       j5:=-1;
+       for i := 0 to TTemplate(TreeView1.Selected.Data).Slots.Count-1 do
+        begin
+          if TSlot(TTemplate(TreeView1.Selected.Data).Slots.Items[i]).DataType='Fuzzy' then
+           begin
+            //count of scales
+            Inc(j5);
+           if j5=((j1 div 2)-1) then
+             begin
+              j6:=tmKB1.IndexOfFScale(TSlot(TTemplate(TreeView1.Selected.Data).
+               Slots.Items[i]).Value);
+              if j6>-1 then
+               begin
+                TFScale(tmKB1.FScales.Items[j6]).
+                 DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+                TFScale(tmKB1.FScales.Items[j6]).
+                 DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+               end;
+             end;
+           end;
+        end;
+      end;
+    //reload arrows
+    TTemplate(TreeView1.Selected.Data).DrawArrowsV2(
+     TImage(ScrollBox4.Components[0]).Canvas,
+      ScrollBox4.HorzScrollBar.Position,
+       ScrollBox4.VertScrollBar.Position,tmKB1);
+   end;
+  //-------------------
+  if TObject(TreeView1.Selected.Data) is TFScale then
+   begin
+     doi:=TFScale(TreeView1.Selected.Data).ID;
+     if j1=1 then
+     //core
+      begin
+       TFScale(TreeView1.Selected.Data).
+        DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+       TFScale(TreeView1.Selected.Data).
+        DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+      end
+     else
+     //terms
+      begin
+       TFVar(TFScale(TreeView1.Selected.Data).ListOfValues.Objects[j1-2]).
+        DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+       TFVar(TFScale(TreeView1.Selected.Data).ListOfValues.Objects[j1-2]).
+        DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+      end;
+
+    //reload arrows
+    TFScale(TreeView1.Selected.Data).DrawArrowsV2(
+     TImage(ScrollBox4.Components[0]).Canvas,
+      ScrollBox4.HorzScrollBar.Position,
+       ScrollBox4.VertScrollBar.Position);
+   end;
+  //-------------------
+  if TObject(TreeView1.Selected.Data) is TFVar then
+   begin
+    doi:=TFVar(TreeView1.Selected.Data).ID;
+     for i := 0 to MovedObj.Parent.ControlCount-1 do
+      begin
+//       if i=0 then s:='' else s:=IntToStr(i);
+       TFVar(TreeView1.Selected.Data).
+        DrawParams.Values['x'+doi]:=
+         IntToStr(MovedObj.Parent.Controls[i].Left);
+       TFVar(TreeView1.Selected.Data).
+        DrawParams.Values['y'+doi]:=
+         IntToStr(MovedObj.Parent.Controls[i].Top);
+      end;
+   end;
+  //-------------------
+  if TObject(TreeView1.Selected.Data) is TFact then
+   begin
+     doi:=TFact(TreeView1.Selected.Data).ID;
+     tmKB1:=GetKBForNode(TreeView1.Selected);
+     if j1=1 then
+      begin
+       TFact(TreeView1.Selected.Data).
+        DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+       TFact(TreeView1.Selected.Data).
+        DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+      end
+     else  //terms
+      begin
+        j6:=tmKB1.IndexOfTemplateV3(TFact(TreeView1.Selected.Data));
+        j2:=0;
+//        for i := 0 to TFact(TreeView1.Selected.Data).Slots.Count-1 do
+//         begin
+          if j6>-1 then
+           begin
+            j7:=0;
+           for j3 := 0 to TTemplate(tmKb1.Templates.Items[j6]).Slots.Count-1 do
+            if (TSlot(TTemplate(tmKb1.Templates.Items[j6]).Slots.Items[j3]).DataType='Fuzzy')
+//             and (TSlot(TTemplate(tmKb1.Templates.Items[j6]).Slots.Items[j3]).Name=
+//               TSlot(TFact(TreeView1.Selected.Data).Slots.Items[i]).Name)
+                then
+                 begin
+                   inc(j7);
+                   if j7=(j1-1) then
+                     begin
+                      j4:=tmKb1.IndexOfFScale(TSlot(TTemplate(tmKb1.Templates.Items[j6]).
+                       Slots.Items[j3]).Value);
+                      if j4>-1 then
+                       begin
+                        j5:=TFScale(tmKb1.FScales.Items[j4]).ListOfValues.IndexOf(TSlot(
+                         TFact(TreeView1.Selected.Data).Slots.Items[j3]).Value);
+                        if j5>-1 then
+                         begin
+                           TFVar(TFScale(tmKb1.FScales.Items[j4]).ListOfValues.Objects[j5]).
+                            DrawParams.Values['x'+doi]:= IntToStr(MovedObj.Left);
+                           TFVar(TFScale(tmKb1.FScales.Items[j4]).ListOfValues.Objects[j5]).
+                            DrawParams.Values['y'+doi]:= IntToStr(MovedObj.Top);
+                         end;
+                       end;
+                     end;
+                 end;
+            end;
+//         end;
+      end;
+    //reload arrows
+    TFact(TreeView1.Selected.Data).DrawArrowsV2(
+     TImage(ScrollBox4.Components[0]).Canvas,
+      ScrollBox4.HorzScrollBar.Position,
+       ScrollBox4.VertScrollBar.Position, tmKb1);
+   end;
+   //--------------------------
+  if TObject(TreeView1.Selected.Data) is TGRule then
+   begin
+     doi:=TGRule(TreeView1.Selected.Data).ID;
+     j:=TGRule(TreeView1.Selected.Data).Conditions.Count*2+1;
+     if j1=j then
+      begin //core
+       TGRule(TreeView1.Selected.Data).
+        DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+       TGRule(TreeView1.Selected.Data).
+        DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+      end
+     else
+      if j1<j then
+       begin //conditions
+         TTemplate(TGRule(TreeView1.Selected.Data).Conditions.Items[
+          (j1 div 2)-1]).
+          DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+         TTemplate(TGRule(TreeView1.Selected.Data).Conditions.Items[
+          (j1 div 2)-1]).
+           DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+       end
+      else //actions
+       begin
+         TTemplate(TGRule(TreeView1.Selected.Data).Actions.Items[
+          ((j1-j) div 2)-1]).
+          DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+         TTemplate(TGRule(TreeView1.Selected.Data).Actions.Items[
+          ((j1-j) div 2)-1]).
+           DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+       end;
+
+    //reload arrows
+    TGRule(TreeView1.Selected.Data).DrawArrowsV2(
+     TImage(ScrollBox4.Components[0]).Canvas,
+      ScrollBox4.HorzScrollBar.Position,
+       ScrollBox4.VertScrollBar.Position);
+   end;
+   //--------------------------
+  if TObject(TreeView1.Selected.Data) is TRule then
+   begin
+     doi:=TRule(TreeView1.Selected.Data).ID;
+     j:=TRule(TreeView1.Selected.Data).Conditions.Count*2+1;
+     if j1=j then
+      begin //core
+       TRule(TreeView1.Selected.Data).
+        DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+       TRule(TreeView1.Selected.Data).
+        DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+      end
+     else
+      if j1<j then
+       begin //conditions
+         TCondition(TRule(TreeView1.Selected.Data).Conditions.Items[
+          (j1 div 2)-1]).Fact.
+          DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+         TCondition(TRule(TreeView1.Selected.Data).Conditions.Items[
+          (j1 div 2)-1]).Fact.
+           DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+       end
+      else //actions
+       begin
+         TRAction(TRule(TreeView1.Selected.Data).Actions.Items[
+          ((j1-j) div 2)-1]).Fact.
+          DrawParams.Values['x'+doi]:=IntToStr(MovedObj.Left);
+         TRAction(TRule(TreeView1.Selected.Data).Actions.Items[
+          ((j1-j) div 2)-1]).Fact.
+           DrawParams.Values['y'+doi]:=IntToStr(MovedObj.Top);
+       end;
+
+    //reload arrows
+    TRule(TreeView1.Selected.Data).DrawArrowsV2(
+     TImage(ScrollBox4.Components[0]).Canvas,
+      ScrollBox4.HorzScrollBar.Position,
+       ScrollBox4.VertScrollBar.Position);
+   end;
+  //drow arrows
+// TreeView1Click(TreeView1);
+ except
+  tmPSO1.Free;
+  tmPSO1:=nil;
+  tmPSO2.Free;
+  tmPSO2:=nil;
+  tmPSO3.Free;
+  tmPSO3:=nil;
+  tmPSO4.Free;
+  tmPSO4:=nil;
+ end;
+end;
+//-----------------------------------------------------------------------------
+procedure TMainForm.ElementDragOver(Sender, Source: TObject; X, Y: Integer;
+  State: TDragState; var Accept: Boolean);
+var
+ MovedObj : TControl;
+begin
+  if (Sender as TControl <> Source) then
+    begin
+     Accept := True;
+     if (Source is TImage)and(TImage(Source).Tag=2) then MovedObj:=TImage(Source).Parent;
+     if (Source is TRzPanel) then
+      if TRzPanel(Source).Tag=1 then MovedObj:=TRzPanel(Source)
+       else MovedObj:=TRzPanel(Source).Parent;
+
+ if (Sender is TScrollBox) then
+  begin
+//   Y:=MovedObj.Top+Y;
+//   X:=MovedObj.Left+X;
+  end
+ else
+  if (Sender is TImage)and(TImage(Source).Tag=2) then
+    begin
+     Y:=TImage(Sender).Parent.Top+TImage(Sender).Top+Y;
+     X:=TImage(Sender).Parent.Left+TImage(Sender).Left+X;
+    end
+   else
+    if TRzPanel(Sender).Tag=1 then
+      begin
+       Y:=TRzPanel(Sender).Top+Y;
+       X:=TRzPanel(Sender).Left+X;
+      end
+     else
+      begin
+       Y:=TRzPanel(Sender).Parent.Top+TRzPanel(Sender).Top+Y;
+       X:=TRzPanel(Sender).Parent.Left+TRzPanel(Sender).Left+X;
+      end;
+
+//---------------
+     if tmPSO1=nil then
+      begin //create a frame
+       tmPSO1:=STDIClass.AddLine(ScrollBox4,
+        X,Y,MovedObj.Height,1);
+       tmPSO1.LineColor:=clRed;
+       tmPSO1.ArrowLength:=0;
+       tmPSO1.Width:=1;
+       tmPSO1.LineWidth:=2;
+//       tmPSO1.OnDragOver:=tmPSODragOver;
+//       tmPSO1.OnDragDrop:=tmPSODragDrop;
+
+      //top side
+       tmPSO2:=STDIClass.AddLine(ScrollBox4,
+        Y,X,1,MovedObj.Width);
+       tmPSO2.LineColor:=clRed;
+       tmPSO2.ArrowLength:=0;
+       tmPSO2.Height:=1;
+       tmPSO2.LineWidth:=2;
+//       tmPSO2.OnDragOver:=tmPSODragOver;
+//       tmPSO2.OnDragDrop:=tmPSODragDrop;
+
+      //bottom side
+       tmPSO3:=STDIClass.AddLine(ScrollBox4,
+        Y+MovedObj.Height,X,
+         1,MovedObj.Width+1);
+       tmPSO3.LineColor:=clRed;
+       tmPSO3.ArrowLength:=0;
+       tmPSO3.Height:=1;
+       tmPSO3.LineWidth:=2;
+//       tmPSO3.OnDragOver:=tmPSODragOver;
+//       tmPSO3.OnDragDrop:=tmPSODragDrop;
+
+      //right side
+       tmPSO4:=STDIClass.AddLine(ScrollBox4,
+        Y,X+MovedObj.Width,
+         MovedObj.Height+1,1);
+       tmPSO4.LineColor:=clRed;
+       tmPSO4.ArrowLength:=0;
+       tmPSO4.Width:=1;
+       tmPSO4.LineWidth:=2;
+//       tmPSO4.OnDragOver:=tmPSODragOver;
+//       tmPSO4.OnDragDrop:=tmPSODragDrop;
+      end
+     else
+      begin  //move a frame
+       //left side
+       tmPSO1.Top:=Y;
+       tmPSO1.Left:=X;
+       //top side
+       tmPSO2.Top:=Y;
+       tmPSO2.Left:=X;
+       //bottom
+       tmPSO3.Top:=Y+MovedObj.Height;
+       tmPSO3.Left:=X;
+       //right
+       tmPSO4.Top:=Y;
+       tmPSO4.Left:=X+MovedObj.Width;
+      end;
+//---------------
+  end;
+end;
 //-----------------------------------------------------------------------------
 procedure TMainForm.ESMenuItemClick(Sender: TObject);
 var
@@ -1353,6 +1807,37 @@ begin
  end;
 end;
 
+procedure TMainForm.TinyDecisionTablesEditor1Click(Sender: TObject);
+begin
+ if MainForm.TreeView1.Selected=nil then
+  MainForm.MMessageBox(1,0,'0='+
+   STDIClass.LoadSingleString('Please, select the knowledge base',
+    LangLocaleDir+LangPrefix+'012.lan')
+   )
+  else
+   begin
+    Application.CreateForm(TTDTForm, TDTForm);
+    TDTForm.ShowModal;
+    TDTForm.Free;
+   end;
+// TDTForm.ShowModal;
+end;
+
+procedure TMainForm.TinyRVMLEditor1Click(Sender: TObject);
+begin
+ if MainForm.TreeView1.Selected=nil then
+  MainForm.MMessageBox(1,0,'0='+
+   STDIClass.LoadSingleString('Please, select the knowledge base',
+    LangLocaleDir+LangPrefix+'012.lan')
+   )
+  else
+   begin
+    Application.CreateForm(TTRVMLEForm, TRVMLEForm);
+    TRVMLEForm.ShowModal;
+    TRVMLEForm.Free;
+   end;
+end;
+
 procedure TMainForm.C1Click(Sender: TObject);
 begin
   ToolButton12Click(ToolButton12);
@@ -1377,11 +1862,11 @@ begin
  Result:=LibraryMethod;
 end;
 
-
 procedure TMainForm.CanonicalTablescsvbeta1Click(Sender: TObject);
 var
   ext : String;
   i : Integer;
+  nF : TAggStrategesSelectForm;
 begin
  OpenDialog1.Title:=Application.Title+': '+
     STDIClass.LoadSingleString('Import',LangLocaleDir+LangPrefix+'012.lan');
@@ -1401,32 +1886,40 @@ begin
  if OpenDialog1.Execute then
   if OpenDialog1.FileName<>'' then
    begin
-    tmKb.Init;
+    //create select strateges for agg form
+    AggStrategesList:=TStringList.Create;
+    Application.CreateForm(TAggStrategesSelectForm, nF);
+    nF.ShowModal;
+    nF.Free;
 
-    prP:=STDIClass.CreateProgressIndicator(Self,
-     IntToStr(OpenDialog1.Files.Count)
-      );
-
-    for i := 0 to OpenDialog1.Files.Count-1 do
+    if AggStrategesList.Count>0 then
      begin
-      tmKb.LoadFromCSVFile(OpenDialog1.Files.Strings[i]);
-      //-----------------------------
-//      prP.Caption:=LS('Please,wait')+' ('+
-      prP.Caption:='Transforming'+' ('+
-       IntToStr(Round(100*i/OpenDialog1.Files.Count))
-       +'%)';
-      Application.ProcessMessages;
-      //-----------------------------
+      tmKb.Init;
+      prP:=STDIClass.CreateProgressIndicator(Self,
+       IntToStr(OpenDialog1.Files.Count)
+        );
+
+      for i := 0 to OpenDialog1.Files.Count-1 do
+       begin
+        tmKb.LoadFromCSVFile(OpenDialog1.Files.Strings[i]);
+        //-----------------------------
+  //      prP.Caption:=LS('Please,wait')+' ('+
+        prP.Caption:='Transforming'+' ('+
+         IntToStr(Round(100*i/OpenDialog1.Files.Count))
+         +'%)';
+        Application.ProcessMessages;
+        //-----------------------------
+       end;
+
+       tmKb.Aggregate(AggStrategesList.Text);
+
+       prP.Free;
+       Application.CreateForm(TExp, Exp);
+
+       Exp.KB:=tmKb;
+       Exp.Tag:=3;
+       Exp.ShowModal;
      end;
-
-     tmKb.Aggregate('');
-
-     prP.Free;
-     Application.CreateForm(TExp, Exp);
-
-     Exp.KB:=tmKb;
-     Exp.Tag:=3;
-     Exp.ShowModal;
    end
 { end
    else
@@ -1562,13 +2055,16 @@ begin
 end;
 
 procedure TMainForm.Importdata1Click(Sender: TObject);
-var
-// K : TKnowledgeBase;
- tmTs : TStringList;
- i : Integer;
 begin
  Application.CreateForm(TImportDataForCasesForm, ImportDataForCasesForm);
-// addKB.Tag:=2;
+ ImportDataForCasesForm.Tag:=1; //for data (facts and cases)
+ ImportDataForCasesForm.ShowModal;
+end;
+
+procedure TMainForm.ImportrulesClick(Sender: TObject);
+begin
+ Application.CreateForm(TImportDataForCasesForm, ImportDataForCasesForm);
+ ImportDataForCasesForm.Tag:=2; //for rules
  ImportDataForCasesForm.ShowModal;
 end;
 
@@ -1802,6 +2298,12 @@ begin
      if (pos(
       STDIClass.LoadSingleString('General',LangLocaleDir+LangPrefix+'012.lan')
        ,pN.Text)>0) then c:=tmKB.GRules.Count;
+     if (pos(
+      STDIClass.LoadSingleString('Scales',LangLocaleDir+LangPrefix+'012.lan')
+       ,pN.Text)>0) then c:=tmKB.FScales.Count;
+     if (pos(
+      STDIClass.LoadSingleString('Fuzzy',LangLocaleDir+LangPrefix+'012.lan')
+       ,pN.Text)>0) then c:=tmKB.FVars.Count;
   end;
 
  Result:=tmTs.Strings[0]+
@@ -1833,7 +2335,10 @@ end;
 
 procedure TMainForm.FileExit1Execute(Sender: TObject);
 begin
-  Close;
+ if MMessageBox(1,1,'0='+
+  STDIClass.LoadSingleString('Exit',LangLocaleDir+LangPrefix+'012.lan'))=0
+   then
+    Close;
 end;
 
 procedure TMainForm.N8Click(Sender: TObject);
@@ -1853,6 +2358,42 @@ end;
 procedure TMainForm.N41Click(Sender: TObject);
 begin
  ToolButton18Click(ToolButton18);
+end;
+
+procedure TMainForm.N43Click(Sender: TObject);
+var
+ nF : TAggStrategesSelectForm;
+ K : TKnowledgeBase;
+ pN : TTreeNode;
+begin
+ if TreeView1.Selected<>nil then
+  begin
+   //select KB
+   K:=GetKBForNode(TreeView1.Selected);
+   if K<>nil then
+    begin
+     if MMessageBox(1,1,'0='+
+      LS('Aggregate entities and relationships')+'?')=0  then
+       begin
+        AggStrategesList:=TStringList.Create;
+        Application.CreateForm(TAggStrategesSelectForm, nF);
+        nF.ShowModal;
+        nF.Free;
+        if AggStrategesList.Count>0 then
+         begin
+          //process KB
+          K.Aggregate(AggStrategesList.Text);
+          //close KB in the tree
+          pN:=TreeView1.Selected.Parent;
+          TreeView1.Selected.Delete;
+          pN.Text:=PutChildCount(pN);
+          TreeView1.Selected:=pN;
+          //show KB
+          MainForm.LoadTree(KBList,MainForm.TreeView1);
+         end;
+       end;
+    end;
+  end;
 end;
 
 procedure TMainForm.N4Click(Sender: TObject);
@@ -1944,7 +2485,7 @@ begin
      Exp.Tag:=3;
      Exp.ShowModal;
    end
- end  
+ end
    else
     begin
      MMessageBox(1,0,'0='+
@@ -1975,80 +2516,80 @@ var
  K : TKnowledgeBase;
  tmTs : TStringList;
 begin
- for i := TreeView1.Items[0].Count-1 downto 0 do
-  begin
-   TreeView1.Selected:=TreeView1.Items[0].Item[i];
-   if MMessageBox(1,1,'0='+
-    STDIClass.LoadSingleString('Save the knowledge base',LangLocaleDir+LangPrefix+'012.lan')
-    +': '+
-    TKnowledgeBase(TreeView1.Selected.Data).Name
-     +'?')=0
-    then
-    begin
-     K:=GetKBForNode(TreeView1.Selected);
-     if (K<>nil) then
+    for i := TreeView1.Items[0].Count-1 downto 0 do
       begin
-       if K.FileName='' then
+       TreeView1.Selected:=TreeView1.Items[0].Item[i];
+       if MMessageBox(1,1,'0='+
+        STDIClass.LoadSingleString('Save the knowledge base',LangLocaleDir+LangPrefix+'012.lan')
+        +': '+
+        TKnowledgeBase(TreeView1.Selected.Data).Name
+         +'?')=0
+        then
         begin
-         SaveDialog1.Title:=Application.Title+': '+
-          STDIClass.LoadSingleString('Save',LangLocaleDir+LangPrefix+'012.lan');
-         SaveDialog1.Filter:='EKB files |*.ekb|'
-          +STDIClass.LoadSingleString('All',LangLocaleDir+LangPrefix+'012.lan')
-          +'|*.*';
-         SaveDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'.\Data';
-         SaveDialog1.FileName:='';
-
-        if SaveDialog1.Execute() then
-         if (SaveDialog1.FileName<>'') then
-         begin
-          if pos('.ekb',SaveDialog1.FileName)=0 then
-           SaveDialog1.FileName:=SaveDialog1.FileName+'.ekb';
-          K.FileName:=
-           SaveDialog1.FileName;
-          XmlSave.GXMLStrSF(K.FileName,K);
-         end;
-        end
-       else
-        begin
-         if Self.Tag=1 then //es mode
+         K:=GetKBForNode(TreeView1.Selected);
+         if (K<>nil) then
           begin
-           if pos('CLIPS',pName)>0 then
+           if K.FileName='' then
             begin
-             tmTs:=TStringList.Create;
-              tmTs.Text:=KB.
-               GetDescriptionOnKBLanguage(
-                ExtractFileDir(Application.ExeName)+'\Dll\cs.dll'
-                 );
-              try
-               TTask(TreeView1.Items.Item[0].Item[0].Item[4].Item[0]).
-                SaveMetaInfotoFile(tmTs);
-              except
-              end;
+             SaveDialog1.Title:=Application.Title+': '+
+              STDIClass.LoadSingleString('Save',LangLocaleDir+LangPrefix+'012.lan');
+             SaveDialog1.Filter:='EKB files |*.ekb|'
+              +STDIClass.LoadSingleString('All',LangLocaleDir+LangPrefix+'012.lan')
+              +'|*.*';
+             SaveDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'.\Data';
+             SaveDialog1.FileName:='';
 
-              tmTs.SaveToFile(K.FileName);
-            end
-           else
-            if pos('PKBD',pName)>0 then
+            if SaveDialog1.Execute() then
+             if (SaveDialog1.FileName<>'') then
              begin
+              if pos('.ekb',SaveDialog1.FileName)=0 then
+               SaveDialog1.FileName:=SaveDialog1.FileName+'.ekb';
+              K.FileName:=
+               SaveDialog1.FileName;
               XmlSave.GXMLStrSF(K.FileName,K);
              end;
-          end
-         else
-          XmlSave.GXMLStrSF(K.FileName,K);
+            end
+           else
+            begin
+             if Self.Tag=1 then //es mode
+              begin
+               if pos('CLIPS',pName)>0 then
+                begin
+                 tmTs:=TStringList.Create;
+                  tmTs.Text:=KB.
+                   GetDescriptionOnKBLanguage(
+                    ExtractFileDir(Application.ExeName)+'\Dll\cs.dll'
+                     );
+                  try
+                   TTask(TreeView1.Items.Item[0].Item[0].Item[4].Item[0]).
+                    SaveMetaInfotoFile(tmTs);
+                  except
+                  end;
+
+                  tmTs.SaveToFile(K.FileName);
+                end
+               else
+                if pos('PKBD',pName)>0 then
+                 begin
+                  XmlSave.GXMLStrSF(K.FileName,K);
+                 end;
+              end
+             else
+              XmlSave.GXMLStrSF(K.FileName,K);
+            end;
+          end;
         end;
       end;
-    end;
-  end;
 
- tmTs:=TStringList.Create;
- tmTs.Add('lang='+Copy(LangPrefix,1,2));
- if Self.Tag=1 then s:='es';
- tmTs.Add('mode='+s);
+     tmTs:=TStringList.Create;
+     tmTs.Add('lang='+Copy(LangPrefix,1,2));
+     if Self.Tag=1 then s:='es';
+     tmTs.Add('mode='+s);
 
- tmTs.SaveToFile(
-  ExtractFileDir(Application.ExeName)+'/Config/pkbd.cfg'
-   );
- Application.Terminate;
+     tmTs.SaveToFile(
+      ExtractFileDir(Application.ExeName)+'/Config/pkbd.cfg'
+       );
+     Application.Terminate;
 end;
 
 function TH_REPORT(p: pointer):integer;
@@ -2490,19 +3031,12 @@ end;
 //  TMethod = function (ProxyParams,InStr,URL:WideString):WideString; stdcall;
 var
  tmTs : TStringList;
-// ModuleID   : Cardinal;
-// EntryPoint : Pointer;
-// LMethod:TMethod;
-
-// c,cc  : String;
  i  : Integer;
-// SerialNumber : string;
-// f  : TStringList;
 
-// tmMI : TMenuItem;
 begin
-// Ver:='3.2015.1015.3 ';
- Ver:='4.2018.0201.6 ';
+
+ Ver:='4.2020.0303.6 ';
+ HelpMessages:=TList.Create;
  RzListView1.Clear;
  RzSplitter3.Percent:=100;
  RzSplitter3.PercentMin:=100;
@@ -2531,28 +3065,32 @@ begin
    KBDS_server_url:='kbds.knowledge-core.ru';
  except
  end;
-// English1Click(English1); //eng
-// LangPrefix:='ru/';
-// LF1:=LangLocaleDir+LangPrefix+'012.lan';
 
  DllListForAbout:=TStringList.Create;
  //list of modules
- DllListForAbout.Add('CLIPS Support=CS.dll');
- DllListForAbout.Add('CLIPS Inference machine=6.1');
  DllListForAbout.Add('CBR Inference machine=002.dll');
+ DllListForAbout.Add('CLIPS Inference machine=6.1');
+ DllListForAbout.Add('CLIPS Support=CS.dll');
+ DllListForAbout.Add('CSV Exporter for decision tables=1.2019');
+ DllListForAbout.Add('CSV Importer for TabbyXL=3.2020');
  DllListForAbout.Add('DM Support: ARAMIS=1.2014');
  DllListForAbout.Add('DROOLS Support=DRLS.dll');
- DllListForAbout.Add('MDL Importer for IBM Rational Rose=2.2016');
+ DllListForAbout.Add('FuzzyCLIPS Support=fzcs.dll');
+ DllListForAbout.Add('FuzzyRVML Support=1.2021');
  DllListForAbout.Add('MDL Exporter for IBM Rational Rose=1.2016 [beta]');
+ DllListForAbout.Add('MDL Importer for IBM Rational Rose=2.2016');
  DllListForAbout.Add('MDJ Importer for StarUML=1.2016');
+ DllListForAbout.Add('OWL Exporter for Protege=3.2020');
  DllListForAbout.Add('OWL Importer for Protege=owl.i.dll');
- DllListForAbout.Add('Report Builder=005.dll');
- DllListForAbout.Add('RVML Support=3.2016');
+ DllListForAbout.Add('PHP Importer for rule engine=1.2019');
+ DllListForAbout.Add('Report Builder=4.2020');
  DllListForAbout.Add('Rule-based expert system builder=1.2016');
- DllListForAbout.Add('XMI Importer for StarUML=xmi.staruml.i.dll');
+ DllListForAbout.Add('Tiny Decision Tables Editor=1.2021 [beta]');
+ DllListForAbout.Add('Tiny RVML Editor=4.2021');
  DllListForAbout.Add('XMI Exporter for StarUML=1.2018 [beta]');
- DllListForAbout.Add('XCL Importer for CmapTools=cxl.i.dll');
+ DllListForAbout.Add('XMI Importer for StarUML=xmi.staruml.i.dll');
  DllListForAbout.Add('XTM Exporter for CmapTools=xtm.s.dll');
+ DllListForAbout.Add('XCL Importer for CmapTools=cxl.i.dll');
  DllListForAbout.Add('XMind Importer=xmind.i.dll');
  //load versions of modules
  LoadDllVersions;
@@ -2569,7 +3107,6 @@ begin
  Translit:=TTranslit.Create;
  Translit.Init;
 
- HelpMessages:=TList.Create;
 // LoadHelpMessages(HelpMessages,
 //  ExtractFileDir(Application.ExeName)+'/Lang/_011.lan');
  //!!!!
@@ -2684,6 +3221,58 @@ end;    }
     ApplyPolicy(UserMode);
   end;
 
+end;
+procedure TMainForm.FormResize(Sender: TObject);
+begin
+ ToolBar3.Left:=RzPageControl1.Width-ToolBar3.Width;
+end;
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+ FormResize(Self);
+end;
+//----------------------------------------------------------------------
+procedure TMainForm.FuzzyCLIPSclp1Click(Sender: TObject);
+var
+  tmKB  : TKnowledgeBase;
+  ext : String;
+  tmTs : TStringList;
+begin
+ if TreeView1.Selected<>nil then
+  begin
+   tmKB:=GetKBForNode(TreeView1.Selected);
+   if tmKB<>nil then
+    begin
+      SaveDialog1.Title:=Application.Title+': '+MainForm.LS('Export to FuzzyCLIPS');
+      ext:='.clp'; //else ext:='.*';
+
+
+      SaveDialog1.Filter:='FuzzyCLIPS files |'
+       +'*'+ext+'|'+MainForm.LS('All')+'|*.*';
+      SaveDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'\Data';
+
+      tmTs:=TStringList.Create;
+
+      if SaveDialog1.Execute() then
+       if (SaveDialog1.FileName<>'') then
+       begin
+    //    tmKB:=GetKBForNode(TreeView1.Selected);
+
+        if pos(ext,SaveDialog1.FileName)=0 then
+         ext:=SaveDialog1.FileName+ext
+          else ext:=SaveDialog1.FileName;
+
+        tmTs.Text:=tmKB.GetDescriptionOnKBLanguage('fzcs.dll');
+        tmTs.SaveToFile(ext);
+        MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
+       end;
+    end
+   else
+    MainForm.MMessageBox(1,0,'0='+
+     STDIClass.LoadSingleString('Please, select the knowledge base',
+      LangLocaleDir+LangPrefix+'012.lan')
+     );
+  end;
 end;
 //----------------------------------------------------------------------
 procedure TMainForm.LoadKBDSMenuItems; //
@@ -2867,6 +3456,14 @@ begin
      STDIClass.LoadSingleString('General',LangLocaleDir+LangPrefix+'012.lan')
       ,Tree.Items[i].Text)>0) then
        Tree.Items[i].ImageIndex:=16;
+    if (pos(
+     STDIClass.LoadSingleString('FuzzyVars',LangLocaleDir+LangPrefix+'012.lan')
+      ,Tree.Items[i].Text)>0) then
+       Tree.Items[i].ImageIndex:=10;
+    if (pos(
+     STDIClass.LoadSingleString('Scales',LangLocaleDir+LangPrefix+'012.lan')
+      ,Tree.Items[i].Text)>0) then
+       Tree.Items[i].ImageIndex:=5;
    end;
   if (Tree.Items[i].Level>=3) then
    begin
@@ -2878,6 +3475,8 @@ begin
     if TObject(Tree.Items[i].Data) is TTask then Tree.Items[i].ImageIndex:=15;
     if TObject(Tree.Items[i].Data) is TGRule then Tree.Items[i].ImageIndex:=16;
     if TObject(Tree.Items[i].Data) is TSlot then Tree.Items[i].ImageIndex:=8;
+    if TObject(Tree.Items[i].Data) is TFVar then Tree.Items[i].ImageIndex:=11;
+    if TObject(Tree.Items[i].Data) is TFScale then Tree.Items[i].ImageIndex:=9;
     if (pos(
      STDIClass.LoadSingleString('Conditions',LangLocaleDir+LangPrefix+'012.lan')
       ,Tree.Items[i].Text)>0) then
@@ -2906,7 +3505,7 @@ begin
  for i:=0 to tmKBList.Count-1 do
   begin
    TKnowledgeBase(tmKBList.Items[i]).UpdateIDforGRules;
-   if TKnowledgeBase(tmKBList.Items[i]).AddToTreeView(TreeView1,tN).Expanded then
+   if TKnowledgeBase(tmKBList.Items[i]).AddToTreeView(Tree,tN).Expanded then
     tN.Expand(False);
   end;
 { tN:=Tree.Items.Add(nil,'Словари/справочники ('+IntToStr(CDicList.Count)+')');
@@ -2915,10 +3514,28 @@ begin
    TCDictionary(CDicList.Items[i]).AddToTreeView(TreeView1,tN);
   end;
 }  
- RebulidImagesOnTree(TreeView1);
+ RebulidImagesOnTree(Tree);
 end;
 //-----------------------------------------------------------------------------
+Function TMainForm.LoadTreeV2(tmKBList:TList; Tree:TTreeView):Integer;
 
+var
+ i  : Integer;
+ tN : TTreeNode;
+begin
+ Tree.Items.Clear;
+ tN:=Tree.Items.Add(nil,
+  STDIClass.LoadSingleString('Knowledge bases (projects)',LangLocaleDir+LangPrefix+'012.lan')
+  +' ['+IntToStr(tmKBList.Count)+']');
+ for i:=0 to tmKBList.Count-1 do
+  begin
+   TKnowledgeBase(tmKBList.Items[i]).UpdateIDforGRules;
+   if TKnowledgeBase(tmKBList.Items[i]).AddToTreeViewV2(Tree,tN,0).Expanded then
+    tN.Expand(False);
+  end;
+ RebulidImagesOnTree(Tree);
+end;
+//-----------------------------------------------------------------------------
 procedure TMainForm.LabelClick_V2(Sender: TObject);
 begin
  TreeView1.Selected:=TreeView1.Selected.Item[
@@ -2969,9 +3586,14 @@ begin
   STDIClass.LoadSingleString('Delete',LangLocaleDir+LangPrefix+'012.lan');
  DeleteItem.Enabled:=False;
  ToolButton11.Enabled:=False;  //pkg
- ToolButton17.Enabled:=False;  //image
+
+
+ if RzPageControl1.ActivePage=TabSheet5 then ToolBar3.Visible:=True
+  else  ToolBar3.Visible:=False;
+
  ToolButton18.Enabled:=False;  //create ES
  N41.Enabled:=False;  //create ES
+ N43.Enabled:=False;  //aggregate
 // CFM1.Enabled:=False;  //create ES
 
    //---------------------------------------------
@@ -2997,7 +3619,7 @@ begin
     RzBitBtn1.Enabled:=False; //check
 
     ToolButton17.Enabled:=False; //save as bmp
-    ToolButton21.Enabled:=False; //order by X axis
+    ToolButton21.Enabled:=False; //centred by X axis
    //---------------------------------------------
 
  STDIClass.ReleaseObjects(ScrollBox4);
@@ -3028,7 +3650,7 @@ try
     end;
  K:=GetKBForNode(TreeView1.Selected);
    //reload controls --------------------------------------
-   if K.Kind=0 then
+   if (K<>nil)and(K.Kind=0) then
     begin //for rule
      //-------------------------------------------
      ToolButton12.Enabled:=False; //case run
@@ -3136,6 +3758,7 @@ try
      EditItem.Enabled:=True;     //edit
      RzButton3.Enabled:=True;    //del
      RzButton4.Enabled:=True;    //edit
+     N43.Enabled:=True;  //aggregate
      //--------------------------------------------------
 
      TKnowledgeBase(TreeView1.Selected.Data).FactOrderMark(tmS);
@@ -3158,15 +3781,15 @@ try
         ,T,L+10,tmWC.Width-25-(L+10),clBlack,clNone,[fsBold]);
 
      s:='';
-//     case TKnowledgeBase(TreeView1.Selected.Data).Kind of
-//      0: s:='фактов';
-//      1: s:='прецедентов';
-//     end;
+     case TKnowledgeBase(TreeView1.Selected.Data).Kind of
+      0: s:='Templates2';
+      1: s:='Templates3';
+     end;
 
      T:=STDIClass.AddLabel(tmWC,
-      STDIClass.LoadSingleString('Templates1',LangLocaleDir+LangPrefix+'012.lan')
-       +s+': ('+
-      IntToStr(TKnowledgeBase(TreeView1.Selected.Data).Templates.Count)+')'
+      STDIClass.LoadSingleString(s,LangLocaleDir+LangPrefix+'012.lan')
+       +' ('+
+      IntToStr(TKnowledgeBase(TreeView1.Selected.Data).Templates.Count)+'):'
       ,T,L,250,clNavy,clNone,[]);
      for i:=0 to TKnowledgeBase(TreeView1.Selected.Data).Templates.Count-1 do
       begin
@@ -3176,10 +3799,10 @@ try
 
        T1:=STDIClass.AddLabel(tmWC,
         TTemplate(TKnowledgeBase(TreeView1.Selected.Data).Templates.Items[i]).Name
-        ,T,L+10+50,150,clBlack,clNone,[fsBold]);
+        ,T,L+10+50,190,clBlack,clNone,[fsBold]);
        T2:=STDIClass.AddLabel(tmWC,
         TTemplate(TKnowledgeBase(TreeView1.Selected.Data).Templates.Items[i]).Description
-        ,T,L+10+50+160,tmWC.Width-25-(L+10+50+160),clNavy,clNone,[fsBold]);
+        ,T,L+10+50+200,tmWC.Width-25-(L+10+50+200),clNavy,clNone,[fsBold]);
        if T1<T2 then T1:=T2;
        T:=T1;
       end;
@@ -3211,36 +3834,122 @@ try
        STDIClass.LoadSingleString('no data',LangLocaleDir+LangPrefix+'012.lan')
        ,T,L+10,250,clInactiveCaption,clNone,[]);
 
- {    T:=STDIClass.AddLabel(tmWC,'Правила: ('+
-      IntToStr(TKnowledgeBase(TreeView1.Selected.Data).Rules.Count)+')'
-      ,T+5,L,250,clNavy,clNone,[]);
-     for i:=0 to TKnowledgeBase(TreeView1.Selected.Data).Rules.Count-1 do
-      begin
-       STDIClass.AddLabel(tmWC,'['+
-        TRule(TKnowledgeBase(TreeView1.Selected.Data).Rules.Items[i]).ID
-         +']',T,10,30,clInactiveCaption,clNone,[fsBold]);
+    if TKnowledgeBase(TreeView1.Selected.Data).Kind=0 then
+     begin
+       //grules
+       T:=STDIClass.AddLabel(tmWC,
+        STDIClass.LoadSingleString('Generalized rules',LangLocaleDir+LangPrefix+'012.lan')
+         +' ('+
+        IntToStr(TKnowledgeBase(TreeView1.Selected.Data).GRules.Count)+'):'
+        ,T+5,L,250,clNavy,clNone,[]);
+       for i:=0 to TKnowledgeBase(TreeView1.Selected.Data).GRules.Count-1 do
+        begin
+         STDIClass.AddLabel(tmWC,'['+
+          TRule(TKnowledgeBase(TreeView1.Selected.Data).GRules.Items[i]).ID
+           +']',T,10,30,clInactiveCaption,clNone,[fsBold]);
 
-       T1:=STDIClass.AddLabel(tmWC,
-        TRule(TKnowledgeBase(TreeView1.Selected.Data).Rules.Items[i]).Name
-        ,T,L+10+50,150,clBlack,clNone,[fsBold]);
+         T1:=STDIClass.AddLabel(tmWC,
+          TRule(TKnowledgeBase(TreeView1.Selected.Data).GRules.Items[i]).Name
+          ,T,L+10+50,190,clBlack,clNone,[fsBold]);
 
-       T1:=STDIClass.AddLabel(tmWC,
-         TRule(TKnowledgeBase(TreeView1.Selected.Data).Rules.Items[i]).Description
-        ,T,L+10+50+160,tmWC.Width-25-(L+10+50+160),clNavy,clNone,[fsBold]);
-       if T1<T2 then T1:=T2;
-       T:=T1;
-      end;
-     if TKnowledgeBase(TreeView1.Selected.Data).Rules.Count=0 then
-      T:=STDIClass.AddLabel(tmWC,'сведений нет'
-       ,T,L+10,250,clInactiveCaption,clNone,[]);
+         T1:=STDIClass.AddLabel(tmWC,
+           TRule(TKnowledgeBase(TreeView1.Selected.Data).GRules.Items[i]).Description
+          ,T,L+10+50+200,tmWC.Width-25-(L+10+50+200),clNavy,clNone,[fsBold]);
+         if T1<T2 then T1:=T2;
+         T:=T1;
+        end;
+       if TKnowledgeBase(TreeView1.Selected.Data).GRules.Count=0 then
+        T:=STDIClass.AddLabel(tmWC,
+         STDIClass.LoadSingleString('no data',LangLocaleDir+LangPrefix+'012.lan')
+         ,T,L+10,250,clInactiveCaption,clNone,[]);
 
-     if TKnowledgeBase(TreeView1.Selected.Data).Functions.Count>0 then
-      begin
-       T:=STDIClass.AddLabel(tmWC,'Функции ('+
-        IntToStr(TKnowledgeBase(TreeView1.Selected.Data).Functions.Count)+')'
-        ,T,L,250,clNavy,clNone,[]);
-      end;
-  }
+       //rules
+       T:=STDIClass.AddLabel(tmWC,
+        STDIClass.LoadSingleString('Rules1',LangLocaleDir+LangPrefix+'012.lan')
+         +' ('+
+        IntToStr(TKnowledgeBase(TreeView1.Selected.Data).Rules.Count)+'):'
+        ,T+5,L,250,clNavy,clNone,[]);
+       for i:=0 to TKnowledgeBase(TreeView1.Selected.Data).Rules.Count-1 do
+        begin
+         STDIClass.AddLabel(tmWC,'['+
+          TRule(TKnowledgeBase(TreeView1.Selected.Data).Rules.Items[i]).ID
+           +']',T,10,30,clInactiveCaption,clNone,[fsBold]);
+
+         T1:=STDIClass.AddLabel(tmWC,
+          TRule(TKnowledgeBase(TreeView1.Selected.Data).Rules.Items[i]).Name
+          ,T,L+10+50,190,clBlack,clNone,[fsBold]);
+
+         T1:=STDIClass.AddLabel(tmWC,
+           TRule(TKnowledgeBase(TreeView1.Selected.Data).Rules.Items[i]).Description
+          ,T,L+10+50+200,tmWC.Width-25-(L+10+50+200),clNavy,clNone,[fsBold]);
+         if T1<T2 then T1:=T2;
+         T:=T1;
+        end;
+       if TKnowledgeBase(TreeView1.Selected.Data).Rules.Count=0 then
+        T:=STDIClass.AddLabel(tmWC,
+         STDIClass.LoadSingleString('no data',LangLocaleDir+LangPrefix+'012.lan')
+         ,T,L+10,250,clInactiveCaption,clNone,[]);
+
+ {      if TKnowledgeBase(TreeView1.Selected.Data).Functions.Count>0 then
+        begin
+         T:=STDIClass.AddLabel(tmWC,'Функции ('+
+          IntToStr(TKnowledgeBase(TreeView1.Selected.Data).Functions.Count)+')'
+          ,T,L,250,clNavy,clNone,[]);
+        end;   }
+       if TKnowledgeBase(TreeView1.Selected.Data).FScales.Count>0 then
+        begin
+         //3!
+         T:=STDIClass.AddLabel(tmWC,
+          STDIClass.LoadSingleString('Scales',LangLocaleDir+LangPrefix+'012.lan')
+         +' ('+
+          IntToStr(TKnowledgeBase(TreeView1.Selected.Data).FScales.Count)+'):'
+          ,T,L,250,clNavy,clNone,[]);
+         for i:=0 to TKnowledgeBase(TreeView1.Selected.Data).FScales.Count-1 do
+          begin
+           STDIClass.AddLabel(tmWC,'['+
+            TFScale(TKnowledgeBase(TreeView1.Selected.Data).FScales.Items[i]).ID
+             +']',T,10,30,clInactiveCaption,clNone,[fsBold]);
+
+           T1:=STDIClass.AddLabel(tmWC,
+            TFScale(TKnowledgeBase(TreeView1.Selected.Data).FScales.Items[i]).Name
+            ,T,L+10+50,190,clBlack,clNone,[fsBold]);
+
+           T1:=STDIClass.AddLabel(tmWC,
+             TFScale(TKnowledgeBase(TreeView1.Selected.Data).FScales.Items[i]).Description
+            ,T,L+10+50+200,tmWC.Width-25-(L+10+50+200),clNavy,clNone,[fsBold]);
+           if T1<T2 then T1:=T2;
+           T:=T1;
+          end;
+        end;
+
+  {     if TKnowledgeBase(TreeView1.Selected.Data).FVars.Count>0 then
+        begin
+         //3!
+         T:=STDIClass.AddLabel(tmWC,
+          STDIClass.LoadSingleString('FuzzyVars',LangLocaleDir+LangPrefix+'012.lan')
+         +' ('+
+          IntToStr(TKnowledgeBase(TreeView1.Selected.Data).FVars.Count)+'):'
+          ,T,L,250,clNavy,clNone,[]);
+         for i:=0 to TKnowledgeBase(TreeView1.Selected.Data).FVars.Count-1 do
+          begin
+           STDIClass.AddLabel(tmWC,'['+
+            TFVar(TKnowledgeBase(TreeView1.Selected.Data).FVars.Items[i]).ID
+             +']',T,10,30,clInactiveCaption,clNone,[fsBold]);
+
+           T1:=STDIClass.AddLabel(tmWC,
+            TFVar(TKnowledgeBase(TreeView1.Selected.Data).FVars.Items[i]).Name
+            ,T,L+10+50,190,clBlack,clNone,[fsBold]);
+
+           T1:=STDIClass.AddLabel(tmWC,
+             TFVar(TKnowledgeBase(TreeView1.Selected.Data).FVars.Items[i]).Description
+            ,T,L+10+50+200,tmWC.Width-25-(L+10+50+200),clNavy,clNone,[fsBold]);
+           if T1<T2 then T1:=T2;
+           T:=T1;
+          end;
+        end;  }
+
+     end;
+
     if (DllIndex<>-1)and(DllList.Count>0) then
       tmTs.Text:=TKnowledgeBase(TreeView1.Selected.Data).
        GetDescriptionOnKBLanguage(DllList.Names[DllIndex]);
@@ -3257,7 +3966,7 @@ try
        EditItem.Enabled:=True;     //edit
        RzButton3.Enabled:=True;    //del
 //       RzButton4.Enabled:=True;    //edit
-//       ToolButton11.Enabled:=True;   //pkg
+       ToolButton21.Enabled:=True;   //order by X
 
        ToolButton17.Enabled:=True; //save as bmp
       end;
@@ -3308,18 +4017,11 @@ try
 
     if (DllIndex<>-1)and(DllList.Count>0) then
       tmTs.Text:=TTemplate(TreeView1.Selected.Data).
-       GetDescriptionOnKBLanguage(DllList.Names[DllIndex]);
+       GetDescriptionOnKBLanguage(DllList.Names[DllIndex],K);
 
      STDIClass.ReleaseObjects(ScrollBox4);
-//     TTemplate(TreeView1.Selected.Data).DrawParams.Clear;
-     TTemplate(TreeView1.Selected.Data).Draw(ScrollBox4);
-
-     CurrentRVMLObject:=TTemplate(TreeView1.Selected.Data);
-
-     TTemplate(CurrentRVMLObject).RVMLImage.DragMode:=dmAutomatic;
-//     TTemplate(CurrentRVMLObject).RVMLImage.OnMouseDown:=RVMLImageMouseDown;
- //    TTemplate(CurrentRVMLObject).RVMLImage.OnDragOver:=ScrollBox4.OnDragOver;
- //    TTemplate(CurrentRVMLObject).RVMLImage.OnDragDrop:=ScrollBox4.OnDragDrop;
+     TTemplate(TreeView1.Selected.Data).DrawV2(ScrollBox4,0,1,
+      TTemplate(TreeView1.Selected.Data).ID);
     end;
    //-------------------------------------------------------------------------------
    //slot description
@@ -3517,16 +4219,17 @@ try
        GetDescriptionOnKBLanguage(DllList.Names[DllIndex]);
 
      STDIClass.ReleaseObjects(ScrollBox4);
-     TRule(TreeView1.Selected.Data).Draw(ScrollBox4);
+//     TRule(TreeView1.Selected.Data).Draw(ScrollBox4);
+     TRule(TreeView1.Selected.Data).DrawV2(ScrollBox4,0,
+      TRule(TreeView1.Selected.Data).ID);
 
 //     CurrentRVMLObject:=TRule(TreeView1.Selected.Data);
 
-     TRule(TreeView1.Selected.Data).RVMLImage.OnMouseDown:=RVMLImageMouseDown;
-     TRule(TreeView1.Selected.Data).RVMLImage.OnDragOver:=ScrollBox4.OnDragOver;
-     TRule(TreeView1.Selected.Data).RVMLImage.OnDragDrop:=ScrollBox4.OnDragDrop;
-//       TRule(TreeView1.Selected.Data).RVMLImage.DragMode:=dmAutomatic;
+//     TRule(TreeView1.Selected.Data).RVMLImage.OnMouseDown:=RVMLImageMouseDown;
+//     TRule(TreeView1.Selected.Data).RVMLImage.OnDragOver:=ScrollBox4.OnDragOver;
+//     TRule(TreeView1.Selected.Data).RVMLImage.OnDragDrop:=ScrollBox4.OnDragDrop;
 
-     for i:=0 to TRule(TreeView1.Selected.Data).DrawnObjects.Count-1 do
+{     for i:=0 to TRule(TreeView1.Selected.Data).DrawnObjects.Count-1 do
       begin
 //       TImage(TRule(TreeView1.Selected.Data).DrawnObjects.Items[i]).OnMouseDown:=
 //        RVMLImageMouseDown;
@@ -3536,7 +4239,8 @@ try
 //        RVMLImageDragDrop;
       TImage(TRule(TreeView1.Selected.Data).DrawnObjects.Items[i]).DragMode:=
         dmAutomatic;
-      end;
+      end;  }
+//      TRule(TreeView1.Selected.Data).ShowAsTable(ScrollBox1,800,1);
     end;
 
    //-------------------------------------------------------------------------------
@@ -3666,14 +4370,16 @@ try
       STDIClass.LoadSingleString('no data',LangLocaleDir+LangPrefix+'012.lan');
 
      STDIClass.ReleaseObjects(ScrollBox4);
-     TGRule(TreeView1.Selected.Data).Draw(ScrollBox4);
+//     TGRule(TreeView1.Selected.Data).Draw(ScrollBox4);
+     TGRule(TreeView1.Selected.Data).DrawV2(ScrollBox4,0,
+      TGRule(TreeView1.Selected.Data).ID);
 
-     TGRule(TreeView1.Selected.Data).RVMLImage.OnMouseDown:=RVMLImageMouseDown;
-     TGRule(TreeView1.Selected.Data).RVMLImage.OnDragOver:=ScrollBox4.OnDragOver;
-     TGRule(TreeView1.Selected.Data).RVMLImage.OnDragDrop:=ScrollBox4.OnDragDrop;
+//     TGRule(TreeView1.Selected.Data).RVMLImage.OnMouseDown:=RVMLImageMouseDown;
+//     TGRule(TreeView1.Selected.Data).RVMLImage.OnDragOver:=ScrollBox4.OnDragOver;
+//     TGRule(TreeView1.Selected.Data).RVMLImage.OnDragDrop:=ScrollBox4.OnDragDrop;
 //     TGRule(TreeView1.Selected.Data).RVMLImage.DragMode:=dmAutomatic;
 
-     for i:=0 to TGRule(TreeView1.Selected.Data).DrawnObjects.Count-1 do
+{     for i:=0 to TGRule(TreeView1.Selected.Data).DrawnObjects.Count-1 do
       begin
        TImage(TGRule(TreeView1.Selected.Data).DrawnObjects.Items[i]).DragMode:=
         dmAutomatic;
@@ -3683,7 +4389,7 @@ try
 //        ScrollBox4.OnDragOver;
 //       TImage(TGRule(TreeView1.Selected.Data).DrawnObjects.Items[i]).OnDragDrop:=
 //        RVMLImageDragDrop;
-      end;
+      end; }
     end;
 
    //-------------------------------------------------------------------------------
@@ -3741,7 +4447,7 @@ try
      RzButton3.Enabled:=True;
      RzButton4.Enabled:=True;
 
-//     ToolButton11.Enabled:=True;  //pkg
+     ToolButton21.Enabled:=True;   //order by X
      ToolButton17.Enabled:=True; //save as bmp
      //----------------------------------------------------
 
@@ -3796,18 +4502,94 @@ try
        GetDescriptionOnKBLanguage(DllList.Names[DllIndex]);
 
      STDIClass.ReleaseObjects(ScrollBox4);
-  //   TFact(TreeView1.Selected.Data).DrawParams.Clear;
-     TFact(TreeView1.Selected.Data).Draw(ScrollBox4,2);
+//     TFact(TreeView1.Selected.Data).Draw(ScrollBox4,2);
+     TFact(TreeView1.Selected.Data).DrawV2(ScrollBox4,2,0,1,
+       TFact(TreeView1.Selected.Data).ID);
 
-     CurrentRVMLObject:=TFact(TreeView1.Selected.Data);
-//     TFact(CurrentRVMLObject).RVMLImage.OnMouseDown:=RVMLImageMouseDown;
-//     TFact(CurrentRVMLObject).RVMLImage.OnMouseUp:=RVMLImageMouseUp;
-//     TFact(CurrentRVMLObject).RVMLImage.OnDragOver:=ScrollBox4.OnDragOver;
-//     TFact(CurrentRVMLObject).RVMLImage.OnDragDrop:=ScrollBox4.OnDragDrop;
-//     TFact(CurrentRVMLObject).RVMLImage.OnClick:=RVMLImageMouseClick;
-     TFact(CurrentRVMLObject).RVMLImage.DragMode:=dmAutomatic;
+//     CurrentRVMLObject:=TFact(TreeView1.Selected.Data);
+//     TFact(CurrentRVMLObject).RVMLImage.DragMode:=dmAutomatic;
     end;
    //-------------------------------------------------------------------------------
+   //sacle description
+   if TObject(TreeView1.Selected.Data) is TFScale then
+    begin
+     tmWC.Visible:=False;
+     // --- controls for fact ----------------------------
+     DeleteItem.Enabled:=True;
+     ToolButton17.Enabled:=True; //save as bmp
+     ToolButton21.Enabled:=True; //order by X
+{     EditItem.Enabled:=True;
+     RzButton3.Enabled:=True;
+     RzButton4.Enabled:=True;  }
+
+     //----------------------------------------------------
+     tmP:=STDIClass.AddRzPanel(1,1,55,500,
+      tmWC,i,alTop,clCream,bvNone,bvNone,bsNone,'');
+
+     if Trim(TFScale(TreeView1.Selected.Data).ID)='' then
+      TFScale(TreeView1.Selected.Data).ID:=K.NewID('S');
+
+     T:=STDIClass.AddLabel(tmP,
+      STDIClass.LoadSingleString('Name',LangLocaleDir+LangPrefix+'012.lan')
+       ,T,L,250,clNavy,clNone,[]);
+//     T:=STDIClass.AddLabel(tmP,'Имя факта (прецедента):',T,L,250,clNavy,clNone,[]);
+     STDIClass.AddLabel(tmP,'['+
+      TFScale(TreeView1.Selected.Data).ID
+       +']',T,10,30,clInactiveCaption,clNone,[fsBold]);
+     T:=STDIClass.AddLabel(tmP,
+      TFScale(TreeView1.Selected.Data).Name
+       ,T,L+10+50,tmP.Width-25-10-50,clBlack,clNone,[fsBold]);
+
+     T:=TFScale(TreeView1.Selected.Data).ShowAsTable(tmWC,T);
+
+     tmWC.Visible:=True;
+     TFScale(TreeView1.Selected.Data).DrawV2(ScrollBox4,0,1,
+      TFScale(TreeView1.Selected.Data).id);
+    end;
+   //--------------------------------------------------------------------------
+   //fvar description
+   if TObject(TreeView1.Selected.Data) is TFVar then
+    begin
+     tmWC.Visible:=False;
+     ToolButton17.Enabled:=True; //save as bmp
+       // --- controls for fact ----------------------------
+//     DeleteItem.Enabled:=True;
+{     EditItem.Enabled:=True;
+     RzButton3.Enabled:=True;
+     RzButton4.Enabled:=True;
+
+//     ToolButton11.Enabled:=True;  //pkg
+
+     //----------------------------------------------------
+
+     RzPanel5.Visible:=True;   }
+
+     tmP:=STDIClass.AddRzPanel(1,1,55,500,
+      tmWC,i,alTop,clCream,bvNone,bvNone,bsNone,'');
+
+     T:=STDIClass.AddLabel(tmP,
+      STDIClass.LoadSingleString('Name',LangLocaleDir+LangPrefix+'012.lan')
+       ,T,L,250,clNavy,clNone,[]);
+//     T:=STDIClass.AddLabel(tmP,'Имя факта (прецедента):',T,L,250,clNavy,clNone,[]);
+
+     if Trim(TFVar(TreeView1.Selected.Data).ID)='' then
+      TFVar(TreeView1.Selected.Data).ID:=K.NewID('V');
+
+     STDIClass.AddLabel(tmP,'['+
+      TFVar(TreeView1.Selected.Data).ID
+       +']',T,10,30,clInactiveCaption,clNone,[fsBold]);
+     T:=STDIClass.AddLabel(tmP,
+      TFVar(TreeView1.Selected.Data).Name
+       ,T,L+10+50,tmP.Width-25-10-50,clBlack,clNone,[fsBold]);
+
+     T:=TFVar(TreeView1.Selected.Data).ShowAsTable(tmWC,T);
+
+    tmWC.Visible:=True;
+    TFVar(TreeView1.Selected.Data).DrawV2(ScrollBox4,0,
+     TFVar(TreeView1.Selected.Data).ID);
+    end;
+   //--------------------------------------------------------------------------
+
    //task description
    if TObject(TreeView1.Selected.Data) is TTask then
     begin
@@ -4133,7 +4915,9 @@ l67:
        TLabel(tmWC.Components[tmWC.ComponentCount-1]).OnClick:=
         LabelClick_V2;
       end;
+   TScrollBox(tmWC).HorzScrollBar.Visible:=True;
   end;
+
 try
  Screen.Cursor:=crHourGlass;
  RzProgressStatus1.TotalParts:=tmTs.Count;;
@@ -4214,11 +4998,6 @@ begin
 
 end;
 
-procedure TMainForm.N18Click(Sender: TObject);
-begin
- doc1Click(Self);
-end;
-
 procedure TMainForm.N19Click(Sender: TObject);
 var
  K : TKnowledgeBase;
@@ -4284,6 +5063,7 @@ end;
 procedure TMainForm.TabSheet5Show(Sender: TObject);
 begin
  ToolBar3.Visible:=True;
+ TreeView1Click(TreeView1.Selected);
 end;
 
 procedure TMainForm.TabSheet6Show(Sender: TObject);
@@ -4629,9 +5409,15 @@ end;
 procedure TMainForm.ToolButton21Click(Sender: TObject);
 begin
  if TObject(TreeView1.Selected.Data) is TGRule then
-  TGRule(TreeView1.Selected.Data).Order;
+  TGRule(TreeView1.Selected.Data).OrderV2(ScrollBox4,0);
  if TObject(TreeView1.Selected.Data) is TRule then
-  TRule(TreeView1.Selected.Data).Order;
+  TRule(TreeView1.Selected.Data).OrderV2(ScrollBox4,0);
+ if TObject(TreeView1.Selected.Data) is TFScale then
+  TFScale(TreeView1.Selected.Data).OrderV2;
+ if TObject(TreeView1.Selected.Data) is TTemplate then
+  TTemplate(TreeView1.Selected.Data).OrderV2(GetKBForNode(TreeView1.Selected));
+ if TObject(TreeView1.Selected.Data) is TFact then
+  TFact(TreeView1.Selected.Data).OrderV2(GetKBForNode(TreeView1.Selected));
  TreeView1.OnClick(TreeView1);
 end;
 
@@ -4644,6 +5430,15 @@ procedure TMainForm.ToolButton9Click(Sender: TObject);
 begin
  N7Click(Self);
  MainForm.RebulidImagesOnTree(MainForm.TreeView1);
+end;
+
+procedure TMainForm.Decision1Click(Sender: TObject);
+begin
+ Application.CreateForm(TExp, Exp);
+
+ Exp.KB:=nil;
+ Exp.Tag:=11;
+ Exp.ShowModal;
 end;
 
 procedure TMainForm.DeleteItemClick(Sender: TObject);
@@ -4661,7 +5456,7 @@ var
  s  : String;
  s1,s2  : String;
  tmTs,tmTs1 : TStringList;
- i  : Integer;
+ i,j  : Integer;
 begin
  if TreeView1.Selected.Data<>nil then
   begin
@@ -4717,13 +5512,18 @@ begin
       end;
      if TObject(TreeView1.Selected.Data) is TSlot then
       begin
-       s:='S';
+       s:='L';
        s1:='свойства/слота: '+TSlot(TreeView1.Selected.Data).Name;
       end;
-     if TObject(TreeView1.Selected.Data) is TGlobalVar then
+     if TObject(TreeView1.Selected.Data) is TFVar then
       begin
        s:='V';
-       s1:='переменной: '+TGlobalVar(TreeView1.Selected.Data).Name;
+       s1:='переменной: '+TFVar(TreeView1.Selected.Data).Name;
+      end;
+     if TObject(TreeView1.Selected.Data) is TFScale then
+      begin
+       s:='S';
+       s1:='scale: '+TFScale(TreeView1.Selected.Data).Name;
       end;
      if TObject(TreeView1.Selected.Data) is TTask then
       begin
@@ -4824,19 +5624,39 @@ begin
            TreeView1Click(TreeView1);
           end;
       end;
-      'R','F','V','P','G':begin
+      'R','F','V','P','G','S':begin
         KB1:=GetKBForNode(TreeView1.Selected);
-        KB1.Delete(S,pN.IndexOf(TreeView1.Selected));
-//        MainForm.LoadTree(KBList,MainForm.TreeView1);
+        j:=-1;
+        if s='S' then //search for templates with this scale
+         begin
+          j:=KB1.IndexOfTemplateWithFScale(TFScale(TreeView1.Selected.Data).Name);
+          if j>-1 then
+           MMessageBox(1,0,'0=The variable cannot be deleted because it is used in Templates: '+
+            TTemplate(KB1.Templates.Items[j]).Name);
+         end;
 
-        if (TObject(pN.Data) is TTmObj)//or(pN.Data=nil)
-         then pN:=GetRootPackage(pN);
+ {       if s='S' then //search for fvars with this scale
+         begin
+          j:=KB1.IndexOfFVarWithScale(TFScale(TreeView1.Selected.Data).Name);
+          if j>-1 then
+           MMessageBox(1,0,'0=The scale cannot be deleted because it is used in Fuzzy Variables: '+
+            TFVar(KB1.FVars.Items[j]).Name);
+         end;  }
 
-        TreeView1.Selected.Delete;
+        if j=-1 then
+         begin
+          KB1.Delete(S,pN.IndexOf(TreeView1.Selected));
+  //        MainForm.LoadTree(KBList,MainForm.TreeView1);
 
-        pN.Text:=PutChildCount(pN);
-        TreeView1.Selected:=pN;
-        TreeView1Click(TreeView1);
+          if (TObject(pN.Data) is TTmObj)//or(pN.Data=nil)
+           then pN:=GetRootPackage(pN);
+
+          TreeView1.Selected.Delete;
+
+          pN.Text:=PutChildCount(pN);
+          TreeView1.Selected:=pN;
+          TreeView1Click(TreeView1);
+         end;
        end;
       'T':begin
         KB1:=GetKBForNode(TreeView1.Selected);
@@ -4866,7 +5686,7 @@ begin
             tmTs1.Text)
             end;
        end;
-      'S':begin
+      'L':begin
         T1:=TTemplate(pN.Data);
         T1.Delete(pN.IndexOf(TreeView1.Selected));
         TreeView1.Selected.Delete;
@@ -4890,7 +5710,7 @@ begin
        KB44:=GetKBForNode(TreeView1.Selected);
        if KB44<>nil then
        try
-        MsgBoxForm.RzProgressStatus1.Visible:=True;
+{        MsgBoxForm.RzProgressStatus1.Visible:=True;
         MsgBoxForm.RzProgressStatus1.TotalParts:=
          KB44.Rules.Count+KB44.Facts.Count+KB44.GRules.Count+
           KB44.Templates.Count;
@@ -4898,13 +5718,27 @@ begin
         MsgBoxForm.Timer1.Enabled:=True;
         BeginThread(nil,1024,TH_REPORT,nil,0,TID1);
 
-        MMessageBox(0,4,'0='+MainForm.LS('Create a report'));
+        MMessageBox(0,4,'0='+MainForm.LS('Create a report'));}
+        prP:=STDIClass.CreateProgressIndicator(Self,
+         IntToStr(KB44.Templates.Count)
+          );
+
+        KB44.CreateReportV4(False,ExtractFileDir(Application.ExeName)+'/Reports/'+
+         KB44.Name+'_'+
+         IntToStr(MilliSecondOfTheYear(Now))+'.doc' );
+
+        prP.Free;
        except
        end;
      end;
   except
    MMessageBox(1,0,'0='+MainForm.LS('Please, select the knowledge base'))
   end;
+end;
+
+procedure TMainForm.doc2Click(Sender: TObject);
+begin
+ doc1Click(Self);
 end;
 
 procedure TMainForm.Droolsdrl1Click(Sender: TObject);
@@ -5443,7 +6277,7 @@ procedure TMainForm.RVMLImageDragDrop(Sender, Source: TObject; X, Y: Integer);
 var
  x1,y1 : Integer;
 begin
- if Source is TImage then // Если перетаскиваем компонент Image то
+{ if Source is TImage then // Если перетаскиваем компонент Image то
   begin
     x1:=x;
     y1:=y;
@@ -5481,7 +6315,7 @@ begin
    TImage(Source).Top := Y1; //Переместить компонент Image в координаты //курсора по Y
 
  //  CurrentRVMLObject:=nil;
-  end;
+  end; }
 end;
 
 procedure TMainForm.ImgClick(Sender: TObject);
@@ -5490,10 +6324,19 @@ begin
 end;
 
 procedure TMainForm.ScrollBox4DragDrop(Sender, Source: TObject; X, Y: Integer);
-var
- x1,y1 : Integer;
+//var
+// x1,y1 : Integer;
 begin
 try
+ if Source is TRzPanel then // Если перетаскиваем компонент
+//  if TImage(Source).Tag>0 then
+  begin
+     TRzPanel(Source).Left := X; //Переместить компонент Image в координаты //курсора по X
+     TRzPanel(Source).Top := Y; //Переместить компонент Image в координаты //курсора по Y
+  end;
+ except
+ end;
+{try
  if Source is TImage then // Если перетаскиваем компонент Image то
   if TImage(Source).Tag>0 then
   begin
@@ -5563,15 +6406,95 @@ try
    tmPSO3:=nil;
    tmPSO4.Free;
    tmPSO4:=nil;
-  end;
+  end; }
 end;
 
 procedure TMainForm.ScrollBox4DragOver(Sender, Source: TObject; X, Y: Integer;
   State: TDragState; var Accept: Boolean);
-//var
-// nX, nY : Integer;
+var
+ MovedObj : TControl;
 begin
-   begin
+  if (Sender as TControl <> Source) then
+    begin
+     Accept := True;
+     if (Source is TImage)and(TImage(Source).Tag=2) then MovedObj:=TImage(Source).Parent;
+     if (Source is TRzPanel) then
+      if TRzPanel(Source).Tag=1 then MovedObj:=TRzPanel(Source)
+       else MovedObj:=TRzPanel(Source).Parent;
+
+ if (Sender is TScrollBox) then
+  begin
+//   Y:=MovedObj.Top+Y;
+//   X:=MovedObj.Left+X;
+  end
+ else
+  if (Sender is TImage)and(TImage(Source).Tag=2) then
+    begin
+     Y:=TImage(Sender).Parent.Top+Y;
+     X:=TImage(Sender).Parent.Left+X;
+    end
+   else
+    if TRzPanel(Sender).Tag=1 then
+      begin
+       Y:=TRzPanel(Sender).Top+Y;
+       X:=TRzPanel(Sender).Left+X;
+      end
+     else
+      begin
+       Y:=TRzPanel(Sender).Parent.Top+Y;
+       X:=TRzPanel(Sender).Parent.Left+X;
+      end;
+//---------------
+     if tmPSO1=nil then
+      begin //create a frame
+       tmPSO1:=STDIClass.AddLine(ScrollBox4,
+        X,Y,MovedObj.Height,1);
+       tmPSO1.LineColor:=clRed;
+       tmPSO1.ArrowLength:=0;
+       tmPSO1.Width:=1;
+       tmPSO1.LineWidth:=2;
+      //top side
+       tmPSO2:=STDIClass.AddLine(ScrollBox4,
+        Y,X,1,MovedObj.Width);
+       tmPSO2.LineColor:=clRed;
+       tmPSO2.ArrowLength:=0;
+       tmPSO2.Height:=1;
+       tmPSO2.LineWidth:=2;
+      //bottom side
+       tmPSO3:=STDIClass.AddLine(ScrollBox4,
+        Y+MovedObj.Height,X,
+         1,MovedObj.Width);
+       tmPSO3.LineColor:=clRed;
+       tmPSO3.ArrowLength:=0;
+       tmPSO3.Height:=1;
+       tmPSO3.LineWidth:=2;
+      //right side
+       tmPSO4:=STDIClass.AddLine(ScrollBox4,
+        Y,X+MovedObj.Width,
+         MovedObj.Height,1);
+       tmPSO4.LineColor:=clRed;
+       tmPSO4.ArrowLength:=0;
+       tmPSO4.Width:=1;
+       tmPSO4.LineWidth:=2;
+      end
+     else
+      begin  //move a frame
+       //left side
+       tmPSO1.Top:=Y;
+       tmPSO1.Left:=X;
+       //top side
+       tmPSO2.Top:=Y;
+       tmPSO2.Left:=X;
+       //bottom
+       tmPSO3.Top:=Y+MovedObj.Height;
+       tmPSO3.Left:=X;
+       //right
+       tmPSO4.Top:=Y;
+       tmPSO4.Left:=X+MovedObj.Width;
+      end;
+//---------------
+    end;
+{   begin
      Accept:= (Source is TImage);
      if (Accept)and(TImage(Source).Tag>0) then
      try
@@ -5656,7 +6579,7 @@ begin
         tmPSO4:=nil;
        end;
      end;
-  end;
+  end;  }
 end;
 
 procedure TMainForm.ImgMouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -5812,6 +6735,63 @@ begin
 end;
 
 procedure TMainForm.N29Click(Sender: TObject);
+function SavePictureV3 (WC:TWinControl; FileName:string):Integer;
+var
+ bmp : TBitmap;
+ P: TPoint;
+ r: TRect;
+begin
+try
+ bmp := TBitmap.Create;
+ bmp.Width:=WC.ClientWidth;
+ bmp.Height:=WC.ClientHeight;
+
+  r := Rect(0, 0, bmp.Width, bmp.Height);
+  bmp.Canvas.CopyRect(r,TImage(WC.Controls[0]).Canvas, r);
+
+  if pos('.bmp',FileName)=0 then FileName:=FileName+'.bmp';
+//  if new_maxH<>0 then  bmp.Height:=new_maxH-5;
+  bmp.SaveToFile(FileName);
+
+  bmp.Free;
+
+  Result:=0;
+ except
+  Result:=-1;
+ end;
+end;
+
+function SavePictureV2 (WC:TWinControl; FileName:string):Integer;
+var
+ DC : HDC;
+ dw: HWND;
+ bmp : TBitmap;
+ P: TPoint;
+begin
+try
+ bmp := TBitmap.Create;
+ bmp.Width:=WC.Width-1;
+ bmp.Height:=WC.Height-1;
+
+ dw := GetDesktopWindow;
+ dc := GetDC(dw);
+ P := WC.ClientToScreen(Point(0,0));
+// BitBlt(bmp.Canvas.Handle, 0, 0, bmp.Width, bmp.Height, dc, 0, 0, SRCCOPY);
+ BitBlt(bmp.Canvas.Handle, 0, 0, bmp.Width, bmp.Height, dc, P.X, P.Y, SRCCOPY);
+ ReleaseDC(dw, dc);
+
+  if pos('.bmp',FileName)=0 then FileName:=FileName+'.bmp';
+//  if new_maxH<>0 then  bmp.Height:=new_maxH-5;
+  bmp.SaveToFile(FileName);
+
+  bmp.Free;
+
+  Result:=0;
+ except
+  Result:=-1;
+ end;
+end;
+
 function SavePicture (WC:TWinControl; FileName:string):Integer;
 var
  i,j,maxH, new_maxH : Integer;
@@ -5856,16 +6836,16 @@ end;
 begin
  CurrentRVMLObject:=TreeView1.Selected.Data;
 
- SavePictureDialog1.Title:=Application.Title+': Сохранение RVML-схемы';
+ SavePictureDialog1.Title:=Application.Title+': Saving RVML-schema';
  SavePictureDialog1.Filter:='BMP files |*.bmp|'+LS('All')+' |*.*';
  SavePictureDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'\Data';
  if (SavePictureDialog1.Execute)and(CurrentRVMLObject<>nil)  then
   if SavePictureDialog1.FileName<>'' then
     begin
-     if SavePicture(ScrollBox4,SavePictureDialog1.FileName)=0 then
-      MMessageBox(0,0,'0='+LS('RVML-scheme is saved'))
+     if SavePictureV2(ScrollBox4,SavePictureDialog1.FileName)=0 then
+      MMessageBox(0,0,'0='+LS('RVML-schema is saved'))
        else
-        MMessageBox(1,0,'0=Извините, произошла ошибка');
+        MMessageBox(1,0,'0=Sorry, an error occurred');
     end;
 end;
 
@@ -6003,6 +6983,15 @@ begin
     end;
   except
   end;
+end;
+
+procedure TMainForm.PHP1Click(Sender: TObject);
+begin
+ Application.CreateForm(TExp, Exp);
+
+ Exp.KB:=nil;
+ Exp.Tag:=10;
+ Exp.ShowModal;
 end;
 
 procedure TMainForm.PopupMenu1Popup(Sender: TObject);
@@ -6181,6 +7170,15 @@ begin
   end;
 end;
 
+procedure TMainForm.N44Click(Sender: TObject);
+begin
+ //rule templates reverse procedure
+ Application.CreateForm(TExp, Exp);
+ Exp.KB:=nil;
+ Exp.Tag:=12;
+ Exp.ShowModal;
+end;
+
 procedure TMainForm.ENGRU1Click(Sender: TObject);
 begin
  if TreeView1.Selected.Data<>nil then
@@ -6203,6 +7201,35 @@ procedure TMainForm.TreeView1MouseMove(Sender: TObject; Shift: TShiftState;
   X, Y: Integer);
 begin
  ReloadHelpMessage(ScrollBox3,TWinControl(Sender).Tag);
+end;
+
+procedure TMainForm.txt1Click(Sender: TObject);
+var
+ KB15 : TKnowledgeBase;
+ i : Integer;
+ tmTs : TStringList;
+begin
+ OpenDialog1.FileName:='';
+ OpenDialog1.Filter:='Txt files |'
+   +'*.txt|'
+   +STDIClass.LoadSingleString('All',LangLocaleDir+LangPrefix+'012.lan')
+   +'|*.*';
+ OpenDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'\Reports';
+ if OpenDialog1.Execute then
+  if OpenDialog1.FileName<>'' then
+   begin
+    KB15:=GetKBForNode(TreeView1.Selected);
+    KB15.SaveToTxt(
+     MainForm.OpenDialog1.FileName
+      );
+ {   tmTs:=TStringList.Create;
+    KB15.GetHashForRules;
+    for i := 0 to KB15.Rules.Count-1 do
+     tmTs.Add(TRule(KB15.Rules.Items[i]).Hash);
+    tmTs.SaveToFile(StringReplace(MainForm.OpenDialog1.FileName,
+     '.txt','_rh.txt',[rfReplaceAll]));
+    tmTs.Free;  }
+   end;
 end;
 
 procedure TMainForm.XMindbeta1Click(Sender: TObject);
@@ -6249,7 +7276,7 @@ begin
   tmA.Date:=TimeToStr(Now);
   tmA.CopyKBs(KBList,tmA.KBs);
   tmA.Kind:=AKind;
-  tmA.SelectedNode:=TreeView1.Selected;
+  tmA.SelectedNode:=MainForm.TreeView1.Selected;
   AList.Insert(0,tmA);
   Result:=AList.Count;
  except
@@ -6795,8 +7822,9 @@ end;
 procedure TMainForm.FormActivate(Sender: TObject);
 begin
  fUpadate:='';
- Timer1.Enabled:=True;
- BeginThread(nil,1024,TH_CHKUPDATE,nil,0,TID1);
+//!!!4
+// Timer1.Enabled:=True;
+// BeginThread(nil,1024,TH_CHKUPDATE,nil,0,TID1);
 
  Self.Caption:=' '+Application.Title+' v.'+Ver;
  LoadParams;

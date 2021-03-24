@@ -5,8 +5,8 @@ object AboutBox: TAboutBox
   AlphaBlend = True
   BorderStyle = bsDialog
   Caption = ' '#1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077
-  ClientHeight = 405
-  ClientWidth = 453
+  ClientHeight = 496
+  ClientWidth = 456
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clBlack
@@ -22,17 +22,19 @@ object AboutBox: TAboutBox
   object Panel1: TPanel
     Left = 0
     Top = 0
-    Width = 453
-    Height = 405
+    Width = 456
+    Height = 496
     Align = alClient
     BevelKind = bkTile
     BevelOuter = bvNone
     TabOrder = 0
+    ExplicitWidth = 453
+    ExplicitHeight = 405
     object ProductName: TLabel
       Left = 255
       Top = 12
-      Width = 178
-      Height = 46
+      Width = 156
+      Height = 36
       Caption = 'Personal Knowledge Base Designer'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clNavy
@@ -76,7 +78,7 @@ object AboutBox: TAboutBox
     end
     object Comments: TLabel
       Left = 16
-      Top = 87
+      Top = 107
       Width = 353
       Height = 39
       Caption = 
@@ -633,7 +635,7 @@ object AboutBox: TAboutBox
       Left = 6
       Top = 107
       Width = 437
-      Height = 261
+      Height = 349
       Align = alCustom
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -642,7 +644,7 @@ object AboutBox: TAboutBox
     object RzButton4: TRzButton
       Tag = 17
       Left = 6
-      Top = 374
+      Top = 462
       Width = 163
       Height = 23
       Cancel = True
@@ -663,7 +665,7 @@ object AboutBox: TAboutBox
     object RzButton1: TRzButton
       Tag = 17
       Left = 172
-      Top = 374
+      Top = 462
       Width = 90
       Height = 23
       Cancel = True
@@ -870,8 +872,8 @@ object AboutBox: TAboutBox
     end
   end
   object OKButton: TButton
-    Left = 345
-    Top = 376
+    Left = 348
+    Top = 465
     Width = 100
     Height = 23
     Caption = #1047#1072#1082#1088#1099#1090#1100

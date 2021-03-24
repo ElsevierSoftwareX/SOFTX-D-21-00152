@@ -1,0 +1,28 @@
+D850 Body EOS 4000D    EOS 200D  D3400 Kit    Alpha
+           Kit 18-     Kit 18-    18-105mm  ILCA-A68K
+           55mm III    55mm IS       VR      Kit 18-
+                         STM                   55mm
+                                                 
+209990    21999       35000      40000      43700
+                                            
+Nikon     Canon       Canon      Nikon      Sony
+                                            
+46.89     18.7        25.8       24.72      24.8
+                                            
+Nikon F   Canon       Canon      NikonF-3   Sony А
+          EF/EF-S     EF/EF-S               
+                      
+8256x5504 5184x3456   6000x4000  6000x4000  6000x4000
+                                            
+19        11          13         15         11
+                                            
+нет       нет         оптически  оптически  сдвиг
+                      й          й          матрицы
+                                            
+Nikon EN- Canon LP-   Canon LP-  Nikon EN-  Sony NP-
+EL15A     E10         E17        EL14a      FM500H
+                                            
+1840      500         650        1200       580
+                                            
+
+

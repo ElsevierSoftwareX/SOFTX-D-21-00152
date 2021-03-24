@@ -164,8 +164,23 @@ Here you can preview the available objects of the knowledge base (discovered in 
 Export the knowledge base
 Here you can preview the available objects of the knowledge base and select some of them for export.
 205
-Import data for cases (facts): select a datasource
+Import data: select a datasource
 Here you can select a datasource file and preview its contents.
 206
 Import data for cases (facts): relationships definition
-Here you can select a knowledge base and fact (case) template, and to define relationships between the slots of the template and the columns of the table imported.
+Here you can select a knowledge base and a fact (case) template, and to define relationships between the slots of the template and the columns of the table imported.
+207
+Import data for rules: relationships definition
+Here you can select a knowledge base and a rules template (a generalized rule), and to define relationships between elements of the rule and the columns of the table imported.
+208
+Export the knowledge base
+Here you can preview the available objects of the knowledge base and select some of them for export.
+212
+Reverse of rule conditions and actions
+Here you can select rules and rule templates for reversing conditions and actions.
+301
+Selecting strategies for aggregation
+Here you can select strategies for aggregation of entities and relationships (fact and rules templates).
+401
+Describing a fuzzy variable
+Here you can describe a fuzzy variable, its scale and values of a memebership function.

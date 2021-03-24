@@ -121,6 +121,15 @@
 				<Form>ImportDataForCasesForm</Form>
 			</DCCReference>
 			<DCCReference Include="AUnit\LevUnit.pas"/>
+			<DCCReference Include="AUnit\UAggStrategesSelectForm.pas">
+				<Form>AggStrategesSelectForm</Form>
+			</DCCReference>
+			<DCCReference Include="AUnit\TDTEUnit.pas">
+				<Form>TDTForm</Form>
+			</DCCReference>
+			<DCCReference Include="TRMLEUnit.pas">
+				<Form>TRVMLEForm</Form>
+			</DCCReference>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>

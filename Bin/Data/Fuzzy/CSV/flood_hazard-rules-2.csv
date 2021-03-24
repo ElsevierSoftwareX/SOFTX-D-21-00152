@@ -1,0 +1,4 @@
+RuleName;Risk::grade;Risk::kind;Risk::cost;Risk::...;#Conclusion::grade;#Conclusion::text
+Risk>Conclusion_1;low;;;;Green;Safe situation
+Risk>Conclusion_3;high;;;;Red;Emercom action
+Risk>Conclusion_2;average;;;;Yellow;Increased attention

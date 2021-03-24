@@ -1,0 +1,67 @@
+DATA;Row Heading;Column Heading
+1;structural element | shell of the corpus;amount
+2600;structural element | shell of the corpus;dimensions | inner or outer diametr
+26;structural element | shell of the corpus;dimensions | wall thickness
+6400;structural element | shell of the corpus;dimensions | length
+вст3;structural element | shell of the corpus;material | marka
+380;structural element | shell of the corpus;material | standard
+1;structural element | shell of the connection №1 ;amount
+700;structural element | shell of the connection №2;dimensions | inner or outer diametr
+36;structural element | shell of the connection №3;dimensions | толщина стенки
+600;structural element | обечайка штуцера №1 ввода трубного пучка;dimensions | длина (высота)
+09g2с;structural element | обечайка штуцера №1 ввода трубного пучка;material | marka
+5520;structural element | обечайка штуцера №1 ввода трубного пучка;material | standard
+1;structural element | обечайка штуцера №2 ввода трубного пучка;amount
+700;structural element | обечайка штуцера №2 ввода трубного пучка;dimensions | диаметр внутренний или наружний
+36;structural element | обечайка штуцера №2 ввода трубного пучка;dimensions | толщина стенки
+600;structural element | обечайка штуцера №2 ввода трубного пучка;dimensions | длина (высота)
+09г2с;structural element | обечайка штуцера №2 ввода трубного пучка;material | marka
+5520;structural element | обечайка штуцера №2 ввода трубного пучка;material | standard
+1;structural element | обечайка штуцера №3 ввода трубного пучка;amount
+700;structural element | обечайка штуцера №3 ввода трубного пучка;dimensions | диаметр внутренний или наружний
+36;structural element | обечайка штуцера №3 ввода трубного пучка;dimensions | толщина стенки
+600;structural element | обечайка штуцера №3 ввода трубного пучка;dimensions | длина (высота)
+09г2с;structural element | обечайка штуцера №3 ввода трубного пучка;material | marka
+5520;structural element | обечайка штуцера №3 ввода трубного пучка;material | standard
+1;structural element | обечайка распределительной камеры №1;amount
+700;structural element | обечайка распределительной камеры №1;dimensions | диаметр внутренний или наружний
+10;structural element | обечайка распределительной камеры №1;dimensions | толщина стенки
+400;structural element | обечайка распределительной камеры №1;dimensions | длина (высота)
+09г2с;structural element | обечайка распределительной камеры №1;material | marka
+5520;structural element | обечайка распределительной камеры №1;material | standard
+1;structural element | обечайка распределительной камеры №2;amount
+700;structural element | обечайка распределительной камеры №2;dimensions | диаметр внутренний или наружний
+10;structural element | обечайка распределительной камеры №2;dimensions | толщина стенки
+400;structural element | обечайка распределительной камеры №2;dimensions | длина (высота)
+09г2с;structural element | обечайка распределительной камеры №2;material | marka
+5520;structural element | обечайка распределительной камеры №2;material | standard
+1;structural element | обечайка распределительной камеры №3;amount
+700;structural element | обечайка распределительной камеры №3;dimensions | диаметр внутренний или наружний
+10;structural element | обечайка распределительной камеры №3;dimensions | толщина стенки
+400;structural element | обечайка распределительной камеры №3;dimensions | длина (высота)
+09г2с;structural element | обечайка распределительной камеры №3;material | marka
+5520;structural element | обечайка распределительной камеры №3;material | standard
+2;structural element | днище корпуса;amount
+2600;structural element | днище корпуса;dimensions | диаметр внутренний или наружний
+26;structural element | днище корпуса;dimensions | толщина стенки
+730;structural element | днище корпуса;dimensions | длина (высота)
+09г2с;structural element | днище корпуса;material | marka
+5520;structural element | днище корпуса;material | standard
+1;structural element | днище распределительной камеры №1;amount
+700;structural element | днище распределительной камеры №1;dimensions | диаметр внутренний или наружний
+10;structural element | днище распределительной камеры №1;dimensions | толщина стенки
+200;structural element | днище распределительной камеры №1;dimensions | длина (высота)
+09г2с;structural element | днище распределительной камеры №1;material | marka
+5520;structural element | днище распределительной камеры №1;material | standard
+1;structural element | днище распределительной камеры №2;amount
+700;structural element | днище распределительной камеры №2;dimensions | диаметр внутренний или наружний
+10;structural element | днище распределительной камеры №2;dimensions | толщина стенки
+200;structural element | днище распределительной камеры №2;dimensions | длина (высота)
+09г2с;structural element | днище распределительной камеры №2;material | marka
+5520;structural element | днище распределительной камеры №2;material | standard
+1;structural element | днище распределительной камеры №3;amount
+700;structural element | днище распределительной камеры №3;dimensions | диаметр внутренний или наружний
+10;structural element | днище распределительной камеры №3;dimensions | толщина стенки
+200;structural element | днище распределительной камеры №3;dimensions | длина (высота)
+09г2с;structural element | днище распределительной камеры №3;material | marka
+5520;structural element | днище распределительной камеры №3;material | standard

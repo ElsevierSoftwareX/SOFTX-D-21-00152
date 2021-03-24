@@ -1,0 +1,12 @@
+RuleName;Keyword::Text;Keyword::Text;Keyword::Text;Keyword::Text;Keyword::Text;Keyword::Text;#Message::Status;#Sender::Status_;#OutPut::FiredRule
+rule 3-12;8(800)333-85-78;binb;order;paid;;;error;blocked;rule 3-12
+rule 3-13;8(800)333-85-78;binb;payment;;;;error;blocked;rule 3-13
+rule 3-14;88005054928;binbank;order;;;;error;blocked;rule 3-14
+rule 2-1;click;hornet;http://bit.ly;;;;moderated;active;rule 2-1
+rule 2-2;download;http://vk.cc;bonuses;get;;;moderated;active;rule 2-2
+rule 2-3;download;http://www.goo.gl;bonuses;get;;;moderated;active;rule 2-3
+rule 2-4;download;http://www.vk.cc;bonuses;receive;;;moderated;active;rule 2-4
+rule 3-15;icloud.com.lfind.me;linked;located;location;mihk@list.ru;;error;blocked;rule 3-15
+rule 3-16;lost;stolen;reclaim;;;;error;blocked;rule 3-16
+rule 1-7;rush;ultra;kiwi;legal;mix;пробы;error;blocked;rule 1-7
+rule 1-8;rush;ultra;legal;mix;пробы;клады;error;blocked;rule 1-8

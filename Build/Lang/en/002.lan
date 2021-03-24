@@ -8,5 +8,7 @@ RzButton1h=
 RzButton2c=Ok
 RzButton2h=Done the operation
 
+RzCheckBox1c=Process properties with values only
+
 ComboBox1h=Selected knowledge base
 Label1c=Knowledge base:

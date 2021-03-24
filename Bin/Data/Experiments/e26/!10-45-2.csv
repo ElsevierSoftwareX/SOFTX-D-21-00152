@@ -1,0 +1,11 @@
+DATA;Row Heading;Column Heading
+459;parameter | inner diameter, mm;lower obturator
+458;parameter | inner diameter, mm;lower obturator
+535;parameter | outer diameter, mm;lower obturator
+99;parameter | height, mm;lower obturator
+98,9;parameter | height, mm;lower obturator
+32;parameter | b1, μμ;lower obturator
+34;parameter | b2, μμ;lower obturator
+29 degree 55 min.;parameter | angle of inclination of the sealing surface to the connection axis;lower obturator
+30 degree 05 min.;parameter | angle of inclination of the sealing surface to the connection axis;lower obturator
+0,5;parameter | roughness of the sealing surface, mkm;lower obturator

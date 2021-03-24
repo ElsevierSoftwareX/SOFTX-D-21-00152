@@ -119,7 +119,7 @@ begin
    AddRuleForm2.G1:=TGRule(KB1.GRules.Items[j]);
 
    AddRuleForm2.R1:=TRule(KB1.Rules.Items[TRzPanel(Sender).Tag]);
-   AddRuleForm2.Tag:=0; //edit mode
+   AddRuleForm2.Tag:=2; //edit mode
 
    for i := 0 to AddRuleForm2.ComboBox1.Items.Count-1 do
     if AddRuleForm2.ComboBox1.Items[i]=

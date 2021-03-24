@@ -478,10 +478,6 @@ object RVMLElementEditForm: TRVMLElementEditForm
     object TabSheet1: TRzTabSheet
       Tag = 8
       Caption = 'Properties (Atributes)'
-      ExplicitLeft = 0
-      ExplicitTop = 23
-      ExplicitWidth = 0
-      ExplicitHeight = 400
       object GroupBox4: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -490,13 +486,11 @@ object RVMLElementEditForm: TRVMLElementEditForm
         Height = 390
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 419
-        ExplicitHeight = 394
         object RzListView1: TRzListView
           Left = 2
           Top = 16
-          Width = 415
-          Height = 374
+          Width = 413
+          Height = 372
           Align = alClient
           Color = clCream
           Columns = <
@@ -535,10 +529,6 @@ object RVMLElementEditForm: TRVMLElementEditForm
     end
     object TabSheet5: TRzTabSheet
       Caption = 'Relations'
-      ExplicitLeft = 0
-      ExplicitTop = 23
-      ExplicitWidth = 0
-      ExplicitHeight = 400
       object GroupBox1: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -547,13 +537,11 @@ object RVMLElementEditForm: TRVMLElementEditForm
         Height = 390
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 419
-        ExplicitHeight = 394
         object RzListView2: TRzListView
           Left = 2
           Top = 16
-          Width = 415
-          Height = 374
+          Width = 413
+          Height = 372
           Align = alClient
           Color = clCream
           Columns = <
@@ -588,10 +576,6 @@ object RVMLElementEditForm: TRVMLElementEditForm
     end
     object TabSheet2: TRzTabSheet
       Caption = 'Facts'
-      ExplicitLeft = 0
-      ExplicitTop = 23
-      ExplicitWidth = 0
-      ExplicitHeight = 400
       object GroupBox2: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -600,13 +584,11 @@ object RVMLElementEditForm: TRVMLElementEditForm
         Height = 390
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 419
-        ExplicitHeight = 394
         object RzListView3: TRzListView
           Left = 2
           Top = 16
-          Width = 415
-          Height = 374
+          Width = 413
+          Height = 372
           Align = alClient
           Color = clCream
           Columns = <
@@ -637,10 +619,6 @@ object RVMLElementEditForm: TRVMLElementEditForm
     end
     object TabSheet6: TRzTabSheet
       Caption = 'Conditions1'
-      ExplicitLeft = 0
-      ExplicitTop = 23
-      ExplicitWidth = 0
-      ExplicitHeight = 400
       object GroupBox6: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -649,13 +627,11 @@ object RVMLElementEditForm: TRVMLElementEditForm
         Height = 390
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 419
-        ExplicitHeight = 394
         object RzListView5: TRzListView
           Left = 2
           Top = 16
-          Width = 415
-          Height = 374
+          Width = 413
+          Height = 372
           Align = alClient
           Color = clCream
           Columns = <
@@ -685,10 +661,6 @@ object RVMLElementEditForm: TRVMLElementEditForm
     end
     object TabSheet7: TRzTabSheet
       Caption = 'Actions1'
-      ExplicitLeft = 0
-      ExplicitTop = 23
-      ExplicitWidth = 0
-      ExplicitHeight = 400
       object GroupBox7: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -697,13 +669,11 @@ object RVMLElementEditForm: TRVMLElementEditForm
         Height = 390
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 419
-        ExplicitHeight = 394
         object RzListView6: TRzListView
           Left = 2
           Top = 16
-          Width = 415
-          Height = 374
+          Width = 413
+          Height = 372
           Align = alClient
           Color = clCream
           Columns = <
@@ -737,10 +707,6 @@ object RVMLElementEditForm: TRVMLElementEditForm
     end
     object TabSheet8: TRzTabSheet
       Caption = 'Actions1'
-      ExplicitLeft = 0
-      ExplicitTop = 23
-      ExplicitWidth = 0
-      ExplicitHeight = 400
       object GroupBox8: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -749,13 +715,11 @@ object RVMLElementEditForm: TRVMLElementEditForm
         Height = 390
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 419
-        ExplicitHeight = 394
         object RzListView7: TRzListView
           Left = 2
           Top = 16
-          Width = 415
-          Height = 374
+          Width = 413
+          Height = 372
           Align = alClient
           Color = clCream
           Columns = <
@@ -785,10 +749,6 @@ object RVMLElementEditForm: TRVMLElementEditForm
     end
     object TabSheet4: TRzTabSheet
       Caption = 'Rules1'
-      ExplicitLeft = 0
-      ExplicitTop = 23
-      ExplicitWidth = 0
-      ExplicitHeight = 400
       object GroupBox5: TGroupBox
         AlignWithMargins = True
         Left = 3
@@ -797,13 +757,11 @@ object RVMLElementEditForm: TRVMLElementEditForm
         Height = 390
         Align = alClient
         TabOrder = 0
-        ExplicitWidth = 419
-        ExplicitHeight = 394
         object RzListView4: TRzListView
           Left = 2
           Top = 16
-          Width = 415
-          Height = 374
+          Width = 413
+          Height = 372
           Align = alClient
           Color = clCream
           Columns = <

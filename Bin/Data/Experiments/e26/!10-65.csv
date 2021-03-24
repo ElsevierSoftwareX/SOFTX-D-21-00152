@@ -1,0 +1,11 @@
+DATA;Row Heading;Column Heading
+ð;parameter | operating pressure, mpa;denotation
+32;parameter | operating pressure, mpa;value
+ðd;parameter | design pressure, mpa;denotation
+32;parameter | design pressure, mpa;value
+ò;parameter | operating environment temperature, c;denotation
+45;parameter | operating environment temperature, c;value
+òd;parameter | design temperature of the wall, c;denotation
+50;parameter | design temperature of the wall, c;value
+circulating gas;parameter | operating environment;denotation
+circulating gas;parameter | operating environment;value

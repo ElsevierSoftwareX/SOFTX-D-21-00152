@@ -1,0 +1,128 @@
+<h2>Personal Knowledge Base Designer</h2>
+<table border="0">
+<tr><td width="70px"><img src='./img/pkbd/logo.png' alt="Personal Knowledge Base Designer"></td>
+<td><p>
+<strong>«Personal Knowledge Base Designer»</strong> is a software for the creation of knowledge bases and expert systems.
+<br>It is free</b>.
+<br>
+</td></tr>
+</table>
+The main <strong>subsystems</strong>:
+<ul>
+<li><b>designer</b>, intendent to create models; includes: model editor, model integrity and consistency checker, and model import-export tools;</li>
+<li><b>generator</b>, provides the creation of application code that represents the specification of all model elements for the interpreter;</li>
+<li><b>interpreter</b> provides runtime functionality, including interpretation and access to model elements, control of interaction with data layers and graphical interface.
+</li>
+</ul>
+
+<strong>The main advantages of the software :</strong>
+<ul>
+<li>focused on <strong>non-programming </strong> user;</li>
+<li>contains a built-in model editor;</li>
+<li>integrated with CASE tools (IBM Rational Rose, StarUML, XMind, CMapTools) for importing/exporting models;</li>
+<li>provides automatic generation of CLIPS, Drools, PHP codes and specifications for PKBD;</li>
+<li>uses models during the application execution phase. </li>
+</ul>
+<table>
+<tr>
+<div id="pncPic">
+<td>
+<a class="two" href="img/pkbd/new/01b.jpg" rel="group"><img src="img/pkbd/new/01s.jpg" border="0" alt="PKBD: Creating a knowledge base"/></a>
+</td><td>&nbsp;&nbsp;</td><td>
+<a class="two" href="img/pkbd/new/02b.jpg" rel="group"><img src="img/pkbd/new/02s.jpg" border="0" alt="PKBD: Editing a fact template"/></a>
+</td><td>&nbsp;&nbsp;</td><td>
+<a class="two" href="img/pkbd/new/03b.jpg" rel="group"><img src="img/pkbd/new/03s.jpg" border="0" alt="PKBD: Preview of a source code for CLIPS"/></a>
+</td><td>&nbsp;&nbsp;</td><td>
+<!--<a class="two" href="img/pkbd/new/04b.jpg" rel="group"><img src="img/pkbd/new/04s.jpg" border="0" alt="PKBD: Preview a RVML"/></a>
+</td><td>&nbsp;&nbsp;</td><td> 
+<a class="two" href="img/pkbd/new/05b.jpg" rel="group"><img src="img/pkbd/new/05s.jpg" border="0" alt="PKBD: Editing a fact"/></a>
+</td><td>&nbsp;&nbsp;</td><td> --!>
+<a class="two" href="img/pkbd/new/06b.jpg" rel="group"><img src="img/pkbd/new/06s.jpg" border="0" alt="PKBD: Creating a rule template"/></a>
+</td><td>&nbsp;&nbsp;</td><td>
+<!--
+<a class="two" href="img/pkbd/new/07b.jpg" rel="group"><img src="img/pkbd/new/07s.jpg" border="0" alt="PKBD: Ввод правила"/></a>
+</td>
+<td>&nbsp;&nbsp;</td><td>
+<a class="two" href="img/pkbd/new/08b.jpg" rel="group"><img src="img/pkbd/new/08s.jpg" border="0" alt="PKBD: Ввод элемента правила"/></a>
+</td><td>&nbsp;&nbsp;</td><td> 
+<a class="two" href="img/pkbd/new/09b.jpg" rel="group"><img src="img/pkbd/new/09s.jpg" border="0" alt="PKBD: Просмотр начальных фактов при логическом выводе"/></a>
+</td><td>&nbsp;&nbsp;</td><td> --!>
+<a class="two" href="img/pkbd/new/10b.jpg" rel="group"><img src="img/pkbd/new/10s.jpg" border="0" alt="PKBD: Preview of a logical inference (all chain)"/></a>
+</td><td>&nbsp;&nbsp;</td><td>
+<!--
+<a class="two" href="img/pkbd/new/11b.jpg" rel="group"><img src="img/pkbd/new/11s.jpg" border="0" alt="PKBD: Просмотр результатов логического вывода (детализация активированного правила)"/></a>
+</td><td>&nbsp;&nbsp;</td><td> --!>
+<a class="two" href="img/pkbd/new/12b.jpg" rel="group"><img src="img/pkbd/new/12s.jpg" border="0" alt="PKBD: Preview of a RVML-schema for a rule"/></a>
+</td><td>&nbsp;&nbsp;</td><td>
+<a class="two" href="img/pkbd/new/13b.jpg" rel="group"><img src="img/pkbd/new/13s.jpg" border="0" alt="PKBD: Import results"/></a>
+</td><td>&nbsp;&nbsp;</td>
+<!--
+<td>
+<a class="two" href="img/pkbd/new/14b.jpg" rel="group"><img src="img/pkbd/new/14s.jpg" border="0" alt="PKBD: Список модулей"/></a>
+</td><td>&nbsp;&nbsp;</td> --!>
+</div>
+</tr>
+</table>
+
+<b>Requirements:</b>
+<ul>
+<li>ОС Windows XP/Vista/7;</li>
+<li>HDD 20 Mb.</li>
+</ul>
+<br \>
+<strong>Download:</strong><br \><br \>
+<table class='pnc' border='1'>
+<tr><td><strong>Lite Edition, ver.4.2020.0303.3</strong></td><td><b>22.11.2020</b></td><td><b><a href='downloads/pkbd/setup_PKBD_4.2020.0303.exe'>Download</a></b></td></tr>
+</table>
+</p>
+<a href='downloads/pkbd/en_PKBD_User_manual.pdf'>Documentation</a><br>
+<p><b>Case studies:</b>
+<br>- <a href='index.php?p=case-1&lan=en'>Case Study 1: The IrkutskNIIHimmash project № 052013</a>;
+<br>- <a href='index.php?p=case-2&lan=en'>Case Study 2: The RSF project № 18-71-10001</a>;
+<br>- The educational process in the Irkutsk National Research Technical University (IrNRTU).</p>
+
+<p><b>Demos:</b>
+<br>- <a href='downloads/pkbd/demos/creating-a-simple-knowledge-base.avi'>Creating a simple knowledge base</a>;
+<br>- <a href='downloads/pkbd/demos/a-knowledge-base-preview.avi'>A knowledge base preview</a>;
+<br>- <a href='downloads/pkbd/demos/importing-a-tabbyxl-file.avi'>Importing a TabbyXL file</a>;
+<br>- <a href='downloads/pkbd/demos/importing-a-rrose-file.avi'>Importing a Rational Rose file</a>;
+</p>
+<p><b>History:</b></p>
+<p>
+<b>4.2020.0303 (2020-03-03)</b><br>
+- integration with decision tables (.csv);<br>
+- export to PHP. <br>
+<b>4.2018.0201 (2018-02-01)</b><br>
+- integration with the TabbyXL canonical tables;
+- interaction with the Knowledge Base Development System service cloud; <br>
+- import from CMap Tools (XCL 1.0);<br>
+- export to CMap Tools (XTM 1.0). <br>
+<b>4.2016.1028 (2016-10-28)</b><br>
+- generation of expert systems; <br>
+- check the integrity of the project;<br>
+- multilingual support;<br>
+- updater. <br>
+<b>3.2015.1015 (2015-10-15)</b><br>
+- RVML support; <br>
+- bug fix. <br>
+<b>3.2015.0512 (2015-05-12)</b><br>
+- logical inference support (CLIPS). <br>
+<b>2.2014.0914 (2014-09-14)</b><br>
+- Microsoft Word reports support. <br>
+<b>2.2014.0820 (2014-08-20)</b><br>
+- import from the MDL-format (IBM Rational Rose); <br>
+<b>2.2014.0110 (2014-01-10)</b><br>
+- single window interface;<br>
+- case-bases testing support. <br>
+<b>1.2013.0617 (2013-06-13)</b><br>
+- bug fix. <br>
+<b>1.2012.0510 (2012-05-10)</b><br>
+- multiwindow interface;<br>
+- import from CLP-files(CLIPS);<br>
+- export to CLP-files (CLIPS);<br>
+
+</p>
+
+<p>
+<br><br>
+<br><br>

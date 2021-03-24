@@ -1,0 +1,6 @@
+(initial-fact)
+(Atmospheric-condensation (grade "AC-LOW") (kind "SNOW") (amount "15 MM") (... nil) (cf "1"))
+(River (name "ANGARA") (water-level "RWL-LOW") (region "IRKUTSK") (... nil) (cf nil))
+(Risk (grade "LOW") (kind "NATURAL") (cost nil) (... nil) (cf nil))
+(Flood-hazard (level "LOW") (probability "0.9") (time-reserve "3 H") (... nil) (cf nil))
+(Conclusion (grade "LOW") (text "SAFE SITUATION") (cf nil))

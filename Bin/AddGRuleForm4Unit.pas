@@ -681,7 +681,8 @@ begin
   RzButton2.Hint:=
    STDIClass.LoadSingleString('RzButton2h',LangLocaleDir+LangPrefix+'001.lan');
  MainForm.ReloadHelpMessage(ScrollBox3,74);
- G1.Draw(ScrollBox4);
+// G1.Draw(ScrollBox4);
+ G1.DrawV2(ScrollBox4,0,G1.ID);
  MarkCurrentNavPanel(2);
 end;
 

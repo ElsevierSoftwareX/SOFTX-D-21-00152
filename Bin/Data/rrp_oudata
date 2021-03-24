@@ -1,0 +1,9 @@
+FIRE    1 Atmospheric-condensation+River->Flood-hazard-1: f-1,f-2
+==> f-4     (Flood-hazard (level "LOW") (probability "0.9") (time-reserve "3 H") (... nil) (cf nil))
+==> Activation 0      Risk+Flood-hazard->Conclusion-1: f-3,f-4
+FIRE    2 Risk+Flood-hazard->Conclusion-1: f-3,f-4
+==> f-5     (Conclusion (grade "LOW") (text "SAFE SITUATION") (cf nil))
+<== Focus MAIN
+2 rules fired5 mean number of facts (6 maximum).
+1 mean number of instances (1 maximum).
+1 mean number of activations (1 maximum).

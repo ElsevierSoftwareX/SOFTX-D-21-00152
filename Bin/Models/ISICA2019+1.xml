@@ -1,0 +1,333 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<XMI xmi.version = "1.1" xmlns:UML="href://org.omg/UML/1.3" timestamp = "Tue Jul 23 11:12:0 2019">
+<XMI.header>
+  <XMI.documentation>
+    <XMI.owner></XMI.owner>
+    <XMI.contact></XMI.contact>
+    <XMI.exporter>StarUML.XMI-Addin</XMI.exporter>
+    <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    <XMI.notice></XMI.notice>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name = "UML" xmi.version = "1.3"/>
+ </XMI.header>
+<XMI.content>
+<UML:Model xmi.id="UMLProject.1">
+  <UML:Namespace.ownedElement>
+    <UML:Model xmi.id="UMLModel.2" name="Use Case Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.139" name="useCaseModel" extendedElement="UMLModel.2"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.3" name="Analysis Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Model xmi.id="UMLModel.4" name="Use Case View" visibility="public" isSpecification="false" namespace="UMLModel.3" isRoot="false" isLeaf="false" isAbstract="false"/>
+        <UML:Model xmi.id="UMLModel.5" name="Logical View" visibility="public" isSpecification="false" namespace="UMLModel.3" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Namespace.ownedElement>
+            <UML:Class xmi.id="UMLClass.6" name="Structural element" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.117 UMLAssociationEnd.123 UMLAssociationEnd.126 UMLAssociationEnd.129" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.7" name="name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.8" name="amount" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.9" name="Sotb, mm" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.10" name="а, mm/year" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.11" name="t1, year" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.12" name="tnr, year" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.13" name="m1" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.14" name="measurement error, mm" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.15" name="pp, мпа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.16" name="d, mm" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.17" name="T, C" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.18" name="g, MPa" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.19" name="sp, mm" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.20" name="p, MPa" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.21" name="r, mm" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+                <UML:Attribute xmi.id="UMLAttribute.22" name="s1p, mm" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.6"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.23" name="наименование элемента" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.105 UMLAssociationEnd.108" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.24" name="Name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.23"/>
+                <UML:Attribute xmi.id="UMLAttribute.25" name="кол., шт." visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.23"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.26" name="Dimensions" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.106 UMLAssociationEnd.130" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.27" name="inner or outer diametr" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.26"/>
+                <UML:Attribute xmi.id="UMLAttribute.28" name="wall thickness" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.26"/>
+                <UML:Attribute xmi.id="UMLAttribute.29" name="length" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.26"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.30" name="Material" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.109 UMLAssociationEnd.112 UMLAssociationEnd.127 UMLAssociationEnd.136" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.31" name="marka" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.30"/>
+                <UML:Attribute xmi.id="UMLAttribute.32" name="standard" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.30"/>
+                <UML:Attribute xmi.id="UMLAttribute.33" name="temperature, C" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.30"/>
+                <UML:Attribute xmi.id="UMLAttribute.34" name="yield strength, MPa" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.30"/>
+                <UML:Attribute xmi.id="UMLAttribute.35" name="tensile strength, MPа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.30"/>
+                <UML:Attribute xmi.id="UMLAttribute.36" name="allowable stress, MPa" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.30"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.37" name="наименование" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.111" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.38" name="Name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.37"/>
+                <UML:Attribute xmi.id="UMLAttribute.39" name="кол., шт." visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.37"/>
+                <UML:Attribute xmi.id="UMLAttribute.40" name="условный переход, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.37"/>
+                <UML:Attribute xmi.id="UMLAttribute.41" name="условное давление, мпа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.37"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.42" name="наименование аппарата" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.43" name="Name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.42"/>
+                <UML:Attribute xmi.id="UMLAttribute.44" name="позиция" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.42"/>
+                <UML:Attribute xmi.id="UMLAttribute.45" name="рег. №" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.42"/>
+                <UML:Attribute xmi.id="UMLAttribute.46" name="зав.№" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.42"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.47" name="№ точки ось" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.48" name="Name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.49" name="1" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.50" name="2" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.51" name="3" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.52" name="4" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.53" name="5" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.54" name="6" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.55" name="7" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.56" name="8" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.57" name="9" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.58" name="10" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.59" name="11" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.60" name="12" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.61" name="13" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.62" name="14" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.63" name="15" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.64" name="16" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.65" name="а, ж, в" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.66" name="б" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.67" name="к 1,2" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.68" name="к 3" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.69" name="г 1,2,3" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.70" name="д 1,2,3" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.71" name="м 1" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.72" name="м 2" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+                <UML:Attribute xmi.id="UMLAttribute.73" name="м 3" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.47"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.74" name="Measurment location" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.114 UMLAssociationEnd.124 UMLAssociationEnd.132 UMLAssociationEnd.135" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.75" name="name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.74"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.76" name="Hardness" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.115" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.77" name="min" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.76"/>
+                <UML:Attribute xmi.id="UMLAttribute.78" name="max" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.76"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.79" name="Parameter" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.133" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.80" name="name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.79"/>
+                <UML:Attribute xmi.id="UMLAttribute.81" name="tube space" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.79"/>
+                <UML:Attribute xmi.id="UMLAttribute.82" name="innertube space" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.79"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.83" name="элемент" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.84" name="Name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.83"/>
+                <UML:Attribute xmi.id="UMLAttribute.85" name="rp0,2, мпа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.83"/>
+                <UML:Attribute xmi.id="UMLAttribute.86" name="[g]пр, мпа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.83"/>
+                <UML:Attribute xmi.id="UMLAttribute.87" name="sф, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.83"/>
+                <UML:Attribute xmi.id="UMLAttribute.88" name="pпр, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.83"/>
+                <UML:Attribute xmi.id="UMLAttribute.89" name="[p]пр, мпа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.83"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.90" name="штуцер" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.91" name="Name" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+                <UML:Attribute xmi.id="UMLAttribute.92" name="d, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+                <UML:Attribute xmi.id="UMLAttribute.93" name="р, мпа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+                <UML:Attribute xmi.id="UMLAttribute.94" name="[g], мпа" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+                <UML:Attribute xmi.id="UMLAttribute.95" name="sф, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+                <UML:Attribute xmi.id="UMLAttribute.96" name="sр, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+                <UML:Attribute xmi.id="UMLAttribute.97" name="sотб., мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+                <UML:Attribute xmi.id="UMLAttribute.98" name="материал" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.90"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Class xmi.id="UMLClass.99" name="толщина стенки, мм" visibility="public" isSpecification="false" namespace="UMLModel.5" isRoot="false" isLeaf="false" isAbstract="false" participant="UMLAssociationEnd.118" isActive="false">
+              <UML:Classifier.feature>
+                <UML:Attribute xmi.id="UMLAttribute.100" name="исполнительная, sи, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.99"/>
+                <UML:Attribute xmi.id="UMLAttribute.101" name="фактическая минимальная (с учетом погрешности измерения), sф, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.99"/>
+                <UML:Attribute xmi.id="UMLAttribute.102" name="расчетная, sр, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.99"/>
+                <UML:Attribute xmi.id="UMLAttribute.103" name="допускаемая, sотб, мм" visibility="public" isSpecification="false" ownerScope="instance" changeability="changeable" targetScope="instance" type="" owner="UMLClass.99"/>
+              </UML:Classifier.feature>
+            </UML:Class>
+            <UML:Association xmi.id="UMLAssociation.104" name="has_a_G001" visibility="public" isSpecification="false" namespace="UMLModel.5">
+              <UML:Association.connection>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.105" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.104" type="UMLClass.23"/>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.106" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.104" type="UMLClass.26"/>
+              </UML:Association.connection>
+            </UML:Association>
+            <UML:Association xmi.id="UMLAssociation.107" name="has_a_G001" visibility="public" isSpecification="false" namespace="UMLModel.5">
+              <UML:Association.connection>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.108" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.107" type="UMLClass.23"/>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.109" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.107" type="UMLClass.30"/>
+              </UML:Association.connection>
+            </UML:Association>
+            <UML:Association xmi.id="UMLAssociation.110" name="has_a_G002" visibility="public" isSpecification="false" namespace="UMLModel.5">
+              <UML:Association.connection>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.111" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.110" type="UMLClass.37"/>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.112" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.110" type="UMLClass.30"/>
+              </UML:Association.connection>
+            </UML:Association>
+            <UML:Association xmi.id="UMLAssociation.113" name="has_a_G003" visibility="public" isSpecification="false" namespace="UMLModel.5">
+              <UML:Association.connection>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.114" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.113" type="UMLClass.74"/>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.115" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.113" type="UMLClass.76"/>
+              </UML:Association.connection>
+            </UML:Association>
+            <UML:Association xmi.id="UMLAssociation.116" name="has_a_G004" visibility="public" isSpecification="false" namespace="UMLModel.5">
+              <UML:Association.connection>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.117" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.116" type="UMLClass.6"/>
+                <UML:AssociationEnd xmi.id="UMLAssociationEnd.118" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.116" type="UMLClass.99"/>
+              </UML:Association.connection>
+            </UML:Association>
+          </UML:Namespace.ownedElement>
+        </UML:Model>
+        <UML:Model xmi.id="UMLModel.119" name="Component View" visibility="public" isSpecification="false" namespace="UMLModel.3" isRoot="false" isLeaf="false" isAbstract="false"/>
+        <UML:Model xmi.id="UMLModel.120" name="Deployment View" visibility="public" isSpecification="false" namespace="UMLModel.3" isRoot="false" isLeaf="false" isAbstract="false"/>
+        <UML:Stereotype xmi.id="X.140" name="analysisModel" extendedElement="UMLModel.3"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.121" name="Design Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Association xmi.id="UMLAssociation.122" name="has_a_G002" visibility="public" isSpecification="false" namespace="UMLModel.121">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.123" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.122" type="UMLClass.6"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.124" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.122" type="UMLClass.74"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.125" name="has_a_G001" visibility="public" isSpecification="false" namespace="UMLModel.121">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.126" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.125" type="UMLClass.6"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.127" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.125" type="UMLClass.30"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.128" name="has_a_G001" visibility="public" isSpecification="false" namespace="UMLModel.121">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.129" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.128" type="UMLClass.6"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.130" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.128" type="UMLClass.26"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.131" name="" visibility="public" isSpecification="false" namespace="UMLModel.121">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.132" name="has_a_G004" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.131" type="UMLClass.74"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.133" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.131" type="UMLClass.79"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Association xmi.id="UMLAssociation.134" name="has_a_G005" visibility="public" isSpecification="false" namespace="UMLModel.121">
+          <UML:Association.connection>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.135" name="" visibility="public" isSpecification="false" isNavigable="false" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.134" type="UMLClass.74"/>
+            <UML:AssociationEnd xmi.id="UMLAssociationEnd.136" name="" visibility="public" isSpecification="false" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" association="UMLAssociation.134" type="UMLClass.30"/>
+          </UML:Association.connection>
+        </UML:Association>
+        <UML:Stereotype xmi.id="X.226" name="designModel" extendedElement="UMLModel.121"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.137" name="Implementation Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.227" name="implementationModel" extendedElement="UMLModel.137"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.138" name="Deployment Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.228" name="deploymentModel" extendedElement="UMLModel.138"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </UML:Namespace.ownedElement>
+</UML:Model>
+<UML:TaggedValue xmi.id="X.141" tag="ordering" value="unordered" modelElement="UMLAttribute.7"/>
+<UML:TaggedValue xmi.id="X.142" tag="ordering" value="unordered" modelElement="UMLAttribute.8"/>
+<UML:TaggedValue xmi.id="X.143" tag="ordering" value="unordered" modelElement="UMLAttribute.9"/>
+<UML:TaggedValue xmi.id="X.144" tag="ordering" value="unordered" modelElement="UMLAttribute.10"/>
+<UML:TaggedValue xmi.id="X.145" tag="ordering" value="unordered" modelElement="UMLAttribute.11"/>
+<UML:TaggedValue xmi.id="X.146" tag="ordering" value="unordered" modelElement="UMLAttribute.12"/>
+<UML:TaggedValue xmi.id="X.147" tag="ordering" value="unordered" modelElement="UMLAttribute.13"/>
+<UML:TaggedValue xmi.id="X.148" tag="ordering" value="unordered" modelElement="UMLAttribute.14"/>
+<UML:TaggedValue xmi.id="X.149" tag="ordering" value="unordered" modelElement="UMLAttribute.15"/>
+<UML:TaggedValue xmi.id="X.150" tag="ordering" value="unordered" modelElement="UMLAttribute.16"/>
+<UML:TaggedValue xmi.id="X.151" tag="ordering" value="unordered" modelElement="UMLAttribute.17"/>
+<UML:TaggedValue xmi.id="X.152" tag="ordering" value="unordered" modelElement="UMLAttribute.18"/>
+<UML:TaggedValue xmi.id="X.153" tag="ordering" value="unordered" modelElement="UMLAttribute.19"/>
+<UML:TaggedValue xmi.id="X.154" tag="ordering" value="unordered" modelElement="UMLAttribute.20"/>
+<UML:TaggedValue xmi.id="X.155" tag="ordering" value="unordered" modelElement="UMLAttribute.21"/>
+<UML:TaggedValue xmi.id="X.156" tag="ordering" value="unordered" modelElement="UMLAttribute.22"/>
+<UML:TaggedValue xmi.id="X.157" tag="ordering" value="unordered" modelElement="UMLAttribute.24"/>
+<UML:TaggedValue xmi.id="X.158" tag="ordering" value="unordered" modelElement="UMLAttribute.25"/>
+<UML:TaggedValue xmi.id="X.159" tag="ordering" value="unordered" modelElement="UMLAttribute.27"/>
+<UML:TaggedValue xmi.id="X.160" tag="ordering" value="unordered" modelElement="UMLAttribute.28"/>
+<UML:TaggedValue xmi.id="X.161" tag="ordering" value="unordered" modelElement="UMLAttribute.29"/>
+<UML:TaggedValue xmi.id="X.162" tag="ordering" value="unordered" modelElement="UMLAttribute.31"/>
+<UML:TaggedValue xmi.id="X.163" tag="ordering" value="unordered" modelElement="UMLAttribute.32"/>
+<UML:TaggedValue xmi.id="X.164" tag="ordering" value="unordered" modelElement="UMLAttribute.33"/>
+<UML:TaggedValue xmi.id="X.165" tag="ordering" value="unordered" modelElement="UMLAttribute.34"/>
+<UML:TaggedValue xmi.id="X.166" tag="ordering" value="unordered" modelElement="UMLAttribute.35"/>
+<UML:TaggedValue xmi.id="X.167" tag="ordering" value="unordered" modelElement="UMLAttribute.36"/>
+<UML:TaggedValue xmi.id="X.168" tag="ordering" value="unordered" modelElement="UMLAttribute.38"/>
+<UML:TaggedValue xmi.id="X.169" tag="ordering" value="unordered" modelElement="UMLAttribute.39"/>
+<UML:TaggedValue xmi.id="X.170" tag="ordering" value="unordered" modelElement="UMLAttribute.40"/>
+<UML:TaggedValue xmi.id="X.171" tag="ordering" value="unordered" modelElement="UMLAttribute.41"/>
+<UML:TaggedValue xmi.id="X.172" tag="ordering" value="unordered" modelElement="UMLAttribute.43"/>
+<UML:TaggedValue xmi.id="X.173" tag="ordering" value="unordered" modelElement="UMLAttribute.44"/>
+<UML:TaggedValue xmi.id="X.174" tag="ordering" value="unordered" modelElement="UMLAttribute.45"/>
+<UML:TaggedValue xmi.id="X.175" tag="ordering" value="unordered" modelElement="UMLAttribute.46"/>
+<UML:TaggedValue xmi.id="X.176" tag="ordering" value="unordered" modelElement="UMLAttribute.48"/>
+<UML:TaggedValue xmi.id="X.177" tag="ordering" value="unordered" modelElement="UMLAttribute.49"/>
+<UML:TaggedValue xmi.id="X.178" tag="ordering" value="unordered" modelElement="UMLAttribute.50"/>
+<UML:TaggedValue xmi.id="X.179" tag="ordering" value="unordered" modelElement="UMLAttribute.51"/>
+<UML:TaggedValue xmi.id="X.180" tag="ordering" value="unordered" modelElement="UMLAttribute.52"/>
+<UML:TaggedValue xmi.id="X.181" tag="ordering" value="unordered" modelElement="UMLAttribute.53"/>
+<UML:TaggedValue xmi.id="X.182" tag="ordering" value="unordered" modelElement="UMLAttribute.54"/>
+<UML:TaggedValue xmi.id="X.183" tag="ordering" value="unordered" modelElement="UMLAttribute.55"/>
+<UML:TaggedValue xmi.id="X.184" tag="ordering" value="unordered" modelElement="UMLAttribute.56"/>
+<UML:TaggedValue xmi.id="X.185" tag="ordering" value="unordered" modelElement="UMLAttribute.57"/>
+<UML:TaggedValue xmi.id="X.186" tag="ordering" value="unordered" modelElement="UMLAttribute.58"/>
+<UML:TaggedValue xmi.id="X.187" tag="ordering" value="unordered" modelElement="UMLAttribute.59"/>
+<UML:TaggedValue xmi.id="X.188" tag="ordering" value="unordered" modelElement="UMLAttribute.60"/>
+<UML:TaggedValue xmi.id="X.189" tag="ordering" value="unordered" modelElement="UMLAttribute.61"/>
+<UML:TaggedValue xmi.id="X.190" tag="ordering" value="unordered" modelElement="UMLAttribute.62"/>
+<UML:TaggedValue xmi.id="X.191" tag="ordering" value="unordered" modelElement="UMLAttribute.63"/>
+<UML:TaggedValue xmi.id="X.192" tag="ordering" value="unordered" modelElement="UMLAttribute.64"/>
+<UML:TaggedValue xmi.id="X.193" tag="ordering" value="unordered" modelElement="UMLAttribute.65"/>
+<UML:TaggedValue xmi.id="X.194" tag="ordering" value="unordered" modelElement="UMLAttribute.66"/>
+<UML:TaggedValue xmi.id="X.195" tag="ordering" value="unordered" modelElement="UMLAttribute.67"/>
+<UML:TaggedValue xmi.id="X.196" tag="ordering" value="unordered" modelElement="UMLAttribute.68"/>
+<UML:TaggedValue xmi.id="X.197" tag="ordering" value="unordered" modelElement="UMLAttribute.69"/>
+<UML:TaggedValue xmi.id="X.198" tag="ordering" value="unordered" modelElement="UMLAttribute.70"/>
+<UML:TaggedValue xmi.id="X.199" tag="ordering" value="unordered" modelElement="UMLAttribute.71"/>
+<UML:TaggedValue xmi.id="X.200" tag="ordering" value="unordered" modelElement="UMLAttribute.72"/>
+<UML:TaggedValue xmi.id="X.201" tag="ordering" value="unordered" modelElement="UMLAttribute.73"/>
+<UML:TaggedValue xmi.id="X.202" tag="ordering" value="unordered" modelElement="UMLAttribute.75"/>
+<UML:TaggedValue xmi.id="X.203" tag="ordering" value="unordered" modelElement="UMLAttribute.77"/>
+<UML:TaggedValue xmi.id="X.204" tag="ordering" value="unordered" modelElement="UMLAttribute.78"/>
+<UML:TaggedValue xmi.id="X.205" tag="ordering" value="unordered" modelElement="UMLAttribute.80"/>
+<UML:TaggedValue xmi.id="X.206" tag="ordering" value="unordered" modelElement="UMLAttribute.81"/>
+<UML:TaggedValue xmi.id="X.207" tag="ordering" value="unordered" modelElement="UMLAttribute.82"/>
+<UML:TaggedValue xmi.id="X.208" tag="ordering" value="unordered" modelElement="UMLAttribute.84"/>
+<UML:TaggedValue xmi.id="X.209" tag="ordering" value="unordered" modelElement="UMLAttribute.85"/>
+<UML:TaggedValue xmi.id="X.210" tag="ordering" value="unordered" modelElement="UMLAttribute.86"/>
+<UML:TaggedValue xmi.id="X.211" tag="ordering" value="unordered" modelElement="UMLAttribute.87"/>
+<UML:TaggedValue xmi.id="X.212" tag="ordering" value="unordered" modelElement="UMLAttribute.88"/>
+<UML:TaggedValue xmi.id="X.213" tag="ordering" value="unordered" modelElement="UMLAttribute.89"/>
+<UML:TaggedValue xmi.id="X.214" tag="ordering" value="unordered" modelElement="UMLAttribute.91"/>
+<UML:TaggedValue xmi.id="X.215" tag="ordering" value="unordered" modelElement="UMLAttribute.92"/>
+<UML:TaggedValue xmi.id="X.216" tag="ordering" value="unordered" modelElement="UMLAttribute.93"/>
+<UML:TaggedValue xmi.id="X.217" tag="ordering" value="unordered" modelElement="UMLAttribute.94"/>
+<UML:TaggedValue xmi.id="X.218" tag="ordering" value="unordered" modelElement="UMLAttribute.95"/>
+<UML:TaggedValue xmi.id="X.219" tag="ordering" value="unordered" modelElement="UMLAttribute.96"/>
+<UML:TaggedValue xmi.id="X.220" tag="ordering" value="unordered" modelElement="UMLAttribute.97"/>
+<UML:TaggedValue xmi.id="X.221" tag="ordering" value="unordered" modelElement="UMLAttribute.98"/>
+<UML:TaggedValue xmi.id="X.222" tag="ordering" value="unordered" modelElement="UMLAttribute.100"/>
+<UML:TaggedValue xmi.id="X.223" tag="ordering" value="unordered" modelElement="UMLAttribute.101"/>
+<UML:TaggedValue xmi.id="X.224" tag="ordering" value="unordered" modelElement="UMLAttribute.102"/>
+<UML:TaggedValue xmi.id="X.225" tag="ordering" value="unordered" modelElement="UMLAttribute.103"/>
+</XMI.content>
+</XMI>

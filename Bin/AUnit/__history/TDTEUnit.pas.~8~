@@ -1,0 +1,102 @@
+unit TDTEUnit;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TTDTForm = class(TForm)
+    ScrollBox1: TScrollBox;
+    procedure FormShow(Sender: TObject);
+    procedure ScrollBox1MouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure ScrollBox1MouseWheelDown(Sender: TObject; Shift: TShiftState;
+      MousePos: TPoint; var Handled: Boolean);
+    procedure ScrollBox1MouseWheelUp(Sender: TObject; Shift: TShiftState;
+      MousePos: TPoint; var Handled: Boolean);
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TDTForm: TTDTForm;
+  HeaderWidths : TStringList;
+
+implementation
+
+uses UPKBClass, USTDIClass, MAIN, UMsgBoxForm;
+
+{$R *.dfm}
+
+procedure TTDTForm.FormActivate(Sender: TObject);
+begin
+ ScrollBox1.VertScrollBar.Position:=10;
+ ScrollBox1.HorzScrollBar.Position:=10;
+// OnActivate:=nil;
+end;
+
+procedure TTDTForm.FormShow(Sender: TObject);
+begin
+ if MainForm.TreeView1.Selected=nil then
+  MainForm.MMessageBox(1,0,'0='+
+   STDIClass.LoadSingleString('Please, select the knowledge base',
+    LangLocaleDir+LangPrefix+'012.lan')
+   )
+  else
+   begin
+     HeaderWidths:=TStringList.Create;
+
+     STDIClass.ReleaseObjects(ScrollBox1);
+     MainForm.GetKBForNode(
+      MainForm.TreeView1.Selected).ShowRulesAsTable(ScrollBox1);
+    // ScrollBox1.HorzScrollBar.Range := ScrollBox1.ClientWidth+1;
+    // ScrollBox1.Align:=alClient;
+
+     STDIClass.AddRzBtn(ScrollBox1,'1',4500,4500,10);
+   end;
+end;
+
+procedure TTDTForm.ScrollBox1MouseMove(Sender: TObject; Shift: TShiftState; X,
+  Y: Integer);
+begin
+ SetFocusedControl(TScrollBox(Sender));
+end;
+
+procedure TTDTForm.ScrollBox1MouseWheelDown(Sender: TObject; Shift: TShiftState;
+  MousePos: TPoint; var Handled: Boolean);
+var
+ m  : Integer;
+begin
+if Sender is TScrollBox then
+begin
+ m:=15;
+ if TScrollBox(Sender).VertScrollBar.Position+m>
+  TScrollBox(Sender).VertScrollBar.Range then
+  m:=m-abs(TScrollBox(Sender).VertScrollBar.Range-
+   TScrollBox(Sender).VertScrollBar.Position-m);
+ TScrollBox(Sender).VertScrollBar.Position:=
+  TScrollBox(Sender).VertScrollBar.Position+m;
+ end;
+end;
+
+procedure TTDTForm.ScrollBox1MouseWheelUp(Sender: TObject; Shift: TShiftState;
+  MousePos: TPoint; var Handled: Boolean);
+var
+ m  : Integer;
+begin
+if Sender is TScrollBox then
+begin
+ m:=15;
+ if TScrollBox(Sender).VertScrollBar.Position-m<0 then
+  m:=m-abs(TScrollBox(Sender).VertScrollBar.Position-m);
+  TScrollBox(Sender).VertScrollBar.Position:=
+   TScrollBox(Sender).VertScrollBar.Position-m;
+end;
+end;
+
+end.

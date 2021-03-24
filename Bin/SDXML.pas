@@ -49,13 +49,18 @@ end;
 function AddSNode(D:DomDocument;RN:IXMLDOMElement;O:TSlot):IXMLDOMElement;
 var
  SNode: IXMLDOMElement;
-// j  : Integer;
+ i  : Extended;
 begin
  SNode:=D.createElement('Slot');
  AddNode(D,SNode,'Name',O.Name);
  AddNode(D,SNode,'ShortName',O.ShortName);
  AddNode(D,SNode,'Description',O.Description);
  AddNode(D,SNode,'Value',O.Value);
+
+ if O.DataType='' then
+  if TryStrToFloat(O.Value,i) then O.DataType:='Number'
+   else O.DataType:='String';
+
  AddNode(D,SNode,'DataType',O.DataType);
  AddNode(D,SNode,'Constraint',O.Constraint);
  RN.appendChild(SNode);
@@ -163,7 +168,54 @@ begin
  RN.appendChild(SNode);
  Result:=SNode;
 end;
+//---------------------------------
+//fvars
+function AddFVarNode(D:DomDocument;RN:IXMLDOMElement;O:TFVar):IXMLDOMElement;
+var
+ SNode,SNode1: IXMLDOMElement;
+ j  : Integer;
+begin
+ SNode:=D.createElement('FVar');
+ AddNode(D,SNode,'ID',O.ID);
+ AddNode(D,SNode,'Name',O.Name);
+ AddNode(D,SNode,'Description',O.Description);
+ AddNode(D,SNode,'ListOfValues',O.ListOfValues.Text);
+ AddNode(D,SNode,'FScaleName',O.FScaleName);
+ AddNode(D,SNode,'UnitsName',O.UnitsName);
+ AddNode(D,SNode,'FType',O.FType);
+ AddNode(D,SNode,'DrawParams',O.DrawParams.Text);
+ AddNode(D,SNode,'Len',IntToStr(O.Len));
+ RN.appendChild(SNode);
+ Result:=SNode;
+end;
+//---------------------------------
+//fsacles
+function AddFScNode(D:DomDocument;RN:IXMLDOMElement;O:TFScale):IXMLDOMElement;
+var
+ SNode,SNode1: IXMLDOMElement;
+ j  : Integer;
+begin
+ SNode:=D.createElement('FScale');
+ AddNode(D,SNode,'ID',O.ID);
+ AddNode(D,SNode,'Name',O.Name);
+ AddNode(D,SNode,'Description',O.Description);
+// AddNode(D,SNode,'ListOfValues',O.ListOfValues.Text);
+// AddNode(D,SNode,'ListOfNames',O.ListOfNames.Text);
+ AddNode(D,SNode,'Min',O.Min);
+ AddNode(D,SNode,'Max',O.Max);
+ AddNode(D,SNode,'Len',IntToStr(O.Len));
+ AddNode(D,SNode,'FType',O.FType);
+ AddNode(D,SNode,'UnitsName',O.UnitsName);
+ AddNode(D,SNode,'DrawParams',O.DrawParams.Text);
 
+ SNode1:=D.createElement('Terms');
+ for j:=0 to O.ListOfValues.Count-1 do
+  AddFVarNode(D,SNode1,TFVar(O.ListOfValues.Objects[j]));
+ SNode.appendChild(SNode1);
+
+ RN.appendChild(SNode);
+ Result:=SNode;
+end;
 //--------------------------------------------------------------------------
 function AddDSPNode(D:DomDocument;RN:IXMLDOMElement;O:TMCTask):IXMLDOMElement;
 
@@ -299,6 +351,7 @@ begin
  AddNode(D,SNode,'ShortName',O.ShortName);
  AddNode(D,SNode,'Description',O.Description);
  AddNode(D,SNode,'Salience',O.Salience);
+ AddNode(D,SNode,'CF',O.CF);
  AddNode(D,SNode,'PackageName',O.PackageName);
  AddNode(D,SNode,'RootPackageName',O.RootPackageName);
  AddNode(D,SNode,'DrawParams',O.DrawParams.Text);
@@ -447,6 +500,26 @@ begin
     end;
   Node.appendChild(SNode);
 
+  //--------------------------- FScales --------------------
+  SNode:=Doc.createElement('FScales');
+  for i:=0 to KB.FScales.Count-1 do
+    begin
+    if TFScale(KB.FScales.Items[i]).ID='' then
+     TFScale(KB.FScales.Items[i]).ID:=KB.NewID('S');
+     AddFScNode(Doc,SNode,TFScale(KB.FScales.Items[i]));
+    end;
+  Node.appendChild(SNode);
+
+  //--------------------------- FVars --------------------
+{ SNode:=Doc.createElement('FVars');
+  for i:=0 to KB.FVars.Count-1 do
+    begin
+    if TFVar(KB.FVars.Items[i]).ID='' then
+     TFVar(KB.FVars.Items[i]).ID:=KB.NewID('V');
+     AddFVarNode(Doc,SNode,TFVar(KB.FVars.Items[i]));
+    end;
+  Node.appendChild(SNode);
+  }
   //--------------------------- Packages --------------------
   SNode:=Doc.createElement('TempPackageList');
   for i:=0 to KB.TempPackageList.Count-1 do
@@ -506,8 +579,8 @@ begin
 end;
 
 function GetSFromNode(N:IXMLNode):TSlot;
-//var
-// i  : Integer;
+var
+ i  : Extended;
 begin
  Result:=TSlot.Create;
  Result.Name:=N.ChildNodes.Nodes['Name'].Text;
@@ -515,6 +588,11 @@ begin
  Result.Description:=N.ChildNodes.Nodes['Description'].Text;
  Result.Value:=N.ChildNodes.Nodes['Value'].Text;
  Result.DataType:=N.ChildNodes.Nodes['DataType'].Text;
+
+ if Result.DataType='' then
+  if TryStrToFloat(Result.Value,i) then Result.DataType:='Number'
+   else Result.DataType:='String';
+
  Result.Constraint:=N.ChildNodes.Nodes['Constraint'].Text;
 end;
 
@@ -601,7 +679,57 @@ begin
    N.ChildNodes.Nodes['Slots'].ChildNodes.Nodes[i]
     ));
 end;
+//--------------------------------------
+function GetFVarFromNode(N:IXMLNode):TFVar;
+var
+ i  : Integer;
+begin
+ Result:=TFVar.Create;
+ Result.Init;
 
+ Result.ID:=Trim(N.ChildNodes.Nodes['ID'].Text);
+ Result.Name:=N.ChildNodes.Nodes['Name'].Text;
+ Result.Description:=N.ChildNodes.Nodes['Description'].Text;
+
+ Result.ListOfValues.Text:=N.ChildNodes.Nodes['ListOfValues'].Text;
+ Result.FScaleName:=N.ChildNodes.Nodes['FScaleName'].Text;
+ Result.UnitsName:=N.ChildNodes.Nodes['UnitsName'].Text;
+ Result.FType:=N.ChildNodes.Nodes['FType'].Text;
+ Result.DrawParams.Text:=N.ChildNodes.Nodes['DrawParams'].Text;
+ i:=Result.ListOfValues.Count;
+ Result.Len:=i;
+end;
+//--------------------------------------
+function GetFScFromNode(N:IXMLNode):TFScale;
+var
+ i  : Integer;
+ tmFVar : TFVar;
+begin
+ Result:=TFScale.Create;
+ Result.Init;
+
+ Result.ID:=Trim(N.ChildNodes.Nodes['ID'].Text);
+ Result.Name:=N.ChildNodes.Nodes['Name'].Text;
+ Result.Description:=N.ChildNodes.Nodes['Description'].Text;
+
+// Result.ListOfValues.Text:=N.ChildNodes.Nodes['ListOfValues'].Text;
+// Result.ListOfNames.Text:=N.ChildNodes.Nodes['ListOfNames'].Text;
+ Result.Min:=N.ChildNodes.Nodes['Min'].Text;
+ Result.Max:=N.ChildNodes.Nodes['Max'].Text;
+ Result.FType:=N.ChildNodes.Nodes['FType'].Text;
+ Result.UnitsName:=N.ChildNodes.Nodes['UnitsName'].Text;
+ Result.DrawParams.Text:=N.ChildNodes.Nodes['DrawParams'].Text;
+ i:=Result.ListOfValues.Count;
+ Result.Len:=i;
+ for i:=0 to N.ChildNodes.Nodes['Terms'].ChildNodes.Count-1 do
+  begin
+   tmFVar:=GetFVarFromNode(
+    N.ChildNodes.Nodes['Terms'].ChildNodes.Nodes[i]
+     );
+   Result.ListOfValues.AddObject(tmFVar.Name,tmFVar);
+  end;
+end;
+//--------------------------------------
 function GetPFromNode(N:IXMLNode):TTask;
 function GetContentFromNode(var s:string;N:IXMLNode):TStringList;
 //var
@@ -718,6 +846,11 @@ begin
  Result.ShortName:=N.ChildNodes.Nodes['ShortName'].Text;
  Result.Description:=N.ChildNodes.Nodes['Description'].Text;
  Result.Salience:=N.ChildNodes.Nodes['Salience'].Text;
+ if Trim(Result.Salience)='' then Result.Salience:='1';
+
+ Result.CF:=N.ChildNodes.Nodes['CF'].Text;
+ if Trim(Result.CF)='' then Result.CF:='1';
+
  Result.PackageName:=N.ChildNodes.Nodes['PackageName'].Text;
  Result.RootPackageName:=N.ChildNodes.Nodes['RootPackageName'].Text;
  Result.DrawParams.Text:=N.ChildNodes.Nodes['DrawParams'].Text;
@@ -932,6 +1065,24 @@ try
          ));
    end;
 
+  //-----------------Загружаем FScales----------------------
+  for j:=0 to MFXD1.DocumentElement.ChildNodes.Nodes['KnowledgeBase'].
+   ChildNodes.Nodes['FScales'].ChildNodes.Count-1 do
+   begin
+       KB.FScales.Add(GetFScFromNode(
+        MFXD1.DocumentElement.ChildNodes.Nodes['KnowledgeBase'].
+         ChildNodes.Nodes['FScales'].ChildNodes.Nodes[j]
+         ));
+   end;
+  //-----------------Загружаем FVars----------------------
+  for j:=0 to MFXD1.DocumentElement.ChildNodes.Nodes['KnowledgeBase'].
+   ChildNodes.Nodes['FVars'].ChildNodes.Count-1 do
+   begin
+       KB.FVars.Add(GetFVarFromNode(
+        MFXD1.DocumentElement.ChildNodes.Nodes['KnowledgeBase'].
+         ChildNodes.Nodes['FVars'].ChildNodes.Nodes[j]
+         ));
+   end;
   //-----------------Загружаем Tasks----------------------
   for j:=0 to MFXD1.DocumentElement.ChildNodes.Nodes['KnowledgeBase'].
    ChildNodes.Nodes['Tasks'].ChildNodes.Count-1 do

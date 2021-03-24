@@ -1,0 +1,130 @@
+object StartProjectForm: TStartProjectForm
+  Left = 524
+  Top = 367
+  BorderStyle = bsDialog
+  Caption = ' Start'
+  ClientHeight = 248
+  ClientWidth = 374
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Default'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 374
+    Height = 248
+    Align = alClient
+    BevelOuter = bvLowered
+    TabOrder = 0
+    object RzBitBtn2: TRzBitBtn
+      AlignWithMargins = True
+      Left = 4
+      Top = 92
+      Width = 366
+      Height = 41
+      FrameColor = 7617536
+      Align = alTop
+      Caption = '  '#1048#1084#1087#1086#1088#1090#1080#1088#1086#1074#1072#1090#1100' '#1073#1072#1079#1091' '#1079#1085#1072#1085#1080#1081' ('#1087#1088#1086#1077#1082#1090')'
+      Color = 15791348
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Default'
+      Font.Style = [fsBold]
+      HotTrack = True
+      ParentFont = False
+      TabOrder = 0
+      OnClick = RzBitBtn2Click
+      ImageIndex = 73
+      Images = MainForm.ImageList1
+    end
+    object RzBitBtn3: TRzBitBtn
+      AlignWithMargins = True
+      Left = 4
+      Top = 4
+      Width = 366
+      Height = 41
+      FrameColor = 7617536
+      Align = alTop
+      Caption = ' '#1057#1086#1079#1076#1072#1090#1100' '#1085#1086#1074#1091#1102' '#1073#1072#1079#1091' '#1079#1085#1072#1085#1080#1081' ('#1087#1088#1086#1077#1082#1090')'
+      Color = 15791348
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Default'
+      Font.Style = [fsBold]
+      HotTrack = True
+      ParentFont = False
+      TabOrder = 1
+      OnClick = RzBitBtn3Click
+      ImageIndex = 54
+      Images = MainForm.ImageList1
+      Margin = 5
+    end
+    object RzBitBtn1: TRzBitBtn
+      AlignWithMargins = True
+      Left = 4
+      Top = 48
+      Width = 366
+      Height = 41
+      Margins.Top = 0
+      Margins.Bottom = 0
+      FrameColor = 7617536
+      Align = alTop
+      Caption = ' '#1054#1090#1082#1088#1099#1090#1100' '#1073#1072#1079#1091' '#1079#1085#1072#1085#1080#1081' ('#1087#1088#1086#1077#1082#1090')'
+      Color = 15791348
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Default'
+      Font.Style = [fsBold]
+      HotTrack = True
+      ParentFont = False
+      TabOrder = 2
+      OnClick = RzBitBtn1Click
+      ImageIndex = 7
+      Images = MainForm.ImageList1
+      Margin = 7
+    end
+    object GroupBox1: TRzGroupBox
+      AlignWithMargins = True
+      Left = 4
+      Top = 139
+      Width = 366
+      Align = alClient
+      Caption = ' Recent Files: '
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Default'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+      object RzListBox1: TRzListBox
+        AlignWithMargins = True
+        Left = 4
+        Top = 17
+        Width = 358
+        Height = 84
+        Align = alClient
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Default'
+        Font.Style = []
+        ItemHeight = 13
+        ParentFont = False
+        TabOrder = 0
+        OnDblClick = RzListView1DblClick
+      end
+    end
+  end
+end

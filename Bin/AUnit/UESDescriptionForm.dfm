@@ -3,8 +3,8 @@ object ESDescriptionForm: TESDescriptionForm
   Top = 0
   BorderStyle = bsSingle
   Caption = 'ESDescriptionForm'
-  ClientHeight = 383
-  ClientWidth = 424
+  ClientHeight = 526
+  ClientWidth = 644
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -20,12 +20,14 @@ object ESDescriptionForm: TESDescriptionForm
   object RzPanel2: TRzPanel
     AlignWithMargins = True
     Left = 3
-    Top = 348
-    Width = 418
+    Top = 491
+    Width = 638
     Height = 32
     Align = alBottom
     BorderOuter = fsGroove
     TabOrder = 0
+    ExplicitTop = 348
+    ExplicitWidth = 418
     object RzButton1: TRzButton
       AlignWithMargins = True
       Left = 4
@@ -54,7 +56,7 @@ object ESDescriptionForm: TESDescriptionForm
       AlignWithMargins = True
       Left = 106
       Top = 4
-      Width = 308
+      Width = 528
       Height = 24
       Margins.Left = 0
       Margins.Top = 2
@@ -74,33 +76,38 @@ object ESDescriptionForm: TESDescriptionForm
       ParentFont = False
       TabOrder = 1
       OnClick = RzButton2Click
+      ExplicitWidth = 308
     end
   end
   object GroupBox5: TGroupBox
     AlignWithMargins = True
     Left = 3
     Top = 3
-    Width = 418
-    Height = 339
+    Width = 638
+    Height = 482
     Align = alClient
     Caption = ' General information: '
     TabOrder = 1
+    ExplicitWidth = 418
+    ExplicitHeight = 339
     object RzPanel9: TRzPanel
       Left = 2
       Top = 162
-      Width = 414
-      Height = 175
+      Width = 634
+      Height = 318
       Align = alClient
       BorderOuter = fsNone
       BorderColor = clBlue
       BorderShadow = clBlue
       TabOrder = 0
+      ExplicitWidth = 414
+      ExplicitHeight = 175
       object RzPanel12: TRzPanel
         AlignWithMargins = True
         Left = 3
         Top = 3
-        Width = 408
-        Height = 169
+        Width = 628
+        Height = 312
         Align = alClient
         BorderOuter = fsFlat
         BorderColor = clBlue
@@ -108,11 +115,13 @@ object ESDescriptionForm: TESDescriptionForm
         Ctl3D = False
         ParentCtl3D = False
         TabOrder = 0
+        ExplicitWidth = 408
+        ExplicitHeight = 169
         object RzLabel1: TRzLabel
           AlignWithMargins = True
           Left = 11
           Top = 4
-          Width = 393
+          Width = 613
           Height = 13
           Margins.Left = 10
           Align = alTop
@@ -129,8 +138,8 @@ object ESDescriptionForm: TESDescriptionForm
           AlignWithMargins = True
           Left = 2
           Top = 21
-          Width = 404
-          Height = 146
+          Width = 624
+          Height = 289
           Margins.Left = 1
           Margins.Top = 1
           Margins.Right = 1
@@ -145,24 +154,27 @@ object ESDescriptionForm: TESDescriptionForm
             'Memo1')
           ParentFont = False
           TabOrder = 0
+          ExplicitWidth = 404
+          ExplicitHeight = 146
         end
       end
     end
     object RzPanel10: TRzPanel
       Left = 2
       Top = 15
-      Width = 414
+      Width = 634
       Height = 147
       Align = alTop
       BorderOuter = fsNone
       BorderColor = clBlue
       BorderShadow = clBlue
       TabOrder = 1
+      ExplicitWidth = 414
       object RzPanel18: TRzPanel
         AlignWithMargins = True
         Left = 159
         Top = 0
-        Width = 252
+        Width = 472
         Height = 144
         Margins.Top = 0
         Align = alClient
@@ -170,17 +182,19 @@ object ESDescriptionForm: TESDescriptionForm
         BorderColor = clBlue
         BorderShadow = clBlue
         TabOrder = 0
+        ExplicitWidth = 252
         object RzPanel11: TRzPanel
           AlignWithMargins = True
           Left = 3
           Top = 61
-          Width = 246
+          Width = 466
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
           BorderColor = clBlue
           BorderShadow = clBlue
           TabOrder = 0
+          ExplicitWidth = 246
           object RzLabel7: TRzLabel
             AlignWithMargins = True
             Left = 11
@@ -202,7 +216,7 @@ object ESDescriptionForm: TESDescriptionForm
             AlignWithMargins = True
             Left = 109
             Top = 2
-            Width = 135
+            Width = 355
             Height = 19
             Margins.Left = 1
             Margins.Top = 1
@@ -218,6 +232,7 @@ object ESDescriptionForm: TESDescriptionForm
             FrameVisible = True
             ParentFont = False
             TabOrder = 0
+            ExplicitWidth = 135
             ExplicitHeight = 21
           end
         end
@@ -225,13 +240,14 @@ object ESDescriptionForm: TESDescriptionForm
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 246
+          Width = 466
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
           BorderColor = clBlue
           BorderShadow = clBlue
           TabOrder = 1
+          ExplicitWidth = 246
           object RzLabel2: TRzLabel
             AlignWithMargins = True
             Left = 11
@@ -253,7 +269,7 @@ object ESDescriptionForm: TESDescriptionForm
             AlignWithMargins = True
             Left = 109
             Top = 2
-            Width = 135
+            Width = 355
             Height = 19
             Margins.Left = 1
             Margins.Top = 1
@@ -269,6 +285,7 @@ object ESDescriptionForm: TESDescriptionForm
             ParentFont = False
             TabOrder = 0
             OnChange = RzEdit1Change
+            ExplicitWidth = 135
             ExplicitHeight = 21
           end
         end
@@ -276,13 +293,14 @@ object ESDescriptionForm: TESDescriptionForm
           AlignWithMargins = True
           Left = 3
           Top = 32
-          Width = 246
+          Width = 466
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
           BorderColor = clBlue
           BorderShadow = clBlue
           TabOrder = 2
+          ExplicitWidth = 246
           object RzLabel3: TRzLabel
             AlignWithMargins = True
             Left = 11
@@ -304,7 +322,7 @@ object ESDescriptionForm: TESDescriptionForm
             AlignWithMargins = True
             Left = 109
             Top = 2
-            Width = 135
+            Width = 355
             Height = 19
             Margins.Left = 1
             Margins.Top = 1
@@ -319,6 +337,7 @@ object ESDescriptionForm: TESDescriptionForm
             FrameVisible = True
             ParentFont = False
             TabOrder = 0
+            ExplicitWidth = 135
             ExplicitHeight = 21
           end
         end
@@ -326,13 +345,14 @@ object ESDescriptionForm: TESDescriptionForm
           AlignWithMargins = True
           Left = 3
           Top = 90
-          Width = 246
+          Width = 466
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
           BorderColor = clBlue
           BorderShadow = clBlue
           TabOrder = 3
+          ExplicitWidth = 246
           object RzLabel4: TRzLabel
             AlignWithMargins = True
             Left = 11
@@ -354,7 +374,7 @@ object ESDescriptionForm: TESDescriptionForm
             AlignWithMargins = True
             Left = 109
             Top = 2
-            Width = 135
+            Width = 355
             Height = 19
             Margins.Left = 1
             Margins.Top = 1
@@ -370,6 +390,7 @@ object ESDescriptionForm: TESDescriptionForm
             FrameVisible = True
             ParentFont = False
             TabOrder = 0
+            ExplicitWidth = 135
             ExplicitHeight = 21
           end
         end
@@ -377,13 +398,14 @@ object ESDescriptionForm: TESDescriptionForm
           AlignWithMargins = True
           Left = 3
           Top = 119
-          Width = 246
+          Width = 466
           Height = 25
           Align = alTop
           BorderOuter = fsFlat
           BorderColor = clBlue
           BorderShadow = clBlue
           TabOrder = 4
+          ExplicitWidth = 246
           object RzLabel5: TRzLabel
             AlignWithMargins = True
             Left = 11
@@ -407,7 +429,7 @@ object ESDescriptionForm: TESDescriptionForm
             AlignWithMargins = True
             Left = 109
             Top = 2
-            Width = 135
+            Width = 355
             Height = 21
             Margins.Left = 1
             Margins.Top = 1
@@ -429,6 +451,7 @@ object ESDescriptionForm: TESDescriptionForm
             Items.Strings = (
               'Windows / PKBD'
               'Windows / CLIPS-PKBD')
+            ExplicitWidth = 135
           end
         end
       end

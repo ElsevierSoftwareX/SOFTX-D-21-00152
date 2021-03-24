@@ -384,6 +384,7 @@ var
  tmSlot : TSlot;
 begin
  tmSlot:=TSlot.Create;
+ tmSlot.DataType:='String';
 
  if tmObj is TTemplate then  //for templates
   begin

@@ -1,0 +1,21 @@
+DATA;RowHeading;ColumnHeading
+1;Talcum;Ìechanical properties | Hardness (Moos)
+2,8;Talcum;Ìechanical properties | Density
+2;Gypsum;Ìechanical properties | Hardness (Moos)
+2,3;Gypsum;Ìechanical properties | Density
+3;Calcite;Ìechanical properties | Hardness (Moos)
+2,7;Calcite;Ìechanical properties | Density
+4;Fluorite;Ìechanical properties | Hardness (Moos)
+3,2;Fluorite;Ìechanical properties | Density
+5;Apatite;Ìechanical properties | Hardness (Moos)
+3,2;Apatite;Ìechanical properties | Density
+6;Orthoclase;Ìechanical properties | Hardness (Moos)
+2,5;Orthoclase;Ìechanical properties | Density
+7;Quartz;Ìechanical properties | Hardness (Moos)
+2,7;Quartz;Ìechanical properties | Density
+8;Topaz;Ìechanical properties | Hardness (Moos)
+3,5;Topaz;Ìechanical properties | Density
+9;Corundum;Ìechanical properties | Hardness (Moos)
+4,0;Corundum;Ìechanical properties | Density
+10;Diamond;Ìechanical properties | Hardness (Moos)
+3,5;Diamond;Ìechanical properties | Density

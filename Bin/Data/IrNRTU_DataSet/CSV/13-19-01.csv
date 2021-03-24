@@ -1,0 +1,81 @@
+DATA;RowHeading;ColumnHeading
+Transparent;Diamond;Color
+Transparent;Diamond;Transparency
+10;Diamond;Ìechanical properties | Hardness (Moos)
+3,47-3,55;Diamond;Ìechanical properties | Density
+2,417-2,419;Diamond;Optical properties | Refractive index
+Adamantine;Diamond;Optical properties | Lustre
+Cubic;Diamond;Crystallography | Crystal system
+Hexaoctahedral;Diamond;Crystallography | Crystal habit
+Green;Emerald;Color
+Transparent, translucent;Emerald;Transparency
+7,5-8;Emerald;Ìechanical properties | Hardness (Moos)
+2,69-2,78;Emerald;Ìechanical properties | Density
+1,56-1,6;Emerald;Optical properties | Refractive index
+Vitreous;Emerald;Optical properties | Lustre
+Hexagonal;Emerald;Crystallography | Crystal system
+Massive;Emerald;Crystallography | Crystal habit
+Blue-green;Turquoise;Color
+Opaque;Turquoise;Transparency
+05.èþí;Turquoise;Ìechanical properties | Hardness (Moos)
+2,6-2,8;Turquoise;Ìechanical properties | Density
+1,61-1,65;Turquoise;Optical properties | Refractive index
+Waxy;Turquoise;Optical properties | Lustre
+Triclinic;Turquoise;Crystallography | Crystal system
+Massive;Turquoise;Crystallography | Crystal habit
+Red, pink;Spinel;Color
+Transparent;Spinel;Transparency
+7,5-8;Spinel;Ìechanical properties | Hardness (Moos)
+3,57-3,72;Spinel;Ìechanical properties | Density
+1,71-1,76;Spinel;Optical properties | Refractive index
+Vitreous;Spinel;Optical properties | Lustre
+Cubic;Spinel;Crystallography | Crystal system
+Octahedral;Spinel;Crystallography | Crystal habit
+Green;Chrysolite;Color
+Transparent;Chrysolite;Transparency
+6,5-7;Chrysolite;Ìechanical properties | Hardness (Moos)
+3,2-3,4;Chrysolite;Ìechanical properties | Density
+1,64-1,70;Chrysolite;Optical properties | Refractive index
+Vitreous;Chrysolite;Optical properties | Lustre
+Orthorhombic;Chrysolite;Crystallography | Crystal system
+Prismatic;Chrysolite;Crystallography | Crystal habit
+Purple;Amethyst;Color
+Transparent, translucent;Amethyst;Transparency
+7;Amethyst;Ìechanical properties | Hardness (Moos)
+2,63-2,65;Amethyst;Ìechanical properties | Density
+1,543-1,554;Amethyst;Optical properties | Refractive index
+Vitreous;Amethyst;Optical properties | Lustre
+Trigonal;Amethyst;Crystallography | Crystal system
+Rhombohedral;Amethyst;Crystallography | Crystal habit
+Pink, yellow;Topaz;Color
+Transparent;Topaz;Transparency
+8;Topaz;Ìechanical properties | Hardness (Moos)
+3,49-3,57;Topaz;Ìechanical properties | Density
+1,606-1,638;Topaz;Optical properties | Refractive index
+Vitreous;Topaz;Optical properties | Lustre
+Orthorhombic;Topaz;Crystallography | Crystal system
+Prismatic;Topaz;Crystallography | Crystal habit
+Yellow, red;Opal;Color
+Semitransparent;Opal;Transparency
+5,5-6,5;Opal;Ìechanical properties | Hardness (Moos)
+1,96-2,2;Opal;Ìechanical properties | Density
+1,44-1,46;Opal;Optical properties | Refractive index
+Pearly;Opal;Optical properties | Lustre
+Amorphous;Opal;Crystallography | Crystal system
+Massive;Opal;Crystallography | Crystal habit
+Red, green;Tourmaline;Color
+Semitransparent, translucent;Tourmaline;Transparency
+7-7,5;Tourmaline;Ìechanical properties | Hardness (Moos)
+3,02-3,26;Tourmaline;Ìechanical properties | Density
+1,616-1,652;Tourmaline;Optical properties | Refractive index
+Vitreous;Tourmaline;Optical properties | Lustre
+Trigonal;Tourmaline;Crystallography | Crystal system
+Prismatic;Tourmaline;Crystallography | Crystal habit
+Green;Jade;Color
+Opaque;Jade;Transparency
+6-6,5;Jade;Ìechanical properties | Hardness (Moos)
+2,9-3;Jade;Ìechanical properties | Density
+1,62;Jade;Optical properties | Refractive index
+Greasy;Jade;Optical properties | Lustre
+Monoclinic;Jade;Crystallography | Crystal system
+Massive;Jade;Crystallography | Crystal habit

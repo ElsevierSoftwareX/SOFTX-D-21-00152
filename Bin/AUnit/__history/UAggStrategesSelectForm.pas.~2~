@@ -1,0 +1,35 @@
+unit UAggStrategesSelectForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, RzButton, ExtCtrls, RzPanel, RzRadChk;
+
+type
+  TAggStrategesSelectForm = class(TForm)
+    RzPanel6: TRzPanel;
+    ScrollBox3: TScrollBox;
+    RzPanel1: TRzPanel;
+    RzButton1: TRzButton;
+    RzButton2: TRzButton;
+    GroupBox3: TGroupBox;
+    RzCheckBox1: TRzCheckBox;
+    RzCheckBox2: TRzCheckBox;
+    RzCheckBox3: TRzCheckBox;
+    RzCheckBox4: TRzCheckBox;
+    RzCheckBox5: TRzCheckBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  AggStrategesSelectForm: TAggStrategesSelectForm;
+
+implementation
+
+{$R *.dfm}
+
+end.

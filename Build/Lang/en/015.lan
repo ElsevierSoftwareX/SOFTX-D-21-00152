@@ -1,28 +1,27 @@
-GroupBox1c= STEP 2: Entering count of values and selection thr similar scale: 
+GroupBox1c= STEP 2. Entering the values of terms: 
 GroupBox1h=
-GroupBox3c= STEP 1: Entering the scale name and description: 
+GroupBox3c= STEP 1. Selecting or describing a scale (linguistic variable):  
 GroupBox3h=
-GroupBox4c= STEP 4: Entered data preview: 
-GroupBox4h=
-GroupBox5c= STEP 4: Entering the values: 
-GroupBox5h=
-GroupBox6c= STEP 3: Entering the interval of values: 
-GroupBox6h=
+GroupBox8c= Description: 
+GroupBox8h=
 
-
-RzLabel3c=Case:
-RzLabel7c=Scale:
-RzLabel13c=Description
-RzLabel14c=Slot name
-RzLabel15c=Datatype
-RzLabel16c=Value by default
-RzLabel17c=Count of values:
+RzLabel4c=Name:
+RzLabel5c=Unit:
+RzLabel6c=Function type:
+RzLabel7c=Count of terms:
+RzLabel8c=Min:
+RzLabel10c=Max:
 
 RzButton1c=Cancel
 RzButton1h=
-RzButton2c=Ok
-RzButton2h=Done the process
-RzButton21c=Next >>
-RzButton21h=Proceed the process
-RzButton3c=<< Back
+RzButton2c=OK
+RzButton2h=To complete the process
+RzButton21c=Далее >>
+RzButton21h=Продложить процесс
+RzButton3c=<< Назад
 RzButton3h=
+
+RzRadioButton1c=Entered earlier:
+RzRadioButton1h=
+RzRadioButton2c=New
+RzRadioButton2h=

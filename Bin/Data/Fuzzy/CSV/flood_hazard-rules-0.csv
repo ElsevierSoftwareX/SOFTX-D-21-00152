@@ -1,0 +1,3 @@
+RuleName;River::name;River::water level;River::region;River::...;Atmospheric-condensation::grade;Atmospheric-condensation::kind;Atmospheric-condensation::amount;Atmospheric-condensation::...;Atmospheric-condensation::cf;#Flood hazard::level;#Flood hazard::probability;#Flood hazard::time reserve;#Flood hazard::...
+River+Atmospheric condensation>Flood hazard_1;Angara;rwl-low;Irkutsk;;ag-average;snow;15;;1;low;0.9;;
+River+Atmospheric condensation>Flood hazard_2;Angara;rwl-average;Irkutsk;;ag-low;snow;2;;1;average;0.9;24;

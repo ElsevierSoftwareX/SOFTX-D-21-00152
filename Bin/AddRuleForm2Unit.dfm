@@ -2,8 +2,8 @@ object AddRuleForm2: TAddRuleForm2
   Left = 0
   Top = 0
   Caption = 'AddRuleForm2'
-  ClientHeight = 544
-  ClientWidth = 772
+  ClientHeight = 591
+  ClientWidth = 904
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -59,7 +59,7 @@ object AddRuleForm2: TAddRuleForm2
     Left = 3
     Top = 76
     Width = 118
-    Height = 433
+    Height = 480
     Align = alLeft
     Picture.Data = {
       07544269746D6170B6040300424DB60403000000000036000000280000008900
@@ -6246,13 +6246,14 @@ object AddRuleForm2: TAddRuleForm2
       D2F7EDD2F7EDD1F7EBD1F7EBD1F8E9D1F8E9D2F9EAD2F9EAD2F9E9D2F9E9D2F9
       EA00}
     PopupMenu = PopupMenu2
+    ExplicitHeight = 433
   end
   object RzPageControl1: TRzPageControl
     AlignWithMargins = True
     Left = 127
     Top = 76
-    Width = 642
-    Height = 433
+    Width = 774
+    Height = 480
     ParentCustomHint = False
     ActivePage = TabSheet1
     ActivePageDefault = TabSheet1
@@ -6276,7 +6277,7 @@ object AddRuleForm2: TAddRuleForm2
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
+        Width = 760
         Height = 65
         Margins.Left = 5
         Margins.Right = 5
@@ -6294,7 +6295,7 @@ object AddRuleForm2: TAddRuleForm2
         object Panel1: TPanel
           Left = 2
           Top = 39
-          Width = 624
+          Width = 756
           Height = 24
           Align = alClient
           BevelOuter = bvNone
@@ -6351,7 +6352,7 @@ object AddRuleForm2: TAddRuleForm2
             AlignWithMargins = True
             Left = 25
             Top = 0
-            Width = 596
+            Width = 728
             Height = 21
             Margins.Top = 0
             Align = alClient
@@ -6369,7 +6370,7 @@ object AddRuleForm2: TAddRuleForm2
         object Panel2: TPanel
           Left = 2
           Top = 15
-          Width = 624
+          Width = 756
           Height = 24
           Align = alTop
           BevelOuter = bvNone
@@ -6469,7 +6470,7 @@ object AddRuleForm2: TAddRuleForm2
             AlignWithMargins = True
             Left = 25
             Top = 0
-            Width = 596
+            Width = 728
             Height = 21
             Margins.Top = 0
             Align = alClient
@@ -6490,8 +6491,8 @@ object AddRuleForm2: TAddRuleForm2
         AlignWithMargins = True
         Left = 5
         Top = 74
-        Width = 628
-        Height = 333
+        Width = 760
+        Height = 380
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6505,10 +6506,10 @@ object AddRuleForm2: TAddRuleForm2
         TabOrder = 1
         object btn1: TRzButton
           AlignWithMargins = True
-          Left = 598
+          Left = 730
           Top = 18
           Width = 25
-          Height = 310
+          Height = 357
           Hint = #1044#1086#1073#1072#1074#1080#1090#1100' '#1085#1086#1074#1099#1081' '#1086#1073#1088#1072#1079#1077#1094'/'#1096#1072#1073#1083#1086#1085' '#1076#1083#1103' '#1092#1072#1082#1090#1072
           Margins.Left = 0
           FrameColor = 7617536
@@ -6531,8 +6532,8 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 590
-          Height = 310
+          Width = 722
+          Height = 357
           Align = alClient
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -6551,16 +6552,12 @@ object AddRuleForm2: TAddRuleForm2
       OnShow = TabSheet2Show
       Caption = 'TabSheet2'
       OnExit = TabSheet2Exit
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GroupBox2: TGroupBox
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
-        Height = 404
+        Width = 760
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6575,9 +6572,9 @@ object AddRuleForm2: TAddRuleForm2
         object ScrollBox1: TScrollBox
           AlignWithMargins = True
           Left = 5
-          Top = 142
-          Width = 618
-          Height = 257
+          Top = 173
+          Width = 750
+          Height = 273
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -6604,7 +6601,7 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
+          Width = 750
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
@@ -6649,7 +6646,7 @@ object AddRuleForm2: TAddRuleForm2
             AlignWithMargins = True
             Left = 124
             Top = 2
-            Width = 492
+            Width = 624
             Height = 19
             Margins.Left = 1
             Margins.Top = 1
@@ -6671,8 +6668,8 @@ object AddRuleForm2: TAddRuleForm2
         object RzPanel4: TRzPanel
           AlignWithMargins = True
           Left = 5
-          Top = 94
-          Width = 618
+          Top = 125
+          Width = 750
           Height = 42
           Align = alTop
           BorderOuter = fsFlat
@@ -6684,8 +6681,8 @@ object AddRuleForm2: TAddRuleForm2
         object RzPanel9: TRzPanel
           AlignWithMargins = True
           Left = 5
-          Top = 47
-          Width = 618
+          Top = 78
+          Width = 750
           Height = 41
           Align = alTop
           BorderOuter = fsFlat
@@ -6698,7 +6695,7 @@ object AddRuleForm2: TAddRuleForm2
             AlignWithMargins = True
             Left = 2
             Top = 2
-            Width = 614
+            Width = 746
             Height = 37
             Margins.Left = 1
             Margins.Top = 1
@@ -6716,6 +6713,114 @@ object AddRuleForm2: TAddRuleForm2
             TabOrder = 0
           end
         end
+        object RzPanel10: TRzPanel
+          AlignWithMargins = True
+          Left = 5
+          Top = 47
+          Width = 750
+          Height = 25
+          Align = alTop
+          BorderOuter = fsFlat
+          BorderColor = clBlue
+          BorderShadow = clBlue
+          TabOrder = 4
+          object RzLabel13: TRzLabel
+            AlignWithMargins = True
+            Left = 213
+            Top = 4
+            Width = 67
+            Height = 17
+            Align = alLeft
+            Alignment = taRightJustify
+            AutoSize = False
+            Caption = #1055#1088#1080#1086#1088#1080#1090#1077#1090':'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clNavy
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = []
+            ParentFont = False
+            ExplicitLeft = 334
+            ExplicitHeight = 15
+          end
+          object RzLabel12: TRzLabel
+            AlignWithMargins = True
+            Left = 4
+            Top = 4
+            Width = 157
+            Height = 17
+            Align = alLeft
+            Alignment = taRightJustify
+            AutoSize = False
+            Caption = #1050#1086#1101#1092#1092#1080#1094#1080#1077#1085#1090' '#1091#1074#1077#1088#1077#1085#1085#1086#1089#1090#1080':'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clNavy
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = []
+            ParentFont = False
+            ExplicitHeight = 15
+          end
+          object RzEdit3: TRzEdit
+            AlignWithMargins = True
+            Left = 165
+            Top = 2
+            Width = 44
+            Height = 21
+            Margins.Left = 1
+            Margins.Top = 1
+            Margins.Right = 1
+            Margins.Bottom = 1
+            Text = '1'
+            Align = alLeft
+            Alignment = taCenter
+            Ctl3D = False
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clNavy
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = [fsBold]
+            ParentCtl3D = False
+            ParentFont = False
+            TabOrder = 0
+            OnChange = RzEdit3Change
+            ExplicitHeight = 19
+          end
+          object ComboBox3: TComboBox
+            AlignWithMargins = True
+            Left = 284
+            Top = 2
+            Width = 45
+            Height = 21
+            Margins.Left = 1
+            Margins.Top = 1
+            Margins.Right = 1
+            Margins.Bottom = 1
+            Align = alLeft
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 1
+            Text = '3'
+            Items.Strings = (
+              '0'
+              '1'
+              '2'
+              '3'
+              '4'
+              '5'
+              '6'
+              '7'
+              '8'
+              '9'
+              '10'
+              '11'
+              '12')
+          end
+        end
       end
     end
     object TabSheet3: TRzTabSheet
@@ -6727,16 +6832,12 @@ object AddRuleForm2: TAddRuleForm2
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GroupBox4: TGroupBox
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
-        Height = 404
+        Width = 760
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6752,8 +6853,8 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 47
-          Width = 618
-          Height = 352
+          Width = 750
+          Height = 399
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -6774,7 +6875,7 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
+          Width = 750
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
@@ -6785,8 +6886,8 @@ object AddRuleForm2: TAddRuleForm2
             AlignWithMargins = True
             Left = 126
             Top = 4
-            Width = 82
-            Height = 13
+            Width = 620
+            Height = 15
             Align = alClient
             Caption = #1055#1088#1077#1094#1077#1076#1077#1085#1090':    '
             Font.Charset = DEFAULT_CHARSET
@@ -6795,6 +6896,8 @@ object AddRuleForm2: TAddRuleForm2
             Font.Name = 'Default'
             Font.Style = [fsBold]
             ParentFont = False
+            ExplicitWidth = 82
+            ExplicitHeight = 13
           end
           object RzLabel2: TRzLabel
             AlignWithMargins = True
@@ -6836,16 +6939,12 @@ object AddRuleForm2: TAddRuleForm2
     object TabSheet5: TRzTabSheet
       OnShow = TabSheet5Show
       Caption = 'TabSheet5'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GroupBox6: TGroupBox
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
-        Height = 404
+        Width = 760
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6861,8 +6960,8 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 95
-          Width = 618
-          Height = 304
+          Width = 750
+          Height = 351
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -6889,7 +6988,7 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
+          Width = 750
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
@@ -6934,8 +7033,8 @@ object AddRuleForm2: TAddRuleForm2
             AlignWithMargins = True
             Left = 126
             Top = 4
-            Width = 82
-            Height = 13
+            Width = 620
+            Height = 15
             Align = alClient
             Caption = #1055#1088#1077#1094#1077#1076#1077#1085#1090':    '
             Font.Charset = DEFAULT_CHARSET
@@ -6944,13 +7043,15 @@ object AddRuleForm2: TAddRuleForm2
             Font.Name = 'Default'
             Font.Style = [fsBold]
             ParentFont = False
+            ExplicitWidth = 82
+            ExplicitHeight = 13
           end
         end
         object RzPanel7: TRzPanel
           AlignWithMargins = True
           Left = 5
           Top = 47
-          Width = 618
+          Width = 750
           Height = 42
           Align = alTop
           BorderOuter = fsFlat
@@ -6964,16 +7065,12 @@ object AddRuleForm2: TAddRuleForm2
     object TabSheet6: TRzTabSheet
       OnShow = TabSheet6Show
       Caption = 'TabSheet6'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GroupBox7: TGroupBox
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
-        Height = 404
+        Width = 760
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6989,8 +7086,8 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 47
-          Width = 618
-          Height = 352
+          Width = 750
+          Height = 399
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -7011,7 +7108,7 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
+          Width = 750
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
@@ -7022,8 +7119,8 @@ object AddRuleForm2: TAddRuleForm2
             AlignWithMargins = True
             Left = 126
             Top = 4
-            Width = 82
-            Height = 13
+            Width = 620
+            Height = 15
             Align = alClient
             Caption = #1055#1088#1077#1094#1077#1076#1077#1085#1090':    '
             Font.Charset = DEFAULT_CHARSET
@@ -7032,6 +7129,8 @@ object AddRuleForm2: TAddRuleForm2
             Font.Name = 'Default'
             Font.Style = [fsBold]
             ParentFont = False
+            ExplicitWidth = 82
+            ExplicitHeight = 13
           end
           object RzLabel10: TRzLabel
             AlignWithMargins = True
@@ -7073,16 +7172,12 @@ object AddRuleForm2: TAddRuleForm2
     object TabSheet4: TRzTabSheet
       OnShow = TabSheet4Show
       Caption = 'TabSheet4'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object GroupBox5: TGroupBox
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
-        Height = 404
+        Width = 760
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -7098,32 +7193,37 @@ object AddRuleForm2: TAddRuleForm2
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
-          Height = 381
+          Width = 750
+          Height = 428
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
           BevelKind = bkSoft
           BevelWidth = 10
+          Enabled = False
           Color = clCream
           Ctl3D = False
-          Padding.Left = 5
-          Padding.Top = 5
-          Padding.Right = 5
-          Padding.Bottom = 5
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Default'
+          Font.Style = []
           ParentColor = False
           ParentCtl3D = False
+          ParentFont = False
           ParentShowHint = False
           ShowHint = True
           TabOrder = 0
+          ExplicitLeft = 7
+          ExplicitTop = 20
         end
       end
     end
   end
   object RzPanel1: TRzPanel
     Left = 0
-    Top = 512
-    Width = 772
+    Top = 559
+    Width = 904
     Height = 32
     Align = alBottom
     BorderOuter = fsGroove
@@ -7131,7 +7231,7 @@ object AddRuleForm2: TAddRuleForm2
     TabOrder = 1
     object RzButton1: TRzButton
       AlignWithMargins = True
-      Left = 469
+      Left = 601
       Top = 4
       Width = 100
       Height = 24
@@ -7155,7 +7255,7 @@ object AddRuleForm2: TAddRuleForm2
       OnClick = RzButton1Click
     end
     object RzButton2: TRzButton
-      Left = 669
+      Left = 801
       Top = 4
       Width = 99
       Height = 24
@@ -7173,9 +7273,11 @@ object AddRuleForm2: TAddRuleForm2
       ParentFont = False
       TabOrder = 1
       OnClick = RzButton2Click
+      ExplicitLeft = 807
+      ExplicitTop = 3
     end
     object RzButton3: TRzButton
-      Left = 569
+      Left = 701
       Top = 4
       Width = 100
       Height = 24
@@ -7199,7 +7301,7 @@ object AddRuleForm2: TAddRuleForm2
     Tag = 15
     Left = 0
     Top = 0
-    Width = 772
+    Width = 904
     Height = 73
     Align = alTop
     BorderInner = fsGroove
@@ -7217,7 +7319,7 @@ object AddRuleForm2: TAddRuleForm2
     object ScrollBox3: TScrollBox
       Left = 4
       Top = 4
-      Width = 764
+      Width = 896
       Height = 65
       Align = alClient
       AutoScroll = False

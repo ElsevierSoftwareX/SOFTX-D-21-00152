@@ -1,0 +1,12 @@
+AggStrategesSelectFormc= Selecting strategies for aggregation
+GroupBox3c= Strategies for aggregation of entities and relationships:  
+GroupBox3h=
+
+RzButton1c=Cancel
+RzButton2c=Ok
+
+RzCheckBox1c=Merging properties with equal or similar names (the Levenshtein distance is used) 
+RzCheckBox2c=Remove the duplicates of relationships
+RzCheckBox3c=Making the relationships in the case of existence of homonymous properties and entities
+RzCheckBox4c=Merging entities with the same structure (with the equal sets of properties)
+RzCheckBox5c=Merging entities with equal or similar names (the Levenshtein distance is used)

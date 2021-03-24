@@ -1,9 +1,9 @@
 object ImportDataForCasesForm: TImportDataForCasesForm
   Left = 0
   Top = 0
-  Caption = 'Import Data For Cases'
-  ClientHeight = 482
-  ClientWidth = 632
+  Caption = ' Importing data from decision tables'
+  ClientHeight = 591
+  ClientWidth = 904
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -58,7 +58,7 @@ object ImportDataForCasesForm: TImportDataForCasesForm
     Left = 3
     Top = 76
     Width = 120
-    Height = 371
+    Height = 480
     Align = alLeft
     Picture.Data = {
       07544269746D6170B6040300424DB60403000000000036000000280000008900
@@ -6244,12 +6244,13 @@ object ImportDataForCasesForm: TImportDataForCasesForm
       F6E9CAF7E7CAF7E7CCF7EACCF7EACFF7EBCFF7EBCFF7ECD0F8EDD0F8ECCFF7EB
       D2F7EDD2F7EDD1F7EBD1F7EBD1F8E9D1F8E9D2F9EAD2F9EAD2F9E9D2F9E9D2F9
       EA00}
+    ExplicitHeight = 371
   end
   object RzPanel6: TRzPanel
     Tag = 15
     Left = 0
     Top = 0
-    Width = 632
+    Width = 904
     Height = 73
     Align = alTop
     BorderInner = fsGroove
@@ -6264,10 +6265,11 @@ object ImportDataForCasesForm: TImportDataForCasesForm
     Font.Style = []
     ParentFont = False
     TabOrder = 0
+    ExplicitWidth = 632
     object ScrollBox3: TScrollBox
       Left = 4
       Top = 4
-      Width = 624
+      Width = 896
       Height = 65
       Align = alClient
       AutoScroll = False
@@ -6283,20 +6285,23 @@ object ImportDataForCasesForm: TImportDataForCasesForm
       ParentColor = False
       ParentFont = False
       TabOrder = 0
+      ExplicitWidth = 624
     end
   end
   object RzPanel1: TRzPanel
     Left = 0
-    Top = 450
-    Width = 632
+    Top = 559
+    Width = 904
     Height = 32
     Align = alBottom
     BorderOuter = fsGroove
     BorderWidth = 2
     TabOrder = 1
+    ExplicitTop = 450
+    ExplicitWidth = 632
     object RzButton1: TRzButton
       AlignWithMargins = True
-      Left = 328
+      Left = 600
       Top = 4
       Width = 100
       Height = 24
@@ -6316,9 +6321,10 @@ object ImportDataForCasesForm: TImportDataForCasesForm
       ParentFont = False
       TabOrder = 0
       OnClick = RzButton1Click
+      ExplicitLeft = 328
     end
     object RzButton2: TRzButton
-      Left = 527
+      Left = 799
       Top = 4
       Width = 101
       Height = 24
@@ -6326,6 +6332,7 @@ object ImportDataForCasesForm: TImportDataForCasesForm
       Default = True
       Align = alRight
       Caption = #1044#1086#1073#1072#1074#1080#1090#1100
+      Enabled = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -6335,9 +6342,10 @@ object ImportDataForCasesForm: TImportDataForCasesForm
       ParentFont = False
       TabOrder = 1
       OnClick = RzButton2Click
+      ExplicitLeft = 527
     end
     object RzButton3: TRzButton
-      Left = 428
+      Left = 700
       Top = 4
       Width = 99
       Height = 24
@@ -6353,14 +6361,15 @@ object ImportDataForCasesForm: TImportDataForCasesForm
       ParentFont = False
       TabOrder = 2
       OnClick = RzButton3Click
+      ExplicitLeft = 428
     end
   end
   object RzPageControl1: TRzPageControl
     AlignWithMargins = True
     Left = 129
     Top = 76
-    Width = 500
-    Height = 371
+    Width = 772
+    Height = 480
     ParentCustomHint = False
     ActivePage = TabSheet1
     ActivePageDefault = TabSheet1
@@ -6376,15 +6385,19 @@ object ImportDataForCasesForm: TImportDataForCasesForm
     ParentFont = False
     TabIndex = 0
     TabOrder = 2
+    ExplicitWidth = 500
+    ExplicitHeight = 371
     FixedDimension = 19
     object TabSheet1: TRzTabSheet
       OnShow = TabSheet1Show
       Caption = 'TabSheet1'
+      ExplicitWidth = 496
+      ExplicitHeight = 348
       object GroupBox1: TGroupBox
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 486
+        Width = 758
         Height = 43
         Margins.Left = 5
         Margins.Right = 5
@@ -6399,11 +6412,12 @@ object ImportDataForCasesForm: TImportDataForCasesForm
         ParentColor = False
         ParentFont = False
         TabOrder = 0
+        ExplicitWidth = 486
         object RzEdit2: TRzEdit
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 437
+          Width = 709
           Height = 21
           Margins.Bottom = 2
           Align = alClient
@@ -6416,10 +6430,11 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           FrameVisible = True
           ParentFont = False
           TabOrder = 0
+          ExplicitWidth = 437
         end
         object RzBitBtn1: TRzBitBtn
           AlignWithMargins = True
-          Left = 445
+          Left = 717
           Top = 18
           Width = 36
           Height = 21
@@ -6432,14 +6447,15 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           HotTrack = True
           TabOrder = 1
           OnClick = SpeedButton1Click
+          ExplicitLeft = 445
         end
       end
       object GroupBox3: TGroupBox
         AlignWithMargins = True
         Left = 5
         Top = 52
-        Width = 486
-        Height = 107
+        Width = 758
+        Height = 113
         Margins.Left = 5
         Margins.Right = 5
         Align = alTop
@@ -6451,12 +6467,13 @@ object ImportDataForCasesForm: TImportDataForCasesForm
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 1
+        ExplicitWidth = 486
         object ListBox1: TListBox
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 476
-          Height = 84
+          Width = 748
+          Height = 90
           Align = alClient
           Color = clCream
           Enabled = False
@@ -6468,19 +6485,21 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           ItemHeight = 13
           ParentFont = False
           TabOrder = 0
+          ExplicitWidth = 476
         end
       end
       object RzPanel5: TRzPanel
         AlignWithMargins = True
         Left = 3
-        Top = 165
-        Width = 490
-        Height = 29
+        Top = 171
+        Width = 762
+        Height = 50
         Align = alTop
         BorderOuter = fsFlat
         BorderColor = clBlue
         BorderShadow = clBlue
         TabOrder = 2
+        ExplicitWidth = 490
         object RzLabel2: TRzLabel
           AlignWithMargins = True
           Left = 4
@@ -6553,18 +6572,40 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           Width = 47
           Height = 21
           Max = 100.000000000000000000
+          Min = 1.000000000000000000
+          Value = 1.000000000000000000
           Align = alLeft
           FlatButtons = True
           FrameVisible = True
           TabOrder = 1
         end
+        object RzCheckBox1: TRzCheckBox
+          AlignWithMargins = True
+          Left = 5
+          Top = 31
+          Width = 753
+          Height = 15
+          Margins.Left = 4
+          Align = alBottom
+          Caption = 'Process the first row to retrieve the structure'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          State = cbUnchecked
+          TabOrder = 2
+          OnClick = RzCheckBox1Click
+          ExplicitWidth = 238
+        end
       end
       object GroupBox5: TGroupBox
         AlignWithMargins = True
         Left = 5
-        Top = 200
-        Width = 486
-        Height = 145
+        Top = 227
+        Width = 758
+        Height = 227
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6576,12 +6617,14 @@ object ImportDataForCasesForm: TImportDataForCasesForm
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 3
+        ExplicitWidth = 486
+        ExplicitHeight = 118
         object ScrollBox4: TScrollBox
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 476
-          Height = 122
+          Width = 748
+          Height = 204
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -6597,15 +6640,19 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           ParentShowHint = False
           ShowHint = True
           TabOrder = 0
+          ExplicitWidth = 476
+          ExplicitHeight = 95
           object RzStringGrid2: TRzStringGrid
             Left = 5
             Top = 5
-            Width = 464
-            Height = 110
+            Width = 736
+            Height = 192
             Align = alClient
             FixedCols = 0
             TabOrder = 0
             Visible = False
+            ExplicitWidth = 464
+            ExplicitHeight = 83
           end
         end
       end
@@ -6623,8 +6670,8 @@ object ImportDataForCasesForm: TImportDataForCasesForm
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 486
-        Height = 342
+        Width = 758
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6640,8 +6687,8 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           AlignWithMargins = True
           Left = 7
           Top = 88
-          Width = 472
-          Height = 249
+          Width = 744
+          Height = 358
           Margins.Left = 5
           Margins.Right = 5
           Align = alClient
@@ -6657,8 +6704,8 @@ object ImportDataForCasesForm: TImportDataForCasesForm
             AlignWithMargins = True
             Left = 5
             Top = 18
-            Width = 462
-            Height = 226
+            Width = 734
+            Height = 335
             Align = alClient
             BevelInner = bvNone
             BevelOuter = bvNone
@@ -6680,7 +6727,7 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 476
+          Width = 748
           Height = 29
           Align = alTop
           BorderOuter = fsFlat
@@ -6709,7 +6756,7 @@ object ImportDataForCasesForm: TImportDataForCasesForm
             AlignWithMargins = True
             Left = 135
             Top = 4
-            Width = 337
+            Width = 609
             Height = 21
             Align = alClient
             Font.Charset = DEFAULT_CHARSET
@@ -6726,7 +6773,7 @@ object ImportDataForCasesForm: TImportDataForCasesForm
           AlignWithMargins = True
           Left = 5
           Top = 53
-          Width = 476
+          Width = 748
           Height = 29
           Align = alTop
           BorderOuter = fsFlat
@@ -6755,7 +6802,7 @@ object ImportDataForCasesForm: TImportDataForCasesForm
             AlignWithMargins = True
             Left = 135
             Top = 4
-            Width = 337
+            Width = 609
             Height = 21
             Align = alClient
             Font.Charset = DEFAULT_CHARSET
@@ -6766,6 +6813,161 @@ object ImportDataForCasesForm: TImportDataForCasesForm
             ParentFont = False
             TabOrder = 0
             OnChange = ComboBox3Change
+          end
+        end
+      end
+    end
+    object TabSheet2: TRzTabSheet
+      OnShow = TabSheet2Show
+      Caption = 'TabSheet2'
+      object GroupBox2: TGroupBox
+        AlignWithMargins = True
+        Left = 5
+        Top = 3
+        Width = 758
+        Height = 451
+        Margins.Left = 5
+        Margins.Right = 5
+        Align = alClient
+        Caption = ' Select knowledge base and generalized rule: '
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Default'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+        object GroupBox6: TGroupBox
+          AlignWithMargins = True
+          Left = 7
+          Top = 88
+          Width = 744
+          Height = 358
+          Margins.Left = 5
+          Margins.Right = 5
+          Align = alClient
+          Caption = ' Generalized rule parts and table columns relationships: '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clNavy
+          Font.Height = -11
+          Font.Name = 'Default'
+          Font.Style = [fsBold]
+          ParentFont = False
+          TabOrder = 0
+          object ScrollBox1: TScrollBox
+            AlignWithMargins = True
+            Left = 5
+            Top = 18
+            Width = 734
+            Height = 335
+            Align = alClient
+            BevelInner = bvNone
+            BevelOuter = bvNone
+            BevelKind = bkSoft
+            Color = clCream
+            Ctl3D = False
+            Padding.Left = 5
+            Padding.Top = 5
+            Padding.Right = 5
+            Padding.Bottom = 5
+            ParentColor = False
+            ParentCtl3D = False
+            ParentShowHint = False
+            ShowHint = True
+            TabOrder = 0
+          end
+        end
+        object RzPanel3: TRzPanel
+          AlignWithMargins = True
+          Left = 5
+          Top = 18
+          Width = 748
+          Height = 29
+          Align = alTop
+          BorderOuter = fsFlat
+          BorderColor = clBlue
+          BorderShadow = clBlue
+          TabOrder = 1
+          object RzLabel4: TRzLabel
+            AlignWithMargins = True
+            Left = 4
+            Top = 6
+            Width = 125
+            Height = 19
+            Margins.Top = 5
+            Align = alLeft
+            Alignment = taRightJustify
+            AutoSize = False
+            Caption = 'Knowledge base:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clNavy
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = []
+            ParentFont = False
+          end
+          object ComboBox1: TComboBox
+            AlignWithMargins = True
+            Left = 135
+            Top = 4
+            Width = 609
+            Height = 21
+            Align = alClient
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 0
+            OnChange = ComboBox1Change
+          end
+        end
+        object RzPanel7: TRzPanel
+          AlignWithMargins = True
+          Left = 5
+          Top = 53
+          Width = 748
+          Height = 29
+          Align = alTop
+          BorderOuter = fsFlat
+          BorderColor = clBlue
+          BorderShadow = clBlue
+          TabOrder = 2
+          object RzLabel6: TRzLabel
+            AlignWithMargins = True
+            Left = 4
+            Top = 6
+            Width = 125
+            Height = 19
+            Margins.Top = 5
+            Align = alLeft
+            Alignment = taRightJustify
+            AutoSize = False
+            Caption = 'Generalized rule:'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clNavy
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = []
+            ParentFont = False
+          end
+          object ComboBox5: TComboBox
+            AlignWithMargins = True
+            Left = 135
+            Top = 4
+            Width = 609
+            Height = 21
+            Align = alClient
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = -11
+            Font.Name = 'Default'
+            Font.Style = [fsBold]
+            ParentFont = False
+            TabOrder = 0
+            OnChange = ComboBox5Change
           end
         end
       end

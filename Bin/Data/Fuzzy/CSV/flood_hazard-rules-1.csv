@@ -1,0 +1,3 @@
+RuleName;Flood-hazard::level;Flood-hazard::probability;Flood-hazard::time reserve;Flood-hazard::...;#Risk::grade;#Risk::kind;#Risk::cost;#Risk::...
+Flood hazard>Risk_1;low;0.9;;;low;natural;;
+Flood hazard>Risk_2;average;;12;;average;natural;;

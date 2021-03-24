@@ -1,0 +1,423 @@
+;**************************************************************
+;**************       created in PKBD        ******************
+; Knowledge Base Name: Knowledge base 10234235031
+;**************************************************************
+; Description: 
+;**************************************************************
+;********************* Templates ******************************
+declare incident-object ;object of the incident
+  cf : String
+  caption : String
+end
+
+declare object-properties ;property of the object
+  cf : String
+  caption : String
+  caption-incident-object : String
+end
+
+declare material ;material of the object
+  cf : String
+  caption : String
+  type : String
+  mechanical-prop-strength-limit : String
+  mechanical-prop-yield-limit : String
+  resistance-prop-corrosion : String
+  resistance-prop-temperature : String
+  resistance-prop-wear : String
+  chemical-prop-alloying : String
+  structure-prop-class : String
+end
+
+declare technological-heredity ;технологическая наследственность
+  cf : Integer
+  caption : String
+end
+
+declare making-defects ;дефекты изготовления
+  caption-technological-heredity : String
+  type : String
+  cause : String
+  location : String
+  cf : Integer
+end
+
+declare mechanical-stress-const ;механические нагрузки - статические/постоянные/
+  stress-const-type : String
+  stress-value : Integer
+  tension-type : String
+  tension-value : String
+  cycle-amplitude : String
+  cycle-frequency : String
+  cycle-asymmetry : String
+  cycle-average-value : String
+  speed : String
+  speed-up : String
+  max-stress-value : String
+  cf : Integer
+end
+
+declare technological-environment ;/рабочая/ технологическая среда
+  contents-molecular-hydrogen : String
+  ph : String
+  radiation : String
+  properties-alternation : String
+  environment-humidity : String
+  environment-flash : String
+  cf : Integer
+end
+
+declare heat-exchange-technological-environment ;теплообменная технологическая среда
+  environment-type : String
+  ph : String
+  cf : Integer
+end
+
+declare exist-event ;наблюдаемое событие кинетики
+  cf : String
+  caption : String
+  caption-kin : String
+  probabilityrel : String
+  id : String
+end
+
+declare exist-dam ;наблюдаемые повреждения
+  id-dam : String
+  caption-dam : String
+  dam-type : String
+  dam-stress-type : String
+  dam-mesto-zarozdenia : String
+  dam-istochnik : String
+  dam-mestopolozenie : String
+  dam-orientacia : String
+  dam-glubina : String
+  dam-dlina : String
+  dam-diametr : String
+  dam-forma : String
+  dam-kolichestvo : String
+  dam-velichina-raskritia : String
+  dam-tech-pered-razrusheniem : String
+  dam-napravlenie : String
+  caption-def : String
+  id-def : String
+  caption-meh : String
+  dam-cf : Integer
+end
+
+declare exist-des ;наблюдаемые разрушения
+  id-des : String
+  caption-des : String
+  des-istochnik : String
+  des-orientacia : String
+  des-napravlenie : String
+  des-forma : String
+  des-kolichestvo : String
+  des-koncentracia-naprazheniy : String
+  des-mestopolozenie : String
+  caption-dam : String
+  id-dam : String
+  caption-meh : String
+  des-cf : Integer
+end
+
+declare exist-def ;наблюдаемые дефекты
+  id-def : String
+  caption-def : String
+  caption-meh : String
+  def-cf : Integer
+end
+
+declare exist-meh ;наблюдаемая механизм
+  caption-meh : String
+  meh-cf : Integer
+end
+
+declare exist-kin ;наблюдаемая кинетика отказа
+  caption : String
+  caption-meh : String
+  cf : Integer
+end
+
+;************************ Facts *******************************
+  mechanical-stress-const = new mechanical-stress-const();
+  mechanical-stress-const.setstress-value(0);
+  mechanical-stress-const.setcycle-frequency("high");
+  mechanical-stress-const.setcf(1);
+  insert(mechanical-stress-const);
+
+  technological-environment = new technological-environment();
+  technological-environment.setph("active");
+  technological-environment.setproperties-alternation("yes");
+  technological-environment.setcf(1);
+  insert(technological-environment);
+
+  incident-object = new incident-object();
+  incident-object.setcf("1");
+  incident-object.setcaption("pipe into pipe");
+  insert(incident-object);
+
+  material = new material();
+  material.setcf("1");
+  material.settype("steel");
+  material.setchemical-prop-alloying("low-alloy steel");
+  insert(material);
+
+;************************* Rules ******************************
+rule fai-mechanism-ky-1001 "правило выявления /механизма/: если имеются механические нагрузки высокой частоты и активная технологическая среда с чередующимися свойствами и материал низколегированная сталь и имеются дефекты изготовления то может возникнуть механизм коррозионная усталость" salience 0
+dialect "mvel"
+when
+  mechanical-stress-const(cycle-frequency == "high")
+  and technological-environment(ph == "active", properties-alternation == "yes")
+  and material(type == "steel", chemical-prop-alloying == "low-alloy steel")
+  and making-defects(caption-technological-heredity == $id-th-m1)
+then
+  mechanical-stress-const = new mechanical-stress-const();
+  mechanical-stress-const.setcycle-frequency("high");
+  insert(mechanical-stress-const);
+  technological-environment = new technological-environment();
+  technological-environment.setph("active");
+  technological-environment.setproperties-alternation("yes");
+  insert(technological-environment);
+end
+
+
+rule fai-kinatics-ky-1001 "правило выявления /кинетики/: если наблюдается механизм коррозионная усталость то может возникнуть кинетика коррозионная усталость" salience 0
+dialect "mvel"
+when
+  exist-event(caption == "mechanism 'corrosion fatigue'", cf == $x)
+then
+  exist-event = new exist-event();
+  exist-event.setcaption("mechanism 'corrosion fatigue'");
+  exist-event.setcf($x);
+  insert(exist-event);
+end
+
+
+List index out of bounds (1)
+
+rule fai-kinatic-events-ky-1002 "правило выявления /последующее событие кинетики/: если наблюдает-ся кинетика коррозионная усталость и событие утечка рабочей среды через сквозные трещины то может наблюдаться событие образование сквозной трещины" salience 0
+dialect "mvel"
+when
+  exist-kin(caption == "kinetics 'corrosion fatigue'")
+  and exist-event(caption == "leakage of the working environment through the through cracks", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-kin = new exist-kin();
+  exist-kin.setcaption("kinetics 'corrosion fatigue'");
+  insert(exist-kin);
+end
+
+
+rule fai-kinatic-events-ky-1003 "правило выявления /последующее событие кинетики/: если наблюдает-ся кинетика коррозионная усталость и событие полный выброс рабочей среды то может наблюдаться событие хрупкое разрушение" salience 0
+dialect "mvel"
+when
+  exist-kin(caption == "kinetics 'corrosion fatigue'")
+  and exist-event(caption == "complete reset of the working environment", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-kin = new exist-kin();
+  exist-kin.setcaption("kinetics 'corrosion fatigue'");
+  insert(exist-kin);
+end
+
+
+List index out of bounds (1)
+
+rule des-mechanism-ky-1002 "Описание правила: des-mechanism-ky-1002" salience 0
+dialect "mvel"
+when
+  exist-dam(caption-dam == "crack", dam-istochnik == "constructive stress concentrator formed by the intersection of holes", dam-orientacia == "perpendicularly", dam-napravlenie == "longitudinal", dam-forma == "semi-elliptic", caption-meh == "corrosion fatigue", dam-cf == $x, id-dam == $id)
+  and exist-event(caption == "formation of the through cracks")
+then
+  exist-dam = new exist-dam();
+  exist-dam.setcaption-dam("crack");
+  exist-dam.setdam-istochnik("constructive stress concentrator formed by the intersection of holes");
+  exist-dam.setdam-orientacia("perpendicularly");
+  exist-dam.setdam-napravlenie("longitudinal");
+  exist-dam.setdam-forma("semi-elliptic");
+  exist-dam.setcaption-meh("corrosion fatigue");
+  exist-dam.setdam-cf($x);
+  exist-dam.setid-dam($id);
+  insert(exist-dam);
+  exist-event = new exist-event();
+  exist-event.setcaption("formation of the through cracks");
+  insert(exist-event);
+end
+
+
+rule des-mechanism-ky-1003 "Описание правила: des-mechanism-ky-1003" salience 0
+dialect "mvel"
+when
+  exist-event(caption == "brittle failure")
+  and exist-des(caption-des == "brittle failure", des-istochnik == "constructive stress concentrator formed by the intersection of holes", des-orientacia == "perpendicularly", des-napravlenie == "longitudinal", des-forma == "semi-elliptic", caption-meh == "corrosion fatigue", id-dam == $id, id-des == $id2, des-cf == $x)
+then
+  exist-event = new exist-event();
+  exist-event.setcaption("brittle failure");
+  insert(exist-event);
+  exist-des = new exist-des();
+  exist-des.setcaption-des("brittle failure");
+  exist-des.setdes-istochnik("constructive stress concentrator formed by the intersection of holes");
+  exist-des.setdes-orientacia("perpendicularly");
+  exist-des.setdes-napravlenie("longitudinal");
+  exist-des.setdes-forma("semi-elliptic");
+  exist-des.setcaption-meh("corrosion fatigue");
+  exist-des.setid-dam($id);
+  exist-des.setid-des($id2);
+  exist-des.setdes-cf($x);
+  insert(exist-des);
+end
+
+
+rule des-kinatic-events-ky-1004 "Описание правила: des-kinatic-events-ky-1004" salience 0
+dialect "mvel"
+when
+  exist-dam(caption-dam == "crack", dam-istochnik == "surface damage", dam-orientacia == "perpendicularly", dam-napravlenie == "longitudinal", dam-kolichestvo == "single", caption-meh == "corrosion fatigue")
+  and exist-event(caption == "formation of the macrocracks of the unacceptable size", caption-kin == "kinetics of destruction 'corrosion fatigue 1'", cf == $x)
+then
+  exist-dam = new exist-dam();
+  exist-dam.setcaption-dam("crack");
+  exist-dam.setdam-istochnik("surface damage");
+  exist-dam.setdam-orientacia("perpendicularly");
+  exist-dam.setdam-napravlenie("longitudinal");
+  exist-dam.setdam-kolichestvo("single");
+  exist-dam.setcaption-meh("corrosion fatigue");
+  insert(exist-dam);
+end
+
+
+rule des-kinatic-events-ky-1005 "Описание правила: des-kinatic-events-ky-1005" salience 0
+dialect "mvel"
+when
+  exist-dam(caption-dam == "crack", dam-istochnik == "hole", dam-orientacia == "perpendicularly", dam-napravlenie == "longitudinal", dam-kolichestvo == "single", caption-meh == "corrosion fatigue")
+  and exist-event(caption == "formation of the macrocracks of the unacceptable size", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-dam = new exist-dam();
+  exist-dam.setcaption-dam("crack");
+  exist-dam.setdam-istochnik("hole");
+  exist-dam.setdam-orientacia("perpendicularly");
+  exist-dam.setdam-napravlenie("longitudinal");
+  exist-dam.setdam-kolichestvo("single");
+  exist-dam.setcaption-meh("corrosion fatigue");
+  insert(exist-dam);
+end
+
+
+rule des-kinatic-events-ky-1006 "Описание правила: des-kinatic-events-ky-1006" salience 0
+dialect "mvel"
+when
+  exist-dam(caption-dam == "crack", dam-istochnik == "hole", dam-orientacia == "perpendicularly", dam-napravlenie == "longitudinal", dam-kolichestvo == "single", caption-meh == "corrosion fatigue")
+  and exist-event(caption == "formation of the macrocracks of the unacceptable size", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-dam = new exist-dam();
+  exist-dam.setcaption-dam("crack");
+  exist-dam.setdam-istochnik("hole");
+  exist-dam.setdam-orientacia("perpendicularly");
+  exist-dam.setdam-napravlenie("longitudinal");
+  exist-dam.setdam-kolichestvo("single");
+  exist-dam.setcaption-meh("corrosion fatigue");
+  insert(exist-dam);
+end
+
+
+rule dam-mechanism-ky-1001 "правило выявления /механизма/" salience 0
+dialect "mvel"
+when
+  mechanical-stress-const(cycle-frequency == "high")
+  and technological-environment(ph == "active", properties-alternation == "yes")
+  and incident-object(caption == $id-inc-obj)
+  and material(type == "steel", chemical-prop-alloying == "low-alloy steel")
+then
+  mechanical-stress-const = new mechanical-stress-const();
+  mechanical-stress-const.setcycle-frequency("high");
+  insert(mechanical-stress-const);
+end
+
+
+rule dam-mechanism-ky-1002 "правило выявления /механизма/" salience 0
+dialect "mvel"
+when
+  mechanical-stress-const(cycle-frequency == "high")
+  and technological-environment(ph == "active", properties-alternation == "yes")
+  and incident-object(caption == $id-inc-obj)
+  and material(type == "steel", chemical-prop-alloying == "low-alloy steel")
+  and exist-event(caption == "macrocracks development of structural damage in zones of stress concentrators 'from the hole in the same plane in two directions'", cf == $x)
+then
+  mechanical-stress-const = new mechanical-stress-const();
+  mechanical-stress-const.setcycle-frequency("high");
+  insert(mechanical-stress-const);
+end
+
+
+rule dam-kinatics-ky-1001 "правило выявления /кинетики/" salience 0
+dialect "mvel"
+when
+  exist-event(caption == "mechanism 'corrosion fatigue'", cf == $x)
+then
+  exist-event = new exist-event();
+  exist-event.setcaption("mechanism 'corrosion fatigue'");
+  exist-event.setcf($x);
+  insert(exist-event);
+end
+
+
+List index out of bounds (1)
+
+rule dam-kinatic-events-ky-1002 "Описание правила: dam-kinatic-events-ky-1002" salience 0
+dialect "mvel"
+when
+  exist-kin(caption == "kinetics 'corrosion fatigue'")
+  and exist-dam(caption-dam == "crack", dam-orientacia == "perpendicularly", dam-napravlenie == "longitudinal", dam-kolichestvo == "single", caption-meh == "corrosion fatigue")
+  and exist-event(caption == "formation of the macrocracks of the unacceptable size", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-kin = new exist-kin();
+  exist-kin.setcaption("kinetics 'corrosion fatigue'");
+  insert(exist-kin);
+end
+
+
+rule dam-kinatic-events-ky-1003 "Описание правила: dam-kinatic-events-ky-1003" salience 0
+dialect "mvel"
+when
+  exist-kin(caption == "kinetics 'corrosion fatigue'")
+  and exist-event(caption == "merging microcracks", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-kin = new exist-kin();
+  exist-kin.setcaption("kinetics 'corrosion fatigue'");
+  insert(exist-kin);
+end
+
+
+rule dam-kinatic-events-ky-1004 "Описание правила: dam-kinatic-events-ky-1004" salience 0
+dialect "mvel"
+when
+  exist-kin(caption == "kinetics 'corrosion fatigue'")
+  and exist-event(caption == "preferential development of microcracks oriented in planes perpendicular to the maximum tensile stress", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-kin = new exist-kin();
+  exist-kin.setcaption("kinetics 'corrosion fatigue'");
+  insert(exist-kin);
+end
+
+
+rule dam-kinatic-events-ky-1005 "Описание правила: dam-kinatic-events-ky-1005" salience 0
+dialect "mvel"
+when
+  exist-kin(caption == "kinetics 'corrosion fatigue'")
+  and exist-event(caption == "formation of the microcracks", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-kin = new exist-kin();
+  exist-kin.setcaption("kinetics 'corrosion fatigue'");
+  insert(exist-kin);
+end
+
+
+rule dam-kinatic-events-ky-1006 "Описание правила: dam-kinatic-events-ky-1006" salience 0
+dialect "mvel"
+when
+  exist-kin(caption == "kinetics 'corrosion fatigue'")
+  and exist-event(caption == "development of intragranular submicrocracks due to the dissolution in the slip planes", caption-kin == "kinetics 'corrosion fatigue'", cf == $x)
+then
+  exist-kin = new exist-kin();
+  exist-kin.setcaption("kinetics 'corrosion fatigue'");
+  insert(exist-kin);
+end
+
+

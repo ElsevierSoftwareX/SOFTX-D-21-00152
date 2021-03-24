@@ -2,8 +2,8 @@ object AddGRuleForm: TAddGRuleForm
   Left = 0
   Top = 0
   Caption = 'AddGRuleForm'
-  ClientHeight = 544
-  ClientWidth = 772
+  ClientHeight = 591
+  ClientWidth = 904
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -51,7 +51,7 @@ object AddGRuleForm: TAddGRuleForm
     Left = 3
     Top = 76
     Width = 118
-    Height = 433
+    Height = 480
     Align = alLeft
     Picture.Data = {
       07544269746D6170B6040300424DB60403000000000036000000280000008900
@@ -6245,10 +6245,10 @@ object AddGRuleForm: TAddGRuleForm
     AlignWithMargins = True
     Left = 127
     Top = 76
-    Width = 642
-    Height = 433
+    Width = 774
+    Height = 480
     ParentCustomHint = False
-    ActivePage = TabSheet2
+    ActivePage = TabSheet1
     ActivePageDefault = TabSheet1
     Align = alClient
     BackgroundColor = clBtnFace
@@ -6260,7 +6260,7 @@ object AddGRuleForm: TAddGRuleForm
     ParentBackgroundColor = False
     ParentColor = False
     ParentFont = False
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     FixedDimension = 19
     object TabSheet1: TRzTabSheet
@@ -6271,7 +6271,7 @@ object AddGRuleForm: TAddGRuleForm
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
+        Width = 760
         Height = 65
         Margins.Left = 5
         Margins.Right = 5
@@ -6289,7 +6289,7 @@ object AddGRuleForm: TAddGRuleForm
         object Panel1: TPanel
           Left = 2
           Top = 39
-          Width = 624
+          Width = 756
           Height = 24
           Align = alClient
           BevelOuter = bvNone
@@ -6346,7 +6346,7 @@ object AddGRuleForm: TAddGRuleForm
           end
           object Image4: TImage
             AlignWithMargins = True
-            Left = 605
+            Left = 737
             Top = 3
             Width = 16
             Height = 18
@@ -6393,13 +6393,14 @@ object AddGRuleForm: TAddGRuleForm
               0001000000000000000000000000000080000000C3C00000FFF30000FFFF0000
               FFFF0000}
             OnClick = Image4Click
+            ExplicitLeft = 605
             ExplicitHeight = 16
           end
           object ComboBox2: TComboBox
             AlignWithMargins = True
             Left = 25
             Top = 0
-            Width = 574
+            Width = 706
             Height = 21
             Margins.Top = 0
             Align = alClient
@@ -6419,7 +6420,7 @@ object AddGRuleForm: TAddGRuleForm
         object Panel2: TPanel
           Left = 2
           Top = 15
-          Width = 624
+          Width = 756
           Height = 24
           Align = alTop
           BevelOuter = bvNone
@@ -6519,7 +6520,7 @@ object AddGRuleForm: TAddGRuleForm
             AlignWithMargins = True
             Left = 25
             Top = 0
-            Width = 596
+            Width = 728
             Height = 21
             Margins.Top = 0
             Align = alClient
@@ -6540,7 +6541,7 @@ object AddGRuleForm: TAddGRuleForm
         AlignWithMargins = True
         Left = 5
         Top = 74
-        Width = 628
+        Width = 760
         Height = 95
         Margins.Left = 5
         Margins.Right = 5
@@ -6557,7 +6558,7 @@ object AddGRuleForm: TAddGRuleForm
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
+          Width = 750
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
@@ -6602,7 +6603,7 @@ object AddGRuleForm: TAddGRuleForm
             AlignWithMargins = True
             Left = 165
             Top = 2
-            Width = 451
+            Width = 583
             Height = 19
             Margins.Left = 1
             Margins.Top = 1
@@ -6624,7 +6625,7 @@ object AddGRuleForm: TAddGRuleForm
           AlignWithMargins = True
           Left = 5
           Top = 47
-          Width = 618
+          Width = 750
           Height = 40
           Align = alTop
           BorderOuter = fsFlat
@@ -6637,7 +6638,7 @@ object AddGRuleForm: TAddGRuleForm
             AlignWithMargins = True
             Left = 2
             Top = 2
-            Width = 614
+            Width = 746
             Height = 36
             Margins.Left = 1
             Margins.Top = 1
@@ -6665,8 +6666,8 @@ object AddGRuleForm: TAddGRuleForm
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
-        Height = 404
+        Width = 760
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6682,8 +6683,8 @@ object AddGRuleForm: TAddGRuleForm
           AlignWithMargins = True
           Left = 5
           Top = 95
-          Width = 618
-          Height = 304
+          Width = 750
+          Height = 351
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -6710,7 +6711,7 @@ object AddGRuleForm: TAddGRuleForm
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
+          Width = 750
           Height = 23
           Align = alTop
           BorderOuter = fsFlat
@@ -6756,7 +6757,7 @@ object AddGRuleForm: TAddGRuleForm
             AlignWithMargins = True
             Left = 152
             Top = 4
-            Width = 462
+            Width = 594
             Height = 15
             Align = alClient
             Caption = #1055#1088#1077#1094#1077#1076#1077#1085#1090':    '
@@ -6774,7 +6775,7 @@ object AddGRuleForm: TAddGRuleForm
           AlignWithMargins = True
           Left = 5
           Top = 47
-          Width = 618
+          Width = 750
           Height = 42
           Align = alTop
           BorderOuter = fsFlat
@@ -6792,8 +6793,8 @@ object AddGRuleForm: TAddGRuleForm
         AlignWithMargins = True
         Left = 5
         Top = 3
-        Width = 628
-        Height = 404
+        Width = 760
+        Height = 451
         Margins.Left = 5
         Margins.Right = 5
         Align = alClient
@@ -6809,21 +6810,24 @@ object AddGRuleForm: TAddGRuleForm
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 618
-          Height = 381
+          Width = 750
+          Height = 428
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
           BevelKind = bkSoft
           BevelWidth = 10
+          Enabled = False
           Color = clCream
           Ctl3D = False
-          Padding.Left = 5
-          Padding.Top = 5
-          Padding.Right = 5
-          Padding.Bottom = 5
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Default'
+          Font.Style = []
           ParentColor = False
           ParentCtl3D = False
+          ParentFont = False
           ParentShowHint = False
           ShowHint = True
           TabOrder = 0
@@ -6833,8 +6837,8 @@ object AddGRuleForm: TAddGRuleForm
   end
   object RzPanel1: TRzPanel
     Left = 0
-    Top = 512
-    Width = 772
+    Top = 559
+    Width = 904
     Height = 32
     Align = alBottom
     BorderOuter = fsGroove
@@ -6842,7 +6846,7 @@ object AddGRuleForm: TAddGRuleForm
     TabOrder = 1
     object RzButton1: TRzButton
       AlignWithMargins = True
-      Left = 468
+      Left = 600
       Top = 4
       Width = 100
       Height = 24
@@ -6866,7 +6870,7 @@ object AddGRuleForm: TAddGRuleForm
       OnClick = RzButton1Click
     end
     object RzButton2: TRzButton
-      Left = 668
+      Left = 800
       Top = 4
       Width = 100
       Height = 24
@@ -6886,7 +6890,7 @@ object AddGRuleForm: TAddGRuleForm
       OnClick = RzButton2Click
     end
     object RzButton3: TRzButton
-      Left = 568
+      Left = 700
       Top = 4
       Width = 100
       Height = 24
@@ -6910,7 +6914,7 @@ object AddGRuleForm: TAddGRuleForm
     Tag = 15
     Left = 0
     Top = 0
-    Width = 772
+    Width = 904
     Height = 73
     Align = alTop
     BorderInner = fsGroove
@@ -6928,7 +6932,7 @@ object AddGRuleForm: TAddGRuleForm
     object ScrollBox3: TScrollBox
       Left = 4
       Top = 4
-      Width = 764
+      Width = 896
       Height = 65
       Align = alClient
       AutoScroll = False

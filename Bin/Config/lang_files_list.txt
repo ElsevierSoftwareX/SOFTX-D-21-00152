@@ -18,3 +18,4 @@
 018 - RVMLElementEditForm 	- 	Информация о RVML объектах
 019 - ESDescriptionForm 	- 	Создание экспертной системы
 020 - ImportDataForCasesForm	- 	Загрузка данных из текстовых файлов и CSV для фактов и прецедентов
+021 - AggStrategesSelectForm - Выбор стратегий агрегирования сущностей при импорте

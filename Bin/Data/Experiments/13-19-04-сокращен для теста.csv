@@ -1,0 +1,5 @@
+DATA;RowHeading;ColumnHeading
+1;Sample | Talcum;Ìechanical properties | Hardness (Moos)
+2,8;Sample | Talcum;Ìechanical properties | Density
+2;Sample | Gypsum;Ìechanical properties | Hardness (Moos)
+2,3;Sample | Gypsum;Ìechanical properties | Density

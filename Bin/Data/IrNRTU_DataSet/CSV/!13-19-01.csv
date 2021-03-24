@@ -1,0 +1,15 @@
+DATA;RowHeading;ColumnHeading
+Transparent;Diamond;Color
+3,47-3,55;Diamond;Hardness (Moos)|Density
+10;Diamond;Hardness (Moos)|Value
+Transparent;Diamond;Transparency|Bandwidth
+2,417-2,419;Diamond;Transparency|Refractive index
+Cubic;Diamond;Syngony|System
+Octahedral;Diamond;Syngony|Appearance of crystals
+Green;Emerald;Color
+2,69-2,78;Emerald;Hardness (Moos)|Density
+7,5-8;Emerald;Hardness (Moos)|Value
+Transparent, semi-transparent;Emerald;Transparency|Bandwidth
+1,56-1,6;Emerald;Transparency|Refractive index
+Hexagonal;Emerald;Syngony|System
+Massive;Emerald;Syngony|Appearance of crystals

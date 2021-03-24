@@ -1,0 +1,17 @@
+DATA;RowHeading;ColumnHeading
+1,9-2,6;Diamond;Optical properties | Refractive index
+Adamantine;Diamond;Optical properties | Lustre
+1,3-1,9;Quartz;Optical properties | Refractive index
+Vitreous;Quartz;Optical properties | Lustre
+2,6-3,03;Cuprite;Optical properties | Refractive index
+Submetallic;Cuprite;Optical properties | Lustre
+3,03-4,5;Chalcopyrite;Optical properties | Refractive index
+Metallic;Chalcopyrite;Optical properties | Lustre
+1,53-1,56;Chalcedony;Optical properties | Refractive index
+Waxy;Chalcedony;Optical properties | Lustre
+1,55-1,62;Jade;Optical properties | Refractive index
+Greasy;Jade;Optical properties | Lustre
+1,48-1,66;Opal;Optical properties | Refractive index
+Pearly;Opal;Optical properties | Lustre
+1,53-1,72;Gypsum;Optical properties | Refractive index
+Silky;Gypsum;Optical properties | Lustre

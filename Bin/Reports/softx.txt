@@ -1,0 +1,103 @@
+c: incident-object
+  p: cf
+  p: caption
+c: object-properties
+  p: caption-incident-object
+c: material
+  p: type
+  p: mechanical-prop-strength-limit
+  p: mechanical-prop-yield-limit
+  p: resistance-prop-corrosion
+  p: resistance-prop-temperature
+  p: resistance-prop-wear
+  p: chemical-prop-alloying
+  p: structure-prop-class
+c: technological-heredity
+c: making-defects
+  p: caption-technological-heredity
+  p: cause
+  p: location
+c: mechanical-stress-const
+  p: stress-const-type
+  p: stress-value
+  p: tension-type
+  p: tension-value
+  p: cycle-amplitude
+  p: cycle-frequency
+  p: cycle-asymmetry
+  p: cycle-average-value
+  p: speed
+  p: speed-up
+  p: max-stress-value
+c: technological-environment
+  p: contents-molecular-hydrogen
+  p: ph
+  p: radiation
+  p: properties-alternation
+  p: environment-humidity
+  p: environment-flash
+c: heat-exchange-technological-environment
+  p: environment-type
+c: exist-event
+  p: caption-kin
+  p: probabilityrel
+  p: id
+c: exist-dam
+  p: id-dam
+  p: caption-dam
+  p: dam-type
+  p: dam-stress-type
+  p: dam-mesto-zarozdenia
+  p: dam-istochnik
+  p: dam-mestopolozenie
+  p: dam-orientacia
+  p: dam-glubina
+  p: dam-dlina
+  p: dam-diametr
+  p: dam-forma
+  p: dam-kolichestvo
+  p: dam-velichina-raskritia
+  p: dam-tech-pered-razrusheniem
+  p: dam-napravlenie
+  p: caption-def
+  p: id-def
+  p: caption-meh
+  p: dam-cf
+c: exist-des
+  p: id-des
+  p: caption-des
+  p: des-istochnik
+  p: des-orientacia
+  p: des-napravlenie
+  p: des-forma
+  p: des-kolichestvo
+  p: des-koncentracia-naprazheniy
+  p: des-mestopolozenie
+  p: des-cf
+c: exist-def
+  p: def-cf
+c: exist-meh
+  p: meh-cf
+c: exist-kin
+r: mechanical-stress-const-exist-event
+r: mechanical-stress-const-exist-meh
+r: technological-environment-exist-event
+r: technological-environment-exist-meh
+r: material-exist-event
+r: material-exist-meh
+r: making-defects-exist-event
+r: making-defects-exist-meh
+r: exist-event-exist-kin
+r: exist-kin-exist-event
+r: exist-event-exist-event
+r: exist-dam-exist-des
+r: exist-dam-exist-event
+r: exist-event-exist-des
+r: exist-des-exist-des
+r: exist-des-exist-event
+r: incident-object-exist-event
+r: exist-kin-exist-dam
+99
+c: 14
+r: 18
+p: 67

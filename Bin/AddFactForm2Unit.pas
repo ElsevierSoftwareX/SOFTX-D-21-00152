@@ -354,19 +354,31 @@ begin
   1:begin //add fact
    if (RzPageControl1.ActivePageIndex=2) then
     begin
-     MainForm.MakeDump(MainForm.LS('Create a new fact (or a case)')+': '+F1.Name,6);
-     MainForm.LoadAList(MainForm.RzListView1);
+     TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).
+      GetHashForFacts;
+     F1.GetHash;
+     if TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).
+      IndexOfFactByHash(F1.Hash)=-1  then
+       begin
+         MainForm.MakeDump(MainForm.LS('Create a new fact (or a case)')+': '+F1.Name,6);
+         MainForm.LoadAList(MainForm.RzListView1);
 
-     TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).Facts.Add(F1);
+         TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).Facts.Add(F1);
 
-     MainForm.TreeView1.Selected:=
-      F1.AddToTreeView(MainForm.TreeView1,
-       MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1]);
+         MainForm.TreeView1.Selected:=
+          F1.AddToTreeView(MainForm.TreeView1,
+           MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1]);
 
-     MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1].Text:=
-      MainForm.PutChildCount(MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1]);
-     MainForm.TreeView1Click(MainForm.TreeView1);
-     Close;
+         MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1].Text:=
+          MainForm.PutChildCount(MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1]);
+         MainForm.TreeView1Click(MainForm.TreeView1);
+         Close;
+       end
+      else //this fact exists
+       begin
+        MainForm.MMessageBox(1,0,'0='+
+         MainForm.LS('Such fact already exists'))
+       end;
     end
    else
     begin
@@ -450,7 +462,7 @@ begin
    IndexOfFactByShortName(Translit.Trans(TRzEdit(Sender).Text,Translit.FL));
  j:=TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).
    IndexOfFactByID(F1.ID);
- if (i>-1)and(i<>j) then
+ if (i>-1)and(i<>j)and(j<>-1) then
   begin
    MainForm.MMessageBox(1,0,
     '0='+MainForm.LS('This fact name already exists'));
@@ -459,6 +471,9 @@ begin
  else
   begin
    RzButton2.Enabled:=True;
+   //for cases
+   if TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).Kind=1 then
+    F1.ShortName:=Translit.Trans(F1.Name,Translit.FL);
   end;
 end;
 
@@ -524,7 +539,7 @@ var
  j : Integer;
  tmWC1 : TWinControl;
  tmP,tmP1 : TRzPanel;
-
+ s : string;
 begin
     RzButton2.Caption:=
      STDIClass.LoadSingleString('RzButton21c',LangLocaleDir+LangPrefix+'003.lan');
@@ -592,9 +607,9 @@ begin
 //    tmWC.Visible:=False;
     STDIClass.ReleaseObjects(tmWC1);
 
-    for i:=0 to F1.Slots.Count-1 do
+    for i:=0 to T1.Slots.Count-1 do
      begin
-       tmP:=STDIClass.AddRzPanel(i*10+1,1,20,500,
+       tmP:=STDIClass.AddRzPanel(i*20+1,1,20,500,
         tmWC1,i,alTop,clCream,bvNone,bvNone,bsNone,'');
 
        tmP1:=STDIClass.AddRzPanel(1,1,10,W-5,
@@ -622,14 +637,14 @@ begin
             )
            ;
         TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
-         StringReplace(
+         Trim(StringReplace(
           TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text
-           ,'_',' ',[rfReplaceAll]);
+           ,'_',' ',[rfReplaceAll]));
 
         TComboBox(tmP.Components[tmP.ComponentCount-1]).Align:=alClient;
         TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
-         StringReplace(TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text,
-          '#',' ',[rfReplaceAll]);
+         Trim(StringReplace(TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text,
+          '#',' ',[rfReplaceAll]));
 
         if TSlot(F1.Slots.Items[i]).Value<>'' then
          begin
@@ -643,8 +658,9 @@ begin
         TComboBox(tmP.Components[tmP.ComponentCount-1]).Text:=
          TSlot(F1.Slots.Items[i]).Value;
 //        L:=120;
-       end
-      else //edit for integer
+       end;
+
+      if  TSlot(T1.Slots.Items[i]).DataType='Integer'  then //edit for integer
        begin
      //   T:=
         STDIClass.AddEdit(tmP,T-3,W+2,
@@ -655,6 +671,47 @@ begin
           TSlot(F1.Slots.Items[i]).Value;
 
 //        L:=30;
+       end;
+
+      if TSlot(T1.Slots.Items[i]).DataType='Fuzzy'  then
+       begin //combo for string - use dictionaries
+       //data from scale
+     //   T:=
+        STDIClass.AddCombo(tmP,T-3,W+2,
+         W-5,tmTs.DelimitedText); //text from scale
+        TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Delimiter:=';';
+
+        j:=TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).
+         IndexOfFScale(TSlot(T1.Slots.Items[i]).Value);
+        s:='';
+        if j>-1 then
+         s:=TFScale(TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).
+          FScales.Items[j]).ShowScaleAsString;
+
+        TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.DelimitedText:=
+         s;
+        TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
+         Trim(StringReplace(
+          TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text
+           ,'_',' ',[rfReplaceAll]));
+
+        TComboBox(tmP.Components[tmP.ComponentCount-1]).Align:=alClient;
+        TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
+         Trim(StringReplace(TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text,
+          '#',' ',[rfReplaceAll]));
+
+        if TSlot(F1.Slots.Items[i]).Value<>'' then
+         begin
+          TComboBox(tmP.Components[tmP.ComponentCount-1]).ItemIndex:=
+           TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.IndexOf(
+            TSlot(F1.Slots.Items[i]).Value
+             );
+
+         end;
+       if TComboBox(tmP.Components[tmP.ComponentCount-1]).ItemIndex=-1 then
+        if TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Count>0 then
+         TComboBox(tmP.Components[tmP.ComponentCount-1]).ItemIndex:=0;
+//        L:=120;
        end;
 
        tmP.Components[tmP.ComponentCount-1].Tag:=i;
@@ -754,57 +811,63 @@ begin
          begin
           if tmP.Components[j].Tag<1000 then
            begin
-            tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag]);
-            tmSlot.Value:=
+//            tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag]);
+//            tmSlot.Value:=
+            TSlot(F.Slots[i]).Value:=
              Trim(TComboBox(tmP.Components[j]).Text)
            end
              else  //use the constaraint field for store information about weigth
               begin
-               tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag-1000]);
-               tmSlot.Constraint:=
+//               tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag-1000]);
+//               tmSlot.Constraint:=
+               TSlot(F.Slots[i]).Constraint:=
                 Trim(TComboBox(tmP.Components[j]).Text);
               end;
          end
        else   //for edit
-        begin
-          if tmP.Components[j].Tag<1000 then
-           begin
-            tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag]);
-            tmSlot.Value:=
-             Trim(TEdit(tmP.Components[j]).Text)
-           end
-             else  //use the constaraint field for store information about weigth
-              begin
-               tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag-1000]);
-               tmSlot.Constraint:=
-                Trim(TEdit(tmP.Components[j]).Text);
-              end;
-        end;
+        if tmP.Components[j] is TEdit then
+          begin
+            if tmP.Components[j].Tag<1000 then
+             begin
+  //            tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag]);
+  //            tmSlot.Value:=
+              TSlot(F.Slots[i]).Value:=
+               Trim(TEdit(tmP.Components[j]).Text)
+             end
+               else  //use the constaraint field for store information about weigth
+                begin
+  //               tmSlot:=TSlot(F.Slots[tmP.Components[j].Tag-1000]);
+  //               tmSlot.Constraint:=
+                TSlot(F.Slots[i]).Constraint:=
+                  Trim(TEdit(tmP.Components[j]).Text);
+                end;
+          end;
       end;
     end;
    end;
+
  //show data
- case Tag of
+{ case Tag of
   0,1 : begin
    F:=F1;
   end;
   3: begin
    F:=T3.F1;
   end;
- end;
+ end;  }
 
  RzLabel2.Caption:='['+F.ID+']';
  RzLabel1.Caption:=F.Name;
 
  WC:=ScrollBox2;
  STDIClass.ReleaseObjects(WC);
- T:=15;
+ T:=0;
 // L:=5;
  WC.Visible:=False;
 for i := 0 to F.Slots.Count-1 do
  if Trim(TSlot(F.Slots.Items[i]).Value)<>'' then
   begin
-   tmP:=STDIClass.AddRzPanel(i*5+1,1,20,500,
+   tmP:=STDIClass.AddRzPanel(T,1,20,500,
     WC,i,alTop,clCream,bvNone,bvNone,bsNone,'');
 //   tmP.AutoSize:=True;
 
@@ -852,8 +915,8 @@ for i := 0 to F.Slots.Count-1 do
      tmP1.Font.Color:=tmColor1;
     end;
 
-   if T12>T then T:=T12;
-   T:=T+5;
+//   if T12>T then T:=T12;
+   T:=T+tmP.Height;
   end;
  WC.Visible:=True;
   MarkCurrentNavPanel(2);

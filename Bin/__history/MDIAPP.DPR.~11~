@@ -1,0 +1,56 @@
+program Mdiapp;
+uses
+  Forms,
+  MAIN in 'MAIN.PAS' {MainForm},
+  about in 'about.pas' {AboutBox},
+  uaddKB in 'uaddKB.pas' {addKB},
+  UPKBClass in 'UPKBClass.pas',
+  MSXML_TLB in 'MSXML_TLB.pas',
+  SDXML in 'SDXML.pas',
+  uExp in 'uExp.pas' {Exp},
+  uDDC in 'uDDC.pas',
+  uTrans in 'uTrans.pas',
+  USTDIClass in 'AUnit\USTDIClass.pas',
+  UDicForm in 'UDicForm.pas' {DicForm},
+  USSClass in 'AUnit\USSClass.pas',
+  USEClass in 'AUnit\USEClass.pas',
+  UStartProjectForm in 'UStartProjectForm.pas' {StartProjectForm},
+  UMsgBoxForm in 'AUnit\UMsgBoxForm.pas' {MsgBoxForm},
+  AddFactForm2Unit in 'AddFactForm2Unit.pas' {AddFactForm2},
+  CRPManagerUnit in 'AUnit\CRPManagerUnit.pas',
+  UViewReportForm in 'AUnit\UViewReportForm.pas' {VRItemForm},
+  AddRuleForm2Unit in 'AddRuleForm2Unit.pas' {AddRuleForm2},
+  RBRFormUnit in 'RBRFormUnit.pas' {RBRForm},
+  RRPManagerUnit in 'AUnit\RRPManagerUnit.pas',
+  CLIPSHeader in 'AUnit\CLIPSHeader.pas',
+  CLIPSSupport in 'AUnit\CLIPSSupport.pas',
+  AddRuleForm3Unit in 'AddRuleForm3Unit.pas',
+  UDDSClass in 'AUnit\UDDSClass.pas',
+  AddTempFormUnit in 'AddTempFormUnit.pas' {AddTempForm},
+  AddGRuleForm4Unit in 'AddGRuleForm4Unit.pas' {AddGRuleForm},
+  UAddTicketForm in 'AUnit\UAddTicketForm.pas' {ATicketForm},
+  ULicForm in 'AUnit\ULicForm.pas' {LicForm},
+  UAddScaleForm in 'AUnit\UAddScaleForm.pas' {AddScaleForm},
+  URVMLElementEditUnit in 'AUnit\URVMLElementEditUnit.pas' {RVMLElementEditForm},
+  UESDescriptionForm in 'AUnit\UESDescriptionForm.pas' {ESDescriptionForm},
+  UImportDataForCasesForm in 'AUnit\UImportDataForCasesForm.pas' {ImportDataForCasesForm},
+  LevUnit in 'AUnit\LevUnit.pas',
+  UAggStrategesSelectForm in 'AUnit\UAggStrategesSelectForm.pas' {AggStrategesSelectForm},
+  TDTEUnit in 'AUnit\TDTEUnit.pas' {TDTForm};
+
+{$R *.RES}
+
+  begin
+  Application.Initialize;
+  Application.Title := 'Personal Knowledge Base Designer';
+  Application.CreateForm(TMainForm, MainForm);
+  Application.CreateForm(TMsgBoxForm, MsgBoxForm);
+  Application.CreateForm(TVRItemForm, VRItemForm);
+  Application.CreateForm(TAddTempForm, AddTempForm);
+  Application.CreateForm(TAddGRuleForm, AddGRuleForm);
+  Application.CreateForm(TATicketForm, ATicketForm);
+  Application.CreateForm(TLicForm, LicForm);
+  Application.CreateForm(TAddScaleForm, AddScaleForm);
+  Application.CreateForm(TTDTForm, TDTForm);
+  Application.Run;
+end.

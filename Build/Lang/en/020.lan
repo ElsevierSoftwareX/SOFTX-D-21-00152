@@ -1,7 +1,10 @@
+ImportDataForCasesFormc=Importing data from decision tables
 RzLabel1c=Template (case model):
 RzLabel2c=Delimeter:
 RzLabel3c=Knowledge base:
+RzLabel4c=Knowledge base:
 RzLabel5c=Start the import from a row:
+RzLabel6c=Generalized rule:
 
 
 RzButton1c=Cancel
@@ -13,12 +16,15 @@ RzButton21h=Proceed the process
 RzButton3c=<< Back
 RzButton3h=
 
+RzCheckBox1c=Processing the first row to retrieve the structure
+
 GroupBox1c= File for import: 
-GroupBox1h=Select a TXT or CSV file for import  
+GroupBox1h= Select a TXT or CSV file for import  
 GroupBox3c= File content preview: 
-GroupBox3h=File content preview
+GroupBox3h= File content preview
 GroupBox4c= Select a knowledge base and template (case model): 
 GroupBox5c= Table content preview: 
-GroupBox5h=Table content preview
+GroupBox5h= Table content preview
+GroupBox6c= Generalized rule parts and table columns relationships: 
 GroupBox7c= Template slots and table columns relationships: 
 

@@ -3,8 +3,8 @@ object Exp: TExp
   Top = 44
   BorderIcons = [biSystemMenu]
   Caption = ' '#1069#1082#1089#1087#1086#1088#1090
-  ClientHeight = 409
-  ClientWidth = 420
+  ClientHeight = 547
+  ClientWidth = 562
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -58,12 +58,14 @@ object Exp: TExp
   object RzPanel1: TRzPanel
     AlignWithMargins = True
     Left = 3
-    Top = 372
-    Width = 414
+    Top = 510
+    Width = 556
     Height = 34
     Align = alBottom
     BorderOuter = fsGroove
     TabOrder = 0
+    ExplicitTop = 372
+    ExplicitWidth = 414
     object RzButton1: TRzButton
       AlignWithMargins = True
       Left = 5
@@ -89,7 +91,7 @@ object Exp: TExp
       AlignWithMargins = True
       Left = 110
       Top = 5
-      Width = 299
+      Width = 441
       Height = 24
       Default = True
       FrameColor = 7617536
@@ -105,12 +107,13 @@ object Exp: TExp
       ParentFont = False
       TabOrder = 1
       OnClick = RzButton2Click
+      ExplicitWidth = 299
     end
   end
   object RzPanel2: TRzPanel
     Left = 0
     Top = 0
-    Width = 420
+    Width = 562
     Height = 71
     Align = alTop
     BorderOuter = fsGroove
@@ -124,10 +127,11 @@ object Exp: TExp
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    ExplicitWidth = 420
     object ScrollBox3: TScrollBox
       Left = 3
       Top = 3
-      Width = 414
+      Width = 556
       Height = 65
       Align = alClient
       AutoScroll = False
@@ -143,23 +147,26 @@ object Exp: TExp
       ParentColor = False
       ParentFont = False
       TabOrder = 0
+      ExplicitWidth = 414
     end
   end
   object RzPanel6: TRzPanel
     Left = 0
     Top = 71
-    Width = 420
-    Height = 298
+    Width = 562
+    Height = 436
     Align = alClient
     BorderOuter = fsGroove
     BorderWidth = 2
     TabOrder = 2
+    ExplicitWidth = 420
+    ExplicitHeight = 298
     object GroupBox1: TGroupBox
       AlignWithMargins = True
       Left = 7
       Top = 58
-      Width = 406
-      Height = 233
+      Width = 548
+      Height = 371
       Align = alClient
       Caption = ' '#1069#1083#1077#1084#1077#1085#1090#1099': '
       Font.Charset = DEFAULT_CHARSET
@@ -169,12 +176,14 @@ object Exp: TExp
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 0
+      ExplicitWidth = 406
+      ExplicitHeight = 233
       object RzCheckTree1: TRzCheckTree
         AlignWithMargins = True
         Left = 5
         Top = 18
-        Width = 396
-        Height = 210
+        Width = 538
+        Height = 327
         Images = MainForm.ImageList2
         OnStateChange = RzCheckTree1StateChange
         Align = alClient
@@ -189,13 +198,36 @@ object Exp: TExp
         StateImages = RzCheckTree1.CheckImages
         TabOrder = 0
         OnClick = RzCheckTree1Click
+        ExplicitWidth = 396
+        ExplicitHeight = 189
+      end
+      object RzCheckBox1: TRzCheckBox
+        AlignWithMargins = True
+        Left = 6
+        Top = 351
+        Width = 537
+        Height = 15
+        Margins.Left = 4
+        Align = alBottom
+        Caption = 'Process properties with values only'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clNavy
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        State = cbUnchecked
+        TabOrder = 1
+        Visible = False
+        ExplicitTop = 213
+        ExplicitWidth = 188
       end
     end
     object GroupBox2: TGroupBox
       AlignWithMargins = True
       Left = 7
       Top = 7
-      Width = 406
+      Width = 548
       Height = 45
       Align = alTop
       Caption = ' '#1044#1086#1089#1090#1091#1087#1085#1099#1077' '#1073#1072#1079#1099' '#1079#1085#1072#1085#1080#1081': '
@@ -206,6 +238,7 @@ object Exp: TExp
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 1
+      ExplicitWidth = 406
       object Label1: TLabel
         Left = 9
         Top = 20
@@ -220,9 +253,9 @@ object Exp: TExp
         ParentFont = False
       end
       object ComboBox1: TComboBox
-        Left = 148
-        Top = 15
-        Width = 252
+        Left = 149
+        Top = 16
+        Width = 393
         Height = 21
         Ctl3D = False
         ParentCtl3D = False

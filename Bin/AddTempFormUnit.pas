@@ -55,13 +55,13 @@ type
     RzLabel10: TRzLabel;
     RzLabel9: TRzLabel;
     RzLabel11: TRzLabel;
-    RzLabel12: TRzLabel;
     Image2: TImage;
     RzPanel7: TRzPanel;
     RzLabel13: TRzLabel;
     RzLabel14: TRzLabel;
     RzLabel15: TRzLabel;
     RzLabel16: TRzLabel;
+    RzLabel12: TRzLabel;
     procedure FormCreate(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
     procedure TabSheet1Show(Sender: TObject);
@@ -83,6 +83,7 @@ type
   public
     { Public declarations }
    T1 : TTemplate;
+   ScN : ShortString;
   end;
 
 var
@@ -116,6 +117,7 @@ procedure TAddTempForm.DataTypeComboChange(Sender: TObject);
 var
  nF : TAddScaleForm;
  s : string;
+ i : Integer;
 begin
  if TComboBox(Sender).Items.IndexOf(
   Trim(TComboBox(Sender).Text))=-1 then
@@ -124,15 +126,20 @@ begin
  if TComboBox(Sender).Text='Fuzzy' then
   begin
    Application.CreateForm(TAddScaleForm, nF);
-   nF.S1:=TFScale.Create;
-   nF.S1.Init;
+   //slot name
    s:=TRzEdit(
-    TComboBox(Sender).Parent.Components[ TComboBox(Sender).ComponentIndex-1]
+    TComboBox(Sender).Parent.Components[TComboBox(Sender).ComponentIndex-1]
     ).Text;
+
    nF.KB2:=TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]);
-   nF.S1.Name:='Scale-for-'+s;
-   nF.S1.Description:=nF.S1.Name;
+
+   nF.ScN:=STDIClass.GetPrefix(T1.Name)+'-'+s;
+
    nF.ShowModal;
+   //value
+   TRzEdit(
+    TComboBox(Sender).Parent.Components[TComboBox(Sender).ComponentIndex+1]
+    ).Text:= ScN;
   end;
 end;
 //----------------------------------------------------------------------

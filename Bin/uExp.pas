@@ -15,7 +15,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, RzButton, RzPanel, ExtCtrls, RzRadGrp, RzTabs, UPKBClass, MAIN,
-  StdCtrls, RzLstBox, RzChkLst, ComCtrls, RzListVw, RzTreeVw;
+  StdCtrls, RzLstBox, RzChkLst, ComCtrls, RzListVw, RzTreeVw, RzRadChk;
 
 type
   TExp = class(TForm)
@@ -31,6 +31,7 @@ type
     Label1: TLabel;
     RzCheckTree1: TRzCheckTree;
     ScrollBox3: TScrollBox;
+    RzCheckBox1: TRzCheckBox;
     procedure RzButton1Click(Sender: TObject);
     procedure RzButton2Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -63,7 +64,7 @@ procedure TExp.FormShow(Sender: TObject);
 //var
 //  i: integer;
 begin
-
+ RzCheckBox1.Visible:=False;
 // if KB<>nil then
 // begin
   RzCheckTree1.Items.Clear;
@@ -115,7 +116,7 @@ begin
     ComboBox1.Items.Add(MainForm.LS('New knowledge base'));
     ComboBox1.ItemIndex:=0;
   end;
-  4,5,6,7,8,9,44:begin //export
+  4,5,6,7,8,9,44,10,11:begin //export
     MainForm.ImageList1.GetIcon(74,Exp.Icon);
     MainForm.ReloadHelpMessage(ScrollBox3,23);
     Exp.Caption:=' '+MainForm.LS('Export');
@@ -125,6 +126,16 @@ begin
 //    for i:=0 to KBList.Count-1 do
 //     ComboBox1.Items.Add(TKnowledgeBase(KBList.Items[i]).Name);
     if KBList.Count>0 then ComboBox1.ItemIndex:=0;
+    if Tag=11 then RzCheckBox1.Visible:=True;
+  end;
+  12:begin //processing (rule templates reversing)
+    MainForm.ImageList1.GetIcon(80,Exp.Icon);
+    Exp.Caption:=' '+MainForm.LS('Reversing');
+    Exp.GroupBox1.Caption:=' '+MainForm.LS('Processing elements')+': ';
+    Exp.RzPanel2.Caption:=MainForm.LS('You need to select the objects for processing');
+    if KBList.Count>0 then ComboBox1.ItemIndex:=0;
+ //!change RzCheckBox1 name
+//    RzCheckBox1.Visible:=True;
   end;
  end; //end case
 
@@ -140,29 +151,6 @@ var
 begin
 try
  eF:=-3;
-{
- L1:='';L2:='';L3:='';L4:='';L5:='';
-
- for j:=0 to RzCheckTree1.Items.Item[0].Count-1 do
-  for c:=0 to RzCheckTree1.Items.Item[0].Item[j].Count-1 do
-//   if RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2 then
-    begin
-//     if (TObject(RzCheckTree1.Items.Item[0].Item[j].Item[c].Data) is TGlobalVar)then
-//      if (RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2) then L4:=L4+'1' else L4:=L4+'0';
-     if (TObject(RzCheckTree1.Items.Item[0].Item[j].Item[c].Data) is TGRule)then
-      if (RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2) then L4:=L4+'1' else L4:=L4+'0';
-     if (TObject(RzCheckTree1.Items.Item[0].Item[j].Item[c].Data) is TRule)then
-      if(RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2) then L1:=L1+'1' else L1:=L1+'0';
-     if (TObject(RzCheckTree1.Items.Item[0].Item[j].Item[c].Data) is TFact)then
-      if(RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2) then L2:=L2+'1' else L2:=L2+'0';
-     if (TObject(RzCheckTree1.Items.Item[0].Item[j].Item[c].Data) is TTemplate)then
-      if(RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2) then L3:=L3+'1' else L3:=L3+'0';
-//     if (TObject(RzCheckTree1.Items.Item[0].Item[j].Item[c].Data) is TFunct)then
-//      if(RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2) then L5:=L5+'1' else L5:=L5+'0';
-     if (TObject(RzCheckTree1.Items.Item[0].Item[j].Item[c].Data) is TTask)then
-      if(RzCheckTree1.Items.Item[0].Item[j].Item[c].StateIndex=2) then L5:=L5+'1' else L5:=L5+'0';
-    end;
-}
  case tag of
  1,3:begin   //load, import
   c:=ComboBox1.Items.IndexOf(ComboBox1.Text);
@@ -192,12 +180,9 @@ try
    TKnowledgeBase(KBList.Items[c]).FileName:=
     MainForm.OpenDialog1.FileName;
 
-    //  eF:=TKnowledgeBase(KBList.Items[c]).CopyRFT(KB,
-//   L1,L2,L3,L4,L5);
   eF:=TKnowledgeBase(KBList.Items[c]).CopyRFT_V2(RzCheckTree1);
 
  end; //end load
-
  2:begin  //save
 
     MainForm.MakeDump(MainForm.LS('Save'),8);
@@ -214,9 +199,6 @@ try
     tmKB.Kind:=KB.Kind;
     tmKB.Description:=KB.Description;
 
-   //save selected items to selected KB
-//    eF:=tmKB.CopyRFT(KB,
-//     L1,L2,L3,L4,L5);
     eF:=tmKB.CopyRFT_V2(RzCheckTree1);
 
    SaveDialog1.Title:=Application.Title+': '+MainForm.LS('Save');
@@ -261,9 +243,6 @@ try
     tmKB.Kind:=KB.Kind;
     tmKB.Description:=KB.Description;
 
-   //save selected items to selected KB
-//    eF:=tmKB.CopyRFT(KB,
-//     L1,L2,L3,L4,L5);
     eF:=tmKB.CopyRFT_V2(RzCheckTree1);
 
     if pos(ext,SaveDialog1.FileName)=0 then
@@ -327,7 +306,6 @@ try
   SaveDialog1.Title:=Application.Title+': '+MainForm.LS('Export');
   ext:='.mdl';
 
-
   SaveDialog1.Filter:='Rational Rose files |'
    +'*'+ext+'|'+MainForm.LS('All')+'|*.*';
   SaveDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'\Models';
@@ -353,7 +331,7 @@ try
     MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
    end;
     except
-     MainForm.MMessageBox(1,0,'0=Извините, при экспорте произошла ошибка')
+     MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
     end;
  end; //end rrose export
  //----------------------------------------------------------
@@ -361,7 +339,6 @@ try
   try
   SaveDialog1.Title:=Application.Title+': '+MainForm.LS('Export');
   ext:='.xml';
-
 
   SaveDialog1.Filter:='CmapTools files |'
    +'*'+ext+'|'+MainForm.LS('All')+'|*.*';
@@ -385,8 +362,6 @@ try
     if pos(ext,SaveDialog1.FileName)=0 then
      SaveDialog1.FileName:=SaveDialog1.FileName+ext;
 
-
-//    tmKB.SaveToMDLFile(SaveDialog1.FileName);
     tmKB.SaveToCmapTools(
      ExtractFileDir(Application.ExeName)+'\Dll\xtm.s.dll'
      ,SaveDialog1.FileName);
@@ -394,7 +369,7 @@ try
     MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
    end;
     except
-     MainForm.MMessageBox(1,0,'0=Извините, при экспорте произошла ошибка')
+     MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
     end;
  end; //end cmaptools export
  //----------------------------------------------------------
@@ -430,7 +405,7 @@ try
     MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
    end;
     except
-     MainForm.MMessageBox(1,0,'0=Извините, при экспорте произошла ошибка')
+     MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
     end;
  end; //end staruml export
  //----------------------------------------------------------
@@ -466,7 +441,7 @@ try
     MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
    end;
     except
-     MainForm.MMessageBox(1,0,'0=Извините, при экспорте произошла ошибка')
+     MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
     end;
  end; //end owl export
  //----------------------------------------------------------
@@ -502,9 +477,103 @@ try
     MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
    end;
     except
-     MainForm.MMessageBox(1,0,'0=Извините, при экспорте произошла ошибка')
+     MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
     end;
  end; //end rdf export
+ //----------------------------------------------------------
+  10:begin  //php export
+  try
+  SaveDialog1.Title:=Application.Title+': '+MainForm.LS('Export');
+  ext:='.php';
+
+  SaveDialog1.Filter:='PHP files |'
+   +'*'+ext+'|'+MainForm.LS('All')+'|*.*';
+  SaveDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'\Data';
+
+  if SaveDialog1.Execute() then
+   if (SaveDialog1.FileName<>'') then
+   begin
+    tmKB:=TKnowledgeBase.Create;
+    tmKB.Init;
+
+    c:=ComboBox1.Items.IndexOf(ComboBox1.Text);
+    if c>-1 then  KB:=TKnowledgeBase(KBList.Items[c]);
+
+    tmKB.Name:=KB.Name;
+    tmKB.Kind:=KB.Kind;
+    tmKB.Description:=KB.Description;
+
+    eF:=tmKB.CopyRFT_V2(RzCheckTree1);
+
+    if pos(ext,SaveDialog1.FileName)=0 then
+     SaveDialog1.FileName:=SaveDialog1.FileName+ext;
+
+    tmKB.SaveToPHP(SaveDialog1.FileName);
+    tmKB.SaveToPHP_V2(StringReplace(SaveDialog1.FileName,
+     '.php','_V2.php',[rfReplaceAll])
+      );
+//   tmKB.SaveToJSON(StringReplace(SaveDialog1.FileName,
+//     '.php','',[rfReplaceAll])
+//      );
+    MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
+   end;
+    except
+     MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
+    end;
+ end; //end php export
+ //----------------------------------------------------------
+  11:begin  //csv dec tables export
+  try
+  SaveDialog1.Title:=Application.Title+': '+MainForm.LS('Export');
+  ext:='.csv';
+
+  SaveDialog1.Filter:='CSV files |'
+   +'*'+ext+'|'+MainForm.LS('All')+'|*.*';
+  SaveDialog1.InitialDir:=ExtractFileDir(Application.ExeName)+'\Data';
+
+  if SaveDialog1.Execute() then
+   if (SaveDialog1.FileName<>'') then
+   begin
+    tmKB:=TKnowledgeBase.Create;
+    tmKB.Init;
+
+    c:=ComboBox1.Items.IndexOf(ComboBox1.Text);
+    if c>-1 then  KB:=TKnowledgeBase(KBList.Items[c]);
+
+    tmKB.Name:=KB.Name;
+    tmKB.Kind:=KB.Kind;
+    tmKB.Description:=KB.Description;
+
+    eF:=tmKB.CopyRFT_V2(RzCheckTree1);
+
+    if pos(ext,SaveDialog1.FileName)=0 then
+     SaveDialog1.FileName:=SaveDialog1.FileName+ext;
+
+    tmKB.SaveToCSV(SaveDialog1.FileName,RzCheckBox1.Checked);
+
+    MainForm.MMessageBox(0,0,'0='+MainForm.LS('The knowledge base is exported'));
+   end;
+    except
+     MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
+    end;
+ end; //end csv dec tables export
+ //----------------------------------------------------------
+ 12:begin  //processing (rule templates reverse)
+  try
+    c:=ComboBox1.Items.IndexOf(ComboBox1.Text);
+    if c>-1 then
+     begin
+      KB:=TKnowledgeBase(KBList.Items[c]);
+
+      KB.ReversingRules(RzCheckTree1);
+     end;
+    MainForm.MMessageBox(0,0,'0='+MainForm.LS('The rules are processed'));
+    MainForm.MakeDump(MainForm.LS('Reversing'),80);
+    MainForm.LoadAList(MainForm.RzListView1);
+  except
+   MainForm.MMessageBox(1,0,'0='+MainForm.LS('Sorry, an error occurred'))
+  end;
+ end; //end rule templates reverse
  //----------------------------------------------------------
  end; //end case
 
@@ -536,47 +605,19 @@ begin
  if TComboBox(Sender).Items.IndexOf(TComboBox(Sender).Text)=-1 then
   TComboBox(Sender).ItemIndex:=0;
  case Tag of
- 2,4,5,6,7,8,9,44:begin  //save
+ 2,4,5,6,7,8,9,44,10,11:begin  //save
   i:=TComboBox(Sender).Items.IndexOf(TComboBox(Sender).Text);
    if i>-1 then  KB:=TKnowledgeBase(KBList.Items[i]);
-//  RzCheckList1.Clear;
-//  RzCheckList2.Clear;
-//  RzCheckList3.Clear;
-
   RzCheckTree1.Items.Clear;
   KB.AddToRzCheckTree(RzCheckTree1,nil);
-{
-  for i:=0 to KB.Templates.Count-1 do
-    begin
-      Exp.RzCheckList3.Items.AddObject(TTemplate(KB.Templates.Items[i]).Name
-       +' '+TTemplate(KB.Templates.Items[i]).Description,
-        TTemplate(KB.Templates.Items[i])
-      );
-    end;
-  for i:=0 to KB.Rules.Count-1 do
-    begin
-      Exp.RzCheckList1.Items.AddObject(TRule(KB.Rules.Items[i]).Name
-       +' '+TRule(KB.Rules.Items[i]).Description,
-        TRule(KB.Rules.Items[i])
-      );
-    end;
-  for i:=0 to KB.Facts.Count-1 do
-    begin
-      Exp.RzCheckList2.Items.AddObject(TFact(KB.Facts.Items[i]).Name,
-        TFact(KB.Facts.Items[i])
-      );
-    end;
-}
  end; //end save
+ 12:begin  //processing
+  i:=TComboBox(Sender).Items.IndexOf(TComboBox(Sender).Text);
+   if i>-1 then  KB:=TKnowledgeBase(KBList.Items[i]);
+  RzCheckTree1.Items.Clear;
+  KB.AddToRzCheckTreeForRules(RzCheckTree1,nil);
+ end; //processing
  end; //end case
-
-{  Exp.RzPageControl1.Pages[0].Caption:='Правила ('+
-   IntToStr(KB.Rules.Count)+')';
-  Exp.RzPageControl1.Pages[1].Caption:='Факты ('+
-   IntToStr(KB.Facts.Count)+')';
-  Exp.RzPageControl1.Pages[2].Caption:='Шаблоны для фактов ('+
-   IntToStr(KB.Templates.Count)+')';
-}   
 end;
 
 procedure TExp.RzCheckList1Click(Sender: TObject);

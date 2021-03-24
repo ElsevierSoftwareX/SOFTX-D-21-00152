@@ -34,7 +34,10 @@ uses
   URVMLElementEditUnit in 'AUnit\URVMLElementEditUnit.pas' {RVMLElementEditForm},
   UESDescriptionForm in 'AUnit\UESDescriptionForm.pas' {ESDescriptionForm},
   UImportDataForCasesForm in 'AUnit\UImportDataForCasesForm.pas' {ImportDataForCasesForm},
-  LevUnit in 'AUnit\LevUnit.pas';
+  LevUnit in 'AUnit\LevUnit.pas',
+  UAggStrategesSelectForm in 'AUnit\UAggStrategesSelectForm.pas' {AggStrategesSelectForm},
+  TDTEUnit in 'AUnit\TDTEUnit.pas' {TDTForm},
+  TRMLEUnit in 'TRMLEUnit.pas' {TRVMLEForm};
 
 {$R *.RES}
 
@@ -49,5 +52,6 @@ uses
   Application.CreateForm(TATicketForm, ATicketForm);
   Application.CreateForm(TLicForm, LicForm);
   Application.CreateForm(TAddScaleForm, AddScaleForm);
+  Application.CreateForm(TTRVMLEForm, TRVMLEForm);
   Application.Run;
 end.

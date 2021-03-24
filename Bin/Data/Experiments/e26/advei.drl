@@ -1,0 +1,129 @@
+//**************************************************************
+//**************       created in PKBD        ******************
+// Knowledge Base Name: Knowledge base 28250899929
+//**************************************************************
+// Description: 
+//**************************************************************
+//********************* Templates ******************************
+declare structural_element ;F1 137-17.csv::structural element
+  Name : String
+  amount,_pcs. : String
+  pressure,_mpa : String
+end
+
+declare material ;F1 137-17.csv::material
+  marka : String
+  standard : String
+end
+
+//************************* Rules ******************************
+rule has_a_G001_R001 "has_a_G001-R001" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "pipe 159х4,5_180 for the output of the rest of the product", pressure,_mpa == "25")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R002 "has_a_G001-R002" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "pipe 273х8_200 for the output of the vapour product", pressure,_mpa == "25")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R003 "has_a_G001-R003" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "pipe 159х4,5_190 for the input of the coolant", pressure,_mpa == "25")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R004 "has_a_G001-R004" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "pipe 57х4_110 for the drainage", pressure,_mpa == "25")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R005 "has_a_G001-R005" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "люк_лаз патрубок 480х10_200", pressure,_mpa == "25")
+then
+  $material = new material();
+  $material.marka = "09g2с";
+  $material.standard = "5520_79";
+  insert($material);
+end
+
+rule has_a_G001_R006 "has_a_G001-R006" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "бобышка регулятора уровня", pressure,_mpa == "_")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R007 "has_a_G001-R007" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "для магнометра", pressure,_mpa == "_")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R008 "has_a_G001-R008" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "люк монтажный патрубок 219х6_258", pressure,_mpa == "25")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R009 "has_a_G001-R009" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "к указателю уровня", pressure,_mpa == "_")
+then
+  $material = new material();
+  $material.marka = "steel 20";
+  $material.standard = "1050_88";
+  insert($material);
+end
+
+rule has_a_G001_R010 "has_a_G001-R010" salience 0
+dialect "mvel"
+when
+  structural_element(Name == "штуцер ввода трубн.пучка патрубок (1,2,3)700х36_335", pressure,_mpa == "25")
+then
+  $material = new material();
+  $material.marka = "09g2с";
+  $material.standard = "5520_79";
+  insert($material);
+end
+

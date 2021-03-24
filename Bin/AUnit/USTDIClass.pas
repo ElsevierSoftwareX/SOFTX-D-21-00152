@@ -15,7 +15,8 @@ interface
 uses SysUtils, Classes, Dialogs, StdCtrls, Variants,
      Forms, Windows, ExtCtrls, Buttons, Controls, Graphics,
      ComCtrls, RzTreeVw, RzLabel, RzPanel, RzButton, rzCommon, RzListVw,
-     RzCmboBx, Grids, Math, RzLine, Chart, Series, TeEngine, Menus;
+     RzCmboBx, Grids, Math, RzLine, Chart, Series, TeEngine, Menus, RzRadChk,
+     RzSpnEdt;
 
 type
 
@@ -39,13 +40,18 @@ type
   Function AddDateTimePicker(NComp:TWinControl;T,L,W:integer;Text:string):integer;
   Function AddMemo(NComp:TWinControl;T,L,W:integer;Text:string):integer;
   Function AddEdit(NComp:TWinControl;T,L,W:integer;Text:string):integer;
+  Function AddSpinEdit(NComp:TWinControl;T,L,W:integer;Text:string):integer;
+
   Function AddTable(NComp:TWinControl;T,L,W:integer; nl,vl:TStringList):integer;
   Function AddTableAsPanels(NComp:TWinControl;T,L,W,ti:integer;nl,vl:TStringList):integer;
+  Function AddTableAsPanelsV2(NComp:TWinControl;T,L,W,ti:Integer;fsc:TObject):integer;
+
   Function AddSimpleGraphAsPanel(NComp:TWinControl;T,L,W:Integer;nl,vl:TStringList):integer;
 
   Function AddImage(NComp:TWinControl;T,L,W,i:integer;IL:TImageList;A:TAlign):TImage;
   Function AddLine(NComp:TWinControl;T,L,H,W:Integer):TRzLine;
   Function AddChart(NComp:TWinControl;T,L,H,W:Integer;nl,vl:TStringList):integer;
+  Function AddChartV2(NComp:TWinControl;T,L,H,W,ti:Integer;fsc:TObject):integer;
 
   Procedure BreakStr(CName:TComboBox;s:string);
 
@@ -71,6 +77,11 @@ type
   Function AddContainerForDataModule(ID,T,L,H,W:Integer;P:TWinControl;Txt:string):Integer;
   procedure CheckBoxCheckClick_2(Sender: TObject);
   Function CreateProgressIndicator(nF:TForm;s:string):TRzPanel;
+  Function GetPrefix(s:string):string;
+
+  procedure DrawArrowV2(obj1,obj2:TStringList;
+   op:String;Canvas:TCanvas;ps:TPenStyle;col:TColor;sbdX,sbdY:Integer;
+    doi:string);
  end;
 
  var
@@ -79,6 +90,175 @@ type
 implementation
 
 uses USEClass, UPKBClass, MAIN;
+//------------------------------------------------------------------
+Function TSTDIClass.GetPrefix(s:string):string;
+var
+ i : Integer;
+ tmTs : TStringList;
+begin
+ tmTs:=TStringList.Create;
+ tmTs.Delimiter:='-';
+ tmTs.DelimitedText:=s;
+ Result:='';
+ for i := 0 to tmTs.Count-1 do
+  if Trim(tmTs.Strings[i])<>'' then Result:=Result+Trim(tmTs.Strings[i])[1];
+ Result:=AnsiLowerCase(Result);
+end;
+//------------------------------------------------------------------
+procedure TSTDIClass.DrawArrowV2(obj1,obj2:TStringList;
+ op:String;Canvas:TCanvas;ps:TPenStyle;col:TColor;sbdX,sbdY:Integer;doi:string);
+//------------------------
+function solve(x1, y1, x2, y2, x3, y3, x4, y4: integer; var xp, yp: integer): boolean;
+var a, b, c, d, e, f,
+  dt, ds, det, t, s: real;
+begin
+  a := x2 - x1;
+  b := x3 - x4;
+  c := x3 - x1;
+  d := y2 - y1;
+  e := y3 - y4;
+  f := y3 - y1;
+
+  det := a * e - b * d;
+  if det = 0 then
+  begin
+    solve := false;
+    exit;
+  end;
+  dt := c * e - f * b;
+  ds := a * f - c * d;
+  t := dt / det;
+  s := ds / det;
+
+  if (0 <= s) and (s <= 1)
+    and (0 <= t) and (t <= 1) then
+  begin
+    xp := round(x1 * (1 - t) + x2 * t);
+    yp := round(y1 * (1 - t) + y2 * t);
+//    xp := round(x1 * (1 - t) + x2 * t)-5;
+//    yp := round(y1 * (1 - t) + y2 * t)-5;
+    solve := true;
+  end
+  else
+  begin
+    solve := false;
+    exit;
+  end;
+end;
+
+procedure DrawArrowHead(Canvas: TCanvas; X, Y: Integer; Angle, LW: Extended);
+var
+  A1, A2: Extended;
+  Arrow: array[0..3] of TPoint;
+  OldWidth: Integer;
+const
+  Beta = 0.322;
+  LineLen = 4;
+  CentLen = 1;
+//  LineLen = 4.74;
+//  CentLen = 3;
+begin
+  Angle := Pi + Angle;
+  Arrow[0] := Point(X, Y);
+  A1 := Angle - Beta;
+  A2 := Angle + Beta;
+  Arrow[1] := Point(X + Round(LineLen * LW * Cos(A1)), Y - Round(LineLen * LW * Sin(A1)));
+//  Arrow[2] := Point(X + Round(CentLen * LW * Cos(Angle)), Y - Round(CentLen * LW * Sin(Angle)));
+  Arrow[2] := Point(X, Y);
+  Arrow[3] := Point(X + Round(LineLen * LW * Cos(A2)), Y - Round(LineLen * LW * Sin(A2)));
+  OldWidth := Canvas.Pen.Width;
+  Canvas.Pen.Width := 1;
+  Canvas.Polygon(Arrow);
+  Canvas.Pen.Width := OldWidth
+end;
+//---------------------------
+procedure DrawArrow(Canvas: TCanvas; X1, Y1, X2, Y2: Integer; LW: Extended; ps:TPenStyle);
+var
+  Angle: Extended;
+begin
+  Angle := ArcTan2(Y1 - Y2, X2 - X1);
+  canvas.Pen.Style := ps;
+  Canvas.MoveTo(X1, Y1);
+  Canvas.LineTo(X2, Y2);
+//  Canvas.LineTo(X2 - Round(2 * LW * Cos(Angle)), Y2 + Round(2 * LW * Sin(Angle)));
+  DrawArrowHead(Canvas, X2, Y2, Angle, LW);
+end;
+//---------------------------
+//------------------------
+var xa, ya: integer;
+   xaa, yaa: integer;
+  x1, y1, x2, y2, h1, h2, w1, w2: integer;
+  dx, dy: integer;
+  ds : Extended;
+  s: string;
+begin
+  x1:=StrToInt(obj1.Values['x'+doi]);
+  x2:=StrToInt(obj2.Values['x'+doi]);
+  y1:=StrToInt(obj1.Values['y'+doi]);
+  y2:=StrToInt(obj2.Values['y'+doi]);
+  h1:=StrToInt(obj1.Values['h']);
+  h2:=StrToInt(obj2.Values['h']);
+  w1:=StrToInt(obj1.Values['w']);
+  w2:=StrToInt(obj2.Values['w']);
+
+  begin
+    if not solve(x1 + (w1 div 2), y1 + (h1 div 2),
+     x2 + (w2 div 2), y2 + (h2 div 2),
+      x1, y1, x1 + w1, y1, xa, ya) then
+       if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+         x1, y1, x1, y1 + h1, xa, ya) then
+        if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+         x1 + w1, y1, x1 + w1, y1 + h1, xa, ya) then
+          if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+          x1, y1 + h1, x1 + w1, y1 + h1, xa, ya) then ;
+
+    if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+    x2, y2, x2 + w2, y2, xaa, yaa) then
+      if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+      x2, y2, x2, y2 + h2, xaa, yaa) then
+        if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+        x2 + w2, y2, x2 + w2, y2 + h2, xaa, yaa) then
+          if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+          x2, y2 + h2, x2 + w2, y2 + h2, xaa, yaa) then ;
+
+    canvas.Pen.Color := col;
+
+//    DrawArrow(Canvas, xa+sbdX, ya+sbdY-3, xaa+sbdX, yaa+sbdY+3, 3, ps);
+    DrawArrow(Canvas, xa+sbdX, ya+sbdY, xaa+sbdX, yaa+sbdY, 3, ps);
+
+ //drow operation
+ if op<>'' then
+  begin
+//    dx := 30;
+//    dy := 30;
+    ds:=sqrt(sqr(xaa-xa)+sqr(yaa-ya));
+    dx:=Round(ds/2)+5;
+    dy:=dx;
+
+    if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+     x2 - dx, y2 - dy, x2 + dx + w2, y2 - dy, xa, ya) then
+      if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+      x2 - dx, y2 - dy, x2 - dx, y2 + dy + h2, xa, ya) then
+        if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+        x2 + dx + w2, y2 - dy, x2 + dx + w2, y2 + dy + h2, xa, ya) then
+          if not solve(x1 + (w1 div 2), y1 + (h1 div 2), x2 + (w2 div 2), y2 + (h2 div 2),
+          x2 - dx, y2 + dy + h2, x2 + dx + w2, y2 + dy + h2, xa, ya) then ;
+    canvas.Pen.Width := 1;
+    canvas.Brush.Color := clWhite;
+    canvas.Pen.Color := col;
+
+    dx := 10;
+    if op='add' then s:='+';
+
+    canvas.Ellipse(xa - dx + sbdX, ya - dx+ sbdY, xa + dx + sbdX, ya + dx + sbdY);
+    canvas.font.Size := 10;
+    canvas.TextOut(xa - (canvas.TextWidth(s) div 2)+ sbdX,
+     ya - (canvas.TextHeight(s) div 2)+ sbdY, s);
+    canvas.font.Size := 8;
+    canvas.Pen.Width := 1;
+  end;
+  end;
+end;
 //------------------------------------------------------------------
 Function TSTDIClass.CreateProgressIndicator(nF:TForm;s:string):TRzPanel;
 var
@@ -570,7 +750,74 @@ begin
   TryStrToFloat(Trim(tmTs1.Strings[1]),f1);
   Series1.AddXY(f1,0,'',clRed);
 end;
+//------------------------------------------------------------------------------
+Function TSTDIClass.AddChartV2(NComp:TWinControl;T,L,H,W,ti:Integer;fsc:TObject):integer;
+var
+ tC : TChart;
+ Series1: TLineSeries;
+ tmTs1, tmTs: TStringList;
+ i : Integer;
+ f1,f2,f3 : Double;
 
+ fs : TFScale;
+// fv_ : TFVar;
+begin
+   fs:=TFScale(fsc);
+//   fv_:=TFVar(fv);
+   tC:=TChart.Create(NComp);
+   tC.Parent:=NComp;
+   tC.Top:=T;
+   tC.Left:=L;
+   tC.Height:=H;
+   tC.Width:=W;
+   tC.Legend.Visible:=False;
+     // tC.Title.Text.Strings[0]:='';
+  tC.View3D:=False;
+  Series1:=TLineSeries.Create(tC);
+//  tC.SeriesList.Add(Series1);
+  Series1.Marks.Arrow.Visible := True;
+  Series1.Marks.Callout.Brush.Color := clBlack;
+  Series1.Marks.Callout.Arrow.Visible := True;
+  Series1.Marks.Visible := False;
+  Series1.LinePen.Color:=clRed;
+  Series1.LinePen.Width:=3;
+  Series1.Pointer.InflateMargins := True;
+
+//  Series1.Pointer.Style := psRectangle;
+  Series1.Pointer.Visible := False;
+  Series1.Stairs := False;
+  Series1.XValues.Order := loNone;
+  Series1.YValues.Order := loNone;
+  Series1.ParentChart:=tC;
+
+  tmTs:=TStringList.Create;
+  tmTs.Delimiter:=':';
+  tmTs.Text:=TFVar(fs.ListOfValues.Objects[ti]).ListOfValues.Text;
+
+  for i := 0 to tmTs.Count-1 do
+   begin
+    f1:=0;f2:=0;
+//    tmTs1:=TStringList.Create;
+//    tmTs1.Delimiter:=':';
+//    tmTs1.DelimitedText:=fs.ListOfNames.ValueFromIndex[i];
+    TryStrToFloat(Trim(tmTs.Names[i]),f1);
+    TryStrToFloat(tmTs.ValueFromIndex[i],f2);
+    if (i=0)and(tmTs.Names[i]<>fs.Min) then   //add first point for min
+     begin
+      TryStrToFloat(Trim(fs.Min),f3);
+      Series1.AddXY(f3,f2,'',clRed);
+     end;
+    Series1.AddXY(f1,f2,'',clRed);
+    if (i=tmTs.Count-1)and(tmTs.Names[i]<>fs.Max) then   //add last point for max
+     begin
+      TryStrToFloat(Trim(fs.Max),f3);
+      Series1.AddXY(f3,f2,'',clRed);
+     end;
+   end;
+//  TryStrToFloat(Trim(tmTs1.Strings[1]),f1);
+//  Series1.AddXY(f1,0,'',clRed);
+end;
+//------------------------------------------------------------------------------
 Function TSTDIClass.AddSimpleGraphAsPanel(NComp:TWinControl;T,L,W:Integer;nl,vl:TStringList):integer;
 var
   i,deltaX : Integer;
@@ -670,7 +917,101 @@ begin
    Result:=T;
   end;
 end;
+//-----------------------------------------------------------------------------
+Function TSTDIClass.AddTableAsPanelsV2(NComp:TWinControl;T,L,W,ti:Integer;
+ fsc:TObject):integer;
+var
+  i,j,c : Integer;
+  tmTs : TStringList;
+  tmP,tmP1,tmP2 : TRzPanel;
+  tmL : TLabel;
+  fs : TFScale;
+  fv: TFVar;
+  v1 : Double;
+begin
+  try
+   fs:=TFScale(fsc);
+   fv:=TFVar(fs.ListOfValues.Objects[ti]);
+   tmTs:=TStringList.Create;
 
+   v1:=StrToFloat(fs.Max)-StrToFloat(fs.Min);
+   if fv.Len<2 then v1:=0 else v1:=RoundTo(v1/(fv.Len-1),-2);
+
+   if (fv.ListOfValues.Count<>fv.Len)and(fv.Len<>0) then
+    begin
+     fv.ListOfValues.Clear;
+     for i := 0 to fv.Len-2 do
+      fv.ListOfValues.Add(FloatToStr(v1*i)+'=0');
+     fv.ListOfValues.Add(fs.Max+'=0');
+    end;
+
+
+   tmP:=AddRzPanel(T,L,20,fv.ListOfValues.Count*40,NComp,ti,alCustom,clCream,
+    bvNone,bvNone,bsSingle,''); //main frame
+
+  //left title
+  tmP1:=AddRzPanel(1,1,20,50,tmP,1,alLeft,clCream,
+   bvNone,bvNone,bsNone,''); //left frame
+  tmP2:=AddRzPanel(1,1,20,40,tmP1,1,alTop,clCream,
+   bvNone,bvNone,bsSingle,'Val.');
+  i:=Length(tmP2.Caption)*7+5;
+  tmP2:=AddRzPanel(2,2,20,40,tmP1,1,alClient,clCream,
+   bvNone,bvNone,bsSingle,'Prob.');
+  j:=Length(tmP2.Caption)*7+5;
+  if i<j then i:=j;
+  if i>tmP1.Width then tmP1.Width:=i;
+  c:=tmP1.Width;
+
+//   tmTs.Delimiter:=':';
+   tmTs.Text:=fv.ListOfValues.Text;
+
+   for i := 0 to tmTs.Count-1 do
+    begin
+    //value-prob
+    tmP1:=AddRzPanel(1,C+i*40,20,40,tmP,1,alLeft,clCream,
+     bvNone,bvNone,bsNone,''); //left frame
+
+//    tmP2:=AddRzPanel(1,1,20,20,tmP1,1,alTop,clCream,
+//      bvNone,bvNone,bsSingle,tmTs.Names[i]);
+//    j:=Length(tmP2.Caption)*7+5;
+
+    AddEdit(tmP1,1,1,20,tmTs.Names[i]
+     );
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Text:=tmTs.Names[i];
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Align:=alTop;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Alignment:=taCenter;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).AlignWithMargins:=True;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Top:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Left:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Right:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Bottom:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Tag:=i;
+
+
+    AddEdit(tmP1,15,1,20,tmTs.ValueFromIndex[i]
+     );
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Text:=tmTs.ValueFromIndex[i];
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Align:=alClient;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Alignment:=taCenter;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).AlignWithMargins:=True;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Top:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Left:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Right:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Margins.Bottom:=1;
+    TEdit(tmP1.Components[tmP1.ComponentCount-1]).Tag:=i;
+    if j>tmP1.Width then tmP1.Width:=j;
+    c:=c+tmP1.Width;
+    end;
+
+//   tmP.AutoSize:=True;
+   tmP.Height:=45;
+   tmP.Width:=c+5;
+   Result:=tmP.Top+tmP.Height;
+  except
+   Result:=T;
+  end;
+end;
+//-----------------------------------------------------------------------------
 Function TSTDIClass.AddEdit(NComp:TWinControl;T,L,W:integer;Text:string):integer;
 var
   C:TEdit;
@@ -688,7 +1029,25 @@ begin
    Result:=T;
   end;
 end;
-
+//-----------------------------------------------------------------------------
+Function TSTDIClass.AddSpinEdit(NComp:TWinControl;T,L,W:integer;Text:string):integer;
+var
+  C:TRzSpinEdit;
+begin
+  try
+   C:=TRzSpinEdit.Create(NComp);
+   C.Parent:=NComp;
+   C.Top:=T;
+   C.Left:=L;
+   C.Width:=W;
+   C.Text:=Text;
+//   C.Width:=NComp.Width-L-25;
+   Result:=C.Top+C.Height;
+  except
+   Result:=T;
+  end;
+end;
+//-----------------------------------------------------------------------------
 Function TSTDIClass.AddMemo(NComp:TWinControl;T,L,W:integer;Text:string):integer;
 var
   C:TMemo;
@@ -812,6 +1171,7 @@ begin
   SEClass.Load(tmps,FileName,Application.Title);
 //  tmps.LoadFromFile(FileName);
   Result:=tmps.Values[CmName];
+  if Result='' then Result:=CmName;
  except
   Result:='';
  end;
@@ -857,6 +1217,13 @@ begin
     if Source.Values[TListBox(Cm).Name+'h']<>'' then
      TListBox(Cm).Hint:=Source.Values[TListBox(Cm).Name+'h'];
    end;
+  if Cm is TRzRadioButton then  //для списков
+   begin
+    if Source.Values[TRzRadioButton(Cm).Name+'c']<>'' then
+     TRzRadioButton(Cm).Caption:=Source.Values[TRzRadioButton(Cm).Name+'c'];
+    if Source.Values[TRzRadioButton(Cm).Name+'h']<>'' then
+     TRzRadioButton(Cm).Hint:=Source.Values[TRzRadioButton(Cm).Name+'h'];
+   end;
   if Cm is TScrollBox then  //для списков
    begin
     if Source.Values[TScrollBox(Cm).Name+'h']<>'' then
@@ -868,6 +1235,13 @@ begin
      TCheckBox(Cm).Caption:=Source.Values[TCheckBox(Cm).Name+'c'];
     if Source.Values[TCheckBox(Cm).Name+'h']<>'' then
      TCheckBox(Cm).Hint:=Source.Values[TCheckBox(Cm).Name+'h'];
+   end;
+  if Cm is TRzCheckBox then  //для rz списков
+   begin
+    if Source.Values[TRzCheckBox(Cm).Name+'c']<>'' then
+     TRzCheckBox(Cm).Caption:=Source.Values[TRzCheckBox(Cm).Name+'c'];
+    if Source.Values[TRzCheckBox(Cm).Name+'h']<>'' then
+     TRzCheckBox(Cm).Hint:=Source.Values[TRzCheckBox(Cm).Name+'h'];
    end;
   if Cm is TPanel then //для TPanel
    begin

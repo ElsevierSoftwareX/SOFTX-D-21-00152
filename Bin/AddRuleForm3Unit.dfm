@@ -6274,6 +6274,10 @@ object AddRuleForm3Unit: TAddRuleForm3Unit
     object TabSheet1: TRzTabSheet
       OnShow = TabSheet1Show
       Caption = 'TabSheet1'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object GroupBox1: TGroupBox
         AlignWithMargins = True
         Left = 5
@@ -6306,7 +6310,7 @@ object AddRuleForm3Unit: TAddRuleForm3Unit
             Left = 3
             Top = 3
             Width = 16
-            Height = 18
+            Height = 16
             Align = alLeft
             AutoSize = True
             Picture.Data = {
@@ -6390,7 +6394,6 @@ object AddRuleForm3Unit: TAddRuleForm3Unit
               2226282725211E19150D21353737282423232323232323212126363600000000
               0000000000000000000000000000000000000000000000000000000000000000
               00000000000000000000000000000000000000000000000000000000}
-            ExplicitHeight = 16
           end
           object ComboBox1: TComboBox
             AlignWithMargins = True
@@ -6425,7 +6428,7 @@ object AddRuleForm3Unit: TAddRuleForm3Unit
             Left = 3
             Top = 3
             Width = 16
-            Height = 18
+            Height = 16
             Align = alLeft
             AutoSize = True
             Picture.Data = {
@@ -6468,14 +6471,13 @@ object AddRuleForm3Unit: TAddRuleForm3Unit
               FFFF0000}
             ExplicitLeft = 0
             ExplicitTop = 0
-            ExplicitHeight = 16
           end
           object Image5: TImage
             AlignWithMargins = True
             Left = 504
             Top = 3
             Width = 16
-            Height = 18
+            Height = 16
             Cursor = crHandPoint
             Align = alRight
             AutoSize = True
@@ -6520,7 +6522,6 @@ object AddRuleForm3Unit: TAddRuleForm3Unit
               FFFF0000}
             OnClick = Image4Click
             ExplicitLeft = 605
-            ExplicitHeight = 16
           end
           object ComboBox2: TComboBox
             AlignWithMargins = True

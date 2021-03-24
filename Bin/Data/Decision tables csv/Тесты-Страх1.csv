@@ -1,0 +1,12 @@
+﻿RuleName;brow::brow_width;eyebrow::eyebrow_movement;eye::left_eye_width;eye::right_eye_width;eye::left_eye_upper_eyelid_movement;eye::right_eye_upper_eyelid_movement;mouth::mouth_length;mouth::mouth_form;mouth::mouth_corners_movement;#emotion::name;#emotion::fired_rule
+fear-p-01;decrease;up;increase;;up;;increase;ellipse;;fear;fear-p-01
+fear-p-02;decrease;to center;;increase;;up;increase;ellipse;;fear;fear-p-02
+fear-p-03;decrease;up;increase;increase;;;increase;ellipse;aside;fear;fear-p-03
+fear-p-04;decrease;up;increase;;up;;increase;ellipse;aside;fear;fear-p-04
+fear-p-05;decrease;to center;;increase;;up;;ellipse;aside;fear;fear-p-05
+fear-p-06;decrease;up;increase;increase;up;up;;ellipse;aside;fear;fear-p-06
+fear-p-07;decrease;up;increase;increase;;;decrease;ellipse;aside;fear;fear-p-07
+fear-p-08;decrease;up;increase;;;;none;ellipse;aside;fear;fear-p-08
+fear-p-09;decrease;to center;increase;increase;;;increase;ellipse;aside;fear;fear-p-09
+fear-p-10;decrease;to center;increase;increase;up;up;;ellipse;aside;fear;fear-p-10
+fear-p-11;decrease;to center;increase;increase;;;decrease;ellipse;aside;fear;fear-p-11

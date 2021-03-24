@@ -1,0 +1,204 @@
+//**************************************************************
+//**************       created in PKBD        ******************
+// Knowledge Base Name: New KB
+//**************************************************************
+// Description: 
+//**************************************************************
+//********************* Templates ******************************
+declare brow_1
+  brow_width : String
+end
+
+declare eyebrow_1
+  eyebrow_movement : String
+end
+
+declare eye_1
+  left_eye_width : String
+  right_eye_width : String
+  left_eye_upper_eyelid_movement : String
+  right_eye_upper_eyelid_movement : String
+end
+
+declare mouth_1
+  mouth_length : String
+  mouth_form : String
+  mouth_corners_movement : String
+end
+
+declare emotion_1
+  name : String
+  fired_rule : String
+end
+
+//************************ Facts *******************************
+rule initial_load
+dialect "mvel"
+when
+//blank
+then
+  $brow_1 = new brow_1();
+  $brow_1.brow_width = "up";
+  insert($brow_1);
+  $mouth_1 = new mouth_1();
+  $mouth_1.mouth_length = "y";
+  $mouth_1.mouth_form = "r";
+  $mouth_1.mouth_corners_movement = "t";
+  insert($mouth_1);
+end
+
+//************************* Rules ******************************
+rule fear_p_01 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "up")
+  and eye_1(left_eye_width == "increase", left_eye_upper_eyelid_movement == "up")
+  and mouth_1(mouth_length == "increase", mouth_form == "ellipse")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_01";
+  insert($emotion_1);
+end
+
+rule fear_p_02 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "to_center")
+  and eye_1(right_eye_width == "increase", right_eye_upper_eyelid_movement == "up")
+  and mouth_1(mouth_length == "increase", mouth_form == "ellipse")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_02";
+  insert($emotion_1);
+end
+
+rule fear_p_03 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "up")
+  and eye_1(left_eye_width == "increase", right_eye_width == "increase")
+  and mouth_1(mouth_length == "increase", mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_03";
+  insert($emotion_1);
+end
+
+rule fear_p_04 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "up")
+  and eye_1(left_eye_width == "increase", left_eye_upper_eyelid_movement == "up")
+  and mouth_1(mouth_length == "increase", mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_04";
+  insert($emotion_1);
+end
+
+rule fear_p_05 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "to_center")
+  and eye_1(right_eye_width == "increase", right_eye_upper_eyelid_movement == "up")
+  and mouth_1(mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_05";
+  insert($emotion_1);
+end
+
+rule fear_p_06 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "up")
+  and eye_1(left_eye_width == "increase", right_eye_width == "increase", left_eye_upper_eyelid_movement == "up", right_eye_upper_eyelid_movement == "up")
+  and mouth_1(mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_06";
+  insert($emotion_1);
+end
+
+rule fear_p_07 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "up")
+  and eye_1(left_eye_width == "increase", right_eye_width == "increase")
+  and mouth_1(mouth_length == "decrease", mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_07";
+  insert($emotion_1);
+end
+
+rule fear_p_08 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "up")
+  and eye_1(left_eye_width == "increase")
+  and mouth_1(mouth_length == "none", mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_08";
+  insert($emotion_1);
+end
+
+rule fear_p_09 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "to_center")
+  and eye_1(left_eye_width == "increase", right_eye_width == "increase")
+  and mouth_1(mouth_length == "increase", mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_09";
+  insert($emotion_1);
+end
+
+rule fear_p_10 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "to_center")
+  and eye_1(left_eye_width == "increase", right_eye_width == "increase", left_eye_upper_eyelid_movement == "up", right_eye_upper_eyelid_movement == "up")
+  and mouth_1(mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_10";
+  insert($emotion_1);
+end
+
+rule fear_p_11 salience 0
+dialect "mvel"
+when
+  brow_1(brow_width == "decrease")
+  and eyebrow_1(eyebrow_movement == "to_center")
+  and eye_1(left_eye_width == "increase", right_eye_width == "increase")
+  and mouth_1(mouth_length == "decrease", mouth_form == "ellipse", mouth_corners_movement == "aside")
+then
+  $emotion_1 = new emotion_1();
+  $emotion_1.name = "fear";
+  $emotion_1.fired_rule = "fear_p_11";
+  insert($emotion_1);
+end
+

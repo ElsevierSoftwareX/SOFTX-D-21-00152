@@ -127,7 +127,10 @@ begin
   end;
  if RzListBox1.Items.Count>0 then
   begin
-   Self.Height:=381;
+   i:=185+RzListBox1.Items.Count*25;
+   if i>270 then i:=270;
+
+   Self.Height:=i;
    GroupBox1.Visible:=True;
   end
  else

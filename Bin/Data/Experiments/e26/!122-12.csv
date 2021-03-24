@@ -1,0 +1,7 @@
+DATA;Row Heading;Column Heading
+gas-oil mixture;parameter | environment;value | actual
+gas-oil mixture;parameter | environment;value | design
+32;parameter | pressure, mpa;value | actual
+32;parameter | pressure, mpa;value | design
+300;parameter | operating environment temperature, c;value | actual
+300;parameter | operating environment temperature, c;value | design

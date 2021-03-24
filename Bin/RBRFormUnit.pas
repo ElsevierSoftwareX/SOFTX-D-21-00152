@@ -439,7 +439,7 @@ begin
  tmP2.Height:=20*i+10;
 // tmP2.Tag:=i;
 
- tmIm:=STDIClass.AddImage(tmP2,tmP2.Height-16,2,13,1,
+ tmIm:=STDIClass.AddImage(tmP2,tmP2.Height-16,1,13,1,
   ImageList2,alCustom);
  tmIm.Anchors:=[akLeft,akBottom];
  tmIm.AutoSize:=False;
@@ -450,7 +450,8 @@ begin
 // ShowRuleComponentImageClick(tmIm);
 
 // if tmP2.Height>tmP.Height then tmP.Height:=tmP2.Height;
- tmP.Height:=4*20;
+ tmP.Height:=4*20-10;
+ tmP.Tag:=tmP.Height;
  Result:=tmP.Top+tmP.Height;
 end;
 //----------------------------------------------------------------
@@ -497,8 +498,10 @@ begin
     tmTs.SaveToFile(ExtractFileDir(Application.ExeName)+'\Data\rrp.tmp');
 
   //  SetCurrentDir(ExtractFileDir(Application.ExeName));
+
     tmTs.Clear;
     tmTs.Add(ExtractFileDir(Application.ExeName)+'\Data\rrp.tmp');
+
     //  tmTs.Add(ExtractFileDir(Application.ExeName)+'\Clips\02-r-revision.clp');
   //  tmTs.Add(ExtractFileDir(Application.ExeName)+'\Clips\03-r-revision.clp');
     RRPManager.KB:=TRRPKnowledgeBase.Create;

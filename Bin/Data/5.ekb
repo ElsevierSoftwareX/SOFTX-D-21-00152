@@ -1,0 +1,309 @@
+<Structure><KnowledgeBase><ID>30219471570</ID><Name>База знаний 30219471570</Name><ShortName></ShortName><Kind>1</Kind><Description></Description><Vars/><Templates><Template><ID>T001</ID><Name>Фотоаппарат</Name><ShortName>Fotoapparat</ShortName><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>EOS 4000D Kit 18-55mm III</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>21999</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Canon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>18.7</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Canon EF/EF-S</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>5184x3456</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>11</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>нет</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Canon LP-E10</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>500</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Template></Templates><Facts><Fact><ID>F001</ID><Name>Canon EOS 4000D Kit 18-55mm III</Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>EOS 4000D Kit 18-55mm III</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>21999</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Canon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>18.7</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Canon EF/EF-S</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>5184x3456</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>11</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>нет</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Canon LP-E10</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>500</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F002</ID><Name>Canon EOS 200D Kit 18-55mm IS STM</Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>EOS 200D Kit 18-55mm IS STM</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>35000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Canon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>25.8</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Canon EF/EF-S</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>6000x4000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>13</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>оптический</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Canon LP-E17</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>650</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F003</ID><Name>Nikon D3400 Kit 18-105mm VR </Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>D3400 Kit 18-105mm VR</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>40000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Nikon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>24.72</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>NikonF-3</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>6000x4000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>15</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>оптический</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Nikon EN-EL14a</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>1200</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F004</ID><Name>Sony Alpha ILCA-A68K Kit 18-55mm</Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>Alpha ILCA-A68K Kit 18-55mm</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>43700</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Sony</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>24.8</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Sony А</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>6000x4000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>11</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>сдвиг матрицы</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Sony NP-FM500H</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>580</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F005</ID><Name>Nikon D5300 Kit 18-105mm VR </Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>D5300 Kit 18-105mm VR</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>48000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Nikon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>24.78</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Nikon F</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>6000x4000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>15</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>оптический</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Nikon EN-EL14a</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>600</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F006</ID><Name>Canon EOS 77D Kit 18-55 IS STM </Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>EOS 77D Kit 18-55 IS STM</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>60000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Canon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>25.8</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Canon EF/EF-S</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>6000x4000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>13</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>оптический</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Canon LP-E17</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>600</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F007</ID><Name>Pentax K-70 kit DA 18-135mm WR</Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>K-70 kit DA 18-135mm WR</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>69999</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Pentax</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>24.78</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Pentax KA/KAF/KAF/KAF2/KAF3</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>6000x4000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>410</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>двойной</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Pentax D-LI109</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>500</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F008</ID><Name>Pentax KP Body</Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>KP Body</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>82999</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Pentax</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>24.96</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Pentax KA/KAF/KAF2</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>6016x4000</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>15</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>сдвиг матрицы</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Pentax D-LI109</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>420</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F009</ID><Name>Nikon D7500 Kit 18-140mm VR </Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>D7500 Kit 18-140mm VR</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>87999</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Nikon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>21.51</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Nikon F</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>5568x3712</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>17</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>оптический</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Nikon EN-EL15A</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>950</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact><Fact><ID>F010</ID><Name>Nikon D850 Body</Name><ShortName>Fotoapparat</ShortName><Mode>1</Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value>D850 Body</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>209990</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Nikon</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>46.89</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Nikon F</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>8256x5504</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>19</Value><DataType>Number</DataType><Constraint></Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value>нет</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value>Nikon EN-EL15A</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>1840</Value><DataType>Number</DataType><Constraint></Constraint></Slot></Slots></Fact></Facts><GRules/><Rules/><Functions/><Tasks><Task><ID>P001</ID><Name></Name><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><Authors></Authors><Creation_date></Creation_date><Modification_date>16.12.2018 18:45:45</Modification_date><Logo_file></Logo_file><task_Ver></task_Ver><Platfotm></Platfotm><Fact><ID>F011</ID><Name>Фотоаппарат</Name><ShortName>Fotoapparat</ShortName><Mode></Mode><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams></DrawParams><Slots><Slot><Name>Модель</Name><ShortName>Model</ShortName><Description></Description><Value></Value><DataType>String</DataType><Constraint>1</Constraint></Slot><Slot><Name>Цена</Name><ShortName>Tsena</ShortName><Description></Description><Value>150000</Value><DataType>String</DataType><Constraint>3</Constraint></Slot><Slot><Name>Производитель</Name><ShortName>Proizvoditel</ShortName><Description></Description><Value>Canon</Value><DataType>String</DataType><Constraint>1</Constraint></Slot><Slot><Name>Общее число мегапикселей</Name><ShortName>Obshchee-chislo-megapikseley</ShortName><Description></Description><Value>18.7</Value><DataType>Number</DataType><Constraint>5</Constraint></Slot><Slot><Name>Байонет</Name><ShortName>Bayonet</ShortName><Description></Description><Value>Canon EF/EF-S</Value><DataType>String</DataType><Constraint>4</Constraint></Slot><Slot><Name>Максимальное разрешение фотоснимка</Name><ShortName>Maksimalnoe-razreshenie-fotosnimka</ShortName><Description></Description><Value>8256x5504</Value><DataType>String</DataType><Constraint>2</Constraint></Slot><Slot><Name>Число оптических элементов</Name><ShortName>Chislo-opticheskikh-elementov</ShortName><Description></Description><Value>11</Value><DataType>Number</DataType><Constraint>3</Constraint></Slot><Slot><Name>Стабилизатор изображения</Name><ShortName>Stabilizator-izobrazheniya</ShortName><Description></Description><Value></Value><DataType>String</DataType><Constraint>1</Constraint></Slot><Slot><Name>Модель аккумулятора</Name><ShortName>Model-akkumulyatora</ShortName><Description></Description><Value></Value><DataType>String</DataType><Constraint>1</Constraint></Slot><Slot><Name>Количество фотографий от одного заряда</Name><ShortName>Kolichestvo-fotografiy-ot-odnogo-zaryada</ShortName><Description></Description><Value>1000</Value><DataType>Number</DataType><Constraint>1</Constraint></Slot></Slots></Fact><K1>30219471570</K1><CBRPResults>F001=0,7
+F002=0,3
+F006=0,3
+F004=0,2
+F010=0,15
+F003=0,05
+F005=0,05
+F007=0,05
+F008=0,05
+F009=0,05
+</CBRPResults><DSP><A>F001
+F002
+F006
+F004
+F010
+F003
+F005
+F007
+F008
+F009
+</A><C>Модель
+Цена
+Производитель
+Общее число мегапикселей
+Байонет
+Максимальное разрешение фотоснимка
+Число оптических элементов
+Стабилизатор изображения
+Модель аккумулятора
+Количество фотографий от одного заряда
+Близость
+</C><E>Personal Knowledge Base Designer
+</E><Scales><Node><Name>Модель</Name><Content>1
+</Content></Node><Node><Name>Цена</Name><Content>1
+2
+</Content></Node><Node><Name>Производитель</Name><Content>1
+2
+3
+</Content></Node><Node><Name>Общее число мегапикселей</Name><Content>1
+2
+3
+4
+</Content></Node><Node><Name>Байонет</Name><Content>1
+2
+3
+4
+5
+</Content></Node><Node><Name>Максимальное разрешение фотоснимка</Name><Content>1
+2
+3
+4
+5
+6
+</Content></Node><Node><Name>Число оптических элементов</Name><Content>1
+2
+3
+4
+5
+6
+7
+</Content></Node><Node><Name>Стабилизатор изображения</Name><Content>1
+2
+3
+4
+5
+6
+7
+8
+</Content></Node><Node><Name>Модель аккумулятора</Name><Content>1
+2
+3
+4
+5
+6
+7
+8
+9
+</Content></Node><Node><Name>Количество фотографий от одного заряда</Name><Content>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</Content></Node><Node><Name>Близость</Name><Content>1
+0,99
+0,98
+0,97
+0,96
+0,95
+0,94
+0,93
+0,92
+0,91
+0,9
+0,89
+0,88
+0,87
+0,86
+0,85
+0,84
+0,83
+0,82
+0,81
+0,8
+0,79
+0,78
+0,77
+0,76
+0,75
+0,74
+0,73
+0,72
+0,71
+0,7
+0,69
+0,68
+0,67
+0,66
+0,65
+0,64
+0,63
+0,62
+0,61
+0,6
+0,59
+0,58
+0,57
+0,56
+0,55
+0,54
+0,53
+0,52
+0,51
+0,5
+0,49
+0,48
+0,47
+0,46
+0,45
+0,44
+0,43
+0,42
+0,41
+0,4
+0,39
+0,38
+0,37
+0,36
+0,35
+0,34
+0,33
+0,32
+0,31
+0,3
+0,29
+0,28
+0,27
+0,26
+0,25
+0,24
+0,23
+0,22
+0,21
+0,2
+0,19
+0,18
+0,17
+0,16
+0,15
+0,14
+0,13
+0,12
+0,11
+0,1
+0,09
+0,08
+0,07
+0,06
+0,05
+0,04
+0,03
+0,02
+0,01
+0
+</Content></Node></Scales><Marks><Node><Name>F001</Name><Content>Модель=0
+Цена=1
+Производитель=1
+Общее число мегапикселей=1
+Байонет=0
+Максимальное разрешение фотоснимка=1
+Число оптических элементов=1
+Стабилизатор изображения=1
+Модель аккумулятора=0
+Количество фотографий от одного заряда=1
+Близость=0,7
+</Content></Node><Node><Name>F002</Name><Content>Модель=0
+Цена=0
+Производитель=1
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,3
+</Content></Node><Node><Name>F006</Name><Content>Модель=0
+Цена=0
+Производитель=1
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,3
+</Content></Node><Node><Name>F004</Name><Content>Модель=0
+Цена=0
+Производитель=0
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=1
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,2
+</Content></Node><Node><Name>F010</Name><Content>Модель=0
+Цена=0
+Производитель=0
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=1
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,15
+</Content></Node><Node><Name>F003</Name><Content>Модель=0
+Цена=0
+Производитель=0
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,05
+</Content></Node><Node><Name>F005</Name><Content>Модель=0
+Цена=0
+Производитель=0
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,05
+</Content></Node><Node><Name>F007</Name><Content>Модель=0
+Цена=0
+Производитель=0
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=1
+Близость=0,05
+</Content></Node><Node><Name>F008</Name><Content>Модель=0
+Цена=0
+Производитель=0
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,05
+</Content></Node><Node><Name>F009</Name><Content>Модель=0
+Цена=0
+Производитель=0
+Общее число мегапикселей=0
+Байонет=0
+Максимальное разрешение фотоснимка=0
+Число оптических элементов=0
+Стабилизатор изображения=0
+Модель аккумулятора=0
+Количество фотографий от одного заряда=0
+Близость=0,05
+</Content></Node></Marks><Results><Node><Name>АРАМИС</Name><Content>F001=0,1818181800
+F002=0,4545454500
+F006=0,4545454500
+F004=0,4545454500
+F010=0,4545454500
+F003=0,4545454500
+F005=0,5000000000
+F007=0,5000000000
+F008=0,5000000000
+F009=0,5000000000
+</Content></Node></Results></DSP></Task></Tasks><TempPackageList/><FactPackageList/><RulePackageList/><GRulePackageList/></KnowledgeBase></Structure>

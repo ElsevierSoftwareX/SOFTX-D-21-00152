@@ -1,9 +1,9 @@
 object MainForm: TMainForm
-  Left = 196
-  Top = 173
+  Left = 146
+  Top = 55
   Caption = 'Personal Knowledge Base Designer'
-  ClientHeight = 492
-  ClientWidth = 778
+  ClientHeight = 575
+  ClientWidth = 937
   Color = clAppWorkSpace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clBlack
@@ -12,23 +12,26 @@ object MainForm: TMainForm
   Font.Style = []
   Menu = MainMenu
   OldCreateOrder = False
-  Position = poScreenCenter
+  Position = poDesigned
   OnActivate = FormActivate
   OnClose = FormClose
   OnCreate = FormCreate
+  OnResize = FormResize
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object Splitter1: TSplitter
     Left = 0
     Top = 57
-    Height = 435
+    Height = 518
     Color = clActiveBorder
     ParentColor = False
+    ExplicitHeight = 435
   end
   object RzStatusBar1: TRzStatusBar
     Left = 0
     Top = 31
-    Width = 778
+    Width = 937
     Height = 26
     AutoStyle = False
     SimpleFrameStyle = fsGroove
@@ -64,7 +67,7 @@ object MainForm: TMainForm
     object RzProgressStatus1: TRzProgressStatus
       Left = 127
       Top = 3
-      Width = 648
+      Width = 807
       FrameStyle = fsGroove
       Align = alClient
       ParentShowHint = False
@@ -90,22 +93,22 @@ object MainForm: TMainForm
   object RzSplitter1: TRzSplitter
     Left = 3
     Top = 57
-    Width = 775
-    Height = 435
-    MarginMax = 309
-    MarginMin = 193
-    Position = 309
-    Percent = 40
+    Width = 934
+    Height = 518
+    MarginMax = 373
+    MarginMin = 233
+    Position = 326
+    Percent = 35
     PercentMax = 60
     PercentMin = 25
     UsePercent = True
     Align = alClient
     TabOrder = 1
     BarSize = (
-      309
+      326
       0
-      313
-      435)
+      330
+      518)
     UpperLeftControls = (
       RzSplitter2)
     LowerRightControls = (
@@ -113,12 +116,12 @@ object MainForm: TMainForm
     object RzSplitter2: TRzSplitter
       Left = 0
       Top = 0
-      Width = 309
-      Height = 435
-      MarginMax = 43
-      MarginMin = 260
+      Width = 326
+      Height = 518
+      MarginMax = 52
+      MarginMin = 310
       Orientation = orVertical
-      Position = 303
+      Position = 361
       Percent = 70
       PercentMax = 90
       PercentMin = 60
@@ -127,9 +130,9 @@ object MainForm: TMainForm
       TabOrder = 0
       BarSize = (
         0
-        303
-        309
-        307)
+        361
+        326
+        365)
       UpperLeftControls = (
         RzGroupBox1)
       LowerRightControls = (
@@ -138,8 +141,8 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 3
         Top = 3
-        Width = 303
-        Height = 297
+        Width = 320
+        Height = 355
         Align = alClient
         Caption = ' '#1041#1072#1079#1099' '#1079#1085#1072#1085#1080#1081' ('#1087#1088#1086#1077#1082#1090#1099'): '
         TabOrder = 0
@@ -148,8 +151,8 @@ object MainForm: TMainForm
           AlignWithMargins = True
           Left = 4
           Top = 17
-          Width = 266
-          Height = 276
+          Width = 283
+          Height = 334
           Align = alClient
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -173,14 +176,15 @@ object MainForm: TMainForm
         end
         object ToolBar1: TToolBar
           AlignWithMargins = True
-          Left = 274
+          Left = 291
           Top = 17
           Width = 27
-          Height = 278
+          Height = 336
           Margins.Left = 1
           Margins.Right = 1
           Margins.Bottom = 1
           Align = alRight
+          ButtonWidth = 25
           Caption = 'ToolBar1'
           Images = ImageList1
           TabOrder = 1
@@ -265,6 +269,8 @@ object MainForm: TMainForm
             Caption = 'ToolButton11'
             Enabled = False
             ImageIndex = 32
+            ParentShowHint = False
+            ShowHint = True
             OnClick = ToolButton11Click
             OnMouseMove = TreeView1MouseMove
           end
@@ -370,8 +376,8 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 3
         Top = 3
-        Width = 303
-        Height = 122
+        Width = 320
+        Height = 147
         ActivePage = TabSheet4
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
@@ -395,8 +401,8 @@ object MainForm: TMainForm
             AlignWithMargins = True
             Left = 3
             Top = 3
-            Width = 293
-            Height = 92
+            Width = 310
+            Height = 117
             Align = alClient
             BorderOuter = fsGroove
             BorderWidth = 1
@@ -412,8 +418,8 @@ object MainForm: TMainForm
             object ScrollBox3: TScrollBox
               Left = 3
               Top = 3
-              Width = 287
-              Height = 86
+              Width = 304
+              Height = 111
               Align = alClient
               AutoScroll = False
               BevelInner = bvNone
@@ -437,8 +443,8 @@ object MainForm: TMainForm
             AlignWithMargins = True
             Left = 3
             Top = 3
-            Width = 293
-            Height = 92
+            Width = 310
+            Height = 117
             Align = alClient
             BorderOuter = fsGroove
             BorderWidth = 1
@@ -454,8 +460,8 @@ object MainForm: TMainForm
             object RzListView1: TRzListView
               Left = 3
               Top = 3
-              Width = 287
-              Height = 86
+              Width = 304
+              Height = 111
               Align = alClient
               BorderStyle = bsNone
               Color = clCream
@@ -478,6 +484,7 @@ object MainForm: TMainForm
               ViewStyle = vsReport
               OnClick = RzListView1Click
               OnDblClick = RzListView1DblClick
+              ExplicitLeft = -1
             end
           end
         end
@@ -487,15 +494,15 @@ object MainForm: TMainForm
       AlignWithMargins = True
       Left = 3
       Top = 3
-      Width = 456
-      Height = 429
+      Width = 598
+      Height = 512
       Align = alClient
       TabOrder = 0
       object RzPanel3: TRzPanel
         AlignWithMargins = True
         Left = 4
-        Top = 393
-        Width = 448
+        Top = 476
+        Width = 590
         Height = 32
         Align = alBottom
         BorderOuter = fsGroove
@@ -563,10 +570,10 @@ object MainForm: TMainForm
       object RzSplitter3: TRzSplitter
         Left = 1
         Top = 14
-        Width = 454
-        Height = 376
+        Width = 596
+        Height = 459
         Orientation = orVertical
-        Position = 299
+        Position = 366
         Percent = 80
         UsePercent = True
         OnULDockOver = RzSplitter3ULDockOver
@@ -574,9 +581,9 @@ object MainForm: TMainForm
         TabOrder = 1
         BarSize = (
           0
-          299
-          454
-          303)
+          366
+          596
+          370)
         UpperLeftControls = (
           RzPageControl1
           ToolBar3)
@@ -586,8 +593,8 @@ object MainForm: TMainForm
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 448
-          Height = 293
+          Width = 590
+          Height = 360
           ActivePage = TabSheet5
           Align = alClient
           BoldCurrentTab = True
@@ -615,16 +622,16 @@ object MainForm: TMainForm
               AlignWithMargins = True
               Left = 3
               Top = 3
-              Width = 440
-              Height = 262
+              Width = 582
+              Height = 329
               Align = alClient
               TabOrder = 0
               object RzPanel2: TRzPanel
                 AlignWithMargins = True
                 Left = 5
                 Top = 18
-                Width = 430
-                Height = 239
+                Width = 572
+                Height = 306
                 Align = alClient
                 BorderOuter = fsGroove
                 BorderWidth = 1
@@ -642,11 +649,12 @@ object MainForm: TMainForm
                   AlignWithMargins = True
                   Left = 6
                   Top = 6
-                  Width = 418
-                  Height = 227
+                  Width = 560
+                  Height = 294
                   Align = alClient
                   BevelInner = bvNone
                   BorderStyle = bsNone
+                  Color = clCream
                   Font.Charset = DEFAULT_CHARSET
                   Font.Color = clWindowText
                   Font.Height = -11
@@ -656,6 +664,7 @@ object MainForm: TMainForm
                   Padding.Top = 5
                   Padding.Right = 5
                   Padding.Bottom = 5
+                  ParentColor = False
                   ParentFont = False
                   TabOrder = 0
                   OnMouseMove = ScrollBox1MouseMove
@@ -674,14 +683,14 @@ object MainForm: TMainForm
               AlignWithMargins = True
               Left = 3
               Top = 3
-              Width = 440
-              Height = 262
+              Width = 582
+              Height = 329
               Align = alClient
               TabOrder = 0
               object RzPanel5: TRzPanel
                 Left = 2
-                Top = 231
-                Width = 436
+                Top = 298
+                Width = 578
                 Height = 29
                 Align = alBottom
                 BorderOuter = fsNone
@@ -703,8 +712,8 @@ object MainForm: TMainForm
                 AlignWithMargins = True
                 Left = 5
                 Top = 18
-                Width = 430
-                Height = 210
+                Width = 572
+                Height = 277
                 Align = alClient
                 ScrollBars = ssBoth
                 TabOrder = 1
@@ -722,8 +731,8 @@ object MainForm: TMainForm
             object ScrollBox4: TScrollBox
               Left = 0
               Top = 0
-              Width = 440
-              Height = 262
+              Width = 582
+              Height = 329
               Align = alClient
               BevelInner = bvNone
               BevelOuter = bvNone
@@ -731,10 +740,6 @@ object MainForm: TMainForm
               DragMode = dmAutomatic
               Color = clCream
               Ctl3D = False
-              Padding.Left = 5
-              Padding.Top = 5
-              Padding.Right = 5
-              Padding.Bottom = 5
               ParentColor = False
               ParentCtl3D = False
               ParentShowHint = False
@@ -743,7 +748,6 @@ object MainForm: TMainForm
               TabOrder = 0
               OnDragDrop = ScrollBox4DragDrop
               OnDragOver = ScrollBox4DragOver
-              ExplicitTop = 1
             end
           end
           object TabSheet6: TRzTabSheet
@@ -753,8 +757,8 @@ object MainForm: TMainForm
               AlignWithMargins = True
               Left = 3
               Top = 3
-              Width = 440
-              Height = 262
+              Width = 582
+              Height = 329
               ActivePage = TabSheet7
               Align = alClient
               BoldCurrentTab = True
@@ -785,8 +789,8 @@ object MainForm: TMainForm
                   AlignWithMargins = True
                   Left = 3
                   Top = 3
-                  Width = 432
-                  Height = 231
+                  Width = 574
+                  Height = 298
                   Align = alClient
                   BevelInner = bvNone
                   BevelOuter = bvNone
@@ -817,8 +821,8 @@ object MainForm: TMainForm
                   AlignWithMargins = True
                   Left = 3
                   Top = 3
-                  Width = 432
-                  Height = 231
+                  Width = 574
+                  Height = 298
                   Align = alClient
                   BevelInner = bvNone
                   BevelOuter = bvNone
@@ -846,8 +850,8 @@ object MainForm: TMainForm
                 object ScrollBox5: TScrollBox
                   Left = 0
                   Top = 0
-                  Width = 432
-                  Height = 196
+                  Width = 574
+                  Height = 263
                   Align = alClient
                   BevelInner = bvNone
                   BevelOuter = bvNone
@@ -870,8 +874,8 @@ object MainForm: TMainForm
                 object RzBitBtn2: TRzBitBtn
                   AlignWithMargins = True
                   Left = 0
-                  Top = 199
-                  Width = 432
+                  Top = 266
+                  Width = 574
                   Height = 32
                   Margins.Left = 0
                   Margins.Right = 0
@@ -900,16 +904,16 @@ object MainForm: TMainForm
                   AlignWithMargins = True
                   Left = 3
                   Top = 3
-                  Width = 432
-                  Height = 231
+                  Width = 574
+                  Height = 298
                   Align = alClient
                   Caption = ' General information: '
                   TabOrder = 0
                   object RzPanel9: TRzPanel
                     Left = 2
                     Top = 160
-                    Width = 428
-                    Height = 69
+                    Width = 570
+                    Height = 136
                     Align = alClient
                     BorderOuter = fsNone
                     BorderColor = clBlue
@@ -919,8 +923,8 @@ object MainForm: TMainForm
                       AlignWithMargins = True
                       Left = 3
                       Top = 3
-                      Width = 422
-                      Height = 63
+                      Width = 564
+                      Height = 130
                       Align = alClient
                       BorderOuter = fsFlat
                       BorderColor = clBlue
@@ -931,18 +935,18 @@ object MainForm: TMainForm
                       object RzSplitter4: TRzSplitter
                         Left = 1
                         Top = 1
-                        Width = 420
-                        Height = 61
-                        Position = 276
+                        Width = 562
+                        Height = 128
+                        Position = 370
                         Percent = 66
                         UsePercent = True
                         Align = alClient
                         TabOrder = 0
                         BarSize = (
-                          276
+                          370
                           0
-                          280
-                          61)
+                          374
+                          128)
                         UpperLeftControls = (
                           RzPanel21)
                         LowerRightControls = (
@@ -951,8 +955,8 @@ object MainForm: TMainForm
                           AlignWithMargins = True
                           Left = 3
                           Top = 3
-                          Width = 270
-                          Height = 55
+                          Width = 364
+                          Height = 122
                           Align = alClient
                           BorderOuter = fsFlat
                           BorderColor = clBlue
@@ -964,7 +968,7 @@ object MainForm: TMainForm
                             AlignWithMargins = True
                             Left = 4
                             Top = 4
-                            Width = 262
+                            Width = 356
                             Height = 26
                             Align = alTop
                             BorderOuter = fsFlat
@@ -976,7 +980,7 @@ object MainForm: TMainForm
                             object RzComboBox1: TRzComboBox
                               Left = 1
                               Top = 1
-                              Width = 260
+                              Width = 354
                               Height = 21
                               Align = alClient
                               Ctl3D = False
@@ -1000,8 +1004,8 @@ object MainForm: TMainForm
                           object RzListView3: TRzListView
                             Left = 1
                             Top = 33
-                            Width = 268
-                            Height = 21
+                            Width = 362
+                            Height = 88
                             Align = alClient
                             Columns = <
                               item
@@ -1033,8 +1037,8 @@ object MainForm: TMainForm
                           AlignWithMargins = True
                           Left = 3
                           Top = 3
-                          Width = 134
-                          Height = 55
+                          Width = 182
+                          Height = 122
                           Align = alClient
                           BorderOuter = fsFlat
                           BorderColor = clBlue
@@ -1047,8 +1051,8 @@ object MainForm: TMainForm
                             AlignWithMargins = True
                             Left = 4
                             Top = 4
-                            Width = 126
-                            Height = 47
+                            Width = 174
+                            Height = 114
                             Align = alClient
                             BevelInner = bvNone
                             BorderStyle = bsNone
@@ -1070,7 +1074,7 @@ object MainForm: TMainForm
                   object RzPanel10: TRzPanel
                     Left = 2
                     Top = 15
-                    Width = 428
+                    Width = 570
                     Height = 145
                     Align = alTop
                     BorderOuter = fsNone
@@ -1081,7 +1085,7 @@ object MainForm: TMainForm
                       AlignWithMargins = True
                       Left = 159
                       Top = 0
-                      Width = 121
+                      Width = 263
                       Height = 142
                       Margins.Top = 0
                       Align = alClient
@@ -1093,7 +1097,7 @@ object MainForm: TMainForm
                         AlignWithMargins = True
                         Left = 3
                         Top = 61
-                        Width = 115
+                        Width = 257
                         Height = 23
                         Align = alTop
                         BorderOuter = fsFlat
@@ -1121,7 +1125,7 @@ object MainForm: TMainForm
                           AlignWithMargins = True
                           Left = 109
                           Top = 2
-                          Width = 4
+                          Width = 146
                           Height = 19
                           Margins.Left = 1
                           Margins.Top = 1
@@ -1144,7 +1148,7 @@ object MainForm: TMainForm
                         AlignWithMargins = True
                         Left = 3
                         Top = 3
-                        Width = 115
+                        Width = 257
                         Height = 23
                         Align = alTop
                         BorderOuter = fsFlat
@@ -1172,7 +1176,7 @@ object MainForm: TMainForm
                           AlignWithMargins = True
                           Left = 109
                           Top = 2
-                          Width = 4
+                          Width = 146
                           Height = 19
                           Margins.Left = 1
                           Margins.Top = 1
@@ -1195,7 +1199,7 @@ object MainForm: TMainForm
                         AlignWithMargins = True
                         Left = 3
                         Top = 32
-                        Width = 115
+                        Width = 257
                         Height = 23
                         Align = alTop
                         BorderOuter = fsFlat
@@ -1223,7 +1227,7 @@ object MainForm: TMainForm
                           AlignWithMargins = True
                           Left = 109
                           Top = 2
-                          Width = 4
+                          Width = 146
                           Height = 19
                           Margins.Left = 1
                           Margins.Top = 1
@@ -1246,7 +1250,7 @@ object MainForm: TMainForm
                         AlignWithMargins = True
                         Left = 3
                         Top = 119
-                        Width = 115
+                        Width = 257
                         Height = 23
                         Align = alTop
                         BorderOuter = fsFlat
@@ -1274,7 +1278,7 @@ object MainForm: TMainForm
                           AlignWithMargins = True
                           Left = 109
                           Top = 2
-                          Width = 4
+                          Width = 146
                           Height = 19
                           Margins.Left = 1
                           Margins.Top = 1
@@ -1297,7 +1301,7 @@ object MainForm: TMainForm
                         AlignWithMargins = True
                         Left = 3
                         Top = 90
-                        Width = 115
+                        Width = 257
                         Height = 23
                         Align = alTop
                         BorderOuter = fsFlat
@@ -1325,7 +1329,7 @@ object MainForm: TMainForm
                           AlignWithMargins = True
                           Left = 109
                           Top = 2
-                          Width = 4
+                          Width = 146
                           Height = 19
                           Margins.Left = 1
                           Margins.Top = 1
@@ -2325,7 +2329,7 @@ object MainForm: TMainForm
                     end
                     object RzPanel19: TRzPanel
                       AlignWithMargins = True
-                      Left = 286
+                      Left = 428
                       Top = 3
                       Width = 139
                       Height = 139
@@ -2383,14 +2387,13 @@ object MainForm: TMainForm
           end
         end
         object ToolBar3: TToolBar
-          Left = 373
-          Top = -1
-          Width = 56
-          Height = 26
+          Left = 540
+          Top = 2
+          Width = 52
+          Height = 24
+          Margins.Top = 0
+          Margins.Right = 0
           Align = alCustom
-          Anchors = [akTop, akRight]
-          AutoSize = True
-          BorderWidth = 1
           Color = clBtnFace
           Images = ImageList1
           Indent = 5
@@ -2415,7 +2418,7 @@ object MainForm: TMainForm
             Top = 0
             Hint = 'order by X axis'
             Caption = 'ToolButton21'
-            ImageIndex = 66
+            ImageIndex = 82
             OnClick = ToolButton21Click
           end
         end
@@ -2423,8 +2426,8 @@ object MainForm: TMainForm
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 448
-          Height = 67
+          Width = 590
+          Height = 83
           Align = alClient
           BorderOuter = fsGroove
           TabOrder = 0
@@ -2433,12 +2436,12 @@ object MainForm: TMainForm
             AlignWithMargins = True
             Left = 5
             Top = 5
-            Width = 337
-            Height = 57
+            Width = 479
+            Height = 73
             Align = alClient
             Columns = <
               item
-                Width = 314
+                Width = 458
               end>
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clRed
@@ -2454,10 +2457,10 @@ object MainForm: TMainForm
           end
           object RzBitBtn1: TRzBitBtn
             AlignWithMargins = True
-            Left = 348
+            Left = 490
             Top = 5
             Width = 98
-            Height = 57
+            Height = 73
             Margins.Right = 0
             FrameColor = 7617536
             Align = alRight
@@ -2476,7 +2479,7 @@ object MainForm: TMainForm
   object RzPanel4: TRzPanel
     Left = 0
     Top = 0
-    Width = 778
+    Width = 937
     Height = 31
     Align = alTop
     BorderOuter = fsNone
@@ -2485,7 +2488,7 @@ object MainForm: TMainForm
       AlignWithMargins = True
       Left = 195
       Top = 3
-      Width = 580
+      Width = 739
       Height = 25
       Align = alClient
       BorderOuter = fsGroove
@@ -2500,7 +2503,7 @@ object MainForm: TMainForm
       Visible = False
       object RzMaskEdit1: TRzMaskEdit
         AlignWithMargins = True
-        Left = 457
+        Left = 616
         Top = 3
         Width = 120
         Height = 19
@@ -2706,10 +2709,25 @@ object MainForm: TMainForm
           ImageIndex = 65
           OnClick = CmapToolsxmi1Click
         end
+        object Decision1: TMenuItem
+          Caption = 'Decision tables (.csv)'
+          ImageIndex = 79
+          OnClick = Decision1Click
+        end
         object Droolsdrl1: TMenuItem
           Caption = 'Drools Expert (.drl)'
           ImageIndex = 76
           OnClick = Droolsdrl1Click
+        end
+        object FuzzyCLIPSclp1: TMenuItem
+          Caption = 'FuzzyCLIPS (.clp)'
+          ImageIndex = 59
+          OnClick = FuzzyCLIPSclp1Click
+        end
+        object PHP1: TMenuItem
+          Caption = 'PHP (.php)'
+          ImageIndex = 78
+          OnClick = PHP1Click
         end
         object Protegeowlbeta1: TMenuItem
           Caption = 'Protege (.owl) [beta]'
@@ -2780,14 +2798,26 @@ object MainForm: TMainForm
         OnClick = NewRClick
       end
       object N18: TMenuItem
-        Caption = #1057#1092#1086#1088#1084#1080#1088#1086#1074#1072#1090#1100' '#1086#1090#1095#1077#1090' (.doc)'
+        Caption = #1057#1092#1086#1088#1084#1080#1088#1086#1074#1072#1090#1100' '#1086#1090#1095#1077#1090
         ImageIndex = 40
-        OnClick = N18Click
+        object doc2: TMenuItem
+          Caption = 'Entity report (.doc)'
+          OnClick = doc2Click
+        end
+        object txt1: TMenuItem
+          Caption = 'Entity report (.txt)'
+          OnClick = txt1Click
+        end
       end
       object Importdata1: TMenuItem
         Caption = 'Import data (.txt, .csv)'
         ImageIndex = 73
         OnClick = Importdata1Click
+      end
+      object Importrules: TMenuItem
+        Caption = 'Import rules (.txt, .csv)'
+        ImageIndex = 73
+        OnClick = ImportrulesClick
       end
       object N30: TMenuItem
         Caption = '-'
@@ -2813,6 +2843,16 @@ object MainForm: TMainForm
           OnClick = C1Click
         end
       end
+      object N43: TMenuItem
+        Caption = #1040#1075#1088#1077#1075#1080#1088#1086#1074#1072#1090#1100' '#1096#1072#1073#1083#1086#1085#1099
+        ImageIndex = 77
+        OnClick = N43Click
+      end
+      object N44: TMenuItem
+        Caption = 'Reversing rules'
+        ImageIndex = 80
+        OnClick = N44Click
+      end
       object N42: TMenuItem
         Caption = '-'
       end
@@ -2827,6 +2867,17 @@ object MainForm: TMainForm
         OnClick = CFM1Click
       end
       object N37: TMenuItem
+        Caption = '-'
+      end
+      object inyDecisionTablesEditor1: TMenuItem
+        Caption = 'Tiny Decision Tables Editor'
+        OnClick = TinyDecisionTablesEditor1Click
+      end
+      object inyRVMLEditor1: TMenuItem
+        Caption = 'Tiny RVML Editor'
+        OnClick = TinyRVMLEditor1Click
+      end
+      object N45: TMenuItem
         Caption = '-'
       end
       object N38: TMenuItem
@@ -2960,137 +3011,265 @@ object MainForm: TMainForm
     DrawingStyle = dsTransparent
     Left = 488
     Bitmap = {
-      494C01014D00C000940010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
-      0000000000003600000028000000400000004001000001002000000000000040
-      010000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00FFFF
-      FF00D0EFFD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BFFFFF00D1F0FD00D0EF
-      FD00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      494C01015300C000800110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      0000000000003600000028000000400000005001000001002000000000000050
+      0100000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000009933000099330000993300009933
+      0000993300009933000099330000000000000000000000000000000000000000
+      0000000000000000000000000000000000009999990099999900999999009999
+      9900999999009999990099999900000000000000000000000000000000000000
+      0000000000000000000000000000000000005555550000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000099330000CC996600CC996600CC99
+      6600CC996600CC99660099330000000000000000000000000000000000000000
+      00000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000000000
+      0000000000000000000000000000000000005555550000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000099330000CC996600CC996600CC99
+      6600CC996600CC99660099330000000000000000000000000000000000000000
+      00000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000000000
+      0000000000005555550055555500555555005555550055555500555555005555
+      5500000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000003399
+      CC000066990000669900006699000066990099330000CC996600CC996600CC99
+      6600CC996600CC99660099330000000000000000000000000000000000009999
+      99009999990099999900999999009999990099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000000000
+      0000000000005555550000000000000000000000000000000000000000005555
+      5500000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
-      FD00D0EFFD00D0EFFD00D0EFFD00FFFFFF00D0F0FD00D0EFFD00C9ECFB00D0EF
-      FD00D0EFFD00D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000003399
+      CC0099FFFF0099FFFF0099FFFF0099FFFF0099330000CC996600CC996600CC99
+      6600CC996600CC99660099330000000000000000000000000000000000009999
+      99000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000000000
+      0000000000005555550000000000000000000000000000000000000000005555
+      5500000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000003399
+      CC0099FFFF0099FFFF0099FFFF0099FFFF0099330000CC996600CC996600CC99
+      6600CC996600CC99660099330000000000000000000000000000000000009999
+      99000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000000000
+      0000000000005555550000000000000000000000000000000000000000005555
+      5500000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000003399
+      CC0099FFFF0099FFFF0099FFFF0099FFFF009933000099330000993300009933
+      0000993300009933000099330000000000000000000000000000000000009999
+      9900000000000000000000000000000000009999990099999900999999009999
+      9900999999009999990099999900000000000000000000000000000000000000
+      0000000000005555550055555500555555005555550055555500555555005555
+      5500000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000009933000099330000993300009933
+      000099330000993300009933000099FFFF0099FFFF0099FFFF0099FFFF000066
+      9900000000000000000000000000000000009999990099999900999999009999
+      9900999999009999990099999900000000000000000000000000000000009999
+      9900000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
-      FD0078C8F1006FC6EF0092D5F400D0EFFD00D0EFFD0050B7EB0039AEE8006DC4
-      EF0078C9F000D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000099330000CC996600CC996600CC99
+      6600CC996600CC9966009933000099FFFF0099FFFF0099FFFF0099FFFF000066
+      99000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000009999
+      9900000000000000000000000000000000000000000000000000000000005555
+      5500555555005555550055555500555555005555550055555500555555005555
+      5500555555005555550000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000099330000CC996600CC996600CC99
+      6600CC996600CC9966009933000099FFFF0099FFFF0099FFFF0099FFFF000066
+      99000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000009999
+      9900000000000000000000000000000000000000000000000000000000005555
+      5500000000000000000000000000000000000000000000000000000000000000
+      0000000000005555550000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000099330000CC996600CC996600CC99
+      6600CC996600CC9966009933000099FFFF0099FFFF0099FFFF0099FFFF000066
+      99000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000009999
+      9900000000000000000000000000000000000000000000000000000000005555
+      5500000000000000000000000000000000000000000000000000000000000000
+      0000000000005555550000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000099330000CC996600CC996600CC99
+      6600CC996600CC996600993300003399CC003399CC003399CC003399CC003399
+      CC000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900999999009999990099999900999999009999
+      9900000000000000000000000000000000000000000000000000000000005555
+      5500000000000000000000000000000000000000000000000000000000000000
+      0000000000005555550000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
-      FD0070C5EF00D0EFFD0064C0ED00B8E4FA00D0EFFD0055B9EB0044B2E900C1E9
-      FB0072C6F000D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
+      00000000000000000000000000000000000099330000CC996600CC996600CC99
+      6600CC996600CC99660099330000000000000000000000000000000000000000
+      00000000000000000000000000000000000099999900CCCCCC00CCCCCC00CCCC
+      CC00CCCCCC00CCCCCC0099999900000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000005555
+      5500555555005555550055555500555555005555550055555500555555005555
+      5500555555005555550000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000009933000099330000993300009933
+      0000993300009933000099330000000000000000000000000000000000000000
+      0000000000000000000000000000000000009999990099999900999999009999
+      9900999999009999990099999900000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000007272720000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00D0EFFD00D0EF
-      FD0068C2EE00D0EFFD00D0EFFD0065C0EE0052B9EB00D0EFFD00D0EFFD00D0EF
-      FD00B5E4F900D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00D0EFFD00D0EFFD004BB6
-      EA00D0EFFD0098D7F500D0EFFD00C2E9FB0047B4EA00D0EFFD00D0EFFD005CBD
-      EC00D0EFFD00D0EFFD00D0EFFD00FFFFFF000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000D0EFFD00D0EFFD0094D5F4003AAE
-      E80047B3E90055BAEB004BB5EA0042B2E9003FB0E80045B3E9004EB7EA0058BB
-      EC0068C2EE00C3E9FB00D0EFFD00D0EFFD000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000D0EFFD007FCCF100A6DDF70047B4
-      EA0058BBEB00D0EFFD0047B4EA00D0EFFD00D0EFFD0085CFF2004BB5EA00D0EF
-      FD00D0EFFD00D0EFFD0079CAF00084CEF2000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000D0EFFD007FCCF10074C7F000D0EF
-      FD00D0EFFD00C3E9FB0049B5EA00D0EFFD00D0EFFD0055BAEC004CB6EA00D0EF
-      FD00D0EFFD00BBE6FA0078C9F0009ED9F6000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000D0EFFD00D0EFFD00D0EFFD00D0EF
-      FD0089D0F30058BBEC004FB7EB0048B4EA0046B3E9004AB5EA0052B8EA005BBC
-      EC0097D6F500D0EFFD00D0EFFD00D0EFFD000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00D0EFFD00D0EF
-      FD00C6EBFC00C3E9FB00D0EFFD00D0EFFD004EB7EA00D0EFFD00D0EFFD0052B8
-      EB0059BBEB00D0EFFD00D0EFFD00FFFFFF000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
-      FD006CC4EF00D0EFFD00D0EFFD005BBCEC005ABCED00CCEEFC00D0EFFD0045B3
-      E9004AB5EA00D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
-      FD0075C7F000D0EFFD0069C2EE00CFEEFD00D0EFFD0067C2EE0099D8F5008FD3
-      F40076C7F000D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
-      FD007CCAF10075C8F000CAECFC00D0EFFD00CFEFFC00D0EFFD0075C7EF0078C8
-      F0007DCBF100D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
-      FD00D0EFFD00D0EFFD00D0EFFD00FFFFFF00FFFFFF00FFFFFF00D0EFFD00D0EF
-      FD00D0EFFD00D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00D0EFFD00FFFFFF00FFFFFF00FFFFFF00FFFFFF00BFFFFF00D1F0FD00D0EF
+      FD00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
+      000000000000000000003399CC00006699000066990000669900006699000066
+      990000669900006699000066990000000000FDFDFD00FCFCFC00FDFDFC00FFFF
+      FF00EFDDD800CAA99E00CD9A8A00CF9D8E00CF9C8D00CF9D8E00CE988C00E0BE
+      B200FDFCF600FFFFFF00FBFAFA00FDFDFD000000000000040000000500000005
+      0000000500000001000004020100060402000603020006040200010000000404
+      040006060600060606000606060001010100FFFFFF00FFFFFF00FFFFFF00D0EF
+      FD00D0EFFD00D0EFFD00D0EFFD00FFFFFF00D0F0FD00D0EFFD00C9ECFB00D0EF
+      FD00D0EFFD00D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
+      000000000000000000003399CC0099FFFF0099FFFF0099FFFF0099FFFF0099FF
+      FF0099FFFF0099FFFF000066990000000000FCFCFC00FDFDFD00FCFBFA00EBD6
+      D000D2A09200CE9B8C00CF9C8D00CF9C8D00CF9C8D00CF9C8D00CF9D8E00CD9A
+      8800DCB8AC00F6EDEA00FEFFFF00FCFCFC000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00D0EF
+      FD0078C8F1006FC6EF0092D5F400D0EFFD00D0EFFD0050B7EB0039AEE8006DC4
+      EF0078C9F000D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
+      000000000000000000003399CC0099FFFF0099FFFF0099FFFF0099FFFF0099FF
+      FF0099FFFF0099FFFF000066990000000000FCFAFA00FCFAFA00DCB7AE00CA93
+      8300CE9B8C00CF9C8D00CF9C8D00CF9C8D00CF9C8D00CF9C8D00CF9C8D00CF9D
+      8F00CC988900CF9A8B00F0E0DE00FEFEFE0000000000007B000000AA0000009D
+      000002AC0000002100008E4E3B00BE7D5400B9714E00BE7D5600241108008388
+      8900BEBEBE00B9B9B900BEBEBE0031313100FFFFFF00FFFFFF00FFFFFF00D0EF
+      FD0070C5EF00D0EFFD0064C0ED00B8E4FA00D0EFFD0055B9EB0044B2E900C1E9
+      FB0072C6F000D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
+      000000000000000000003399CC0099FFFF0099FFFF0099FFFF0099FFFF0099FF
+      FF0099FFFF0099FFFF000066990000000000FEFFFF00EAD4CE00CB938300D09F
+      9100CF9C8D00CF9C8D00CF9D8E00CF9C8D00CF9C8D00CF9D8E00CF9C8D00CD97
+      8800CF9C8D00CD988900D4A99E00FBF9F9000000000000AB000000ED000000DB
+      000003EF0100002E0000C56D5300FFAD7500FF9E6D00FFAE780032180C00B7BD
+      BF00FFFFFF00FFFFFF00FFFFFF0044444400FFFFFF00FFFFFF00D0EFFD00D0EF
+      FD0068C2EE00D0EFFD00D0EFFD0065C0EE0052B9EB00D0EFFD00D0EFFD00D0EF
+      FD00B5E4F900D0EFFD00FFFFFF00FFFFFF000000000000000000000000000000
+      000000000000000000003399CC0099FFFF0099FFFF0099FFFF0099FFFF0099FF
+      FF0099FFFF0099FFFF000066990000000000F3EDEC00DDC0B800CD988800CE9B
+      8C00CF9D8E00CF9C8D00CE9A8A00CF9B8C00CF9D8E00CD998900D1A29300E7DA
+      D600D8B4A900CD988800CB948400E3C5BC000000000002AE020003F0030003DE
+      030006F20400002F0000C76E5400FFAF7600FF9F6E00FFB07A0033190C00B8BE
+      C100FFFFFF00FFFFFF00FFFFFF0045454500FFFFFF00D0EFFD00D0EFFD004BB6
+      EA00D0EFFD0098D7F500D0EFFD00C2E9FB0047B4EA00D0EFFD00D0EFFD005CBD
+      EC00D0EFFD00D0EFFD00D0EFFD00FFFFFF0000000000CCCCCC00CC996600CCCC
+      CC00CC996600CCCCCC003399CC0099FFFF0099FFFF0099FFFF0099FFFF0099FF
+      FF0099FFFF0099FFFF000066990000000000EAE0E000E9DEDB00D3A59800D2A3
+      9500CD988800CF9B8C00D3A69900D09F9100CF9B8C00D2A39500D1A29500EDE9
+      E700E4D2CD00D1A19300CF9D8E00D7ACA00000000000001E0000002A00000026
+      0000002B00000008000025141000312015002F1D140031201600090402002627
+      23003636310035352F00373731000E0E0C00D0EFFD00D0EFFD0094D5F4003AAE
+      E80047B3E90055BAEB004BB5EA0042B2E9003FB0E80045B3E9004EB7EA0058BB
+      EC0068C2EE00C3E9FB00D0EFFD00D0EFFD0000000000CC99660000000000FFFF
+      FF0000000000FFFFFF003399CC0099FFFF0099FFFF0099FFFF0099FFFF0099FF
+      FF0099FFFF0099FFFF000066990000000000E6D8D400EFEEEE00EAE0DE00EBE3
+      E100E7DAD600D5ACA000EAE2DF00DEC2BA00CB928100E5D3CE00E5D4D000E4D1
+      CC00F0F0F000E9DEDA00ECE6E500E1CCC6000000000090879000BEB2BE00B9AD
+      B900BEB2BE0024252A0079472C00B0745000AB694800B0725000261508003B40
+      7F006564B0005B5BAB006262B00018182D00D0EFFD007FCCF100A6DDF70047B4
+      EA0058BBEB00D0EFFD0047B4EA00D0EFFD00D0EFFD0085CFF2004BB5EA00D0EF
+      FD00D0EFFD00D0EFFD0079CAF00084CEF20000000000CCCCCC00FFFFFF000000
+      0000FFFFFF00000000003399CC0099FFFF0099FFFF0099FFFF0099FFFF003399
+      CC003399CC003399CC003399CC0000000000DEC2B900F0F0F000DAB7AE00D3A6
+      9900EBE5E200E7DAD700EAE0DE00E6D7D200CB928100E0C9C300ECE6E400E1CC
+      C600EDE9E800D4AA9D00D8B3A800EDEAE90000000000C8CAC800FFFFFF00FFFF
+      FF00FFFFFF0032383B00B96C4500FFB07A00FF9F6E00FFAE7A0039200C006269
+      C100A3A2FF009494FF00A0A0FF0027274500D0EFFD007FCCF10074C7F000D0EF
+      FD00D0EFFD00C3E9FB0049B5EA00D0EFFD00D0EFFD0055BAEC004CB6EA00D0EF
+      FD00D0EFFD00BBE6FA0078C9F0009ED9F60000000000CC99660000000000FFFF
+      FF0000000000FFFFFF003399CC0099FFFF0099FFFF0099FFFF0099FFFF003399
+      CC00CCFFFF00006699000000000000000000D6ADA200EEEBEB00DAB9AF00C788
+      7500D8B3A800EFEDED00E9DFDC00EAE0DC00CA907F00D6AFA300EEEDEC00DFC5
+      BE00EFEDED00D1A39500C88A7800E1CAC30000000000CACACB00FFFFFF00FFFF
+      FF00FFFFFF0033383B00B96D4600FFB17B00FFA17000FFAF7B0039200D006269
+      C100A3A2FF009494FF00A0A0FF0027274500D0EFFD00D0EFFD00D0EFFD00D0EF
+      FD0089D0F30058BBEC004FB7EB0048B4EA0046B3E9004AB5EA0052B8EA005BBC
+      EC0097D6F500D0EFFD00D0EFFD00D0EFFD0000000000CCCCCC00FFFFFF000000
+      0000FFFFFF00000000003399CC0099FFFF0099FFFF0099FFFF0099FFFF003399
+      CC0000669900000000000000000000000000CE9B8B00ECE6E400EADFDD00DAB8
+      AF00E8DCD800ECE7E500DFC7C000EEECEC00DCBDB500E3D0CA00F3F7F900DDC0
+      B800F0F0F100E2CDC800DBBDB400E9DFDC000000000029292500373731003535
+      2F00363631000B0C0B00210F0600311B0E002F180C00311B0E000A0400000D0E
+      23001817310015152F001717310005050C00FFFFFF00FFFFFF00D0EFFD00D0EF
+      FD00C6EBFC00C3E9FB00D0EFFD00D0EFFD004EB7EA00D0EFFD00D0EFFD0052B8
+      EB0059BBEB00D0EFFD00D0EFFD00FFFFFF0000000000CC99660000000000FFFF
+      FF0000000000FFFFFF003399CC003399CC003399CC003399CC003399CC003399
+      CC0000000000000000000000000000000000CD918300DFC4BD00E7DBD700E7DB
+      D700E6D7D300D6ACA000D5ADA100F2F4F500E8DDDA00E6D6D200DEC3BA00D2A4
+      9700E2CEC800E7DBD700E9DCD800DDCCC60000000000464685006262B0005B5B
+      AB006565B0000D0C21007E828000B0B5B800ABB1B300B0B5B800212224007E7E
+      7900B6B6B000B1B1AB00B6B6B0002F2F2D00FFFFFF00FFFFFF00FFFFFF00D0EF
+      FD006CC4EF00D0EFFD00D0EFFD005BBCEC005ABCED00CCEEFC00D0EFFD0045B3
+      E9004AB5EA00D0EFFD00FFFFFF00FFFFFF0000000000CCCCCC00FFFFFF000000
+      0000FFFFFF0000000000FFFFFF0000000000FFFFFF00CCCCCC00000000000000
+      000000000000000000000000000000000000E0BCB600CD988900CD978700CD96
+      8600CD978800CD978700D2A59800F0F2F300DABAB000CB918000CD998900CE9B
+      8B00CD988800CC978700CC928100D4ACA200000000007373CB00A0A0FF009494
+      FF00A3A3FF0016163300BFBEB700FFFFFF00FFFFFF00FFFFFF0033333300B8B8
+      B900FFFFFF00FFFFFF00FFFFFF0045454500FFFFFF00FFFFFF00FFFFFF00D0EF
+      FD0075C7F000D0EFFD0069C2EE00CFEEFD00D0EFFD0067C2EE0099D8F5008FD3
+      F40076C7F000D0EFFD00FFFFFF00FFFFFF0000000000CC99660000000000FFFF
+      FF0000000000FFFFFF00CCCCCC00CC996600CCCCCC00CC996600000000000000
+      000000000000000000000000000000000000F8F4F300D7AA9B00CD998900D09E
+      9000CF9D8E00CF9D8E00CF9D8E00DAB9B000D6AEA300CE9B8C00CF9D8F00CF9C
+      8D00CF9D8E00D0A09100CB928300EFD7D500000000007171C8009D9DFF009191
+      FF00A0A0FF0015153200BDBDB700FFFFFF00FFFFFF00FFFFFF0032323200B7B7
+      B700FFFFFF00FFFFFF00FFFFFF0044444400FFFFFF00FFFFFF00FFFFFF00D0EF
+      FD007CCAF10075C8F000CAECFC00D0EFFD00CFEFFC00D0EFFD0075C7EF0078C8
+      F0007DCBF100D0EFFD00FFFFFF00FFFFFF0000000000CCCCCC00FFFFFF000000
+      0000FFFFFF0000000000CC996600E5E5E500CC99660000000000000000000000
+      000000000000000000000000000000000000FFFFFF00F2E0D800CF9A8900CD9B
+      8D00D09E8F00CF9C8D00CF9C8D00CD988800CE9A8A00CF9C8D00CF9C8D00D09D
+      8F00CF9C8D00C9938300DCB8AC00FCF9F900000000001B1B2F0025253F002222
+      3D0026263F0005050C002D2D2B003F3F3F003D3D3D003F3F3F000C0C0C002B2B
+      2B003F3F3F003D3D3D003F3F3F0010101000FFFFFF00FFFFFF00FFFFFF00D0EF
+      FD00D0EFFD00D0EFFD00D0EFFD00FFFFFF00FFFFFF00FFFFFF00D0EFFD00D0EF
+      FD00D0EFFD00D0EFFD00FFFFFF00FFFFFF0000000000CC99660000000000FFFF
+      FF0000000000FFFFFF00CCCCCC00CC9966000000000000000000000000000000
+      000000000000000000000000000000000000FCFAFA00FFFFFF00F0E1DB00D09A
+      8700CB958500CE9B8B00CF9C8E00CF9D8E00CF9D8E00CF9C8D00CF9D8E00CC96
+      8600CF9B8C00E0BFB500FBFCFB00FDFEFD000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
-      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FDFDFD02FDFDFD02FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF0000000000CCCCCC00CC996600CCCC
+      CC00CC996600CCCCCC00CC996600000000000000000000000000000000000000
+      000000000000000000000000000000000000FDFDFD00FCFCFB00FEFFFF00F7EB
+      E600E0C2BA00D3A09400CE9B8C00CF9D8D00CF9C8D00CF9C8E00CE9B8C00D8B1
+      A000F0E2DA00FFFFFF00FCFCFC00FDFCFC000000000001010200010103000101
+      0300010103000000000002020200030303000303030003030300000000000202
+      020003030300030303000303030000000000FDFDFD02FDFDFD02FFFFFF00FFFF
       FF00FEFEFE01FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
       FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -5523,12 +5702,16 @@ object MainForm: TMainForm
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
       000000000000000000000000000000000000424D3E000000000000003E000000
-      2800000040000000400100000100010000000000000A00000000000000000000
-      000000000000000000000000FFFFFF0000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      0000000000000000000000000000000000000000000000000000000000000000
-      000000000000000000000000000000000000FFFFFFFF00000000F81FFC3F0000
+      2800000040000000500100000100010000000000800A00000000000000000000
+      000000000000000000000000FFFFFF00FFFFFFFFFFFF0000FF01FF01FF7F0000
+      FF01FF01FF7F0000FF01FF01F80F0000E001E001FBEF0000E001EF01FBEF0000
+      E001EF01FBEF0000E001EF01F80F0000000F01EFFFFF0000000F01EFE0030000
+      000F01EFEFFB0000000F01EFEFFB0000000F000FEFFB000001FF01FFE0030000
+      01FF01FFFF7F0000FFFFFFFFFFFF00000000FC01000000000000FC0100000000
+      0000FC01000000000000FC01000000000000FC01000000000000800100000000
+      0000A8010000000000009401000000000000A803000000000000940700000000
+      0000A80F000000000000953F000000000000A83F000000000000947F00000000
+      0000A8FF00000000000081FF000000000000FFFFFFFF00000000F81FFC3F0000
       0000E007F00F00000000C003E00700000000C003C003000000008001C0030000
       0000800180010000000080018001000000008001800100000000800180010000
       00008001C00300000000C003C00300000000C003E00700000000E007F00F0000
@@ -5636,7 +5819,7 @@ object MainForm: TMainForm
   object ImageList2: TImageList
     Left = 344
     Bitmap = {
-      494C010113001800400010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010113001800080110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000005000000001002000000000000050
       000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
@@ -6394,7 +6577,7 @@ object MainForm: TMainForm
   object ImageList3: TImageList
     Left = 712
     Bitmap = {
-      494C010102000400400010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010102000400080110001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -6547,7 +6730,7 @@ object MainForm: TMainForm
     Left = 520
     Top = 256
     Bitmap = {
-      494C010115001800400010002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010115001800080110002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       000000000000360000002800000040000000C0000000010020000000000000C0
       0000000000000000000000000000000000000000000000000000FEFEFE01FCFB
       FB05FBF9F907FBF9F907FBF9F907FBF9F907FBF9F907FBF9F907FBF9F907FBF9

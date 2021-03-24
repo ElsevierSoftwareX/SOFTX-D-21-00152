@@ -1,0 +1,33 @@
+﻿RuleName;brow::brow_width;eyebrow::eyebrow_movement;eyebrow::eyebrow_movement;eye::left_eye_width;eye::right_eye_width;eye::left_eye_upper_eyelid_movement;eye::right_eye_upper_eyelid_movement;mouth::mouth_length;mouth::mouth_form;mouth::mouth_corners_movement;#emotion::name
+fear-p-01;decrease;up;;increase;;up;;increase;ellipse;;fear
+fear-p-02;decrease;to center;;;increase;;up;increase;ellipse;;fear
+fear-p-03;decrease;up;to center;increase;increase;;;increase;ellipse;aside;fear
+fear-p-04;decrease;up;;increase;;up;;increase;ellipse;aside;fear
+fear-p-05;decrease;to center;;;increase;;up;;ellipse;aside;fear
+fear-p-06;decrease;up;to center;increase;increase;up;up;;ellipse;aside;fear
+fear-n-07;none;up;;increase;;up;;increase;ellipse;;none
+fear-n-08;increase;to center;;;increase;;up;increase;ellipse;;none
+fear-n-09;none;up;to center;increase;increase;;;increase;ellipse;aside;none
+fear-n-10;increase;up;;increase;;up;;increase;ellipse;aside;none
+fear-n-11;decrease;down;;;increase;;up;;ellipse;aside;none
+fear-n-12;decrease;none;;increase;increase;up;up;;ellipse;aside;none
+fear-n-13;decrease;up;;decrease;;;;increase;ellipse;;none
+fear-n-14;decrease;to center;;;decrease;;;increase;ellipse;;none
+fear-n-15;decrease;up;to center;decrease;increase;;;increase;ellipse;aside;none
+fear-n-16;decrease;up;;none;;;;increase;ellipse;aside;none
+fear-n-17;decrease;to center;;;none;;;;ellipse;aside;none
+fear-n-18;decrease;up;to center;increase;none;;;;ellipse;aside;none
+fear-n-19;decrease;up;;increase;;;;decrease;ellipse;;none
+fear-n-20;decrease;to center;;;increase;;;none;ellipse;;none
+fear-p-21;decrease;up;to center;increase;increase;;;decrease;ellipse;aside;fear
+fear-p-22;decrease;up;;increase;;;;none;ellipse;aside;fear
+fear-n-23;decrease;to center;;;increase;;;;ellipse;down;none
+fear-n-24;decrease;up;to center;increase;increase;;;;ellipse;none;none
+fear-n-25;decrease;up;;increase;;up;;increase;rectangle;;none
+fear-n-26;decrease;to center;;;increase;;up;increase;line;;none
+fear-n-27;;up;;increase;;up;;increase;ellipse;;none
+fear-n-28;decrease;to center;;;;;;increase;ellipse;;none
+fear-n-29;decrease;up;;increase;increase;;;;ellipse;;none
+fear-n-30;decrease;up;;increase;;up;;increase;;aside;none
+fear-n-31;decrease;to center;;;increase;;up;;ellipse;;none
+fear-n-32;decrease;up;;increase;increase;up;up;;;;none

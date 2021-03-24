@@ -1,0 +1,13 @@
+<Structure><KnowledgeBase><ID>3799443015</ID><Name>База знаний 3799443015</Name><ShortName></ShortName><Kind>0</Kind><Description></Description><Vars/><Templates><Template><ID>T001</ID><Name>parameter</Name><ShortName>parameter</ShortName><Description>!122-12.csv::parameter</Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams>x=5
+y=5
+h=95
+w=328
+</DrawParams><Slots><Slot><Name>Name</Name><ShortName>Name</ShortName><Description>!122-12.csv::environment;pressure, mpa;operating environment temperature, c;</Description><Value>environment;pressure, mpa;operating environment temperature, c;</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>lower split connection of the inclined separator</Name><ShortName>lower-split-connection-of-the-inclined-separator</ShortName><Description>!10-45.csv::lower split connection of the inclined separator</Description><Value>499;500;w94x1/4'';29 degree 55 min;30 degree;0,5;</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>dimension</Name><ShortName>dimension</ShortName><Description>!10-45.csv::dimension</Description><Value>-;100;</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>denotation</Name><ShortName>denotation</ShortName><Description>!10-65.csv::denotation</Description><Value>р;рd;т;тd;circulating gas;</Value><DataType>String</DataType><Constraint></Constraint></Slot></Slots></Template><Template><ID>T002</ID><Name>value</Name><ShortName>value</ShortName><Description>!122-12.csv::value/!10-65.csv::value</Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams>x=5
+y=5
+h=65
+w=196
+</DrawParams><Slots><Slot><Name>actual</Name><ShortName>actual</ShortName><Description>!122-12.csv::actual</Description><Value>gas-oil mixture;32;300;</Value><DataType>String</DataType><Constraint></Constraint></Slot><Slot><Name>design</Name><ShortName>design</ShortName><Description>!122-12.csv::design</Description><Value>gas-oil mixture;32;300;</Value><DataType>String</DataType><Constraint></Constraint></Slot></Slots></Template></Templates><Facts/><GRules><GRule><ID>G001</ID><Name>has_a_value</Name><ShortName>has-a-value</ShortName><Description></Description><PackageName></PackageName><RootPackageName></RootPackageName><DrawParams>x=112
+y=135
+w=114
+h=40
+</DrawParams><Conditions><C0>parameter</C0></Conditions><Actions><A0>value</A0></Actions></GRule></GRules><Rules/><Functions/><Tasks/><TempPackageList/><FactPackageList/><RulePackageList/><GRulePackageList/></KnowledgeBase></Structure>

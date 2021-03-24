@@ -1,0 +1,21 @@
+DATA;RowHeading;ColumnHeading
+1;Sample | Talcum;Ìechanical properties | Hardness (Moos)
+2,8;Sample | Talcum;Ìechanical properties | Density
+2;Sample | Gypsum;Ìechanical properties | Hardness (Moos)
+2,3;Sample | Gypsum;Ìechanical properties | Density
+3;Sample | Calcite;Ìechanical properties | Hardness (Moos)
+2,7;Sample | Calcite;Ìechanical properties | Density
+4;Sample | Fluorite;Ìechanical properties | Hardness (Moos)
+3,2;Sample | Fluorite;Ìechanical properties | Density
+5;Sample | Apatite;Ìechanical properties | Hardness (Moos)
+3,2;Sample | Apatite;Ìechanical properties | Density
+6;Sample | Orthoclase;Ìechanical properties | Hardness (Moos)
+2,5;Sample | Orthoclase;Ìechanical properties | Density
+7;Sample | Quartz;Ìechanical properties | Hardness (Moos)
+2,7;Sample | Quartz;Ìechanical properties | Density
+8;Sample | Topaz;Ìechanical properties | Hardness (Moos)
+3,5;Sample | Topaz;Ìechanical properties | Density
+9;Sample | Corundum;Ìechanical properties | Hardness (Moos)
+4;Sample | Corundum;Ìechanical properties | Density
+10;Sample | Diamond;Ìechanical properties | Hardness (Moos)
+3,5;Sample | Diamond;Ìechanical properties | Density

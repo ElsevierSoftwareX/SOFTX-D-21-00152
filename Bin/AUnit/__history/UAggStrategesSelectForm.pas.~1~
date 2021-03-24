@@ -1,0 +1,30 @@
+unit UAggStrategesSelectForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, RzButton, ExtCtrls, RzPanel;
+
+type
+  TForm1 = class(TForm)
+    RzPanel6: TRzPanel;
+    ScrollBox3: TScrollBox;
+    RzPanel1: TRzPanel;
+    RzButton1: TRzButton;
+    RzButton2: TRzButton;
+    GroupBox3: TGroupBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.

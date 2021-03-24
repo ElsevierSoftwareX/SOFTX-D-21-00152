@@ -2,8 +2,8 @@ object VRItemForm: TVRItemForm
   Left = 0
   Top = 0
   Caption = ' '#1055#1086#1076#1088#1086#1073#1085#1099#1081' '#1087#1088#1086#1089#1084#1086#1090#1088' '#1088#1077#1079#1091#1083#1100#1090#1072#1090#1086#1074' '#1087#1086#1080#1089#1082#1072
-  ClientHeight = 299
-  ClientWidth = 545
+  ClientHeight = 461
+  ClientWidth = 684
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,8 +19,8 @@ object VRItemForm: TVRItemForm
   object RzPanel14: TRzPanel
     Left = 0
     Top = 0
-    Width = 545
-    Height = 299
+    Width = 684
+    Height = 461
     Align = alClient
     BorderOuter = fsPopup
     BorderColor = clWhite
@@ -32,29 +32,34 @@ object VRItemForm: TVRItemForm
     GradientColorStop = clMoneyGreen
     GridColor = clMoneyGreen
     TabOrder = 0
+    ExplicitWidth = 545
+    ExplicitHeight = 299
     object RzPanel1: TRzPanel
       AlignWithMargins = True
       Left = 4
       Top = 6
-      Width = 537
-      Height = 248
+      Width = 676
+      Height = 410
       Margins.Top = 5
       Align = alClient
       BorderOuter = fsNone
       Color = clWhite
       TabOrder = 0
       Transparent = True
+      ExplicitWidth = 537
+      ExplicitHeight = 248
       object RzPanel4: TRzPanel
         Left = 0
         Top = 0
-        Width = 537
+        Width = 676
         Height = 17
         Align = alTop
         BorderOuter = fsNone
         Color = clWhite
         TabOrder = 0
+        ExplicitWidth = 537
         object RzLabel4: TRzLabel
-          Left = 152
+          Left = 291
           Top = 0
           Width = 20
           Height = 17
@@ -78,7 +83,7 @@ object VRItemForm: TVRItemForm
           AlignWithMargins = True
           Left = 5
           Top = 0
-          Width = 147
+          Width = 286
           Height = 17
           Margins.Left = 5
           Margins.Top = 0
@@ -99,7 +104,7 @@ object VRItemForm: TVRItemForm
           ExplicitWidth = 171
         end
         object RzLabel3: TRzLabel
-          Left = 172
+          Left = 311
           Top = 0
           Width = 180
           Height = 17
@@ -118,7 +123,7 @@ object VRItemForm: TVRItemForm
         end
         object RzLabel5: TRzLabel
           AlignWithMargins = True
-          Left = 352
+          Left = 491
           Top = 0
           Width = 180
           Height = 17
@@ -143,17 +148,19 @@ object VRItemForm: TVRItemForm
       object RzPanel2: TRzPanel
         Left = 0
         Top = 17
-        Width = 537
-        Height = 231
+        Width = 676
+        Height = 393
         Align = alClient
         BorderOuter = fsNone
         TabOrder = 1
+        ExplicitWidth = 537
+        ExplicitHeight = 231
         object ScrollBox2: TScrollBox
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 531
-          Height = 225
+          Width = 670
+          Height = 387
           Align = alClient
           BevelInner = bvNone
           BevelOuter = bvNone
@@ -169,14 +176,16 @@ object VRItemForm: TVRItemForm
           ParentShowHint = False
           ShowHint = True
           TabOrder = 0
+          ExplicitWidth = 531
+          ExplicitHeight = 225
         end
       end
     end
     object RzGroupBox1: TRzGroupBox
       AlignWithMargins = True
       Left = 4
-      Top = 258
-      Width = 537
+      Top = 420
+      Width = 676
       Height = 37
       Margins.Top = 1
       Align = alBottom
@@ -190,6 +199,8 @@ object VRItemForm: TVRItemForm
       GroupStyle = gsTopLine
       ParentFont = False
       TabOrder = 1
+      ExplicitTop = 258
+      ExplicitWidth = 537
       object RzLabel1: TRzLabel
         Left = 4
         Top = -1
@@ -204,7 +215,7 @@ object VRItemForm: TVRItemForm
         ParentFont = False
       end
       object RzButton1: TRzButton
-        Left = 462
+        Left = 601
         Top = 13
         Height = 24
         Margins.Left = 150
@@ -225,9 +236,10 @@ object VRItemForm: TVRItemForm
         ParentFont = False
         TabOrder = 0
         OnClick = RzButton1Click
+        ExplicitLeft = 462
       end
       object RzButton2: TRzButton
-        Left = 370
+        Left = 509
         Top = 13
         Width = 92
         Height = 24
@@ -249,9 +261,10 @@ object VRItemForm: TVRItemForm
         ParentFont = False
         TabOrder = 1
         OnClick = RzButton2Click
+        ExplicitLeft = 370
       end
       object RzButton3: TRzButton
-        Left = 273
+        Left = 412
         Top = 13
         Width = 97
         Height = 24
@@ -273,6 +286,7 @@ object VRItemForm: TVRItemForm
         ParentFont = False
         TabOrder = 2
         OnClick = RzButton3Click
+        ExplicitLeft = 273
       end
     end
   end

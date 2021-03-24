@@ -76,6 +76,11 @@ type
     ENGRU1: TMenuItem;
     RzPanel9: TRzPanel;
     Memo1: TMemo;
+    RzPanel10: TRzPanel;
+    RzLabel13: TRzLabel;
+    RzLabel12: TRzLabel;
+    RzEdit3: TRzEdit;
+    ComboBox3: TComboBox;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
@@ -100,6 +105,7 @@ type
       var Handled: Boolean);
     procedure RzEdit1Change(Sender: TObject);
     procedure TabSheet2Exit(Sender: TObject);
+    procedure RzEdit3Change(Sender: TObject);
   private
     { Private declarations }
   public
@@ -179,41 +185,6 @@ begin
   end;
 
 end;
-{
-//----------------------------------------------------------------
-function TAddRuleForm2.GetObjForReplacement(FN:string;ObjLst:TStringList;K14:TKnowledgeBase):Integer;
-var
- i,j,k : Integer;
- tmF : TFact;
- s : string;
-begin
- ObjLst.Clear;
-  //search in actions of entered rules
-  for i :=K14.Rules.Count-1  downto 0 do
-   begin
-     for j := 0 to TRule(K14.Rules.Items[i]).Conditions.Count-1 do
-      if TCondition(TRule(K14.Rules.Items[i]).Conditions.Items[j]).Fact.ShortName=
-       FN then
-        begin
-         tmF:=TCondition(TRule(K14.Rules.Items[i]).Conditions.Items[j]).Fact;
-         s:=tmF.GetBriefTextualDescription;
-         k:=ObjLst.IndexOf(s);
-         if k=-1 then ObjLst.AddObject(s,tmF);
-        end;
-
-     for j := 0 to TRule(K14.Rules.Items[i]).Actions.Count-1 do
-      if TRAction(TRule(K14.Rules.Items[i]).Actions.Items[j]).Fact.ShortName=
-       FN then
-        begin
-         tmF:=TRAction(TRule(K14.Rules.Items[i]).Actions.Items[j]).Fact;
-         s:=tmF.GetBriefTextualDescription;
-         k:=ObjLst.IndexOf(s);
-         if k=-1 then ObjLst.AddObject(s,tmF);
-        end;
-   end;
- Result:=ObjLst.Count;
-end;
-}
 //----------------------------------------------------------------
 function TAddRuleForm2.GetStrForReplacement(FN,SN,PN:string;K14:TKnowledgeBase):string;
 var
@@ -290,18 +261,21 @@ begin
       TRAction(R1.Actions.Items[TRzPanel(TRzComboBox(Sender).Parent).Tag]).Fact
        );
      if i>-1 then
-      begin
-       if Trim(TSlot(
-         TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
-          ).Value)<>'' then s:=';'+s;
+       if TSlot(
+           TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
+            ).DataType<>'Fuzzy' then
+        begin
+         if Trim(TSlot(
+           TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
+            ).Value)<>'' then s:=';'+s;
 
-        TSlot(
-         TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
-          ).Value:=
           TSlot(
            TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
-            ).Value+s;
-      end;
+            ).Value:=
+            TSlot(
+             TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
+              ).Value+s;
+        end;
     end;
   end;
 end;
@@ -326,18 +300,21 @@ begin
       TCondition(R1.Conditions.Items[TRzPanel(TRzComboBox(Sender).Parent).Tag]).Fact
        );
      if i>-1 then
-      begin
-       if Trim(TSlot(
-         TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
-          ).Value)<>'' then s:=';'+s;
+       if TSlot(
+           TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
+            ).DataType<>'Fuzzy' then
+        begin
+         if Trim(TSlot(
+           TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
+            ).Value)<>'' then s:=';'+s;
 
-        TSlot(
-         TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
-          ).Value:=
           TSlot(
            TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
-            ).Value+s;
-      end;
+            ).Value:=
+            TSlot(
+             TTemplate(tKB.Templates.Items[i]).Slots.Items[TRzComboBox(Sender).Tag]
+              ).Value+s;
+        end;
     end;
   end;
 end;
@@ -383,15 +360,11 @@ begin
       tmF:=TFact(tmTs.Objects[i]);
       tMI:=TMenuItem.Create(TPopupMenu(Sender));
       tMI.Caption:=tmTs.Strings[i];
-//      tMI.Caption:=tmF.GetBriefTextualDescription;
-//      tMI.ImageIndex:=36;
-//      tMI.Tag:=StrToInt(tmTs.Names[i]);
       tMI.Tag:=i;
       tMI.OnClick:=MenuItemClick;
       TPopupMenu(Sender).Items.Add(tMI);
     end;
   end;
-
 end;
 //----------------------------------------------------------------
 procedure TAddRuleForm2.ComboBox1Change(Sender: TObject);
@@ -468,6 +441,10 @@ begin
  for i := 0 to RzPageControl1.PageCount-1 do
   RzPageControl1.Pages[i].TabVisible:=False;
 
+ ComboBox3.Items.Clear;
+ for i := 0 to 100 do
+  ComboBox3.Items.Add(IntToStr(i));
+
  STDIClass.LoadLocalLang(Self,LangLocaleDir+LangPrefix+'007.lan');
 
  G1:=TGRule.Create;
@@ -520,7 +497,6 @@ begin
       );
     end;
 
-//  RzPanel9.Canvas.Create;
  ScrollBox1.OnMouseWheelDown:=MainForm.ScrollBoxMouseWheelDown;
  ScrollBox1.OnMouseWheelUp:=MainForm.ScrollBoxMouseWheelUp;
  ScrollBox2.OnMouseWheelDown:=MainForm.ScrollBoxMouseWheelDown;
@@ -540,7 +516,7 @@ var
  tmTs : TStringList;
 begin
  case tag of
-  0:begin  //new
+  0,2:begin  //edit
    Caption:=' '+MainForm.LS('Edit the rule');
   end;
   1:begin  //add
@@ -554,7 +530,7 @@ begin
   T:=80;
   tmTs:=TStringList.Create;
   case Tag of
-   0,1:begin
+   0,1,2:begin
      tmTs.Add('1='+MainForm.LS('STEP 1:')+' '+MainForm.LS('Entering the condition'));
      tmTs.Add('2='+MainForm.LS('STEP 2:')+' '+MainForm.LS('Entered data preview'));
      tmTs.Add('3='+MainForm.LS('STEP 3:')+' '+MainForm.LS('Entering the action'));
@@ -596,8 +572,7 @@ begin
    );
  R1.ShortName:=Translit.Trans(R1.Name, Translit.FL);
  R1.GetStructureFrom(G1);
-// T3.Template:=T1;
-// T3.F1:=F1;
+
  s:='';
  if Trim(ComboBox2.text)<>'' then
  try
@@ -624,33 +599,30 @@ end;
 procedure TAddRuleForm2.RzButton2Click(Sender: TObject);
 var
  s : string;
+ i : Integer;
 begin
  case Tag of
-  0:begin //edit case
+  0,2:begin //edit case
    if (RzPageControl1.ActivePageIndex=5) then
     begin
      MainForm.MakeDump(MainForm.LS('Edit the rule')+ ': '+R1.Name,10);
      MainForm.LoadAList(MainForm.RzListView1);
+     if (Tag=0) then  //edit from the main form
+      begin
+        TRule(MainForm.TreeView1.Selected.Data).MakeACloneFrom(
+         TKnowledgeBase(
+          ComboBox1.Items.Objects[ComboBox1.ItemIndex]
+           ), R1);
 
-//     TKnowledgeBase(KBList.Items[ComboBox1.ItemIndex]).Facts.Add(F1);
+        //reload name
+        if R1.Description<>'' then s:=' ('+R1.Description+')';
+        MainForm.TreeView1.Selected.Text:=
+         '['+R1.ID+'] '+R1.Name+s;
+      end;
 
-{     MainForm.TreeView1.Selected:=
-      F1.AddToTreeView(MainForm.TreeView1,
-       MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1]);
-
-     MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1].Text:=
-      MainForm.PutChildCount(MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[1]);
-}
-
-      TRule(MainForm.TreeView1.Selected.Data).MakeACloneFrom(
-       TKnowledgeBase(
-        ComboBox1.Items.Objects[ComboBox1.ItemIndex]
-         ), R1);
-
-      //reload name
-      if R1.Description<>'' then s:=' ('+R1.Description+')';
-      MainForm.TreeView1.Selected.Text:=
-       '['+R1.ID+'] '+R1.Name+s;
+     if (Tag=2) then  //edit from AddRuleForm3
+      begin
+      end;
 
      MainForm.TreeView1Click(MainForm.TreeView1);
      Close;
@@ -673,24 +645,28 @@ begin
        MainForm.MMessageBox(1,0,'0='+MainForm.LS('The rule with such name already exists'))
       end;
      end;
-  end;
+  end; //end edit rule
   1:begin //add rule
    if (RzPageControl1.ActivePageIndex=5) then
     begin
-     MainForm.MakeDump(MainForm.LS('Create a new rule')+': '+R1.Name,6);
-     MainForm.LoadAList(MainForm.RzListView1);
+     TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).
+      GetHashForRules;
+     R1.GetHash(1);
+     if TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).
+      IndexOfRuleByHash(R1.Hash)=-1  then
+       begin
+         MainForm.MakeDump(MainForm.LS('Create a new rule')+': '+R1.Name,6);
+         MainForm.LoadAList(MainForm.RzListView1);
 
-     TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).Rules.Add(R1);
-{
-     MainForm.TreeView1.Selected:=
-      R1.AddToTreeView(MainForm.TreeView1,
-       MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[3]);
-
-     MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[3].Text:=
-      MainForm.PutChildCount(MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[3]);
-     MainForm.TreeView1Click(MainForm.TreeView1);}
-     MainForm.LoadTree(KBList,MainForm.TreeView1);
-     Close;
+         TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).Rules.Add(R1);
+         MainForm.LoadTree(KBList,MainForm.TreeView1);
+         Close;
+       end
+      else //this rule exists
+       begin
+        MainForm.MMessageBox(1,0,'0='+
+         MainForm.LS('Such rule already exists'))
+       end;
     end
    else
     begin
@@ -712,41 +688,6 @@ begin
       end;
     end;
   end;
-  3:begin //crp
-{   if (RzPageControl1.ActivePageIndex=2) then
-    begin
-     CRPManager:=TCRPManager.Create;
-     CRPResults:=TCRPResults.Create;
-//     T3.CBRPResults.Clear;
-     T3.K1:=TKnowledgeBase(KBList[ComboBox1.ItemIndex]);
-
-     CRPManager.CaseRetrieveProcedure(T3,
-      TKnowledgeBase(KBList[ComboBox1.ItemIndex])
-        );
-    end;
-   if (RzPageControl1.ActivePageIndex=3) then
-    begin
-     MainForm.MakeDump('Создание задачи: '+T3.ID,6);
-     MainForm.LoadAList(MainForm.RzListView1);
-
-     TKnowledgeBase(KBList.Items[ComboBox1.ItemIndex]).Tasks.Add(T3);
-
-     MainForm.TreeView1.Selected:=
-      T3.AddToTreeView(MainForm.TreeView1,
-       MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[2]);
-
-     MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[2].Text:=
-      MainForm.PutChildCount(MainForm.TreeView1.Items.Item[0].Item[ComboBox1.ItemIndex].Item[2]);
-     MainForm.TreeView1Click(MainForm.TreeView1);
-     Close;
-    end
-   else
-    begin
-     RzPageControl1.ActivePageIndex:=
-      RzPageControl1.ActivePageIndex+1;
-    end;}
-  end;
-
  end; //end case
 end;
 
@@ -784,19 +725,29 @@ begin
   end;
 end;
 
+procedure TAddRuleForm2.RzEdit3Change(Sender: TObject);
+var
+ s : string;
+ f1 : Double;
+begin
+ TEdit(Sender).Text:=StringReplace(Trim(TEdit(Sender).Text),'.',',',[rfReplaceAll]);
+ s:=TEdit(Sender).Text;
+ f1:=0;
+ TryStrToFloat(s,f1);
+ if ((f1=0)and(s<>'0')) then
+  begin
+   TEdit(Sender).Text:='1';
+  end
+end;
+
 procedure TAddRuleForm2.TabSheet1Show(Sender: TObject);
 begin
-// if Tag=1 then
-//  MainForm.ReloadHelpMessage(ScrollBox3,34)
-//   else
-//    MainForm.ReloadHelpMessage(ScrollBox3,35);
 MainForm.ReloadHelpMessage(ScrollBox3,40);
 
  if ListBox1.ItemIndex=-1 then  RzButton2.Enabled:=False
   else  RzButton2.Enabled:=True;
     RzButton2.Caption:=
      STDIClass.LoadSingleString('RzButton21c',LangLocaleDir+LangPrefix+'007.lan');
-//    'Далее >>';
     RzButton2.Hint:=
      STDIClass.LoadSingleString('RzButton21h',LangLocaleDir+LangPrefix+'007.lan');
   RzButton3.Enabled:=False;
@@ -805,8 +756,6 @@ end;
 //-----------------------------------------------------------------------------
 procedure TAddRuleForm2.AutoFillRuleComponentImageClick(Sender: TObject);
 var
-// i : Integer;
-// tKB : TKnowledgeBase;
  p : TPoint;
 begin
  p:=Mouse.CursorPos;
@@ -882,15 +831,15 @@ begin
  R1.Name:=Trim(RzEdit1.Text);
  R1.ShortName:=Translit.Trans(R1.Name, Translit.FL);
  R1.Description:=Trim(Memo1.Text);
+ R1.Salience:=Trim(ComboBox3.Text);
+ R1.CF:=Trim(RzEdit3.Text);
 end;
 
 procedure TAddRuleForm2.TabSheet2Show(Sender: TObject);
 var
- i,j,c,c1  : Integer;
+ i,j,c,c1,j1  : Integer;
  T  : Integer;
  tmTs,tmTs1,tmTs2 : TStringList;
-
-// Tg  :  TRzGroupBox;
  W : Integer;
 
  tmWC : TWinControl;
@@ -900,6 +849,7 @@ var
  tmIm,tmIm1 : TImage;
  tKB : TKnowledgeBase;
  s : string;
+ tmT : TTemplate;
 
 begin
 	 MainForm.ReloadHelpMessage(ScrollBox3,41);
@@ -908,26 +858,16 @@ begin
 
   RzButton2.Caption:=
      STDIClass.LoadSingleString('RzButton21c',LangLocaleDir+LangPrefix+'007.lan');
-  //  'Далее >>';
-//  RzButton2.Hint:='Продложить процесс описания факта (прецедента)';
-  if Tag=0 then
+
+  if (Tag=0)or((Tag=2)) then
    begin
     RzButton3.Enabled:=False;
     GroupBox2.Caption:=' '+MainForm.LS('STEP 1:')+
      ' '+MainForm.LS('Entering the condition')+': ';
-//    MainForm.ReloadHelpMessage(ScrollBox3,36)
    end
    else
     begin
-//     RzButton3.Enabled:=True;
-{     if Tag=1 then
-      MainForm.ReloadHelpMessage(ScrollBox3,37)
-       else
-        begin
-         MainForm.ReloadHelpMessage(ScrollBox3,38);
-         RzPanel3.Visible:=False;
-        end;
-}    end;
+    end;
 
  if (R1<>nil) then
  try
@@ -938,12 +878,6 @@ begin
     ComboBox1.Items.Objects[ComboBox1.ItemIndex]
      );
 
-//  if Tag<>0 then
-//   begin
-//    R1.ShortName:=G1.ShortName;
-//    R1.Name:=G1.Name;
-//    R1.Description:=MainForm.LS('Description of the rule')+': '+R1.Name;
-//   end;
    if Trim(R1.Description)='' then
     R1.Description:=MainForm.LS('Description of the rule')+': '+R1.Name;
 
@@ -952,15 +886,19 @@ begin
     TRzEdit(Sender).Text
      ,Translit.FL);
 
-
    if R1.ID='' then
     begin
      R1.ID:=TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).NewID('R');
     end;
-//     F1.Name:='имя факта';
     RzLabel5.Caption:='['+R1.ID+']';
     RzEdit1.Text:=R1.Name;
     Memo1.Text:=R1.Description;
+
+   if R1.Salience='' then R1.Salience:='1';
+    ComboBox3.ItemIndex:=ComboBox3.Items.IndexOf(R1.Salience);
+
+   if R1.CF='' then R1.CF:='1';
+    RzEdit3.Text:=R1.CF;
 
      T:=1;
       for j := 1 to 5 do
@@ -968,8 +906,7 @@ begin
 
    tmWC:=ScrollBox1;
    case Tag of
-    0,1,3 : W:=Round(tmWC.Width/2)-20;
-  //  3: W:=Round(tmWC.Width/5*2)-20;
+    0,1,2,3 : W:=Round(tmWC.Width/2)-20;
    end;
     tmWC.Visible:=False;
     STDIClass.ReleaseObjects(tmWC);
@@ -1042,10 +979,12 @@ begin
        tmP1.Font.Style:=[];
 //       tmP1.OnMouseMove:=ComponentMouseMove;
      //values from template
-      if TSlot(tmLHS.Fact.Slots.Items[j]).DataType='String'  then
-       begin //combo for string - use dictionaries
+     c1:=tKB.IndexOfTemplate(tmLHS.Fact);
+     if c1>-1 then tmT:=TTemplate(tKB.Templates.Items[c1]) else tmT:=nil;
 
-     //   T:=
+      if ((TSlot(tmLHS.Fact.Slots.Items[j]).DataType='String')and(tmT=nil))or
+       ((TSlot(tmT.Slots.Items[j]).DataType='String'))  then
+       begin //combo for string - use dictionaries
         STDIClass.AddRzCombo(tmP,T-3,W+2,
          W-5,tmTs.DelimitedText); //text from template
         //!!!!
@@ -1076,7 +1015,7 @@ begin
              s:=GetStrForReplacement(
               tmLHS.Fact.ShortName,
                TSlot(tmLHS.Fact.Slots.Items[j]).ShortName,
-                AddRuleForm3.ComboBox2.Text,
+                AddRuleForm2.ComboBox2.Text,
                  tKB
               );
             except
@@ -1094,9 +1033,11 @@ begin
           OnExitCombo;
 //        L:=120;
 //        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).OnMouseWheel:=
-       end
-      else //edit for integer
-       begin
+       end;
+
+      if ((TSlot(tmLHS.Fact.Slots.Items[j]).DataType='Integer')and(tmT=nil))or
+       ((TSlot(tmT.Slots.Items[j]).DataType='Integer')) then
+       begin   //edit for integer
         STDIClass.AddEdit(tmP,T-3,W+2,
          W-5,'');
         TEdit(tmP.Components[tmP.ComponentCount-1]).Align:=alClient;
@@ -1106,6 +1047,61 @@ begin
           TSlot(tmLHS.Fact.Slots.Items[j]).Value;
         TEdit(tmP.Components[tmP.ComponentCount-1]).OnExit:=
           OnExitEdit;
+       end;
+
+      if ((TSlot(tmLHS.Fact.Slots.Items[j]).DataType='Fuzzy')and(tmT=nil))or
+        (TSlot(tmT.Slots.Items[j]).DataType='Fuzzy') then
+       begin //combo for string - use scales
+        s:='';
+        if tmT<>nil then
+         begin
+          j1:=tKB.IndexOfFScale(TSlot(tmT.Slots.Items[j]).Value);
+            if j1>-1 then s:=TFScale(tKB.FScales.Items[j1]).ShowScaleAsString;
+         end;
+
+        STDIClass.AddRzCombo(tmP,T-3,W+2,
+         W-5,''); //text from template
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Delimiter:=';';
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.DelimitedText:=
+           s;
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
+           Trim(StringReplace(
+            TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text
+             ,'_',' ',[rfReplaceAll]));
+         //!!!!
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Align:=alClient;
+
+        if TSlot(tmLHS.Fact.Slots.Items[j]).Value<>'' then
+         begin
+          c:=TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.IndexOf(
+            TSlot(tmLHS.Fact.Slots.Items[j]).Value);
+          if c<>-1 then
+            TRzComboBox(tmP.Components[tmP.ComponentCount-1]).ItemIndex:=c;
+         end;
+
+         //----------------------------------------------------------------
+         //auto fill value
+         if TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Text='' then
+          begin
+            try
+             s:=GetStrForReplacement(
+              tmLHS.Fact.ShortName,
+               TSlot(tmLHS.Fact.Slots.Items[j]).ShortName,
+                AddRuleForm2.ComboBox2.Text,
+                 tKB
+              );
+            except
+             s:='';
+            end;
+             c:=TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.IndexOf(
+              s);
+             if c<>-1 then  TRzComboBox(tmP.Components[tmP.ComponentCount-1]).ItemIndex:=c
+              else
+                TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Text:=s;
+          end;
+         //----------------------------------------------------------------
+         TRzComboBox(tmP.Components[tmP.ComponentCount-1]).OnExit:=
+          OnExitCombo;
        end;
 
        tmP.Components[tmP.ComponentCount-1].Tag:=j;
@@ -1148,11 +1144,7 @@ var
  i,j,c : Integer;
  WC : TWinControl;
  tmP : TRzPanel;
-
-// R : TRule;
  tmSlot : TSlot;
-// tmColor,tmColor1 : TColor;
-// tmLHS : TCondition;
 begin
  //reload data
  for c := 0 to WC1.ComponentCount-1 do
@@ -1203,7 +1195,7 @@ begin
 
  WC1:=ScrollBox1;
  case Tag of
-  0 : begin
+  0,2 : begin
    R:=R1;
    GroupBox4.Caption:=' '+MainForm.LS('STEP 2:')+' '+
     MainForm.LS('Entered data preview')+': ';
@@ -1212,9 +1204,6 @@ begin
    R:=R1;
   end;
   3: begin
-//   W:=Round(WC.Width/5*2)-20;
-//   F:=T3.F1;
-//   T3.CBRPResults.Clear;
    RzPanel2.Visible:=False;
   end;
  end;
@@ -1222,13 +1211,12 @@ begin
   R.Name:=RzEdit1.Text;
   R.Description:=Memo1.Text;
 
-
  //reload data
  ReloadDataLHS(WC1);
 
  //show data
  case Tag of
-  0,1 : begin
+  0,1,2 : begin
    R:=R1;
   end;
   3: begin
@@ -1258,7 +1246,7 @@ begin
       T:=tmP1.Top+tmP1.Height;
       tmLHS.Fact.ShowAsTable(tmP,T,0);
 
-      if tmP.Tag=0 then
+      if (tmP.Tag=0)or(tmP.Tag=2) then
        begin
          tmP1:=STDIClass.AddRzPanel(T,1,20,500,
           tmP,i,alTop,clCream,bvNone,bvNone,bsSingle,MainForm.LS('no data'));
@@ -1268,8 +1256,7 @@ begin
        end;
       T:=tmP.Top+tmP.Height;
      end;
-// if c1<>0 then  RzButton2.Enabled:=False
-//  else
+
  RzButton2.Enabled:=True;
  WC.Visible:=True;
  MarkCurrentNavPanel(2);
@@ -1280,53 +1267,38 @@ procedure TAddRuleForm2.TabSheet4Show(Sender: TObject);
 begin
  RzButton2.Caption:=MainForm.LS('Ok');
  MainForm.ReloadHelpMessage(ScrollBox3,45);
- R1.Draw(ScrollBox4);
+ R1.DrawV2(ScrollBox4,0,R1.ID);
  MarkCurrentNavPanel(5);
 end;
 
 procedure TAddRuleForm2.TabSheet5Show(Sender: TObject);
 var
- i,j,c,c1  : Integer;
+ i,j,c,c1,j1  : Integer;
  T  : Integer;
-// tL : TLabel;
  tmTs,tmTs1 : TStringList;
  tmTs2 : TStringList;
-// s,s1  : String;
-// Tg  :  TRzGroupBox;
  W : Integer;
 
-// j : Integer;
  tmWC : TWinControl;
-// tmVal : TStringList;
-// tmLabel  :TRzLabel;
+
  tmP,tmP1,tmP2 : TRzPanel;
  tmRHS : TRAction;
  tmIm,tmIm1 : TImage;
  tKB : TKnowledgeBase;
  s : string;
+ tmT : TTemplate;
 
 begin
   MainForm.ReloadHelpMessage(ScrollBox3,43);
   RzButton2.Caption:=MainForm.LS('Next >>');
 //  RzButton2.Hint:='Продложить процесс описания факта (прецедента)';
-  if Tag=0 then
+  if (Tag=0)or(Tag=2) then
    begin
-//    RzButton3.Enabled:=False;
-//    GroupBox2.Caption:=
-//     ' ШАГ 1: Описание условия: ';
-//    MainForm.ReloadHelpMessage(ScrollBox3,36)
    end
    else
     begin
      RzButton3.Enabled:=True;
-{     if Tag=1 then
-      MainForm.ReloadHelpMessage(ScrollBox3,37)
-       else
-        begin
-         MainForm.ReloadHelpMessage(ScrollBox3,38);
-         RzPanel3.Visible:=False;
-        end;
-}    end;
+   end;
 
  if (R1<>nil) then
  try
@@ -1337,28 +1309,20 @@ begin
     ComboBox1.Items.Objects[ComboBox1.ItemIndex]
      );
 
-  if Tag<>0 then
-   begin
-//    R1.ShortName:=G1.ShortName;
-//    R1.Name:=G1.Name;
-   end;
-
    if R1.ID='' then
     begin
      R1.ID:=TKnowledgeBase(ComboBox1.Items.Objects[ComboBox1.ItemIndex]).NewID('R');
     end;
-//     F1.Name:='имя факта';
     RzLabel4.Caption:='['+R1.ID+']';
     RzLabel8.Caption:=R1.Name;
 
      T:=1;
-//     L:=5;
       for j := 1 to 5 do
        tmTs1.Add(IntToStr(j));
 
    tmWC:=ScrollBox5;
    case Tag of
-    0,1,3 : W:=Round(tmWC.Width/2)-20;
+    0,1,2,3 : W:=Round(tmWC.Width/2)-20;
   //  3: W:=Round(tmWC.Width/5*2)-20;
    end;
     tmWC.Visible:=False;
@@ -1427,18 +1391,18 @@ begin
        tmP.Height:=20*(((Length(TSlot(tmRHS.Fact.Slots.Items[j]).Name)*7) div tmP1.Width)+1);
        tmP1.Font.Style:=[];
 
-     //values from template
-      if TSlot(tmRHS.Fact.Slots.Items[j]).DataType='String'  then
-       begin //combo for string - use dictionaries
+     c1:=tKB.IndexOfTemplate(tmRHS.Fact);
+     if c1>-1 then tmT:=TTemplate(tKB.Templates.Items[c1]) else tmT:=nil;
 
+     //values from template
+      if ((TSlot(tmRHS.Fact.Slots.Items[j]).DataType='String')and(tmT=nil))or
+       ((TSlot(tmT.Slots.Items[j]).DataType='String'))  then
+       begin //combo for string - use dictionaries
      //   T:=
         STDIClass.AddRzCombo(tmP,T-3,W+2,
          W-5,tmTs.DelimitedText); //text from template
 //        TComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Delimiter:=';';
         //!!!!
-//         tKB:=TKnowledgeBase(
-//          KBList[ComboBox1.ItemIndex]
-//           );
          c1:=tKB.IndexOfTemplate(tmRHS.Fact);
          if c1>-1 then
           TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
@@ -1465,7 +1429,7 @@ begin
              s:=GetStrForReplacement(
               tmRHS.Fact.ShortName,
                TSlot(tmRHS.Fact.Slots.Items[j]).ShortName,
-                AddRuleForm3.ComboBox2.Text,
+                AddRuleForm2.ComboBox2.Text,
                  tKB
               );
             except
@@ -1481,8 +1445,10 @@ begin
 
          TRzComboBox(tmP.Components[tmP.ComponentCount-1]).OnExit:=
           OnExitCombo2;
-       end
-      else //edit for integer
+       end;
+
+      if ((TSlot(tmRHS.Fact.Slots.Items[j]).DataType='Integer')and(tmT=nil))or
+       ((TSlot(tmT.Slots.Items[j]).DataType='Integer')) then
        begin
      //   T:=
         STDIClass.AddEdit(tmP,T-3,W+2,
@@ -1495,6 +1461,68 @@ begin
 
         TEdit(tmP.Components[tmP.ComponentCount-1]).OnExit:=
           OnExitEdit2;
+       end;
+
+      if ((TSlot(tmRHS.Fact.Slots.Items[j]).DataType='Fuzzy')and(tmT=nil))or
+        (TSlot(tmT.Slots.Items[j]).DataType='Fuzzy') then
+       begin //combo for string - use scales
+        s:='';
+        if tmT<>nil then
+         begin
+          j1:=tKB.IndexOfFScale(TSlot(tmT.Slots.Items[j]).Value);
+            if j1>-1 then s:=TFScale(tKB.FScales.Items[j1]).ShowScaleAsString;
+         end;
+
+        STDIClass.AddRzCombo(tmP,T-3,W+2,
+         W-5,''); //text from template
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Delimiter:=';';
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.DelimitedText:=
+           s;
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
+           Trim(StringReplace(
+            TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text
+             ,'_',' ',[rfReplaceAll]));
+
+//         TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.Text:=
+//           TSlot(TTemplate(tKB.Templates.Items[c1]).Slots.Items[j]).TempValue;
+         //!!!!
+        TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Align:=alClient;
+
+        if TSlot(tmRHS.Fact.Slots.Items[j]).Value<>'' then
+         begin
+          c:=TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.IndexOf(
+            TSlot(tmRHS.Fact.Slots.Items[j]).Value);
+          if c<>-1 then
+//           TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Text:=
+//            TSlot(tmLHS.Fact.Slots.Items[j]).Value
+//           else
+            TRzComboBox(tmP.Components[tmP.ComponentCount-1]).ItemIndex:=c;
+         end;
+
+         //----------------------------------------------------------------
+         //auto fill value
+         if TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Text='' then
+          begin
+            try
+             s:=GetStrForReplacement(
+              tmRHS.Fact.ShortName,
+               TSlot(tmRHS.Fact.Slots.Items[j]).ShortName,
+                AddRuleForm2.ComboBox2.Text,
+                 tKB
+              );
+            except
+             s:='';
+            end;
+             c:=TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Items.IndexOf(
+              s);
+             if c<>-1 then  TRzComboBox(tmP.Components[tmP.ComponentCount-1]).ItemIndex:=c
+              else
+                TRzComboBox(tmP.Components[tmP.ComponentCount-1]).Text:=s;
+          end;
+         //----------------------------------------------------------------
+
+         TRzComboBox(tmP.Components[tmP.ComponentCount-1]).OnExit:=
+          OnExitCombo2;
        end;
 
        tmP.Components[tmP.ComponentCount-1].Tag:=j;
@@ -1538,11 +1566,7 @@ var
  i,j,c : Integer;
  WC : TWinControl;
  tmP : TRzPanel;
-
-// R : TRule;
  tmSlot : TSlot;
-// tmColor,tmColor1 : TColor;
-// tmRHS : TRAction;
 begin
  //reload data
  for c := 0 to WC1.ComponentCount-1 do
@@ -1588,31 +1612,20 @@ var
 begin
  MainForm.ReloadHelpMessage(ScrollBox3,44);
  RzButton2.Caption:=MainForm.LS('Next >>');
-// if Tag<>3 then
-//  begin
-//    RzButton2.Caption:='Готово';
-//    RzButton2.Hint:='Завершить процесс описания пр (прецедента)';
-//  end;
-
  RzButton3.Enabled:=True;
 
  WC1:=ScrollBox5;
  case Tag of
-  0 : begin
+  0,2 : begin
    R:=R1;
-//   GroupBox4.Caption:=' ШАГ 2: Проверка (просмотр) введенных данных: ';
   end;
   1 : begin
    R:=R1;
   end;
   3: begin
-//   W:=Round(WC.Width/5*2)-20;
-//   F:=T3.F1;
-//   T3.CBRPResults.Clear;
    RzPanel2.Visible:=False;
   end;
  end;
-
   R.Name:=RzEdit1.Text;
 
  //reload data
@@ -1620,7 +1633,7 @@ begin
 
  //show data
  case Tag of
-  0,1 : begin
+  0,1,2 : begin
    R:=R1;
   end;
   3: begin
@@ -1651,7 +1664,7 @@ begin
       T:=tmP1.Top+tmP1.Height;
       tmRHS.Fact.ShowAsTable(tmP,T,0);
 
-      if tmP.Tag=0 then
+      if (tmP.Tag=0)or(tmP.Tag=2) then
        begin
          tmP1:=STDIClass.AddRzPanel(T,1,20,500,
           tmP,i,alTop,clCream,bvNone,bvNone,bsSingle,MainForm.LS('no data'));
@@ -1661,8 +1674,6 @@ begin
        end;
       T:=tmP.Top+tmP.Height;
      end;
-// if c1<>0 then  RzButton2.Enabled:=False
-//  else
  RzButton2.Enabled:=True;
  WC.Visible:=True;
  MarkCurrentNavPanel(4);
